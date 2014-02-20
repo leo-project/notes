@@ -1,0 +1,45 @@
+2014-02-20 10:43:03.133 [debug] <0.54.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/yosuke/dev/leo/leo-insight/basho_bench/tests/20140220_104302/error.log"} into lager_event
+2014-02-20 10:43:03.133 [debug] <0.56.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/yosuke/dev/leo/leo-insight/basho_bench/tests/20140220_104302/console.log"} into lager_event
+2014-02-20 10:43:03.133 [debug] <0.58.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2014-02-20 10:43:03.176 [debug] <0.40.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.60.0>
+2014-02-20 10:43:03.176 [debug] <0.39.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.61.0>
+2014-02-20 10:43:03.177 [debug] <0.41.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.62.0>
+2014-02-20 10:43:03.177 [debug] <0.41.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.63.0>
+2014-02-20 10:43:03.611 [debug] <0.49.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2014-02-20 10:43:03.617 [notice] <0.44.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-02-20 10:43:03.680 [info] <0.7.0> Application lager started on node nonode@nohost
+2014-02-20 10:43:03.689 [info] <0.2.0>@basho_bench:log_dimensions:249 Est. data size: 12.21 MB
+2014-02-20 10:43:03.763 [debug] <0.71.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.72.0>
+2014-02-20 10:43:03.764 [debug] <0.71.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.73.0>
+2014-02-20 10:43:03.765 [debug] <0.70.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.71.0>
+2014-02-20 10:43:03.775 [debug] <0.70.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.74.0>
+2014-02-20 10:43:03.775 [info] <0.7.0> Application sasl started on node nonode@nohost
+2014-02-20 10:43:03.822 [debug] <0.79.0> Supervisor crypto_sup started crypto_server:start_link() at pid <0.80.0>
+2014-02-20 10:43:03.822 [info] <0.7.0> Application crypto started on node nonode@nohost
+2014-02-20 10:43:03.851 [debug] <0.89.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.90.0>
+2014-02-20 10:43:03.854 [debug] <0.89.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.91.0>
+2014-02-20 10:43:03.857 [debug] <0.89.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.92.0>
+2014-02-20 10:43:03.857 [info] <0.7.0> Application folsom started on node nonode@nohost
+2014-02-20 10:43:03.880 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.85.0>
+2014-02-20 10:43:03.886 [warning] <0.94.0>@basho_bench_keygen:new:39 The int_to_bin key generator wrapper is deprecated, please use the int_to_bin_bigendian or int_to_bin_littleendian wrapper instead
+2014-02-20 10:43:03.886 [debug] <0.94.0>@basho_bench_valgen:init_source:77 random source
+2014-02-20 10:43:03.994 [debug] <0.100.0> Supervisor mnesia_sup started mnesia_sup:start_event() at pid <0.101.0>
+2014-02-20 10:43:04.024 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_monitor:start() at pid <0.103.0>
+2014-02-20 10:43:04.033 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_subscr:start() at pid <0.104.0>
+2014-02-20 10:43:04.053 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_locker:start() at pid <0.105.0>
+2014-02-20 10:43:04.063 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_recover:start() at pid <0.106.0>
+2014-02-20 10:43:04.110 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_tm:start() at pid <0.107.0>
+2014-02-20 10:43:04.128 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_checkpoint_sup:start() at pid <0.108.0>
+2014-02-20 10:43:04.137 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_snmp_sup:start() at pid <0.109.0>
+2014-02-20 10:43:04.147 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_controller:start() at pid <0.110.0>
+2014-02-20 10:43:04.165 [debug] <0.102.0> Supervisor mnesia_kernel_sup started mnesia_late_loader:start() at pid <0.111.0>
+2014-02-20 10:43:04.166 [debug] <0.100.0> Supervisor mnesia_sup started mnesia_kernel_sup:start() at pid <0.102.0>
+2014-02-20 10:43:04.166 [info] <0.7.0> Application mnesia started on node nonode@nohost
+2014-02-20 10:43:04.241 [debug] <0.113.0> Supervisor savanna_commons_sup started svc_metric_server:start_link('sv_test.col', svc_metrics_counter, counter, 60000, basho_bench_driver_savanna_commonse) at pid <0.119.0>
+2014-02-20 10:43:04.241 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.94.0>
+2014-02-20 10:43:04.241 [debug] <0.26.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.120.0>
+2014-02-20 10:43:04.249 [info] <0.96.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.96.0>
+2014-02-20 10:43:04.249 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2014-02-20 10:53:08.035 [info] <0.85.0>@basho_bench_stats:report_total_errors:318 No Errors.
