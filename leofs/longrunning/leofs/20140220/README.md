@@ -1,11 +1,21 @@
 Title
 =====
+
 Long running test result for leofs-1.0.0pre3
 
 Env
 ===
-* bacho_bench
- Please refer to files in this dir.
+
+* bacho_bench (benchmarker)
+    * Configuration:
+        * key_generator:
+            * type: pareto_int
+            * max key: 100000
+        * value_generator:
+            * type: exponential_bin
+            * min-size: 8192
+            * mean-size: 131072
+        * [see more](128K_R999.conf)
 
 * LeoFS
     * OS: CentOS release 6.4 (Final)
@@ -33,7 +43,7 @@ Env
     
     [Node(s) state]
     -------+-------------------------------+--------------+----------------+----------------+----------------------------
-    type  |             node              |    state     |  current ring  |   prev ring    |          updated at         
+     type  |             node              |    state     |  current ring  |   prev ring    |          updated at         
     -------+-------------------------------+--------------+----------------+----------------+----------------------------
       S    | intel22@192.168.200.22        | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
       S    | intel24@192.168.200.24        | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
