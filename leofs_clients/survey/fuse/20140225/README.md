@@ -62,3 +62,15 @@ Example.
     ls /mnt/s3/0
 ```
 
+Concerns of leofs with owncloud
+===============================
+[s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse) or [aws-sdk-php](https://github.com/aws/aws-sdk-php) is required to use [leofs](https://github.com/leo-project/leofs/) under [owncloud](https://owncloud.org/).
+
+* s3fs-fuse
+  * Mount request of s3fs-fuse will timeout under lots of files in leofs.
+
+* aws-sdk-php
+  * To separate data on each users, the number of buckets will be same as the number of users, then buckets will increase dramatically.
+  * Some S3 API are not supported by LeoFS now, so some patches will be required.
+    * [getBucketAcl](http://docs.aws.amazon.com/aws-sdk-php/latest/class-Aws.S3.S3Client.html#_getBucketAcl)
+    * [waitUntilBucketExists](http://docs.aws.amazon.com/aws-sdk-php/latest/class-Aws.S3.S3Client.html#_waitUntilBucketExists)
