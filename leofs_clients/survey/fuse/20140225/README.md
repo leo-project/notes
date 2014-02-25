@@ -11,20 +11,22 @@ Available commands
 ==================
 | Commands | s3fs-fuse | s3fuse |
 | -------- | --------- | ------ |
-| diff     | N/A       | OK     |
-| find     | N/A       | OK     |
+| diff     | OK        | OK     |
+| find     | OK        | OK     |
 | chgrp    | N/A       | N/A    |
 | chmod    | N/A       | N/A    |
 | chown    | N/A       | N/A    |
-| cp       | N/A       | OK     |
-| ls       | N/A       | OK     |
+| cp       | OK        | OK     |
+| ls       | OK        | OK     |
 | ln       | N/A       | N/A    |
-| mkdir    | N/A       | OK     |
-| mv       | N/A       | OK     |
-| rm       | N/A       | OK     |
-| rmdir    | N/A       | NG     |
-| stat     | N/A       | OK     |
-| touch    | N/A       | OK     |
+| mkdir    | OK        | OK     |
+| mv       | OK        | OK     |
+| rm       | OK        | OK     |
+| rmdir    | OK        | NG     |
+| stat     | OK        | OK     |
+| touch    | OK        | OK     |
+
+- "stat" show modify time but do not access time and change time are always 1970-01-01 09:00:00.000000000 +0900
 
 Problems to be solved
 =====================
