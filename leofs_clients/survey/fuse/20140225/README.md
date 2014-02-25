@@ -38,7 +38,7 @@ Problems to be solved
     * And there are lots of inefficient codes everywhere.
 
 * [s3fuse](https://code.google.com/p/s3fuse/)
-    * N/A
+    * rmdir always do not work regardless of existing childs
 
 * [leofs](https://github.com/leo-project/leofs/)
     * Peformance degradation when invoking a ls command at a directory which have lots of sub directories AND lots of files
