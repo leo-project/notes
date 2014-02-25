@@ -11,20 +11,20 @@ Available commands
 ==================
 | Commands | s3fs-fuse | s3fuse |
 | -------- | --------- | ------ |
-| diff     | N/A       | N/A    |
-| find     | N/A       | N/A    |
+| diff     | N/A       | OK     |
+| find     | N/A       | OK     |
 | chgrp    | N/A       | N/A    |
 | chmod    | N/A       | N/A    |
 | chown    | N/A       | N/A    |
-| cp       | yes       | yes    |
-| ls       | N/A       | N/A    |
+| cp       | N/A       | OK     |
+| ls       | N/A       | OK     |
 | ln       | N/A       | N/A    |
-| mkdir    | N/A       | N/A    |
-| mv       | N/A       | N/A    |
-| rm       | N/A       | N/A    |
-| rmdir    | N/A       | N/A    |
-| stat     | N/A       | N/A    |
-| touch    | N/A       | N/A    |
+| mkdir    | N/A       | OK     |
+| mv       | N/A       | OK     |
+| rm       | N/A       | OK     |
+| rmdir    | N/A       | NG     |
+| stat     | N/A       | OK     |
+| touch    | N/A       | OK     |
 
 Problems to be solved
 =====================
