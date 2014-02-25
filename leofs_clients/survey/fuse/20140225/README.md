@@ -39,3 +39,24 @@ Problems to be solved
 
 * [s3fuse](https://code.google.com/p/s3fuse/)
     * N/A
+
+* [leofs](https://github.com/leo-project/leofs/)
+    * Peformance degradation when invoking a ls command at a directory which have lots of sub directories AND lots of files
+
+Example.
+
+```
+    /mnt/s3/0
+    ├── 0
+    │   └── lots of files
+    ├── 1
+    │   └── ...
+    └── 2
+        └── ....
+```
+
+```
+    # The below command take a very long time due to searching all child files(directories)
+    ls /mnt/s3/0
+```
+
