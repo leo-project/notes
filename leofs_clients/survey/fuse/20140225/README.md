@@ -6,25 +6,26 @@ Products
 =======
 * [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse)
 * [s3fuse](https://code.google.com/p/s3fuse/)
+* [s3backer](https://code.google.com/p/s3backer)
 
 Available commands
 ==================
-| Commands | s3fs-fuse | s3fuse |
-| -------- | --------- | ------ |
-| diff     | OK        | OK     |
-| find     | OK        | OK     |
-| chgrp    | N/A       | N/A    |
-| chmod    | N/A       | N/A    |
-| chown    | N/A       | N/A    |
-| cp       | OK        | OK     |
-| ls       | OK        | OK     |
-| ln       | N/A       | N/A    |
-| mkdir    | OK        | OK     |
-| mv       | OK        | OK     |
-| rm       | OK        | OK     |
-| rmdir    | OK        | NG     |
-| stat     | OK        | OK     |
-| touch    | OK        | OK     |
+| Commands | s3fs-fuse | s3fuse | s3backer |
+| -------- | --------- | ------ | -------- |
+| diff     | OK        | OK     | OK       |
+| find     | OK        | OK     | OK       |
+| chgrp    | N/A       | N/A    | OK       |
+| chmod    | N/A       | N/A    | OK       |
+| chown    | N/A       | N/A    | OK       |
+| cp       | OK        | OK     | OK       |
+| ls       | OK        | OK     | OK       |
+| ln       | N/A       | N/A    | OK       |
+| mkdir    | OK        | OK     | OK       |
+| mv       | OK        | OK     | OK       |
+| rm       | OK        | OK     | OK       |
+| rmdir    | OK        | NG     | OK       |
+| stat     | OK        | OK     | OK       |
+| touch    | OK        | OK     | OK       |
 
 - "stat" show modify time but do not access time and change time are always 1970-01-01 09:00:00.000000000 +0900
 
@@ -41,6 +42,9 @@ Problems to be solved
 
 * [s3fuse](https://code.google.com/p/s3fuse/)
     * rmdir always do not work regardless of existing childs
+
+* [s3backer](https://code.google.com/p/s3backer)
+    * s3backer creates 4k files for each used block, creating that many files can bring leofs to a halt.
 
 * [leofs](https://github.com/leo-project/leofs/)
     * Peformance degradation when invoking a ls command at a directory which have lots of sub directories AND lots of files
