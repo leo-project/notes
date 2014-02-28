@@ -19,6 +19,14 @@ Measure the time of `ls` command against a directory storing a specific amount o
     * the number of total objects stored in LeoFS(hereafter called `T`)
     * the number of objects in the target(ls) directory(hereafter called `O`)
 
+* LeoFS cluster information
+    * Server: CentOS 6.4
+    * LeoFS : 1.0.0-pre3
+    * s3fuse: 0.15(https://github.com/s3fs-fuse/s3fs-fuse)
+    * fuse:   2.8.4
+    * consistency: N:3, R:1, D:1, W:2
+    * # of servers: G:1, S:5
+
 Results
 =======
 * M=1, C=1
