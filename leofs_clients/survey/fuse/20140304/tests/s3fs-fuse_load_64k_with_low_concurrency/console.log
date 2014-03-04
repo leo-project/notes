@@ -1,0 +1,61 @@
+2014-03-04 15:52:47.028 [debug] <0.50.0> Lager installed handler {lager_file_backend,"/home/leofs/dev/basho_bench/tests/20140304_155245/console.log"} into lager_event
+2014-03-04 15:52:47.034 [debug] <0.52.0> Lager installed handler error_logger_lager_h into error_logger
+2014-03-04 15:52:47.034 [info] <0.7.0> Application lager started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 15:52:47.056 [info] <0.2.0>@basho_bench:log_dimensions:249 Est. data size: 625.00 MB
+2014-03-04 15:52:47.188 [debug] <0.60.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.61.0>
+2014-03-04 15:52:47.189 [debug] <0.60.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.62.0>
+2014-03-04 15:52:47.190 [debug] <0.59.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.60.0>
+2014-03-04 15:52:47.191 [debug] <0.59.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.63.0>
+2014-03-04 15:52:47.192 [info] <0.7.0> Application sasl started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 15:52:47.312 [debug] <0.68.0> Supervisor crypto_sup started crypto_server:start_link() at pid <0.69.0>
+2014-03-04 15:52:47.313 [info] <0.7.0> Application crypto started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 15:52:47.343 [debug] <0.78.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.79.0>
+2014-03-04 15:52:47.347 [debug] <0.78.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.80.0>
+2014-03-04 15:52:47.351 [debug] <0.78.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.81.0>
+2014-03-04 15:52:47.352 [info] <0.7.0> Application folsom started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 15:52:47.386 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.74.0>
+2014-03-04 15:52:47.394 [debug] <0.83.0>@basho_bench_keygen:new:82 ID 1 generating range 0 to 1250
+2014-03-04 15:52:47.395 [debug] <0.83.0>@basho_bench_valgen:init_source:77 random source
+2014-03-04 15:52:47.512 [debug] <0.86.0>@basho_bench_keygen:new:82 ID 2 generating range 1250 to 2500
+2014-03-04 15:52:47.512 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.83.0>
+2014-03-04 15:52:47.577 [debug] <0.88.0>@basho_bench_keygen:new:82 ID 3 generating range 2500 to 3750
+2014-03-04 15:52:47.578 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.86.0>
+2014-03-04 15:52:47.642 [debug] <0.90.0>@basho_bench_keygen:new:82 ID 4 generating range 3750 to 5000
+2014-03-04 15:52:47.707 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.88.0>
+2014-03-04 15:52:47.707 [debug] <0.92.0>@basho_bench_keygen:new:82 ID 5 generating range 5000 to 6250
+2014-03-04 15:52:47.708 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.90.0>
+2014-03-04 15:52:47.771 [debug] <0.94.0>@basho_bench_keygen:new:82 ID 6 generating range 6250 to 7500
+2014-03-04 15:52:47.772 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.92.0>
+2014-03-04 15:52:47.835 [debug] <0.96.0>@basho_bench_keygen:new:82 ID 7 generating range 7500 to 8750
+2014-03-04 15:52:47.836 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.94.0>
+2014-03-04 15:52:47.899 [debug] <0.98.0>@basho_bench_keygen:new:82 ID 8 generating range 8750 to 10000
+2014-03-04 15:52:47.900 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.96.0>
+2014-03-04 15:52:47.963 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.98.0>
+2014-03-04 15:52:47.965 [debug] <0.31.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.100.0>
+2014-03-04 15:52:47.973 [info] <0.99.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.99.0>
+2014-03-04 15:52:47.974 [info] <0.97.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.97.0>
+2014-03-04 15:52:47.974 [info] <0.95.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.95.0>
+2014-03-04 15:52:47.974 [info] <0.93.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.93.0>
+2014-03-04 15:52:47.974 [debug] <0.101.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.99.0>: 0 (0%)
+2014-03-04 15:52:47.974 [info] <0.91.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.91.0>
+2014-03-04 15:52:47.974 [info] <0.89.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.89.0>
+2014-03-04 15:52:47.974 [info] <0.87.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.87.0>
+2014-03-04 15:52:47.974 [info] <0.85.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.85.0>
+2014-03-04 15:52:47.975 [debug] <0.102.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.97.0>: 0 (0%)
+2014-03-04 15:52:47.975 [info] <0.7.0> Application basho_bench started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 15:52:48.031 [debug] <0.103.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.95.0>: 0 (0%)
+2014-03-04 15:52:48.074 [debug] <0.104.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.93.0>: 0 (0%)
+2014-03-04 15:52:48.222 [debug] <0.105.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.91.0>: 0 (0%)
+2014-03-04 15:52:48.339 [debug] <0.106.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.89.0>: 0 (0%)
+2014-03-04 15:52:48.488 [debug] <0.107.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.87.0>: 0 (0%)
+2014-03-04 15:52:48.681 [debug] <0.108.0>@basho_bench_keygen:sequential_int_generator:169 sequential_int_gen: <0.85.0>: 0 (0%)
+2014-03-04 16:12:29.902 [info] <0.99.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.99.0>) has requested stop: empty_keygen
+2014-03-04 16:12:29.984 [info] <0.97.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.97.0>) has requested stop: empty_keygen
+2014-03-04 16:12:30.114 [info] <0.95.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.95.0>) has requested stop: empty_keygen
+2014-03-04 16:12:31.712 [info] <0.93.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.93.0>) has requested stop: empty_keygen
+2014-03-04 16:12:34.321 [info] <0.91.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.91.0>) has requested stop: empty_keygen
+2014-03-04 16:12:35.377 [info] <0.89.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.89.0>) has requested stop: empty_keygen
+2014-03-04 16:12:36.146 [info] <0.87.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.87.0>) has requested stop: empty_keygen
+2014-03-04 16:12:36.534 [info] <0.85.0>@basho_bench_worker:worker_next_op:271 Driver basho_bench_driver_file (<0.85.0>) has requested stop: empty_keygen
+2014-03-04 16:12:36.536 [info] <0.74.0>@basho_bench_stats:report_total_errors:318 No Errors.
+2014-03-04 16:12:36.537 [info] <0.2.0>@basho_bench:wait_for_stop:190 Test stopped: shutdown
