@@ -12,6 +12,10 @@ Result
 * s3fs-fuse
     * basho_bench files 
         * [case1](https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k)
+            * concurrent: 32
+            * # of objects: 10000
+            * Value: fixed_bin, 65536
+            * put: 100%
 ![summary.png](https://raw.github.com/leo-project/notes/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k/summary.png)
         
         * https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k_with_low_concurrency
@@ -28,5 +32,4 @@ Result
         * https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fuse_r8w2_64k_with_low_concurrency
     *  examinations
         * Setting concurrency in a basho_bench config file low improve load throughput  
-
 
