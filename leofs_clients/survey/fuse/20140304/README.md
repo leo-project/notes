@@ -11,7 +11,9 @@ Result
 ======
 * s3fs-fuse
     * basho_bench files 
-        * https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k
+        * [case1](https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k)
+![summary.png](https://raw.github.com/leo-project/notes/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k/summary.png)
+        
         * https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_load_64k_with_low_concurrency
         * https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_r8w2_64k
         * https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304/tests/s3fs-fuse_r8w2_64k_with_low_concurrency
