@@ -15,7 +15,6 @@ LeoFS
    * OS: CentOS6.4
    * Erlang VM: R16B03-1
    * LeoFS's version: 1.0.0-pre3
-   * 
 * Cluster Settings
    
 ```
