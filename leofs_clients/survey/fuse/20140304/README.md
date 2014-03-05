@@ -12,15 +12,13 @@ LeoFS
 ======
 
 * Environment
-   * OS:
-   * Erlang VM:
-   * LeoFS's version:
+   * OS: CentOS6.4
+   * Erlang VM: R16B03-1
+   * LeoFS's version: 1.0.0-pre3
 * Cluster Settings
-
-```
-@TODO
-```
-
+   * Storage: 5
+   * Gateway: 1
+   * N:3, R:1, W:2, D:1
 
 Result
 ======
