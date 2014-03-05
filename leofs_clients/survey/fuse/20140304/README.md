@@ -15,10 +15,34 @@ LeoFS
    * OS: CentOS6.4
    * Erlang VM: R16B03-1
    * LeoFS's version: 1.0.0-pre3
+   * 
 * Cluster Settings
-   * Storage: 5
-   * Gateway: 1
-   * N:3, R:1, W:2, D:1
+   
+```
+    [System config]
+                    System version : 1.0.0-pre3
+                        Cluster Id : 
+                             DC Id : 
+                    Total replicas : 3
+               # of successes of R : 1
+               # of successes of W : 2
+               # of successes of D : 1
+    # of DC-awareness replicas    : 0
+    # of Rack-awareness replicas  : 0
+                         ring size : 2^128
+                 Current ring hash : 41e0c107
+                    Prev ring hash : 41e0c107
+    
+    [Node(s) state]
+    -------+-------------------------------+--------------+----------------+----------------+----------------------------
+     type  |             node              |    state     |  current ring  |   prev ring    |          updated at         
+    -------+-------------------------------+--------------+----------------+----------------+----------------------------
+      S    | intel22@192.168.200.22        | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
+      S    | intel24@192.168.200.24        | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
+      S    | intel25@192.168.200.25        | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
+      S    | intel26@192.168.200.26        | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
+      G    | gateway_0@192.168.200.12      | running      | 41e0c107       | 41e0c107       | 2014-02-20 18:04:59 +0900
+```
 
 Result
 ======
