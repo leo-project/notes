@@ -4,6 +4,7 @@
 
 ## leofs_clients
 
+- [Mar 14, 2014: Performance test of s3gof3r](https://github.com/leo-project/notes/tree/master/leofs_clients/survey/s3gof3r/20140314)
 - [Mar 4, 2014: Performance test of s3fs-fuse and s3fuse with basho_bench](https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140304)
 - [Mar 3, 2014: Performance test of s3fs-fuse and s3fuse](https://github.com/leo-project/notes/tree/master/leofs_clients/survey/fuse/20140303)
 - [Feb 28, 2014: S3FUSE's Command line example](https://github.com/leo-project/notes/blob/master/leofs_clients/survey/s3fuse/README.md)
