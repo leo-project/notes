@@ -34,8 +34,9 @@ Install fresh LeoFS,tcpdump, and wireshark utility to Analyse packet header.
 * Outputs :
     * In two seconds around 10 HEAD Object Request founded.
     * 3 PUT Object Request founded First. Second and Third PUT Request Content-Length according to order 0B,1MB,0B.
-    * Last Put Object Request having **x-amz-copy-source field** ***Malicious or Extra Packet which is might be responsible for time-stamp change.
-```
+    * Last Put Object Request having **x-amz-copy-source field** #Malicious or Extra Packet which is might be responsible for time-stamp change.
+
+    ```
 PUT /test/REAME.temp HTTP/1.1
 Host: localhost:8080
 Accept: */*
@@ -55,9 +56,11 @@ x-amz-metadata-directive: REPLACE
 Content-Length: 0
 Expect: 100-continue
 
-```
+    ```
+
     * LeoFs 'du $stoarage_cluster' gives following strange results for 1 MB file upload operation:
-``` 
+
+    ``` 
      active number of objects: 1
   total number of objects: 3
    active size of objects: 1048803.0
@@ -85,12 +88,14 @@ Expect: 100-continue
     total size of objects: 0
      ratio of active size: 0%
     last compaction start: ____-__-__ __:__:__
-      last compaction end: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__ 
 ```
+
     * For the big size file if we observe upload progress, size and time-stamp. "e.g. watch timestamp s3cmd ls s3:\\bucketname\filename" It chages timestamp of file two times.
 
 Disadvantages 
 =============
+
 * Waste of Bandwidth and storage space. frequently storage compaction required.
 * Due to too many Head request stress on server and network packet collision possibility.
 * Double time spending for every operation and wrong timestamp of object creation.
