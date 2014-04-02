@@ -24,7 +24,6 @@ Env
     * LeoFS:  1.0.0
 
 * LeoFS cluster settings
-    * Cluster1
 
 ```
     [System config]
@@ -49,8 +48,6 @@ Env
       S    | intel22@192.168.200.22        | running      | e66e265a       | e66e265a       | 2014-04-01 16:17:23 +0900
       G    | gateway_0@192.168.200.12      | running      | e66e265a       | e66e265a       | 2014-04-01 16:17:26 +0900
 ```
-
-    * Cluster2
 
 ```
     [System config]
@@ -78,7 +75,15 @@ Env
 
 Result
 ======
+* Bulk Load with 128K
+![Bulk Load with 128K](tests/128k_load/summary.png)
+* Read:Write = 8:2 with 128K
+![Read:Write = 8:2 with 128K](tests/128k_r8w2/summary.png)
+* Bulk Load with 512K
+![Bulk Load with 512K](tests/512k_load/summary.png)
+* Read:Write = 8:2 with 512K
+![Read:Write = 8:2 with 512K](tests/512k_r8w2/summary.png)
 
-![tests/128k_load/summary.png](Bulk Load with 128K)
-
-
+Conclusion
+==========
+We have acomplished implementing `Multi DC Replication` without degrade performance.
