@@ -1,0 +1,283 @@
+2014-04-01 17:02:41.311 [debug] <0.50.0> Lager installed handler {lager_file_backend,"/home/leofs/dev/basho_bench/tests/20140401_170239/console.log"} into lager_event
+2014-04-01 17:02:41.317 [debug] <0.52.0> Lager installed handler error_logger_lager_h into error_logger
+2014-04-01 17:02:41.317 [info] <0.7.0> Application lager started on node 'bb@intel11.rit.rakuten.com'
+2014-04-01 17:02:41.332 [info] <0.2.0>@basho_bench_keygen:dimension:132 No dimension available for key generator: {pareto_int,100000}
+2014-04-01 17:02:41.474 [debug] <0.60.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.61.0>
+2014-04-01 17:02:41.475 [debug] <0.60.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.62.0>
+2014-04-01 17:02:41.476 [debug] <0.59.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.60.0>
+2014-04-01 17:02:41.477 [debug] <0.59.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.63.0>
+2014-04-01 17:02:41.478 [info] <0.7.0> Application sasl started on node 'bb@intel11.rit.rakuten.com'
+2014-04-01 17:02:41.647 [debug] <0.68.0> Supervisor crypto_sup started crypto_server:start_link() at pid <0.69.0>
+2014-04-01 17:02:41.648 [info] <0.7.0> Application crypto started on node 'bb@intel11.rit.rakuten.com'
+2014-04-01 17:02:41.685 [debug] <0.78.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.79.0>
+2014-04-01 17:02:41.690 [debug] <0.78.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.80.0>
+2014-04-01 17:02:41.695 [debug] <0.78.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.81.0>
+2014-04-01 17:02:41.695 [info] <0.7.0> Application folsom started on node 'bb@intel11.rit.rakuten.com'
+2014-04-01 17:02:41.737 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.74.0>
+2014-04-01 17:02:41.757 [debug] <0.84.0>@basho_bench_valgen:init_source:77 random source
+2014-04-01 17:02:41.915 [debug] <0.90.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.91.0>
+2014-04-01 17:02:41.916 [info] <0.7.0> Application ibrowse started on node 'bb@intel11.rit.rakuten.com'
+2014-04-01 17:02:41.916 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.84.0>
+2014-04-01 17:02:41.980 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.93.0>
+2014-04-01 17:02:42.044 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.95.0>
+2014-04-01 17:02:42.107 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.97.0>
+2014-04-01 17:02:42.171 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.99.0>
+2014-04-01 17:02:42.235 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.101.0>
+2014-04-01 17:02:42.299 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.103.0>
+2014-04-01 17:02:42.363 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.105.0>
+2014-04-01 17:02:42.427 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.107.0>
+2014-04-01 17:02:42.491 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.109.0>
+2014-04-01 17:02:42.555 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.111.0>
+2014-04-01 17:02:42.619 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.113.0>
+2014-04-01 17:02:42.683 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.115.0>
+2014-04-01 17:02:42.747 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.117.0>
+2014-04-01 17:02:42.811 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.119.0>
+2014-04-01 17:02:42.875 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.121.0>
+2014-04-01 17:02:42.938 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_17, 17) at pid <0.123.0>
+2014-04-01 17:02:43.002 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_18, 18) at pid <0.125.0>
+2014-04-01 17:02:43.066 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_19, 19) at pid <0.127.0>
+2014-04-01 17:02:43.130 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_20, 20) at pid <0.129.0>
+2014-04-01 17:02:43.194 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_21, 21) at pid <0.131.0>
+2014-04-01 17:02:43.258 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_22, 22) at pid <0.133.0>
+2014-04-01 17:02:43.322 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_23, 23) at pid <0.135.0>
+2014-04-01 17:02:43.385 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_24, 24) at pid <0.137.0>
+2014-04-01 17:02:43.449 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_25, 25) at pid <0.139.0>
+2014-04-01 17:02:43.513 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_26, 26) at pid <0.141.0>
+2014-04-01 17:02:43.577 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_27, 27) at pid <0.143.0>
+2014-04-01 17:02:43.641 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_28, 28) at pid <0.145.0>
+2014-04-01 17:02:43.705 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_29, 29) at pid <0.147.0>
+2014-04-01 17:02:43.769 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_30, 30) at pid <0.149.0>
+2014-04-01 17:02:43.832 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_31, 31) at pid <0.151.0>
+2014-04-01 17:02:43.896 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_32, 32) at pid <0.153.0>
+2014-04-01 17:02:43.960 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_33, 33) at pid <0.155.0>
+2014-04-01 17:02:44.024 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_34, 34) at pid <0.157.0>
+2014-04-01 17:02:44.088 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_35, 35) at pid <0.159.0>
+2014-04-01 17:02:44.152 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_36, 36) at pid <0.161.0>
+2014-04-01 17:02:44.216 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_37, 37) at pid <0.163.0>
+2014-04-01 17:02:44.280 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_38, 38) at pid <0.165.0>
+2014-04-01 17:02:44.344 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_39, 39) at pid <0.167.0>
+2014-04-01 17:02:44.408 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_40, 40) at pid <0.169.0>
+2014-04-01 17:02:44.471 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_41, 41) at pid <0.171.0>
+2014-04-01 17:02:44.535 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_42, 42) at pid <0.173.0>
+2014-04-01 17:02:44.599 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_43, 43) at pid <0.175.0>
+2014-04-01 17:02:44.663 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_44, 44) at pid <0.177.0>
+2014-04-01 17:02:44.727 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_45, 45) at pid <0.179.0>
+2014-04-01 17:02:44.791 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_46, 46) at pid <0.181.0>
+2014-04-01 17:02:44.855 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_47, 47) at pid <0.183.0>
+2014-04-01 17:02:44.919 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_48, 48) at pid <0.185.0>
+2014-04-01 17:02:44.982 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_49, 49) at pid <0.187.0>
+2014-04-01 17:02:45.046 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_50, 50) at pid <0.189.0>
+2014-04-01 17:02:45.110 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_51, 51) at pid <0.191.0>
+2014-04-01 17:02:45.174 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_52, 52) at pid <0.193.0>
+2014-04-01 17:02:45.238 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_53, 53) at pid <0.195.0>
+2014-04-01 17:02:45.302 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_54, 54) at pid <0.197.0>
+2014-04-01 17:02:45.366 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_55, 55) at pid <0.199.0>
+2014-04-01 17:02:45.430 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_56, 56) at pid <0.201.0>
+2014-04-01 17:02:45.494 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_57, 57) at pid <0.203.0>
+2014-04-01 17:02:45.562 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_58, 58) at pid <0.205.0>
+2014-04-01 17:02:45.626 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_59, 59) at pid <0.207.0>
+2014-04-01 17:02:45.690 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_60, 60) at pid <0.209.0>
+2014-04-01 17:02:45.753 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_61, 61) at pid <0.211.0>
+2014-04-01 17:02:45.817 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_62, 62) at pid <0.213.0>
+2014-04-01 17:02:45.881 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_63, 63) at pid <0.215.0>
+2014-04-01 17:02:45.945 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_64, 64) at pid <0.217.0>
+2014-04-01 17:02:45.946 [debug] <0.31.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.219.0>
+2014-04-01 17:02:45.956 [info] <0.218.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.218.0>
+2014-04-01 17:02:45.956 [info] <0.216.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.216.0>
+2014-04-01 17:02:45.956 [info] <0.214.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.214.0>
+2014-04-01 17:02:45.956 [info] <0.212.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.212.0>
+2014-04-01 17:02:45.957 [info] <0.210.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.210.0>
+2014-04-01 17:02:45.957 [info] <0.208.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.208.0>
+2014-04-01 17:02:45.957 [info] <0.206.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.206.0>
+2014-04-01 17:02:45.957 [info] <0.204.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.204.0>
+2014-04-01 17:02:45.957 [info] <0.202.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.202.0>
+2014-04-01 17:02:45.958 [info] <0.200.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.200.0>
+2014-04-01 17:02:45.958 [info] <0.198.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.198.0>
+2014-04-01 17:02:45.958 [info] <0.196.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.196.0>
+2014-04-01 17:02:45.958 [info] <0.194.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.194.0>
+2014-04-01 17:02:45.959 [info] <0.192.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.192.0>
+2014-04-01 17:02:45.959 [info] <0.190.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.190.0>
+2014-04-01 17:02:45.959 [info] <0.188.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.188.0>
+2014-04-01 17:02:45.959 [info] <0.186.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.186.0>
+2014-04-01 17:02:45.959 [info] <0.184.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.184.0>
+2014-04-01 17:02:45.960 [info] <0.182.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.182.0>
+2014-04-01 17:02:45.960 [info] <0.180.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.180.0>
+2014-04-01 17:02:45.960 [info] <0.178.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.178.0>
+2014-04-01 17:02:45.961 [info] <0.176.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.176.0>
+2014-04-01 17:02:45.961 [info] <0.174.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.174.0>
+2014-04-01 17:02:45.961 [info] <0.172.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.172.0>
+2014-04-01 17:02:45.962 [info] <0.170.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.170.0>
+2014-04-01 17:02:45.962 [info] <0.168.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.168.0>
+2014-04-01 17:02:45.963 [info] <0.166.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.166.0>
+2014-04-01 17:02:45.963 [info] <0.164.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.164.0>
+2014-04-01 17:02:45.963 [info] <0.162.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.162.0>
+2014-04-01 17:02:45.963 [info] <0.160.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.160.0>
+2014-04-01 17:02:45.963 [info] <0.158.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.158.0>
+2014-04-01 17:02:45.964 [info] <0.156.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.156.0>
+2014-04-01 17:02:45.964 [info] <0.154.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.154.0>
+2014-04-01 17:02:45.964 [info] <0.152.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.152.0>
+2014-04-01 17:02:45.964 [info] <0.150.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.150.0>
+2014-04-01 17:02:45.965 [info] <0.148.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.148.0>
+2014-04-01 17:02:45.965 [info] <0.146.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.146.0>
+2014-04-01 17:02:45.965 [info] <0.144.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.144.0>
+2014-04-01 17:02:45.965 [info] <0.142.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.142.0>
+2014-04-01 17:02:45.965 [info] <0.140.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.140.0>
+2014-04-01 17:02:45.965 [info] <0.138.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.138.0>
+2014-04-01 17:02:45.965 [info] <0.136.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.136.0>
+2014-04-01 17:02:45.965 [info] <0.134.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.134.0>
+2014-04-01 17:02:45.965 [info] <0.132.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.132.0>
+2014-04-01 17:02:45.965 [info] <0.130.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.130.0>
+2014-04-01 17:02:45.965 [info] <0.128.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.128.0>
+2014-04-01 17:02:45.965 [info] <0.126.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.126.0>
+2014-04-01 17:02:45.965 [info] <0.124.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.124.0>
+2014-04-01 17:02:45.966 [info] <0.120.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.120.0>
+2014-04-01 17:02:45.966 [info] <0.122.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.122.0>
+2014-04-01 17:02:45.966 [info] <0.118.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.118.0>
+2014-04-01 17:02:45.966 [info] <0.116.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.116.0>
+2014-04-01 17:02:45.966 [info] <0.114.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.114.0>
+2014-04-01 17:02:45.966 [info] <0.112.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.112.0>
+2014-04-01 17:02:45.966 [info] <0.110.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.110.0>
+2014-04-01 17:02:45.966 [info] <0.108.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.108.0>
+2014-04-01 17:02:45.966 [info] <0.106.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.106.0>
+2014-04-01 17:02:45.966 [info] <0.104.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.104.0>
+2014-04-01 17:02:45.966 [info] <0.102.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.102.0>
+2014-04-01 17:02:45.966 [info] <0.100.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.100.0>
+2014-04-01 17:02:45.966 [info] <0.96.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.96.0>
+2014-04-01 17:02:45.966 [info] <0.98.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.98.0>
+2014-04-01 17:02:45.966 [info] <0.94.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.94.0>
+2014-04-01 17:02:45.966 [info] <0.86.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.86.0>
+2014-04-01 17:02:45.967 [info] <0.7.0> Application basho_bench started on node 'bb@intel11.rit.rakuten.com'
+2014-04-01 17:02:45.984 [debug] <0.284.0> Supervisor inet_gethost_native_sup started undefined at pid <0.285.0>
+2014-04-01 17:02:45.984 [debug] <0.31.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.284.0>
+2014-04-01 17:03:16.029 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:04:06.020 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:04:26.029 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:08:06.046 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:08:16.029 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:09:36.029 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 17:09:46.019 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:09:46.031 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 17:16:36.037 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:17:26.031 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:18:36.044 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:18:56.045 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:23:06.026 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 17:27:16.035 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:28:56.034 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:29:26.037 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 17:34:56.024 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:35:06.028 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:36:06.039 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:38:46.061 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 17:38:56.044 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:43:36.029 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:46:36.024 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:53:06.065 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:57:16.046 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 17:57:46.062 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:02:26.065 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:06:36.030 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:08:16.051 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:19:15.659 [warning] <0.154.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1099214
+2014-04-01 18:20:46.112 [warning] <0.218.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1167632
+2014-04-01 18:23:16.052 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:27:26.035 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:33:16.064 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:48:56.036 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:49:46.025 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 18:51:26.050 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 18:51:36.052 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 18:56:46.059 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:07:26.046 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:12:46.067 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 19:12:56.064 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:22:46.031 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:23:26.063 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:26:06.047 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 19:28:06.044 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 19:32:56.090 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 19:37:26.051 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 19:38:16.082 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:38:26.048 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:47:56.075 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 19:50:56.068 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:51:36.054 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:53:06.069 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 19:53:16.080 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:02:26.067 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:09:16.062 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 20:12:26.071 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:16:39.196 [warning] <0.172.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1315646
+2014-04-01 20:21:36.102 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:21:56.078 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:24:43.036 [warning] <0.154.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1054977
+2014-04-01 20:26:06.060 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:30:26.056 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:31:06.072 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:35:06.068 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:35:16.096 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 20:39:26.063 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:45:46.067 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 20:46:05.673 [warning] <0.166.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1070074
+2014-04-01 20:51:56.067 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 20:52:26.089 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:05:32.253 [warning] <0.148.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1054680
+2014-04-01 21:10:46.076 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:11:16.068 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:15:16.067 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:15:26.066 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:19:56.066 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:23:46.077 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:24:16.097 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:25:59.101 [warning] <0.172.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1218895
+2014-04-01 21:32:36.094 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:37:36.043 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:37:56.062 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:39:09.057 [warning] <0.132.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1210643
+2014-04-01 21:40:49.905 [warning] <0.214.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1073506
+2014-04-01 21:45:06.067 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:45:16.035 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 21:45:36.064 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 21:46:06.085 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:48:26.081 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 21:49:56.059 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 21:50:16.092 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 21:53:36.077 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:54:06.070 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:57:56.101 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 21:58:26.071 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:05:56.068 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:06:26.049 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:06:46.084 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:09:11.701 [warning] <0.118.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1315106
+2014-04-01 22:09:56.068 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:18:36.085 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:21:06.084 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:22:16.114 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:25:46.111 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:33:16.084 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:40:16.098 [warning] <0.74.0>@basho_bench_stats:report_latency:306 No data for op: {put,put}
+2014-04-01 22:45:06.117 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:45:26.065 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:49:26.114 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:51:56.079 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:52:36.088 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:52:56.081 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 22:53:46.091 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:00:56.076 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:04:16.104 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:04:26.099 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:07:56.078 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:08:06.122 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:09:15.391 [warning] <0.158.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1170296
+2014-04-01 23:10:46.104 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:12:46.071 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:17:36.088 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:29:36.084 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:31:06.074 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:34:36.099 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},2},{{{get,get},{get,connection_closing}},2}]
+2014-04-01 23:35:06.090 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:38:06.062 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:47:59.541 [warning] <0.144.0>@basho_bench_valgen:data_block:96 value_generator_source_size is too small 1048576 < 1318285
+2014-04-01 23:52:06.087 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-04-01 23:59:16.103 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
