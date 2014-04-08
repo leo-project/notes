@@ -1,0 +1,23 @@
+Bucket Created Successfully 
+Get Bucket Successfully 
+Successfully created text file 
+Your object is :"fuga"
+Successfully get objects
+{:meta=>{}, :restore_in_progress=>false, :content_type=>"application/octet-stream", :etag=>"\"c32ec965db3295bad074d2afa907b1c3\"", :last_modified=>2014-04-07 05:23:13 +0900, :content_length=>4}
+"fuga"
+File copied successfully 
+"fuga"
+File rename or move Successfully 
+Bucket deleted Successfully 
+action	response_time
+-------------------------
+Create Bucket	0.023567522
+Get Bucket	1.2013e-05
+Create Object	0.010314161
+Get Object	0.00420668
+HEAD object	0.002341079
+Copy Object	0.016656025
+Rename Object	0.013239111
+List Objects	0.017478479
+Delete Object	0.006244927
+Delete Bucket	0.010627049
