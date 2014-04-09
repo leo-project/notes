@@ -45,6 +45,8 @@ Env
 Results
 =======
 
+The vertical axis of each graphs show response time in seconds.
+
  **different num of buckets cases**
 * 1000 buckets x 100 objects
   ![1000 buckets x 100 objects](test_results/different_num_of_buckets/1000bckt_100obj.png)
