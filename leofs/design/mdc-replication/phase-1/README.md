@@ -1,4 +1,4 @@
-# LeoFS's Multi Data Center Replication (Phase 1)
+# Multi Data Center Replication (Phase 1)
 
 If you look at the big idea at LeoFS, what we're really focused on is **High Scalability**, **High Availability** and **High Cost Performance Ratio** because as you know, unstructured data have been exponentially increasing day by day, so we need to build **Global Scale Storage System** at low cost.
 
