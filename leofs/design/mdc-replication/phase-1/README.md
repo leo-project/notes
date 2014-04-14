@@ -1,6 +1,6 @@
 # Multi Data Center Replication (Phase 1)
 
-If you look at the big idea at LeoFS, what we're really focused on is **High Scalability**, **High Availability** and **High Cost Performance Ratio** because as you know, unstructured data have been exponentially increasing day by day, so we need to build **Global Scale Storage System** at low cost.
+If you look at the big idea at LeoFS, what we're really focused on is **high scalability**, **high availability** and **high cost performance ratio** because as you know, unstructured data have been exponentially increasing day by day, so we need to build **global scale storage system** at low cost.
 
 I've been considering how to realize LeoFS's multi data center replication more simply without SPOF - *Single Point Of Failure* and degrading the performance.
 
@@ -55,4 +55,4 @@ The node of the local cluster receives metadatas of trasfered objects, then comp
 
 ## Wrap up
 
-We designed this mechanism/function without a sacrifice of the performance and the availability but it is now the 1st phase. So we're going to improve and increase it, going forward.
+We designed this mechanism/function without the performance degration and the availability but it is now the 1st phase. So we're going to improve and increase it, going forward.
