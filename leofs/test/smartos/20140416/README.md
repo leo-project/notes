@@ -110,7 +110,7 @@ $ make release
 | Erlang               |    R16B03-1 |
 | LeoFS's version      |       1.0.0 |
 
-### Operation and Expectation result
+### Operation and Expected result
 
 
 | No| Operation                                                       | Expected result               |
