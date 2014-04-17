@@ -3,6 +3,7 @@
 - Design/Architecture
     - [Apr 11, 2014: Multi Data Center Replication (1st phase)](https://github.com/leo-project/notes/tree/master/leofs/design/mdc-replication/phase-1/README.md)
 - Test
+    - [Apr 17, 2014: Test LeoFS on SmartOS](https://github.com/leo-project/notes/blob/master/leofs/test/smartos/20140416/README.md) 
     - [Apr 8, 2014: Compare response time on different num of buckets and objects at LeoFS v1.0.0](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/20140408/README.md)
     - [Apr 2, 2014: The benchmark result with Multi DC Replication for LeoFS v1.0.0](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/20140402/README.md)
     - [Feb 20, 2014: The long-running test result for LeoFS v1.0.0-pre3](https://github.com/leo-project/notes/tree/master/leofs/longrunning/leofs/20140220/README.md)
