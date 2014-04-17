@@ -113,7 +113,7 @@ $ make release
 ### Operation and Expectation result
 
 
-| No| Operation                                                       | Expectation result            |
+| No| Operation                                                       | Expected result               |
 |:--|:----------------------------------------------------------------|:------------------------------|
 | 1 | Launch Managee,Storage and Gateway                              | Success                       |
 | 2 | Confirm disc-status of a storage-node with the ``du`` command   | Value of all items are ``0``  |
