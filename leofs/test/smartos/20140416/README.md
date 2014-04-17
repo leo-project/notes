@@ -42,9 +42,6 @@
 # pkgin -y up
 # pkgin in gmake scmgit-base gcc47 binutils pkg_alternatives autoconf cmake check automake flex
 
-* Compile
-$ mkdir -p ~/src
-$ cd ~/src
 ```
 
 ### Install Erlang-related libs/environments
@@ -386,4 +383,398 @@ fa3a0cda-d09c-450a-b8e6-854e64e08a1a  OS    8192     running           smartos7
 fb779bf9-272b-40b6-b2b2-629d8b433b92  OS    8192     running           smartos1
 
 
+```
+
+## Case-2: TEST LeoFS
+### Configuration
+
+| Item                 | Value       |
+|:---------------------|------------:|
+| inserted total files |     1000000 |
+| # of replicas        |           3 |
+| # of storage nodes   |           6 |
+| # of gateway nodes   |           1 |
+
+### LeoFS-related environments
+
+| Item                 | Value       |
+|:---------------------|------------:|
+| Erlang               |    R16B03-1 |
+| LeoFS's version      |       1.0.0 |
+
+### Operation and Expected result
+
+| No| Operation                                                       | Expected result               |
+|:--|:----------------------------------------------------------------|:------------------------------|
+| 1 | Launch Managee,Storage and Gateway                              | Success                       |
+| 2 | Confirm disc-status of a storage-node with the ``du`` command   | As below(du status values)    |
+| 3 | Suspend ``storage_0``                                           | Success                       |
+| 4 | Stop ``storage_0`` with the ``leo_storage`` shell               | Success                       |
+| 5 | Restart ``storage_0`` with the ``leo_storage`` shell            | Success                       |
+| 6 | Resume ``storage_0``                                            | Success                       |
+| 7 | Reconfirm disc-status of a storage-node with the ``du`` command | As below(du status values)    |
+
+## du status values
+| Colomn                   | Value               |
+|:-------------------------|--------------------:|
+| active number of objects |              520748 |
+| total number of objects  |              520798 |
+| active size of objects   |        8649970950.0 |
+| total size of objects    |        8650801485.0 |
+| ratio of active size     |              99.99% |
+| last compaction start    | ____-__-__ __:__:__ |
+| last compaction end      | ____-__-__ __:__:__ |
+
+
+### Log
+
+```
+* LeoFS operation
+-- Main status --
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | running      | bf519cce       | bf519cce       | 2014-04-16 07:03:35 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+ active number of objects: 520748
+  total number of objects: 520798
+   active size of objects: 8649970950.0
+    total size of objects: 8650801485.0
+     ratio of active size: 99.99%
+    last compaction start: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__
+
+== Suspend ==
+$ telnet {LEOFS_MANAGER} 10010
+  suspend storage_0@XXX.XXX.XXX.42
+  OK
+  quit
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | suspend      | bf519cce       | bf519cce       | 2014-04-16 07:03:35 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+ active number of objects: 520748
+  total number of objects: 520798
+   active size of objects: 8649970950.0
+    total size of objects: 8650801485.0
+     ratio of active size: 99.99%
+    last compaction start: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__
+
+== Daemon stop ==
+$ {LEOFS_HOME}/leo_storage/bin/leo_storage stop
+ok
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | suspend      | bf519cce       | bf519cce       | 2014-04-16 07:03:35 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+[ERROR] nodedown
+
+== Restart storage ==
+$ {LEOFS_HOME}/leo_storage/bin/leo_storage start
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | restarted    |                |                | 2014-04-17 02:40:26 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+ active number of objects: 520748
+  total number of objects: 520798
+   active size of objects: 8649970950.0
+    total size of objects: 8650801485.0
+     ratio of active size: 99.99%
+    last compaction start: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__
+
+== Resume ==
+$ telnet {LEOFS_MANAGER} 10010
+  resume storage_0@XXX.XXX.XXX.42
+  OK
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | running      | bf519cce       | bf519cce       | 2014-04-17 02:40:26 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+ active number of objects: 520748
+  total number of objects: 520798
+   active size of objects: 8649970950.0
+    total size of objects: 8650801485.0
+     ratio of active size: 99.99%
+    last compaction start: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__
+
+
+== kill -9 ==
+$ kill -9 {PROCESS_ID}
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | stop         |                |                | 2014-04-17 02:42:43 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+[ERROR] nodedown
+
+== Restart storage ==
+$ {LEOFS_HOME}/leo_storage/bin/leo_storage start
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | restarted    | bf519cce       | bf519cce       | 2014-04-17 02:43:36 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+du storage_0@XXX.XXX.XXX.42
+ active number of objects: 520748
+  total number of objects: 520798
+   active size of objects: 8649970950.0
+    total size of objects: 8650801485.0
+     ratio of active size: 99.99%
+    last compaction start: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__
+
+== Resume ==
+$ telnet {LEOFS_MANAGER} 10010
+  resume storage_0@XXX.XXX.XXX.42
+  OK
+
+-- Main status --
+status
+[System config]
+                System version : 1.0.0
+                    Cluster Id : leofs_1
+                         DC Id : dc_1
+                Total replicas : 3
+           # of successes of R : 1
+           # of successes of W : 2
+           # of successes of D : 2
+ # of DC-awareness replicas    : 0
+                     ring size : 2^128
+             Current ring hash : bf519cce
+                Prev ring hash : bf519cce
+[Multi DC replication settings]
+         max # of joinable DCs : 2
+            # of replicas a DC : 1
+
+[Node(s) state]
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+ type  |             node              |    state     |  current ring  |   prev ring    |          updated at
+-------+-------------------------------+--------------+----------------+----------------+----------------------------
+  S    | storage_0@XXX.XXX.XXX.42      | running      | bf519cce       | bf519cce       | 2014-04-17 02:43:36 +0000
+  S    | storage_1@XXX.XXX.XXX.43      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_2@XXX.XXX.XXX.44      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_3@XXX.XXX.XXX.45      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_4@XXX.XXX.XXX.46      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  S    | storage_5@XXX.XXX.XXX.47      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:15 +0000
+  G    | gateway_0@XXX.XXX.XXX.48      | running      | bf519cce       | bf519cce       | 2014-04-11 09:09:41 +0000
+
+-- du status --
+du storage_0@XXX.XXX.XXX.42
+ active number of objects: 520748
+  total number of objects: 520798
+   active size of objects: 8649970950.0
+    total size of objects: 8650801485.0
+     ratio of active size: 99.99%
+    last compaction start: ____-__-__ __:__:__
+      last compaction end: ____-__-__ __:__:__
+
+== vmadm result ==
+# vmadm list
+UUID                                  TYPE  RAM      STATE             ALIAS
+26fe9a69-9e2c-47d3-949d-20845ca520e7  OS    8192     running           smartos8
+5c1ea8fe-2160-4e3b-8d91-588a035140fc  OS    8192     running           smartos4
+7b97c7e8-6b8e-4f72-9138-9fdbcb6eec16  OS    8192     running           smartos2
+c7221459-8390-44ed-8ca9-23b96878cebe  OS    8192     running           smartos3
+d05f15b5-771d-4714-972e-f21ddde8b54c  OS    8192     running           smartos6
+edc75fd9-93c5-4fd0-844e-2c9e98b5df0c  OS    8192     running           smartos5
+fa3a0cda-d09c-450a-b8e6-854e64e08a1a  OS    8192     running           smartos7
+fb779bf9-272b-40b6-b2b2-629d8b433b92  OS    8192     running           smartos1
 ```
