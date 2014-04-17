@@ -121,7 +121,7 @@ $ make release
 | 4 | Stop ``storage_0`` with the ``leo_storage`` shell               | Success                       |
 | 5 | Restart ``storage_0`` with the ``leo_storage`` shell            | Success                       |
 | 6 | Resume ``storage_0``                                            | Success                       |
-| 8 | Reconfirm disc-status of a storage-node with the ``du`` command | Value of all items are ``0``  |
+| 7 | Reconfirm disc-status of a storage-node with the ``du`` command | Value of all items are ``0``  |
 
 
 ### Log
