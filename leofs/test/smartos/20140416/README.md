@@ -111,15 +111,15 @@ $ make release
 ### Operation and Expected result
 
 
-| No| Operation                                                       | Expected result               |
-|:--|:----------------------------------------------------------------|:------------------------------|
-| 1 | Launch Managee,Storage and Gateway                              | Success                       |
-| 2 | Confirm disc-status of a storage-node with the ``du`` command   | Value of all items are ``0``  |
-| 3 | Suspend ``storage_0``                                           | Success                       |
-| 4 | Stop ``storage_0`` with the ``leo_storage`` shell               | Success                       |
-| 5 | Restart ``storage_0`` with the ``leo_storage`` shell            | Success                       |
-| 6 | Resume ``storage_0``                                            | Success                       |
-| 7 | Reconfirm disc-status of a storage-node with the ``du`` command | Value of all items are ``0``  |
+| No| Operation                                                       | Expected result               | Result |
+|:--|:----------------------------------------------------------------|:------------------------------|:-------|
+| 1 | Launch Managee,Storage and Gateway                              | Success                       | Passed |
+| 2 | Confirm disc-status of a storage-node with the ``du`` command   | Value of all items are ``0``  | Passed |
+| 3 | Suspend ``storage_0``                                           | Success                       | Passed |
+| 4 | Stop ``storage_0`` with the ``leo_storage`` shell               | Success                       | Passed |
+| 5 | Restart ``storage_0`` with the ``leo_storage`` shell            | Success                       | Passed |
+| 6 | Resume ``storage_0``                                            | Success                       | Passed |
+| 7 | Reconfirm disc-status of a storage-node with the ``du`` command | Value of all items are ``0``  | Passed |
 
 
 ### Log
@@ -405,15 +405,15 @@ fb779bf9-272b-40b6-b2b2-629d8b433b92  OS    8192     running           smartos1
 
 ### Operation and Expected result
 
-| No| Operation                                                       | Expected result               |
-|:--|:----------------------------------------------------------------|:------------------------------|
-| 1 | Launch Managee,Storage and Gateway                              | Success                       |
-| 2 | Confirm disc-status of a storage-node with the ``du`` command   | As below(du status values)    |
-| 3 | Suspend ``storage_0``                                           | Success                       |
-| 4 | Stop ``storage_0`` with the ``leo_storage`` shell               | Success                       |
-| 5 | Restart ``storage_0`` with the ``leo_storage`` shell            | Success                       |
-| 6 | Resume ``storage_0``                                            | Success                       |
-| 7 | Reconfirm disc-status of a storage-node with the ``du`` command | As below(du status values)    |
+| No| Operation                                                       | Expected result               | Result |
+|:--|:----------------------------------------------------------------|:------------------------------|:-------|
+| 1 | Launch Managee,Storage and Gateway                              | Success                       | Passed |
+| 2 | Confirm disc-status of a storage-node with the ``du`` command   | As below(du status values)    | Passed |
+| 3 | Suspend ``storage_0``                                           | Success                       | Passed |
+| 4 | Stop ``storage_0`` with the ``leo_storage`` shell               | Success                       | Passed |
+| 5 | Restart ``storage_0`` with the ``leo_storage`` shell            | Success                       | Passed |
+| 6 | Resume ``storage_0``                                            | Success                       | Passed |
+| 7 | Reconfirm disc-status of a storage-node with the ``du`` command | As below(du status values)    | Passed |
 
 ## du status values
 | Colomn                   | Value               |
@@ -779,3 +779,9 @@ edc75fd9-93c5-4fd0-844e-2c9e98b5df0c  OS    8192     running           smartos5
 fa3a0cda-d09c-450a-b8e6-854e64e08a1a  OS    8192     running           smartos7
 fb779bf9-272b-40b6-b2b2-629d8b433b92  OS    8192     running           smartos1
 ```
+
+## Conclusion
+
+We could not face [#169](https://github.com/leo-project/leofs/issues/169).
+
+
