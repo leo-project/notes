@@ -83,6 +83,7 @@ $ sudo make install
 
 ```
 - LeoFS
+$ export PATH=$PATH:/opt/local/erlang/R16B03-1/bin
 $ cd ~/
 $ git clone https://github.com/leo-project/leofs.git
 $ cd leofs
