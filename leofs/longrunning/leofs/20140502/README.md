@@ -15,7 +15,7 @@ Env
             * type: exponential_bin
             * min-size: 8192
             * mean-size: 131072
-        * [see more](128k_r999.conf)
+        * [see more](128k_r999w1.conf)
 
 * LeoFS
     * OS: CentOS release 6.5 (Final)
