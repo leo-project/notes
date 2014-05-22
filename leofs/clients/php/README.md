@@ -28,9 +28,12 @@ This sample application is designed to show you how to:
  * Read access keys from environment variables or define it statically in this sample we are using static entry.
  * Instantiate an Amazon Simple Storage Service (Amazon S3) client.
  * Interact with Amazon S3 in various ways, such as creating a bucket and uploading a file.
+
 The project's README file contains more information about this sample code. If you have trouble getting set up or have other feedback about this sample, let us know on [GitHub](https://github.com/leo-project/leofs_client_tests/tree/develop/aws-sdk-php). 
+
 ##API Feature List
 The storage API is compatible with the Amazon S3 REST API which means that any of the operations listed can be executed using any of the commonly available S3 libraries or tools.
+
 ###Bucket-Level Operation                                                    
   * GET Bucket - Returns a list of the objects within a bucket
   * GET Bucket ACL - Returns the ACL associated with a bucket
@@ -38,6 +41,7 @@ The storage API is compatible with the Amazon S3 REST API which means that any o
   * PUT Bucket ACL - Sets the ACL permissions for a bucket
   * HEAD Object – Retrieves Bucket metadata
   * DELETE Bucket - Deletes a bucket
+
 ###Object-Level Operation
   * GET Object- Retrieves an object
   * LIST Object- Retrieves an object list
@@ -45,6 +49,7 @@ The storage API is compatible with the Amazon S3 REST API which means that any o
   * PUT Object (Copy) - Creates a copy of an object
   * HEAD Object - Retrieves object metadata (not the full content of the object)
   * DELETE Object - Deletes an object
+
 ###Multipart Upload
   * Initiate Multipart Upload - Initiates a multipart upload and returns an upload ID
   * Upload Part - Uploads a part in a multipart upload
