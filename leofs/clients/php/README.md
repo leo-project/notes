@@ -1,4 +1,5 @@
-# **> Quick Start LeoFS Access Using PHP-Client**
+# Quick Start LeoFS Access Using PHP-Client
+
 ## Introduction
 This article will get you going with a ``PHP-client`` application how to develop and architect applications for LeoFS. This article assumes that you have already installed LeoFS environment on your local or remote node. See [Getting Started with LeoFS](http://leo-project.net/leofs/docs/getting_started.html#getting-started) for more Information.
 ## Installation & Setup PHP-Client!
@@ -166,17 +167,15 @@ Here we request an object iterator and loop over it to retrieve the desired info
 
 ```php
  $iterator = $client->getIterator("ListObjects", array("Bucket" => $bucket_name));
-    foreach($iterator as $object) {
-        print $object["Key"]."\t".$object["Size"]."\t".$object["LastModified"]."\n";
-    }
+ foreach($iterator as $object) {
+     print $object["Key"]."\t".$object["Size"]."\t".$object["LastModified"]."\n";
+ }
 ```
 
 ###Head Object
 Files in Amazon S3 & LeoFS are called ``objects`` and are stored in buckets. A specific object is referred to by its key (i.e., name) and holds data. Here, we create a new object with the key name, ``HEAD`` request is metadata of that object. 
 
-e.g. Size, etag, Content_type etc.. For more detail information you can refer this
-
-[page](http://docs.aws.amazon.com/aws-sdk-php/latest/class-Aws.S3.S3Client.html#_headObject).
+e.g. ContentLength, ETag, ContentType etc.. For more detail information you can refer this [page](http://docs.aws.amazon.com/aws-sdk-php/latest/class-Aws.S3.S3Client.html#_headObject).
 
 ```php
 $headers = $client->headObject(array("Bucket" => $bucket_name, "Key" => $file_name));
