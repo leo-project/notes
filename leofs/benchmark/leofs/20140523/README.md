@@ -56,8 +56,6 @@ Env
 
 Result
 ======
-* Bulk Load with 10K
-![Bulk Load with 10K](tests/10k_load/20140523_184610/summary.png)
 * Read:Write = 8:2 with 10K
 ![Read:Write = 8:2 with 10K](tests/10k_r8w2/20140523_184831/summary.png)
 * Bulk Load with 1M
