@@ -66,6 +66,10 @@ Result
 ![Bulk Load with 10M](tests/10m_load/20140523_195747/summary.png)
 * Read:Write = 8:2 with 10M
 ![Read:Write = 8:2 with 10M](tests/10m_r8w2/20140523_200211/summary.png)
+* Read:Write = 8:2 with 1M (30 minutes)
+![Read:Write = 8:2 with 1M](tests/1m_r8w2_30min/20140526_150943/summary.png)
+* Read:Write = 8:2 with 10M (30 minutes)
+![Read:Write = 8:2 with 10M](tests/10m_r8w2_30min/20140526_155523/summary.png)
 
 Conclusion
 ==========
