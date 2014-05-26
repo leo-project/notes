@@ -54,8 +54,7 @@ Env
 
 Result
 ======
-* Bulk Load with 128K
-![Bulk Load with 128K](tests/128k_load/summary.png)
+
 * Read:Write = 8:2 with 128K
 ![Read:Write = 8:2 with 128K](tests/128k_r8w2/summary.png)
 * Bulk Load with 512K
