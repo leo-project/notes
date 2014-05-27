@@ -59,7 +59,7 @@ Result
 * Read:Write = 8:2 with 10K
 ![Read:Write = 8:2 with 10K](tests/10k_r8w2/20140523_184831/summary.png)
 * Read:Write = 8:2 with 1M
-![Read:Write = 8:2 with 1M](tests/1m_r8w2/20140527_150334/summary.png)
+![Read:Write = 8:2 with 1M](tests/1m_r8w2/20140527_143120/summary.png)
 * Bulk Load with 10M
 ![Bulk Load with 10M](tests/10m_load/20140527_145645/summary.png)
 * Read:Write = 8:2 with 10M
