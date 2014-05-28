@@ -60,8 +60,8 @@ Result
 ![Read:Write = 99:1 with 128K](tests/128k_r99w1_960h/20140527_173352/summary.png)
 * Read:Write = 8:2 with 1M (180 minutes)
 ![Read:Write = 8:2 with 1M](tests/1m_r8w2_180min/20140528_095449/summary.png)
-* Read:Write = 8:2 with 1M (90 minutes)
-![Read:Write = 8:2 with 1M](tests/1m_r9w1_90min/20140528_151505/summary.png)
+* Read:Write = 9:1 with 1M (90 minutes)
+![Read:Write = 9:1 with 1M](tests/1m_r9w1_90min/20140528_151505/summary.png)
 
 
 Conclusion
