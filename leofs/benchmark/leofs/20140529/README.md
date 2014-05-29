@@ -60,6 +60,8 @@ Result
 ![Read:Write = 9:1 with 1M](tests/1m_r9w1_90min/20140528_175714/summary.png)
 * Read:Write = 9:1 with 1M (90 minutes) min: 100KB max: 1.5MB
 ![Read:Write = 9:1 with 1M](tests/1m_r9w1_90min_2/20140529_102739/summary.png)
+* Read:Write = 9:1 with 1M (90 minutes) min: 100KB max: 1.5MB (New Logic)
+![Read:Write = 9:1 with 1M](tests/1m_r9w1_90min_new_logic/20140529_141256/summary.png)
 
 
 Conclusion
