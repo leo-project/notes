@@ -111,12 +111,22 @@ total     |548       |178        | 726
 ![Storage-5](https://raw.githubusercontent.com/leo-project/notes/33a660ba55df1be343969ece855280b8a0e96733/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs18_20140601_162330/ksar-output/storage_4_all-cpu.png)
 
 
+### Memory Usage
 
+* Gateway
+![Gateway](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs13_20140601_162355/ksar-output/gateway_0_LinuxkbmemSar.png)
 
+* Storage-1
+![Storage-1](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs14_20140601_162334/ksar-output/storage_0_LinuxkbmemSar.png)
 
+* Storage-2
+![Storage-2](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs15_20140601_162333/ksar-output/storage_1_LinuxkbmemSar.png)
 
+* Storage-3
+![Storage-3](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs16_20140601_162330/ksar-output/storage_2_LinuxkbmemSar.png)
 
+* Storage-4
+![Storage-4](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs17_20140601_162334/ksar-output/storage_3_LinuxkbmemSar.png)
 
-
-
-
+* Storage-5
+![Storage-5](https://github.com/leo-project/notes/blob/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs18_20140601_162330/ksar-output/storage_4_LinuxkbmemSar.png)
