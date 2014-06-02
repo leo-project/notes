@@ -129,4 +129,4 @@ total     |548       |178        | 726
 ![Storage-4](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs17_20140601_162334/ksar-output/storage_3_LinuxkbmemSar.png)
 
 * Storage-5
-![Storage-5](https://github.com/leo-project/notes/blob/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs18_20140601_162330/ksar-output/storage_4_LinuxkbmemSar.png)
+![Storage-5](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs18_20140601_162330/ksar-output/storage_4_LinuxkbmemSar.png)
