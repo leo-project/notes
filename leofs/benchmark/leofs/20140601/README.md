@@ -1,29 +1,11 @@
-Title
-=====
+## Benchmark LeoFS v1.0.2 on June 1st
 
-Benchmark result for leofs-1.0.2 on 10Gbps
+### Environment
 
-Env
-===
-
-* bacho_bench (benchmarker)
-    * Configuration:
-        * key_generator:
-            * type: pareto_int
-            * max key: 1MB:10000
-        * value_generator:
-            * type: exponential_bin
-            * min-size: 1024
-            * mean-size: 1572864
-        * [see more](tests/)
-
-* LeoFS
-    * OS: CentOS release 6.5 (Final)
-    * Kernel: Linux leofs12.rit.rakuten.com 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
-    * Erlang: R16B03-1
-    * LeoFS:  1.0.2
-
-* LeoFS cluster settings
+* OS: CentOS release 6.5 (Final)
+* Erlang/OTP: R16B03-1
+* LeoFS: v1.0.2
+* LeoFS cluster settings:
 
 ```
 [System config]
@@ -54,12 +36,55 @@ Env
   G    | leofs13@192.168.100.13      | running      | d02a43c0       | d02a43c0       | 2014-05-27 14:55:07 +0900
 ```
 
-Result
-======
-* Read:Write = 9:1 with 1M (4 hours) min: 100KB max: 1.5MB (New Logic)
-![Read:Write = 9:1 with 1M](tests/1m_r9w1_240min/20140601_162422/summary.png)
+* basho-bench Configuration:
+    * Duration: 4hours
+    * # of concurrent processes: 64
+    * # of keys
+    * Value size groups(byte):
+        *   1024..10240:   24%
+        *  10241..102400:  30%
+        * 102401..819200:  30%
+        * 819201.. 1572864:16%
+    * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/leofs/blob/develop/test/src/basho_bench_driver_leofs.erl)
+    * Configuration file: [1m_r9w1_240min.conf](https://github.com/leo-project/notes/blob/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/20140601_162422/1m_r9w1_240min.conf)
+
+### OPS and Latency:
+
+![ops-latency](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/20140601_162422/summary.png)
+
+### Network Traffic
+#### Chart of Each Nodes
+
+* Gateway
+![Gateway](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs13_20140601_162355/ksar-output/gateway_0_p1p1-if1.png)
+
+* Storage-1
+![Storage-1](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs14_20140601_162334/ksar-output/storage_0_p1p1-if1.png)
+
+* Storage-2
+![Storage-2](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs15_20140601_162333/ksar-output/storage_1_p1p1-if1.png)
+
+* Storage-3
+![Storage-3](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs16_20140601_162330/ksar-output/storage_2_p1p1-if1.png)
+
+* Storage-4
+![Storage-4](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs17_20140601_162334/ksar-output/storage_3_p1p1-if1.png)
+
+* Storage-5
+![Storage-5](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs18_20140601_162330/ksar-output/storage_4_p1p1-if1.png)
 
 
-Conclusion
-==========
-We have been keeping the same performance with the new version LeoFS.
+#### Symmary
+
+* Total of network traffic: 5.6Gbps
+* Itemized results:
+
+   Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
+----------|---------:|----------:|---------------:
+storage_0 |18        |28         | 46
+storage_1 |20        |25         | 45
+storage_2 |20        |25         | 45
+storage_3 |20        |25         | 45
+storage_4 |20        |25         | 45
+gateway_0 |450       |50         | 45
+total     |548       |178        | 726
