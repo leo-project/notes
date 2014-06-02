@@ -74,7 +74,7 @@
 ![Storage-5](https://raw.githubusercontent.com/leo-project/notes/master/leofs/benchmark/leofs/20140601/tests/1m_r9w1_240min/leofs18_20140601_162330/ksar-output/storage_4_p1p1-if1.png)
 
 
-#### Symmary
+#### Summary
 
 * Total of network traffic: 5.6Gbps
 * Itemized results:
