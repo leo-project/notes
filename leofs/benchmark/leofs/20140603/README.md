@@ -55,7 +55,7 @@
 #### Chart of Each Nodes
 
 * Gateway
-![Gateway](/tests/1m_r9w1_ssd/leofs13_20140603_150716/sar_20140603_150716.png_p1p1-if1.png)
+![Gateway](tests/1m_r9w1_ssd/leofs13_20140603_150716/sar_20140603_150716.png_p1p1-if1.png)
 
 * Storage-1
 ![Storage-1](tests/1m_r9w1_ssd/leofs14_20140603_150647/sar_20140603_150647.png_p1p1-if1.png)
