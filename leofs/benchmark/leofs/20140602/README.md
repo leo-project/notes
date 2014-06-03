@@ -76,18 +76,18 @@
 
 #### Symmary
 
-* Total of network traffic: 5.6Gbps
+* Total of network traffic: 5.64Gbps
 * Itemized results:
 
    Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
 ----------|---------:|----------:|---------------:
-storage_0 |          |           | 
-storage_1 |          |           |  
-storage_2 |          |           |  
-storage_3 |          |           |  
-storage_4 |          |           |  
-gateway_0 |          |           |  
-total     |          |           | 
+storage_0 |       31 |        20 |       51
+storage_1 |       27 |        19 |       46
+storage_2 |       26 |        19 |       45
+storage_3 |       27 |        19 |       46
+storage_4 |       27 |        20 |       47
+gateway_0 |       48 |       440 |      488
+total     |      186 |       537 |      723
 
 * basho-bench Configuration:
     * Duration: 4hours
@@ -126,15 +126,15 @@ total     |          |           |
 
 #### Symmary
 
-* Total of network traffic:  . Gbps
+* Total of network traffic: 9.93Gbps
 * Itemized results:
 
    Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
 ----------|---------:|----------:|---------------:
-storage_0 |          |           |
-storage_1 |          |           |
-storage_2 |          |           |
-storage_3 |          |           |
-storage_4 |          |           |
-gateway_0 |          |           |
-total     |          |           |
+storage_0 |       53 |        33 |        86
+storage_1 |       46 |        32 |        78
+storage_2 |       47 |        33 |        80
+storage_3 |       48 |        33 |        81
+storage_4 |       48 |        35 |        83
+gateway_0 |       83 |       781 |       864
+total     |      325 |       947 |      1272
