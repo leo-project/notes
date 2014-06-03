@@ -1,4 +1,4 @@
-## Benchmark LeoFS v1.0.2 on June 1st
+## Benchmark LeoFS v1.0.2 on June 2nd
 
 ### Environment
 
@@ -88,3 +88,53 @@ storage_3 |          |           |
 storage_4 |          |           |  
 gateway_0 |          |           |  
 total     |          |           | 
+
+* basho-bench Configuration:
+    * Duration: 4hours
+    * # of concurrent processes: 32
+    * # of keys
+    * Value size groups(byte):
+        *   512KB:   100%
+    * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/leofs/blob/develop/test/src/basho_bench_driver_leofs.erl)
+    * Configuration file: [1m_r9w1_240min.conf](tests/512k_r9w1_240min/20140602_160310/512k_r9w1_240min.conf)
+
+### OPS and Latency:
+
+![ops-latency](tests/512k_r9w1_240min/20140602_160310/summary.png)
+
+### Network Traffic
+#### Chart of Each Nodes
+
+* Gateway
+![Gateway](tests/512k_r9w1_240min/leofs13_20140602_160303/sar_20140602_160303.png_p1p1-if1.png)
+
+* Storage-1
+![Storage-1](tests/512k_r9w1_240min/leofs14_20140602_160238/sar_20140602_160238.png_p1p1-if1.png)
+
+* Storage-2
+![Storage-2](tests/512k_r9w1_240min/leofs15_20140602_160237/sar_20140602_160237.png_p1p1-if1.png)
+
+* Storage-3
+![Storage-3](tests/512k_r9w1_240min/leofs16_20140602_160233/sar_20140602_160233.png_p1p1-if1.png)
+
+* Storage-4
+![Storage-4](tests/512k_r9w1_240min/leofs17_20140602_160237/sar_20140602_160237.png_p1p1-if1.png)
+
+* Storage-5
+![Storage-5](tests/512k_r9w1_240min/leofs18_20140602_160232/sar_20140602_160232.png_p1p1-if1.png)
+
+
+#### Symmary
+
+* Total of network traffic:  . Gbps
+* Itemized results:
+
+   Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
+----------|---------:|----------:|---------------:
+storage_0 |          |           |
+storage_1 |          |           |
+storage_2 |          |           |
+storage_3 |          |           |
+storage_4 |          |           |
+gateway_0 |          |           |
+total     |          |           |
