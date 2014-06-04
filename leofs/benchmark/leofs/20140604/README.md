@@ -45,7 +45,7 @@
         * 102401..819200:  30%
         * 819201.. 1572864:16%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/leofs/blob/develop/test/src/basho_bench_driver_leofs.erl)
-    * Configuration file: [1m_r9w1_240min.conf](tests/1m_r9w1_60min/20140604_094456/1m_r9w1_60min.conf)
+    * Configuration file: [1m_r9w1_60min.conf](tests/1m_r9w1_60min/20140604_094456/1m_r9w1_60min.conf)
 
 ### OPS and Latency:
 
@@ -83,3 +83,53 @@ storage_2 |          |           |
 storage_3 |          |           |         
 gateway_0 |          |           |         
 total     |          |           |         
+
+* basho-bench Configuration:
+    * Duration: 240 minutes (HDD version)
+    * # of concurrent processes: 32
+    * # of keys
+    * Value size groups(byte):
+        *   1024..10240:   24%
+        *  10241..102400:  30%
+        * 102401..819200:  30%
+        * 819201.. 1572864:16%
+    * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/leofs/blob/develop/test/src/basho_bench_driver_leofs.erl)
+    * Configuration file: [1m_r9w1_240min.conf](tests/1m_r9w1_240min/20140604_143332/1m_r9w1_240min.conf)
+
+### OPS and Latency:
+
+![ops-latency](tests/1m_r9w1_240min/20140604_143332/summary.png)
+
+### Network Traffic
+#### Chart of Each Nodes
+
+* Gateway
+![Gateway]()
+
+* Storage-1
+![Storage-1]()
+
+* Storage-2
+![Storage-2]()
+
+* Storage-3
+![Storage-3]()
+
+* Storage-4
+![Storage-4]()
+
+
+#### Symmary
+
+* Total of network traffic:  .  Gbps
+* Itemized results:
+
+   Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
+----------|---------:|----------:|---------------:
+storage_0 |          |           |
+storage_1 |          |           |
+storage_2 |          |           |
+storage_3 |          |           |
+gateway_0 |          |           |
+total     |          |           |
+
