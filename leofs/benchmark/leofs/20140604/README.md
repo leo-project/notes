@@ -1,4 +1,4 @@
-## Benchmark LeoFS v1.0.2 on June 2nd
+## Benchmark LeoFS v1.0.2 on June 4th
 
 ### Environment
 
@@ -37,7 +37,7 @@
 
 * basho-bench Configuration:
     * Duration: 90 minutes
-    * # of concurrent processes: 32
+    * # of concurrent processes: 64
     * # of keys
     * Value size groups(byte):
         *   1024..10240:   24%
@@ -86,7 +86,7 @@ total     |          |           |
 
 * basho-bench Configuration:
     * Duration: 240 minutes (HDD version)
-    * # of concurrent processes: 32
+    * # of concurrent processes: 64
     * # of keys
     * Value size groups(byte):
         *   1024..10240:   24%
@@ -104,32 +104,36 @@ total     |          |           |
 #### Chart of Each Nodes
 
 * Gateway
-![Gateway]()
+![Gateway](tests/1m_r9w1_240min/leofs13_20140604_143322/sar_1_20140604_143322.png_p1p1-if1.png)
 
 * Storage-1
-![Storage-1]()
+![Storage-1](tests/1m_r9w1_240min/leofs14_20140604_143249/sar_3_20140604_143249.png_p1p1-if1.png)
 
 * Storage-2
-![Storage-2]()
+![Storage-2](tests/1m_r9w1_240min/leofs15_20140604_143248/sar_3_20140604_143248.png_p1p1-if1.png)
 
 * Storage-3
-![Storage-3]()
+![Storage-3](tests/1m_r9w1_240min/leofs16_20140604_143243/sar_3_20140604_143243.png_p1p1-if1.png)
 
 * Storage-4
-![Storage-4]()
+![Storage-4](tests/1m_r9w1_240min/leofs17_20140604_143248/sar_3_20140604_143248.png_p1p1-if1.png)
+
+* Storage-5
+![Storage-5](tests/1m_r9w1_240min/leofs18_20140604_143242/sar_2_20140604_143242.png_p1p1-if1.png)
 
 
 #### Symmary
 
-* Total of network traffic:  .  Gbps
+* Total of network traffic: 6.60Gbps
 * Itemized results:
 
    Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
 ----------|---------:|----------:|---------------:
-storage_0 |          |           |
-storage_1 |          |           |
-storage_2 |          |           |
-storage_3 |          |           |
-gateway_0 |          |           |
-total     |          |           |
+storage_0 |       36 |        22 |        58
+storage_1 |       31 |        22 |        53
+storage_2 |       31 |        22 |        53
+storage_3 |       32 |        22 |        54
+storage_4 |       32 |        23 |        55
+gateway_0 |       59 |       513 |       572
+total     |      221 |       624 |       845
 
