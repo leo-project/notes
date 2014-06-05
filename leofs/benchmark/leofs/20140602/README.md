@@ -38,7 +38,7 @@
 
 * basho-bench Configuration:
     * Duration: 4hours
-    * # of concurrent processes: 32
+    * # of concurrent processes: 64
     * # of keys
     * Value size groups(byte):
         *   1024..10240:   24%
@@ -91,7 +91,7 @@ total     |      186 |       537 |      723
 
 * basho-bench Configuration:
     * Duration: 4hours
-    * # of concurrent processes: 32
+    * # of concurrent processes: 64
     * # of keys
     * Value size groups(byte):
         *   512KB:   100%

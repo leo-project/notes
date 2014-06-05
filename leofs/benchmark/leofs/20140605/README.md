@@ -209,7 +209,7 @@ total     |      215 |       620 |       835
 
 #### Symmary
 
-* Total of network traffic: .Gbps
+* Total of network traffic: 5.55Gbps
 * Itemized results:
 
    Node   |Read(MB/s)|Write(MB/s)|Total(MB/s)
