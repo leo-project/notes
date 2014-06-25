@@ -2,10 +2,10 @@
 
 ## Introduction
 This article will get you going with a how to develop and architect ``Ruby-client`` application for LeoFS. This article assumes that you have already installed LeoFS environment on your local or remote node. See [Getting Started with LeoFS](http://leo-project.net/leofs/docs/getting_started.html#getting-started) for more Information.
-## Installation & Setup Ruby-Client
+## Installation and Setup S3 Ruby-client
 The easiest way to install Ruby on your machine is through the yum package installer. Then we need some additional Ruby dependancies.
 
-### CentOS, Fedora & RHEL:
+### CentOS, Fedora and RHEL:
 ```shell
 ##### Install Ruby, SDK and Dependencies #####
 $ sudo yum install ruby
@@ -17,7 +17,7 @@ Once you have Ruby installed now you can easily install the ruby gems.
 ```shell
 $ sudo yum install rubygems
 ```
-### Debian & Ubuntu based Installation
+### Debian and Ubuntu based Installation
 
 ```shell
 ##### Install Ruby, SDK and Dependencies #####
@@ -45,7 +45,7 @@ $ gem install aws-sdk
 $ gem install content_type  # to check content_type 
 ```
 
-### About the Sample    
+### About the sample    
 This sample application is designed to show you how to:
  * Declare a dependency on the aws-sdk using rubygemes.
  * Read access keys from environment variables or define it statically in this sample we are using static entry.
@@ -54,10 +54,10 @@ This sample application is designed to show you how to:
 
 The project's ``README`` file contains more information about this sample code. If you have trouble getting set up or have other feedback about this sample codes, let us know on [GitHub](https://github.com/leo-project/leofs_client_tests/tree/develop/aws-sdk-ruby). 
 
-##API Feature List
+##API feature list
 The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html) which means that any of the operations listed can be executed using any of the commonly available S3 libraries or tools.
 
-###Bucket-Level Operation                                                    
+###Bucket-level operation                                                    
   * GET Bucket - Returns a list of the objects within a bucket
   * GET Bucket ACL - Returns the ACL associated with a bucket
   * PUT Bucket - Creates a new bucket
@@ -65,7 +65,7 @@ The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amaz
   * HEAD Object – Retrieves Bucket metadata
   * DELETE Bucket - Deletes a bucket
 
-###Object-Level Operation
+###Object-level operation
   * GET Object- Retrieves an object
   * LIST Object- Retrieves an object list
   * PUT Object - Stores an object to a bucket
@@ -73,7 +73,7 @@ The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amaz
   * HEAD Object - Retrieves object metadata (not the full content of the object)
   * DELETE Object - Deletes an object
 
-###Multipart Upload
+###Multipart upload
   * Initiate Multipart Upload - Initiates a multipart upload and returns an upload ID
   * Upload Part - Uploads a part in a multipart upload
   * Complete Multipart Upload - Completes a multipart upload and assembles previously uploaded parts
@@ -81,13 +81,13 @@ The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amaz
   * List Parts - Lists the parts that have been uploaded for a specific multipart upload.
   * List Multipart Uploads - Lists multipart uploads that have not yet been completed or aborted.
 
-Multipart upload allows you to upload a single object as a set of parts. Object parts can be uploaded independently and in any order. After all parts are uploaded, LeoFS assembles an object out of the parts. When your object size reaches 100MB, you should consider using multipart uploads instead of uploading the object in a single operation. Read more about parallel multipart uploads [here](http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html).
+The *multipart-upload* allows you to upload a single object as a set of parts. Object parts can be uploaded independently and in any order. After all parts are uploaded, LeoFS assembles an object out of the parts. When your object size reaches 100MB, you should consider using multipart uploads instead of uploading the object in a single operation. Read more about parallel multipart uploads [here](http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html).
 ![Multipart Upload](./image/multipartUpload.png)
 
-##Sample Methods:
+##Sample methods:
 The complete API reference is available on the [Amazon site](http://rubydoc.info/gems/aws/2.4.5/Aws/S3Interfac). Here we included our sample [script file](https://github.com/leo-project/leofs_client_tests/blob/develop/aws-sdk-ruby/leo.rb) which includes major method which is supported by LeoFS.
 
-###Creating a Connection
+###Creating a connection
 A simple way to specify your credentials is by injecting them directly into the factory method when instantiating the client object. However, be careful to not hard-code your credentials inside of your applications. Hard-coding your credentials can be dangerous. According to your bucket Name please set sub-domain name entry as per this [Page](http://leo-project.net/leofs/docs/s3_client.html#edit-etc-hosts). For more detail method you can refer this [page](http://www.rubydoc.info/github/aws/aws-sdk-ruby/AWS#config-class_method).
 
 ```ruby
@@ -148,7 +148,7 @@ AWS.config(
 s3 = AWS::S3.new
 ```
 
-## Creating a Bucket
+## Creating a bucket
 A simple way to create bucket is given from here be careful bucket name should be globally unique and must be DNS compatible otherwise it will throw ``S3Exception``. For more information about bucket name restrictions, see http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html bucket.
 
 ```ruby
@@ -157,8 +157,8 @@ A simple way to create bucket is given from here be careful bucket name should b
    puts "Bucket Created Successfully\n"
 ```
 
-###Does Bucket exists ?
-A Simple to check bucket is exist or not and you have permission to access it. The operation returns a ``200 - OK`` if the bucket exists and you have permission to access it. Otherwise, the operation might return responses such as ``404 - Not Found`` and ``403 - Forbidden``. for more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/Bucket.html#exists%3F-instance_method).
+###Does bucket exists ?
+A simple to check bucket is exist or not and you have permission to access it. The operation returns a ``200 - OK`` if the bucket exists and you have permission to access it. Otherwise, the operation might return responses such as ``404 - Not Found`` and ``403 - Forbidden``. for more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/Bucket.html#exists%3F-instance_method).
 
 ```ruby
    if !(s3.bucket.exists?)
@@ -166,7 +166,7 @@ A Simple to check bucket is exist or not and you have permission to access it. T
    end
 ```
 
-###Get Buckets
+###Get buckets
 You can get array of  all the buckets owned by your account using the ``buckets['bucket-name']`` method. You can also enumerate all buckets in your account. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/BucketCollection.html#each-instance_method).
 
 ```ruby
@@ -178,7 +178,7 @@ You can get array of  all the buckets owned by your account using the ``buckets[
    end
 ```
 
-###Single-Part Object upload
+###Single-part object upload
 A simple way to upload object via the single-part method from your file system which is recommended to use for object less than 100MB in size. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/S3Object.html#write-instance_method).
 
 ```ruby
@@ -190,8 +190,8 @@ A simple way to upload object via the single-part method from your file system w
    obj = bucket.objects[FileName + ".single"].write(file: file_path,           content_type: fileObject.content_type)
 ```
 
-###Multi-Part Object upload
-Multipart upload allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order. If transmission of any part fails, you can retransmit that part without affecting other parts. After all parts of your object are uploaded, LeoFS assembles these parts and creates the object. In general, when your object size reaches 100 MB, you should consider using multipart uploads instead of uploading the object in a single operation. Advantages: Improved throughput, Quick recovery from any network issues, Suspend and resume object uploads begin an upload before you know the final object size. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/MultipartUpload.html).
+###Multi-part object upload
+The *multipart-upload* allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order. If transmission of any part fails, you can retransmit that part without affecting other parts. After all parts of your object are uploaded, LeoFS assembles these parts and creates the object. In general, when your object size reaches 100 MB, you should consider using multipart uploads instead of uploading the object in a single operation. Advantages: Improved throughput, Quick recovery from any network issues, Suspend and resume object uploads begin an upload before you know the final object size. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/MultipartUpload.html).
 
 ```ruby
    # PUT object using multi-part method
@@ -209,7 +209,7 @@ Multipart upload allows you to upload a single object as a set of parts. Each pa
    puts "File Uploaded Successfully\n\n"
 ```
 
-###List a Bucket’s Content
+###List a bucket’s content
 Here we request an object iterator and loop over it to retrieve the desired information about the objects (object key, size, and modification time stamp in this case) . For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/ObjectCollection.html).
 
 ```ruby
@@ -223,8 +223,8 @@ Here we request an object iterator and loop over it to retrieve the desired info
    end
 ```
 
-###Head Object
-Files in Amazon S3 & LeoFS are called ``objects`` and are stored in buckets. A specific object is referred to by its key (i.e., name) and holds data. Here, we create a new object with the key name, ``HEAD`` request is metadata of that object. 
+###Head an object
+Files in Amazon-S3 and LeoFS are called ``objects`` and are stored in buckets. A specific object is referred to by its key (i.e., name) and holds data. Here, we create a new object with the key name, ``HEAD`` request is metadata of that object. 
 
 e.g. ContentLength, ETag, ContentType etc.. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/S3Object.html#head-instance_method).
 
@@ -248,7 +248,7 @@ e.g. ContentLength, ETag, ContentType etc.. For more detail information you can 
    end
 ```
 
-###GET  or READ Object
+###GET / READ an object
 A simple way to download object from LeoFS in to current directory by using read method. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/S3Object.html#read-instance_method).
 
 ```ruby
@@ -267,7 +267,7 @@ A simple way to download object from LeoFS in to current directory by using read
    end
 ```
 
-###Copy Object
+###Copy an object
 A simple way to copy object on LeoFS same bucket or different bucket We should use this method than by using the ``exists`` method. we are checking presence of copied object. Ruby SDK have two methods ``copy_from`` and ``copy_to``. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/S3Object.html#copy_from-instance_method).
 
 ```ruby
@@ -278,7 +278,7 @@ A simple way to copy object on LeoFS same bucket or different bucket We should u
    end
    puts "File copied successfully\n"
 ```
-###Move or Rename Object
+###Move / Rename an object
 A simple way to move or rename object on LeoFS same bucket or different bucket, we are checking presence of moved or renamed object. Ruby SDK have two methods ``move_to`` and ``rename_to``. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/S3Object.html#move_to-instance_method).
 
 ```ruby
@@ -296,7 +296,7 @@ A simple way to move or rename object on LeoFS same bucket or different bucket, 
    puts "\nFile rename Successfully\n"
 ```
 
-###Delete Object
+###Delete an object
 A simple way to delete object from LeoFS by providing bucket and object name - key. Multiple object delete method currently not supported but you can perfrom similar operation via using iterator. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/S3/S3Object.html#delete-instance_method).
 
 ```ruby
@@ -318,7 +318,7 @@ A simple way to delete object from LeoFS by providing bucket and object name - k
    end
 ```
 
-###Get a Bucket ACL
+###Get a bucket ACL
 A simple way to get bucket ACL is given here. LeoFS basically supports ``private``, ``public-read`` and ``public-read-write`` types of the ACL. Object level ACL is currently not supported yet. In ruby SDK it displays like ``read``,``read_acp``, ``write`` and ``full_control``. here we are using permisions as collection of permissions as a array. For more detail information you can refer this [page](http://www.rubydoc.info/github/aws/aws-sdk-ruby/AWS/S3/S3Object#acl-instance_method).
 
 ```ruby
@@ -332,7 +332,7 @@ A simple way to get bucket ACL is given here. LeoFS basically supports ``private
    end
 ```
 
-###Put a Bucket ACL
+###Put a bucket ACL
 A simple way to put ACL` and restrict different Bucket Acess by this method. For more detail information you can refer this [page](http://www.rubydoc.info/github/aws/aws-sdk-ruby/AWS/S3/S3Object#acl-instance_method).
 
 ```ruby
@@ -344,7 +344,7 @@ A simple way to put ACL` and restrict different Bucket Acess by this method. For
    # OR
    bucket.acl = :private
 ```
-###Delete Bucket
+###Delete a bucket
 A simple way to delete bucket using ``clear`` and ``delete`` methods. For more detail information you can refer this [page](http://rubydoc.info/gems/aws/2.4.5/Aws/S3Interface#delete_bucket-instance_method).
 
 ```ruby
@@ -355,9 +355,9 @@ A simple way to delete bucket using ``clear`` and ``delete`` methods. For more d
   puts "Bucket deleted Successfully\n"
 ```
 
-##Test Script Source Code:
+##Test script code:
 This testing file include all well know methods of Ruby SDK. This script required sample file name as “testFile” at following location in ``$file_path = "../temp_data/$file_name";`` your project Directory. Sample Operation testing Script which is located in downloaded project’s leo.rb  file or you can access https://gist.github.com/PatelParas/aa46d8d6c64e181446ec#file-leofs_ruby_client_testing_script-rb.
 
-##Test Script Output :
+##Test script output :
 You can check sample output of this script via this link https://gist.github.com/PatelParas/aa46d8d6c64e181446ec#file-leofs_ruby_client_testing_script_result.
 
