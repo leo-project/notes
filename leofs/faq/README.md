@@ -41,10 +41,9 @@
 ### The way of LeoFS operation
 #### Commons
 * バージョンアップ方法
+* アップデート方法は？
 * バケットの制限はあるか
 * 起動中のLeoFSに新しい設定ファイルを反映させる方法はあるか
-
-* アップデート方法は？
 
 #### Manager
 * ``[Consistency]`` 冗長度は変えられるか
