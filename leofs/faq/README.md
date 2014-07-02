@@ -24,14 +24,14 @@
 * バケット名のルールはあるか
 
 #### Gateway
-* [Cache] 設定ファイルでconfig.cache_max_content_lenの設定値
-* [Cache] ``config.cache_disk_threshold_len`` の設定値
+* ``[Cache]`` 設定ファイルでconfig.cache_max_content_lenの設定値
+* ``[Cache]`` ``config.cache_disk_threshold_len`` の設定値
 
 #### Manager
-* [Consistency] Total replicasとDC-awareness replicasの違いは
+* ``[Consistency]`` Total replicasとDC-awareness replicasの違いは
 
 #### Storage
-* [Storage] ブロックサイズの設定はあるか
+* ``[Storage]`` ブロックサイズの設定はあるか
 
 
 ### Launch and stop LeoFS
@@ -39,18 +39,27 @@
 * 停止時の注意点
 
 ### The way of LeoFS operation
-* コンパクション時にノードを停止させる必要があるか
-* 冗長度は変えられるか
+#### Commons
 * バージョンアップ方法
 * バケットの制限はあるか
 * 起動中のLeoFSに新しい設定ファイルを反映させる方法はあるか
-* リバランスを止めることができるか
-* リバランス・リカバーの速度変更はどうするか
-* ノード追加したときのデータはどこにいくか
+
 * アップデート方法は？
-* コンパクションは自動で行われるか
+
+#### Manager
+* ``[Consistency]`` 冗長度は変えられるか
+* ``[Rebalance]`` リバランスを止めることができるか
+* ``[Rebalance]`` ``[Recovery]`` リバランス・リカバーの速度変更はどうするか
+
+#### Storage
+* ``[Compaction]`` コンパクション時にノードを停止させる必要があるか
+* ``[Compaction]`` コンパクションは自動で行われるか
+* ノード追加したときのデータはどこにいくか
 * エラー検知時にノードの自動追加・削除がされるか
-* キャッシュのエクスパイア時間の設定方法
+
+#### Gateway
+* ``[Cache]``キャッシュのエクスパイア時間の設定方法
+
 
 ### Trouble shooting
 * ディスクフルとなった時の対応
