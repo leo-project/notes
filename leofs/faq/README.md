@@ -24,11 +24,11 @@
 * バケット名のルールはあるか
 
 #### Gateway
-* ``[Cache]`` 設定ファイルでconfig.cache_max_content_lenの設定値
+* ``[Cache]`` 設定ファイルで ``config.cache_max_content_len`` の設定値
 * ``[Cache]`` ``config.cache_disk_threshold_len`` の設定値
 
 #### Manager
-* ``[Consistency]`` Total replicasとDC-awareness replicasの違いは
+* ``[Consistency]`` ``[MDC-Replication]`` ``Total replicas`` と ``DC-awareness replicas`` の違いは
 
 #### Storage
 * ``[Storage]`` ブロックサイズの設定はあるか
