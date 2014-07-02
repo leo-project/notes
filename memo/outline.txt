@@ -1,0 +1,57 @@
+1. LeoFS fundamentals
+Q. What's LeoFS?
+Q. What's difference from block storage?
+Q. Does LeoFS support NFS?
+Q. What are typical uses for LeoFS?
+Q. What's architecture of LeoFS?
+Q. How does LeoFS store objects?
+Q. What's the role of Manager?
+Q. キャッシュメカニズムはどうなっているか
+Q. キャッシュの時間
+Q. オブジェクト名で使用可能な特殊文字
+Q. バケット名のルールはあるか
+Q. How does LeoFS work on Multi-DC replication?
+Q. How do I do a compaction?
+Q. What language is LeoFS written in?
+Q. What's the roadmap for LeoFS?
+
+2. LeoFS for infrastructure engineer
+2-1. installing
+Q. What's required machine spec?
+Q. ディスク構成について
+Q. rpmをインストールするときにバージョンが古いと怒られる
+
+2-2. configuration
+Q. 設定ファイルにはIPアドレスとホスト名のどちらを記載すべきか
+Q. 設定ファイルでconfig.cache_max_content_lenの設定値
+Q. config.cache_disk_threshold_lenの設定値
+Q. Total replicasとDC-awareness replicasの違いは
+Q. ブロックサイズの設定はあるか
+
+2-3. starting up & stopping
+Q. 起動ユーザについて
+Q. 停止時の注意点
+
+2-4. running operation
+Q. コンパクション時にノードを停止させる必要があるか
+Q. 冗長度は変えられるか
+Q. バージョンアップ方法
+Q. バケットの制限はあるか
+Q. 起動中のLeoFSに新しい設定ファイルを反映させる方法はあるか
+Q. リバランスを止めることができるか
+Q. リバランス・リカバーの速度変更はどうするか
+Q. ノード追加したときのデータはどこにいくか
+Q. アップデート方法は？
+Q. コンパクションは自動で行われるか
+Q. エラー検知時にノードの自動追加・削除がされるか
+
+2-5. trouble shooting
+Q. ディスクフルとなった時の対応
+Q. コンパクション時にhttp_errorが頻発する
+Q. インストールは問題ないのに Storage ノードが起動しない
+
+3. LeoFS for application developer
+Q. How can I access to LeoFS?
+Q. When others update an object, how can I get the newest file?
+Q. If I remove a document, does LeoFS remove it from disk?
+
