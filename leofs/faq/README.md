@@ -6,6 +6,7 @@
 * What are typical uses for LeoFS?
 * What's architecture of LeoFS?
 * How does LeoFS store objects?
+* What's the role of Gateway?
 * What's the role of Manager?
 * What language is LeoFS written in?
 * What's the roadmap for LeoFS?
@@ -34,12 +35,10 @@
 * ``[Storage]`` ブロックサイズの設定はあるか
 
 
-### Launch and stop LeoFS
+### LeoFS operation
+#### Commons
 * 起動ユーザについて
 * 停止時の注意点
-
-### The way of LeoFS operation
-#### Commons
 * バージョンアップ方法
 * アップデート方法は？
 * バケットの制限はあるか
@@ -65,14 +64,14 @@
 * コンパクション時にhttp_errorが頻発する
 * インストールは問題ないのに Storage ノードが起動しない
 
-## LeoFS for application developer
+## LeoFS for application developers
 * How can I access to LeoFS?
 * When others update an object, how can I get the newest file?
-* If I remove a document, does LeoFS remove it from disk?
-* How does LeoFS work on Multi-DC replication?
+* If I remove a object, does LeoFS remove it from disk?
 * How do I do a compaction?
 
-### About Cache
+## Inside LeoFS
+* How does LeoFS work on Multi-DC replication?
 * キャッシュメカニズムはどうなっているか
 
 
