@@ -1,3 +1,128 @@
 1)
 Q. need to suspend nodes during compaction?
 A. No. It's possible to compaction without any suspension.
+
+2)
+Q. Where is the roadmap of LeoFS?
+A. http://www.leofs.org/docs/intro.html or https://github.com/leo-project/leofs/
+
+3)
+Q. LeoFS can change redundancy?
+A. Yes, you can choice redundancy numbers. Please write to manager's system configuration.
+http://www.leofs.org/docs/install.html#id3
+
+4)
+Q. How many time caching objects on gateway of LeoFS?
+A. Default is 5 minutes.(0.12.5)
+
+5)
+Q. What is cache method of LeoFS?
+A. You can choice 2 caching pattern on LeoFS. (0.12.5)
+http://www.leofs.org/docs/install.html#leofs-gateway
+
+6)
+Q. How to update version of LeoFS?
+A. Basically, rolling update. Detach 1 server, update, and attach again.
+
+7)
+Q. How many buckets can be in LeoFS?
+A. We didn't prepare limits for that.
+
+8)
+Q. How to reflect new configuration file (app.config) to running LeoFS?
+A. Configuration file can't change on current version.(0.12.5)
+
+9)
+Q. How to stop rebalance action of LeoFS?
+A. It can't stop on current version.(0.12.5)
+
+10)
+Q. Which should we use IP or host(domain) name on configuration of LeoFS?
+A. In LeoFS setting, you should write IP to configuration files.
+In S3 clients setting file, you should write host name or domain because S3 specified it.
+And if you run LeoFS with multiple nodes, do not use "127.0.0.1" on app.config and vm.args.
+
+11)
+A. What special characters can use in LeoFS as object names.
+These following characters can not use to file name in LeoFS;
+< > " { } | \ ^ [ ]`
+These following characters have meaning in URL but it can use in LeoFS;
+# % ; / ? : @ & = + $ ,
+These following characters can use in LeoFS but do not recommend as URL;
+‘ ( )
+
+12)
+Q. Bucket naming rule
+A. http://leo-project.net/leofs/docs/s3_api.html#s3-path-label
+
+13)
+Q. How to change the speed of rebalance/recover. 
+A. (Answer date: 2014/Jan/24th, target version: LeoFS 1.0.0-pre1)
+Reference: http://www.leofs.org/docs/configuration.html#leofs-storage
+
+Firstly, please change the number of *.num_of_batch_process.
+In our environment, we change it to 1000, then rebalance time reduce 30%. But be careful to I/O and network usage!
+
+#### THIS SAMPLE SETTING(START) ####
+
+## --------------------------------------------------------------------
+## STORAGE - MQ
+## --------------------------------------------------------------------
+## A number of mq-server's processes
+mq.num_of_mq_procs = 8
+
+## MQ recover per_object
+mq.recover_per_object.num_of_batch_process = ${NUM_OF_PROC_PER_OBJECT}
+mq.recover_per_object.interval_min = ${INT_PER_OBJECT_MIN}
+mq.recover_per_object.interval_max = ${INT_PER_OBJECT_MAX}
+
+## MQ synchronize objects by vnode-id
+mq.sync_by_vnode_id.num_of_batch_process = ${NUM_OF_PROC_SYNC_BY_VN}
+mq.sync_by_vnode_id.interval_min = ${INT_SYNC_BY_VNODE_MIN}
+mq.sync_by_vnode_id.interval_max = ${INT_SYNC_BY_VNODE_MAX}
+
+## MQ rebalance objects
+mq.rebalance.num_of_batch_process = ${NUM_OF_PROC_REBALANCE}
+mq.rebalance.interval_min = ${INT_REBALANCE_MIN}
+mq.rebalance.interval_max = ${INT_REBALANCE_MAX}
+
+## MQ delete objects
+mq.delete_object.num_of_batch_process = ${NUM_OF_PROC_ASYNC_DEL}
+mq.delete_object.interval_min = ${INT_ASYNC_DEL_MIN}
+mq.delete_object.interval_max = ${INT_ASYNC_DEL_MAX}
+
+## MQ recover a node's object
+mq.recovery_node.num_of_batch_process = ${NUM_OF_PROC_RECOVERY_N}
+mq.recovery_node.interval_min = ${INT_RECOVERY_NODE_MIN}
+mq.recovery_node.interval_max = ${INT_RECOVERY_NODE_MAX}
+
+
+## --------------------------------------------------------------------
+## STORAGE - Replication/Recovery object(s)
+## --------------------------------------------------------------------
+## Rack-id for the rack-awareness replica placement
+replication.rack_awareness.rack_id = []
+
+## Size of stacked objects (bytes)
+replication.recovery.size_of_stacked_objs = 67108864
+
+## Stacking timeout (msec)
+replication.recovery.stacking_timeout = 5000
+
+#### THIS SAMPLE SETTING(END) ####
+
+Flow of back-end data transferring for rebalance/recover
+
+# Sense of configurations
+	*.num_of_batch_process
+		How many data will transfer at same time.Effect to #1 of above image.
+	*.interval_min
+		Minimum number of random sleep time.(millisecond) Effect to #2 of above image.
+	*.interval_max
+		Maximum number of random sleep time.(millisecond) Effect to #2 of above image.
+
+14)
+Q. Where is my data after add a new node?
+A. Your data are distributed to some nodes.
+"whereis" command will helpful to check the position of data. 
+http://www.leofs.org/docs/admin_guide.html#storage-cluster-operation-commands
