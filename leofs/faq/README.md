@@ -10,7 +10,7 @@
 * What's the role of Manager?
 * What language is LeoFS written in?
 * What's the roadmap for LeoFS?
-
+* 制約
 
 ## LeoFS for administrators
 ## Install LeoFS
