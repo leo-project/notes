@@ -1,6 +1,6 @@
 # LeoFS 
 ## LeoFS fundamentals
-* What's LeoFS?
+* [What is LeoFS?](what-is-leofs.md)
 * What's difference from block storage?
 * Does LeoFS support NFS?
 * What are typical uses for LeoFS?
@@ -10,13 +10,15 @@
 * What's the role of Manager?
 * What language is LeoFS written in?
 * What's the roadmap for LeoFS?
-* 制約
+
+### LeoFS limits
+* @TODO
 
 ## LeoFS for administrators
 ## Install LeoFS
-* What's required machine spec?
-* ディスク構成について
-* rpmをインストールするときにバージョンが古いと怒られる
+* What is required machine spec?
+* How do I operate LeoFS installation with the RPM package?
+* How do I operate LeoFS installation with the DEB package?
 
 ### Configuration
 #### Commons
@@ -25,14 +27,15 @@
 * バケット名のルールはあるか
 
 #### Gateway
-* ``[Cache]`` 設定ファイルで ``config.cache_max_content_len`` の設定値
-* ``[Cache]`` ``config.cache_disk_threshold_len`` の設定値
+* ``[Cache]`` How do I configure cache?
 
 #### Manager
-* ``[Consistency]`` ``[MDC-Replication]`` ``Total replicas`` と ``DC-awareness replicas`` の違いは
+* ``[consistency]`` How do I configure consistency level?
+* ``[mdc-replication]`` How do I configure multi datacenter replication?
 
 #### Storage
-* ``[Storage]`` ブロックサイズの設定はあるか
+* ``[storage]`` Are there block size configuration? 
+* ``[storage]`` How do I confiure disk structure?
 
 
 ### LeoFS operation
@@ -45,23 +48,23 @@
 * 起動中のLeoFSに新しい設定ファイルを反映させる方法はあるか
 
 #### Manager
-* ``[Consistency]`` 冗長度は変えられるか
-* ``[Rebalance]`` リバランスを止めることができるか
-* ``[Rebalance]`` ``[Recovery]`` リバランス・リカバーの速度変更はどうするか
+* ``[consistency]`` How do I change consisntecy level during running LeoFS?
+* ``[rebalance]`` How do I stop ``rebalance processing``?
+* ``[rebalance]`` How do I configure message-quueing of object recover?
 
 #### Storage
-* ``[Compaction]`` コンパクション時にノードを停止させる必要があるか
-* ``[Compaction]`` コンパクションは自動で行われるか
-* ノード追加したときのデータはどこにいくか
-* エラー検知時にノードの自動追加・削除がされるか
+* ``[compaction]`` Should I need to stop a storage node when executing the ``compaction`` command?
+* ``[compaction]`` コンパクションは自動で行われるか?
+* ノード追加したときのデータは、どこに配置されるのか?
+* ノード停止を検知した時、どのような振る舞いをするのか?
 
 #### Gateway
-* ``[Cache]``キャッシュのエクスパイア時間の設定方法
+* ``[cache]`` How do I operate cache expire?
 
 
 ### Trouble shooting
-* ディスクフルとなった時の対応
-* コンパクション時にhttp_errorが頻発する
+* ``[storage]`` How do I operate LeoFS after capacity of a storage node is full?
+* ``[compaction]`` コンパクション時にhttp_errorが頻発する
 * インストールは問題ないのに Storage ノードが起動しない
 
 ## LeoFS for application developers
@@ -72,7 +75,7 @@
 
 ## Inside LeoFS
 * How does LeoFS work on Multi-DC replication?
-* キャッシュメカニズムはどうなっているか
+* How does implement cache mechanism?
 
 
 
