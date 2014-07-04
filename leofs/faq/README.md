@@ -8,11 +8,10 @@
 * [What language is LeoFS written in?](contents/what-language-is-leofs-written-in.md)
 * What languages can I use to work with LeoFS?
 * Does LeoFS handle caching?
-* What are the limitations of 32-bit versions of LeoFS?
 
 
-### LeoFS limits
-* @TODO
+## LeoFS limits
+
 
 ## LeoFS for administrators
 ## Install LeoFS
