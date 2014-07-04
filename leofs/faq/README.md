@@ -1,15 +1,15 @@
 # LeoFS 
 ## LeoFS fundamentals
-* [What is LeoFS?](contents/what-is-leofs.md)
-* What's difference from block storage?
-* Does LeoFS support NFS?
+* [What kind of storage is LeoFS?](contents/what-kind-of-storage-is-leofs.md)
 * What are typical uses for LeoFS?
-* What's architecture of LeoFS?
-* How does LeoFS store objects?
-* What's the role of Gateway?
-* What's the role of Manager?
-* What language is LeoFS written in?
+* What is architecture of LeoFS?
+* What is the role of each components?
 * What's the roadmap for LeoFS?
+* What language is LeoFS written in?
+* What languages can I use to work with LeoFS?
+* Does LeoFS handle caching?
+* What are the limitations of 32-bit versions of LeoFS?
+
 
 ### LeoFS limits
 * @TODO
@@ -20,11 +20,13 @@
 * How do I operate LeoFS installation with the RPM package?
 * How do I operate LeoFS installation with the DEB package?
 
+
 ### Configuration
 #### Commons
 * 設定ファイルにはIPアドレスとホスト名のどちらを記載すべきか
 * オブジェクト名で使用可能な特殊文字
 * バケット名のルールはあるか
+* Does LeoFS support NFS?
 
 #### Gateway
 * ``[Cache]`` How do I configure cache?
