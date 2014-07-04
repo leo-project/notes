@@ -1,6 +1,6 @@
 # LeoFS 
 ## LeoFS fundamentals
-* [What is LeoFS?](what-is-leofs.md)
+* [What is LeoFS?](contents/what-is-leofs.md)
 * What's difference from block storage?
 * Does LeoFS support NFS?
 * What are typical uses for LeoFS?
