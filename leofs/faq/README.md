@@ -1,11 +1,11 @@
 # LeoFS 
 ## LeoFS fundamentals
 * [What kind of storage is LeoFS?](contents/what-kind-of-storage-is-leofs.md)
-* What are typical uses for LeoFS?
+* [What are typical uses for LeoFS?](contents/what-are-typical-uses-for-leofs.md)
 * What is architecture of LeoFS?
 * What is the role of each components?
 * What's the roadmap for LeoFS?
-* What language is LeoFS written in?
+* [What language is LeoFS written in?](contents/what-language-is-leofs-written-in.md)
 * What languages can I use to work with LeoFS?
 * Does LeoFS handle caching?
 * What are the limitations of 32-bit versions of LeoFS?
