@@ -1,6 +1,6 @@
 ## Overview
 
-LeoFS is a highly scalable, fault-tolerant unstructured object storage system for the Web.
+[LeoFS](http://leo-project.net/leofs/) is a highly scalable, fault-tolerant [object storage](http://en.wikipedia.org/wiki/Object_storage) for the Web.
 
 LeoFS provides *high cost performance ratio*. It allows you to build LeoFS clusters using commodity hardware on top of the Linux operating system. LeoFS will provide very good performance even on commodity hardware. LeoFS will require a smaller cluster than other storage to achieve the same performance. LeoFS is also very easy to setup and to operate.
 
@@ -11,7 +11,7 @@ LeoFS provides *high scalability*. Adding and removing nodes is simple and quick
 
 ## Role of each compoent
 
-LeoFS consists of 3 components - ``Storage``, ``Gateway`` and ``Manager` which depend on Erlang.
+LeoFS consists of 3 components - ``Storage``, ``Gateway`` and ``Manager`` which depend on Erlang.
 
 ``Gateway`` handles http-request and http-response from any clients when using REST-API OR S3-API. Also, ``Gateway`` is already built in the object-cache mechanism (memory cache and disc cache).
 
