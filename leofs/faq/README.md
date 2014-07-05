@@ -3,7 +3,6 @@
 * [What kind of storage is LeoFS?](contents/what-kind-of-storage-is-leofs.md)
 * [What are typical uses for LeoFS?](contents/what-are-typical-uses-for-leofs.md)
 * [What is architecture of LeoFS?](contents/what-is-architecture-of-leofs.md)
-* [What is the role of each components?](contents/what-is-the-role-of-each-components.md)
 * [Is there the roadmap of LeoFS?](contents/is-there-the-roadmap-of-leofs.md)
 * [What language is LeoFS written in?](contents/what-language-is-leofs-written-in.md)
 * [What languages can I use to work with LeoFS?](contents/what-languages-can-I-use-to-work-with-leofs.md)
