@@ -1,6 +1,6 @@
 We're mainly focused on is "High Availability", "High Scalability" and "High Cost Performance Ratio" because unstructured data such as image, movie, event-data, log and so on, they have been exponentially increasing in our services day by day, so we needed to build the cloud storage with all them.
 
-LeoFS consists of 3 core functions - Gateway, Storage and Manager. The role of each function is clearly defined.
+LeoFS consists of 3 core components - **Gateway**, **Storage** and **Manager**. The role of each component is clearly defined.
 
 ![LeoFS architecture](images/leofs-architecture.png)
 
