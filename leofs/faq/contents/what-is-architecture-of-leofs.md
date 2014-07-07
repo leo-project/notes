@@ -1,14 +1,14 @@
-We're mainly focused on is "High Availability", "High Scalability" and "High Cost Performance Ratio" because unstructured data such as image, movie, event-data, log and so on, they have been exponentially increasing in our services day by day, so we needed to build the cloud storage with all them.
+We're mainly focused on is **High Availability**, **High Scalability** and **High Cost Performance Ratio** because unstructured data such as image, movie, event-data, log and so on, they have been exponentially increasing in our services day by day, so we needed to build the cloud storage with all them.
 
-LeoFS consists of 3 core components - **Gateway**, **Storage** and **Manager**. The role of each component is clearly defined.
+LeoFS consists of 3 core components - [Gateway](contents/leofs-gateway-detail.md), [Storage](contents/leofs-storage-detail.md) and [Manager](contents/leofs-manager-detail.md). The role of each component is clearly defined.
 
 ![LeoFS architecture](images/leofs-architecture.png)
 
-**Gateway** handles http-request and http-response from any clients when using REST-API OR S3-API. Also, **Gateway** is already built-in support for the object-cache mechanism.
+[Gateway](contents/leofs-gateway-detail.md) handles http-request and http-response from any clients when using REST-API OR S3-API. Also, it is already built-in support for the object-cache mechanism.
 
-**Storage** handles *GET*, *PUT* and *DELETE*, Also **Storage** has replicator and recoverer in order to keep running and keep consistency.
+[Storage](contents/leofs-storage-detail.md) handles *GET*, *PUT* and *DELETE*, Also it has replicator and recoverer in order to keep running and keep consistency.
 
-**Manager** always monitors Gateway(s) and Storage(s). Main monitoring status are node-status and RING(logical routing-table) checksum for keep running and keep consistency.
+[Manager](contents/leofs-manager-detail.md) always monitors Gateway(s) and Storage(s). Main monitoring status are node-status and RING(logical routing-table) checksum for keep running and keep consistency.
 
 
 Also, What we carefully desined LeoFS is 3 things:
