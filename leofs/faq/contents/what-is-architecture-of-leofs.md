@@ -4,14 +4,14 @@ LeoFS consists of 3 core components - [Gateway](leofs-gateway-detail.md), [Stora
 
 ![LeoFS architecture](images/leofs-architecture.png)
 
-[Gateway](leofs-gateway-detail.md) handles http-request and http-response from any clients when using REST-API OR S3-API. Also, it is already built-in support for the object-cache mechanism.
+[Gateway](leofs-gateway-detail.md) handles http-requests and http-responses from clients when using REST-API OR S3-API. Also, it has the built-in object-cache system.
 
-[Storage](leofs-storage-detail.md) handles *GET*, *PUT* and *DELETE*, Also it has replicator and recoverer in order to keep running and keep consistency.
+[Storage](leofs-storage-detail.md) handles *GET*, *PUT* and *DELETE*, Also it has replicator and recoverer in order to keep running and consistency.
 
-[Manager](leofs-manager-detail.md) always monitors Gateway(s) and Storage(s). Main monitoring status are node-status and RING(logical routing-table) checksum for keep running and keep consistency.
+[Manager](leofs-manager-detail.md) always monitors Gateway(s) and Storage(s). Manger monitors node-status and RING(logical routing-table) checksum to keep running and consistency.
 
 
-Also, What we carefully desined LeoFS is 3 things:
-* Keep running and No [SPOF - Single Point Of Failure](http://en.wikipedia.org/wiki/Single_point_of_failure)
+Also, what we payed attention when we desined LeoFS are the following 3 things:
+* To keep always running and No [SPOF - Single Point Of Failure](http://en.wikipedia.org/wiki/Single_point_of_failure)
 * To keep high-performance, regardless of the kind of data and amout data
 * To provide easy administration, we already provide LeoFS CUI and GUI console.
