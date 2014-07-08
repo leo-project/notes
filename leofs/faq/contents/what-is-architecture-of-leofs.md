@@ -1,4 +1,4 @@
-We've been mainly focusing on **High Availability**, **High Scalability** and **High Cost Performance Ratio** since unstructured data such as images, movies, logs and event-data have been exponentially increasing in our services day by day, and we needed to build a cloud storage that can handle all them.
+We've been mainly focusing on **High Availability**, **High Scalability** and **High Cost Performance Ratio** since unstructured data such as images, movies and logs have been exponentially increasing in our services day by day, and we needed to build a cloud storage that can handle all them.
 
 LeoFS consists of 3 core components - [Gateway](leofs-gateway-detail.md), [Storage](leofs-storage-detail.md) and [Manager](leofs-manager-detail.md). The role of each component is clearly defined.
 
