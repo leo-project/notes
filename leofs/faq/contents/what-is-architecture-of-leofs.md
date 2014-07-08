@@ -13,5 +13,5 @@ LeoFS consists of 3 core components - [Gateway](leofs-gateway-detail.md), [Stora
 
 Also, what we payed attention when we desined LeoFS are the following 3 things:
 * To keep always running and No [SPOF - Single Point Of Failure](http://en.wikipedia.org/wiki/Single_point_of_failure)
-* To keep high-performance, regardless of the kind of data and amount data
+* To keep high-performance, regardless of the kind and amount of data
 * To provide easy administration, we already provide LeoFS CUI and GUI console.
