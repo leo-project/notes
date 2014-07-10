@@ -1,6 +1,7 @@
 # LeoFS 
 ## LeoFS fundamentals
 * [What kind of storage is LeoFS?](contents/what-kind-of-storage-is-leofs.md)
+* [What is benefit for LeoFS users?](contents/what-is-benefit-for-leofs-users.md)
 * [What are typical uses for LeoFS?](contents/what-are-typical-uses-for-leofs.md)
 * [What is architecture of LeoFS?](contents/what-is-architecture-of-leofs.md)
 * [Is there the roadmap of LeoFS?](contents/is-there-the-roadmap-of-leofs.md)
