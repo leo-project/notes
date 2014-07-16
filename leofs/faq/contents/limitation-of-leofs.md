@@ -13,8 +13,13 @@ SEE:
 SEE:
 * [Configuration of Storage nodes](http://leo-project.net/leofs/docs/configuration_2.html)
 * [Upgrade your old version LeoFS to v1.0.2](http://leo-project.net/leofs/docs/admin_guide_5.html)
+* [The roadmap of LeoFS](http://leo-project.net/leofs/docs/faq_1.html#is-there-the-roadmap-of-leofs)
 
 ## NFS
 
- - NFS実装はNFSv3のサブセット。ロック機構、認証機構、所有者、パーミッション管理は未実装（アルファ版）
- - NFSを利用する場合は、LeoFSのチャンクサイズを1MB以下にしないとディスク使用効率が悪化する。
+ - NFS implemantation with LeoFS v1.1 is a subset of [NFS v3](http://www.ietf.org/rfc/rfc1813.txt). Lock manager protocol, Authentication, and Owner/Permission management are not covered.
+ - If you use LeoFS with NFS, you should set the size of a chunked object in LeoFS  to `1048576`, otherwise the efficiency of disk utilization can be decreased.
+
+SEE:
+* [Configuration of Gateway nodes](http://leo-project.net/leofs/docs/configuration_3.html)
+* [NFS R/W transfer block size is limited up to 1MB](https://github.com/leo-project/leofs/issues/198)
