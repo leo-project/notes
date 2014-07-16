@@ -12,6 +12,7 @@
 
 ## LeoFS limits
 
+* [LeoFS limits](contents/limitation-of-leofs.md)
 
 ## LeoFS for administrators
 ## Install LeoFS
