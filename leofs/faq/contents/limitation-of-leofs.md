@@ -1,6 +1,6 @@
 ## Feature
  - LeoFS have covered almost major [Amazon S3 REST API](http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html) but not all.
- - If you use [the Multipart upload API](http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html), the size of a part of an object should be less than the size of a chunked object in LeoFS.
+ - If you use [the Multipart upload API](http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html), the size of a part of an object must be less than the size of a chunked object in LeoFS.
 
 SEE:
 * [Amazon S3 API and Interface](http://leo-project.net/leofs/docs/s3_api.html)
