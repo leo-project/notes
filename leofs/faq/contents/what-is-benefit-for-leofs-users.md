@@ -16,6 +16,7 @@ LeoFS is supporting the following features:
 
 In near future, LeoFS will offer more convenient features.
 * NFS support
+* LeoFS insight
 * OpenStack integration
 
 ## For business managers
