@@ -13,6 +13,34 @@ Initialize a worker pool.
  * `PodName` = `atom()`
  * `PodSize` = `non_neg_integer()`
  * `MaxOverFlow` = `non_neg_integer()`
- * `WorkerMod` = `atom()`
+ * `WorkerMod` = `module()`
  * `WorkerArgs` = `[any()]`
  * `InitFun` = `fun((any()) -> any())`
+
+ 
+```Erlang
+stop(PodName) -> 'true' | 'not_started'.
+```
+
+**Explanation:**
+
+Stop the worker pool.
+
+**Types:**
+
+ * `PodName` = `atom()`
+
+ 
+```Erlang
+
+```
+
+**Explanation:**
+
+
+
+**Types:**
+
+ * 
+
+  
