@@ -10,12 +10,13 @@ Initialize a worker pool.
 
 **Types:**
 
- * `PodName` = `atom()`
- * `PodSize` = `non_neg_integer()`
- * `MaxOverFlow` = `non_neg_integer()`
- * `WorkerMod` = `module()`
- * `WorkerArgs` = `[any()]`
- * `InitFun` = `fun((any()) -> any())`
+* `PodName` = `atom()`
+* `PodSize` = `non_neg_integer()`
+* `MaxOverFlow` = `non_neg_integer()`
+  * `PodSize + MaxOverFlow` is the max number of workers in the pool.
+* `WorkerMod` = `module()`
+* `WorkerArgs` = `[any()]`
+* `InitFun` = `fun((any()) -> any())`
 
 - - -
  
@@ -29,7 +30,7 @@ Stop the worker pool.
 
 **Types:**
 
- * `PodName` = `atom()`
+* `PodName` = `atom()`
 
 - - -
  
@@ -43,7 +44,7 @@ Checkout a worker from the worker pool.
 
 **Types:**
 
- * `PodName` = `atom()`
+* `PodName` = `atom()`
 
 - - -
 
@@ -57,8 +58,8 @@ Checkin the worker into the worker pool.
 
 **Types:**
 
- * `PodName` = `atom()`
- * `Worker` = `pid()`
+* `PodName` = `atom()`
+* `Worker` = `pid()`
 
 - - -
 
@@ -72,8 +73,8 @@ Checkin the worker into the worker pool assynchronously.
 
 **Types:**
 
- * `PodName` = `atom()`
- * `Worker` = `pid()`
+* `PodName` = `atom()`
+* `Worker` = `pid()`
 
 - - -
 
@@ -90,6 +91,6 @@ It returns the tuple of the numbers of working_processes, waiting processes, and
 
 **Types:**
 
- * `PodName` = `atom()`
+* `PodName` = `atom()`
 
 - - -
