@@ -45,7 +45,7 @@ Checkout a worker from the worker pool.
 
  * `PodName` = `atom()`
 
- - - -
+- - -
 
 ```Erlang
 leo_pod:checkin(PodName, Worker) -> ok.
@@ -60,7 +60,7 @@ Checkin the worker into the worker pool.
  * `PodName` = `atom()`
  * `Worker` = `pid()`
 
- - - -
+- - -
 
 ```Erlang
 leo_pod:checkin_async(PodName, Worker) -> ok.
@@ -75,7 +75,7 @@ Checkin the worker into the worker pool assynchronously.
  * `PodName` = `atom()`
  * `Worker` = `pid()`
 
- - - -
+- - -
 
 ```Erlang
 leo_pod:status(PodName) -> {ok, {non_neg_integer(),
