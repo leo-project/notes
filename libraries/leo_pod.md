@@ -47,7 +47,7 @@ Checkout a worker from the worker pool.
 
  - - -
 
- ```Erlang
+```Erlang
 leo_pod:checkin(PodName, Worker) -> ok.
 ```
 
@@ -62,7 +62,7 @@ Checkin the worker into the worker pool.
 
  - - -
 
- ```Erlang
+```Erlang
 leo_pod:checkin_async(PodName, Worker) -> ok.
 ```
 
@@ -77,7 +77,7 @@ Checkin the worker into the worker pool assynchronously.
 
  - - -
 
- ```Erlang
+```Erlang
 leo_pod:status(PodName) -> {ok, {non_neg_integer(),
                                  non_neg_integer(),
                                  non_neg_integer()}}.
