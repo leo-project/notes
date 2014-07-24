@@ -17,6 +17,7 @@ Initialize a worker pool.
  * `WorkerArgs` = `[any()]`
  * `InitFun` = `fun((any()) -> any())`
 
+- - -
  
 ```Erlang
 stop(PodName) -> 'true' | 'not_started'.
@@ -30,6 +31,7 @@ Stop the worker pool.
 
  * `PodName` = `atom()`
 
+- - -
  
 ```Erlang
 
@@ -42,5 +44,3 @@ Stop the worker pool.
 **Types:**
 
  * 
-
-  
