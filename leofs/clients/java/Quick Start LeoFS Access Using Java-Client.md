@@ -3,7 +3,7 @@
 ## Introduction
 This article will get you going with a how to develop and architect ``Java-client`` application for LeoFS. This article assumes that you have already installed LeoFS environment on your local or remote node. See [Getting Started with LeoFS](http://leo-project.net/leofs/docs/getting_started.html#getting-started) for more Information.
 ## Installation and Setup S3 Java-client
-The easiest way to install Java on your machine is through the yum or apt package installer. Then we need some additional ant.
+The easiest way to install Java on your machine is through the yum or apt package installer. Then we need some additional [Apache Ant](http://ant.apache.org/).
 
 ### CentOS, Fedora and RHEL:
 ```shell
@@ -29,7 +29,7 @@ $ cd aws-sdk-java
 ```
 ### About the sample    
 This sample application is designed to show you how to:
- * Include a dependency on the aws-sdk using build.xml file.
+ * Include a dependency on the aws-sdk using ``build.xml`` file.
  * Read access keys from environment variables or define it statically in this sample we are using static entry.
  * Instantiate an Amazon Simple Storage Service (Amazon S3) client using ```ClientConfiguration()``` method.
  * Interact with Amazon S3 in various ways, such as creating a bucket and uploading a file.
@@ -48,8 +48,8 @@ The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amaz
   * DELETE Bucket - Deletes a bucket
 
 ###Object-level operation
-  * GET Object- Retrieves an object
-  * LIST Object- Retrieves an object list
+  * GET Object - Retrieves an object
+  * LIST Object - Retrieves an object list
   * PUT Object - Stores an object to a bucket
   * PUT Object (Copy) - Creates a copy of an object internally or externally
   * HEAD Object - Retrieves object metadata (not the full content of the object)
@@ -63,21 +63,21 @@ The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amaz
   * List Parts - Lists the parts that have been uploaded for a specific multipart upload.
   * List Multipart Uploads - Lists multipart uploads that have not yet been completed or aborted.
 
-The *multipart-upload* allows you to upload a single object as a set of parts. Object parts can be uploaded independently and in any order. After all parts are uploaded, LeoFS assembles an object out of the parts. When your object size reaches 100MB, you should consider using multipart uploads instead of uploading the object in a single operation. Read more about parallel multipart uploads [here](http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html).
-![Multipart Upload](./image/multipartUpload.png).
+The *multipart-upload* allows you to upload a single object as a set of parts. Object parts can be uploaded independently and in any order. After all, parts are uploaded, LeoFS assembles an object out of the parts. When your object size reaches 100MB, you should consider using multipart uploads instead of uploading the object in a single operation. Read more about [parallel multipart uploads](http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html).
+![Multipart Upload](http://media.amazonwebservices.com/blog/s3_multipart_upload.png).
 
-Basically AWS-Java Client have two types of Multipart Upload Method :
+Basically, AWS-Java Client have two types of the multipart upload method :
 
  1. Using the High-Level Java API for Multipart Upload
  2. Using the Low-Level Java API for Multipart Upload
-Here we are Using High-leve Java API for Multipart Upload. For More Detail Visit this [Page](http://docs.aws.amazon.com/AmazonS3/latest/dev/usingHLmpuJava.html).
+Here we are Using High-level Java API for the multipart upload. For more detail visit [this page](http://docs.aws.amazon.com/AmazonS3/latest/dev/usingHLmpuJava.html).
  
 
 ##Sample methods:
 The complete API reference is available on the [Amazon site](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/). Here we included our sample [script file](https://github.com/leo-project/leofs_client_tests/blob/develop/aws-sdk-java/LeoFSSample.java) which includes major method which is supported by LeoFS.
 
 ###Creating a connection
-A simple way to specify your credentials is by injecting them directly into the factory method when instantiating the client object. However, be careful to not hard-code your credentials inside of your applications. Hard-coding your credentials can be dangerous. According to your bucket Name please set sub-domain name entry as per this [Page](http://leo-project.net/leofs/docs/s3_client.html#edit-etc-hosts). For more detail method you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/BasicAWSCredentials.html#BasicAWSCredentials(java.lang.String, java.lang.String)).
+A simple way to specify your credentials is by injecting them directly into the factory method when instantiating the client object. However, be careful to NOT *hard-coding* your credentials inside your applications. *Hard-coding* your credentials can be dangerous. According to your bucket name, set ``sub-domain`` name entry as a per [this page](http://leo-project.net/leofs/docs/s3_client.html#edit-etc-hosts). For more detail method you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/BasicAWSCredentials.html#BasicAWSCredentials(java.lang.String, java.lang.String)).
 
 ```java
         /*  Global variable setting 
@@ -108,7 +108,7 @@ ClientConfiguration config = new ClientConfiguration();
      AWS_SECRET_ACCESS_KEY='...'
 */
 ```
-For More detail Please refer this [Page](https://github.com/awslabs/aws-java-sample/blob/master/README.md).
+For More detail, you can refer [this page](https://github.com/awslabs/aws-java-sample/blob/master/README.md).
 
 ## Creating a bucket
 A simple way to create bucket is given from here be careful bucket name should be globally unique and must be DNS compatible otherwise it will throw ``S3Exception``. For more information about bucket name restrictions, see http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html bucket.
@@ -122,7 +122,7 @@ A simple way to create bucket is given from here be careful bucket name should b
 ```
 
 ###Does bucket exists ?
-A simple to check bucket is exist or not and you have permission to access it. The operation returns a ``200 - OK`` if the bucket exists and you have permission to access it. Otherwise, the operation might return responses such as ``404 - Not Found`` and ``403 - Forbidden``. for more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#doesBucketExist(java.lang.String)).
+A simple to check bucket is exist or not and you have permission to access it. The operation returns a ``200 - OK`` if the bucket exists and you have permission to access it. Otherwise, the operation might return responses such as ``404 - Not Found`` and ``403 - Forbidden``. For more detail information, you can refer [this  page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#doesBucketExist(java.lang.String)).
 
 ###Get buckets
 You can get list of  all the buckets owned by your account using the ``listbuckets()`` method. You can also enumerate all buckets in your account. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#listBuckets()).
@@ -136,7 +136,7 @@ You can get list of  all the buckets owned by your account using the ``listbucke
 ```
 
 ###Single-part object upload
-A simple way to upload object via the single-part method from your file system which is recommended to use for object less than 100MB in size. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#putObject(java.lang.String, java.lang.String, java.io.File)).
+A simple way to upload object via the single-part method from your file system which is recommended to use for object less than 100MB in size. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#putObject(java.lang.String, java.lang.String, java.io.File)).
 
 ```java
     // File Upload to LeoFS using single part upload method
@@ -152,7 +152,9 @@ A simple way to upload object via the single-part method from your file system w
 ```
 
 ###Multi-part object upload
-The *multipart-upload* allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order. If transmission of any part fails, you can retransmit that part without affecting other parts. After all parts of your object are uploaded, LeoFS assembles these parts and creates the object. In general, when your object size reaches 100 MB, you should consider using multipart uploads instead of uploading the object in a single operation. Advantages: Improved throughput, Quick recovery from any network issues, Suspend and resume object uploads begin an upload before you know the final object size. For more detail information you can refer this [page](). This method is very simple in java for More detail you can refer this class [methods](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/transfer/TransferManager.html).
+The *multipart-upload* allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order. If transmission of any part fails, you can retransmit that part without affecting other parts. After all, parts of your object are uploaded, LeoFS assembles these parts and creates the object. In general, when your object size reaches 100 MB, you should consider using multipart uploads instead of uploading the object in a single operation.
+
+Advantages: Improved throughput, quick recovery from any network issues, suspend and resume object uploads begin an upload before you know the final object size. For more detail information, you can refer [this page](). This method is very simple in java for more detail you can refer [this class methods](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/transfer/TransferManager.html).
 
 ```java
     // File Upload to LeoFS using multipart upload method
@@ -176,8 +178,10 @@ The *multipart-upload* allows you to upload a single object as a set of parts. E
 ```
 
 ###Head an object
-Files in Amazon-S3 and LeoFS are called ``objects`` and are stored in buckets. A specific object is referred to by its key (i.e., name) and holds data. Here, we create a new object with the key name, ``HEAD`` request is metadata of that object. 
-e.g. ContentLength, ETag, ContentType etc.. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#getObjectMetadata(java.lang.String, java.lang.String)).
+Files in Amazon-S3 and LeoFS are called ``objects`` and are stored in buckets. A specific object is referred to by its key (i.e., name) and holds data. Here we create a new object with the key name, ``HEAD`` request is metadata of that object.
+
+
+e.g. ContentLength, ETag, ContentType etc.. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#getObjectMetadata(java.lang.String, java.lang.String)).
 
 ```java
     // Head Object
@@ -192,7 +196,7 @@ e.g. ContentLength, ETag, ContentType etc.. For more detail information you can 
 ```
 
 ###GET / READ an object
-A simple way to download object from LeoFS in to current directory by using read method. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#getObject(com.amazonaws.services.s3.model.GetObjectRequest, java.io.File)).
+A simple way to download object from LeoFS in to current directory by using read method. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#getObject(com.amazonaws.services.s3.model.GetObjectRequest, java.io.File)).
 
 ```java
     // File Download from LeoFS
@@ -206,7 +210,7 @@ A simple way to download object from LeoFS in to current directory by using read
 ```
 
 ###Copy an object
-A simple way to copy object on LeoFS same bucket or different bucket We should use this method than by using the ``exists`` method. we are checking presence of copied object. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#copyObject(java.lang.String, java.lang.String, java.lang.String, java.lang.String)).
+A simple way to copy object on LeoFS same bucket or different bucket we should use this method than by using the ``exists`` method. we are checking presence of copied object. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#copyObject(java.lang.String, java.lang.String, java.lang.String, java.lang.String)).
 
 ```java
    // File copy bucket internally
@@ -217,10 +221,10 @@ A simple way to copy object on LeoFS same bucket or different bucket We should u
     }
 ```
 ###Move / Rename an object
-This method currently not available via Java Client but might be in Future it will be Available.
+This method currently not available via Java client but might be in future it will be available.
 
 ###List a bucket’s content
-Here we request an object iterator and loop over it to retrieve the desired information about the objects (object key, size, and modification time stamp in this case) . For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#listObjects(java.lang.String)).
+Here we request an object iterator and loop over it to retrieve the desired information about the objects - object key, size, and modification time stamp in this case. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#listObjects(java.lang.String)).
 
 ```java
   // Retrieve list of objects from the LeoFS
@@ -233,7 +237,7 @@ Here we request an object iterator and loop over it to retrieve the desired info
 ```
 
 ###Delete an object
-A simple way to delete object from LeoFS by providing bucket and object name - key. Multiple object delete method currently not supported but you can perfrom similar operation via using iterator. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#deleteObject(java.lang.String, java.lang.String)).
+A simple way to delete object from LeoFS by providing bucket and object name - key. The multiple object delete method currently not supported but you can perfrom similar operation via using iterator. For more detail information you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#deleteObject(java.lang.String, java.lang.String)).
 
 ```java
    // DELETE an object from the LeoFS
@@ -248,7 +252,7 @@ A simple way to delete object from LeoFS by providing bucket and object name - k
         }
     }
 ```
-Currently doesFileExist is not availble inbuilt in AWS Java Client so I made my own trailer made method.
+Currently, ``FileExist`` is not availble in built in AWS Java client. So I made my own trailer made method.
 ```java
     public static boolean doesFileExist( AmazonS3 s3, String bucketName, String key ) throws AmazonClientException,           AmazonServiceException {
         boolean isValidFile = true;
@@ -271,7 +275,7 @@ Currently doesFileExist is not availble inbuilt in AWS Java Client so I made my 
     }
 ```
 
-To dump InputStream into File I created Function ``dumpInputStream(InputStream,FileName)`` it will use to dump stream(string) into file.
+To dump InputStream into File I created a function ``dumpInputStream(InputStream,FileName)``. It will use to dump stream(string) into file.
 
 ```java
     private static void dumpInputStream(InputStream input,String fileName) throws IOException {
@@ -287,7 +291,7 @@ To dump InputStream into File I created Function ``dumpInputStream(InputStream,F
         reader.close();
     }
 ```
-To cound Hashtext(Etag) of local file to verify content's MD5 Digest i created User Define fucntion ``MD5(filePath)`` As below :
+To cound Hashtext(Etag) of local file to verify content's MD5 digest. I created a user define fucntion ``MD5(filePath)`` as below:
 ```java
 public static String MD5( String filePath )
     {
@@ -321,7 +325,7 @@ public static String MD5( String filePath )
 
 
 ###Get a bucket ACL
-A simple way to get bucket ACL is given here. LeoFS basically supports ``private``, ``public-read`` and ``public-read-write`` types of the ACL. Object level ACL is currently not supported yet. In java SDK it associated with ``CannedAccessControlList`` which have enume constant like ``Private``,``PublicRead``, ``write`` and ``PublicReadWrite``. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/CannedAccessControlList.html). For more detail information about ``getBucketACL`` you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#getBucketAcl(java.lang.String)).
+A simple way to get bucket ACL is given here. LeoFS basically supports ``private``, ``public-read`` and ``public-read-write`` types of the ACL. *Object level ACL* is currently not supported yet. In java SDK it associated with ``CannedAccessControlList`` which have enume constant like ``Private``,``PublicRead``, ``write`` and ``PublicReadWrite``. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/CannedAccessControlList.html). For more detail information about ``getBucketACL`` you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#getBucketAcl(java.lang.String)).
 
 ```java
     System.out.println("#####Default ACL#####");
@@ -338,7 +342,7 @@ A simple way to get bucket ACL is given here. LeoFS basically supports ``private
 ```
 
 ###Put a bucket ACL
-A simple way to put ACL and restrict different Bucket Acess by ``setBucketACl(BucketName,CannedAccessControlList)`` method. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#setBucketAcl(java.lang.String, com.amazonaws.services.s3.model.CannedAccessControlList)).
+A simple way to put ACL and restrict different ``Bucket Acess`` by ``setBucketACl(BucketName,CannedAccessControlList)`` method. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#setBucketAcl(java.lang.String, com.amazonaws.services.s3.model.CannedAccessControlList)).
 
 ```java
     System.out.println("\n#####:public_read ACL#####");
@@ -356,7 +360,7 @@ A simple way to put ACL and restrict different Bucket Acess by ``setBucketACl(Bu
 ```
 
 ###Delete a bucket
-A simple way to delete bucket using ``deleteBucket(bucketName)`` method. For more detail information you can refer this [page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#deleteBucket(java.lang.String)).
+A simple way to delete bucket using ``deleteBucket(bucketName)`` method. For more detail information, you can refer [this page](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#deleteBucket(java.lang.String)).
 
 ```java
     // DELETE a bucket from the LeoFS
@@ -364,7 +368,7 @@ A simple way to delete bucket using ``deleteBucket(bucketName)`` method. For mor
 ```
 
 ##Test script code:
-This testing file include all well know methods of Java SDK. This script required sample file name as “testFile” at following location in ``$file_path = "../temp_data/$file_name";`` your project Directory. Sample Operation testing Script which is located in downloaded project’s LeoFSSample.java  file or you can access [script] (https://gist.github.com/PatelParas/8a06ec19283efa4c09ff#file-leofs_java_client_testing_script).
+This testing file include all well know methods of Java SDK. This script required sample file name as ``testFile`` at following location in ``$file_path = "../temp_data/$file_name";`` your project Directory. Sample Operation testing Script which is located in downloaded project’s LeoFSSample.java  file or you can access [script] (https://gist.github.com/PatelParas/8a06ec19283efa4c09ff#file-leofs_java_client_testing_script).
 
 ##Test script output :
-You can check sample output of this script via this [link] (https://gist.github.com/PatelParas/8a06ec19283efa4c09ff#file-leofs_java_client_testing_results).
+You can check sample output of this script via [this link] (https://gist.github.com/PatelParas/8a06ec19283efa4c09ff#file-leofs_java_client_testing_results).
