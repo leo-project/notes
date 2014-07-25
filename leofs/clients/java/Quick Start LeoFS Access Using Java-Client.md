@@ -64,7 +64,9 @@ The storage API is compatible with the [Amazon S3 REST API](http://docs.aws.amaz
   * List Multipart Uploads - Lists multipart uploads that have not yet been completed or aborted.
 
 The *multipart-upload* allows you to upload a single object as a set of parts. Object parts can be uploaded independently and in any order. After all, parts are uploaded, LeoFS assembles an object out of the parts. When your object size reaches 100MB, you should consider using multipart uploads instead of uploading the object in a single operation. Read more about [parallel multipart uploads](http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html).
+
 ![Multipart Upload](http://media.amazonwebservices.com/blog/s3_multipart_upload.png).
+
 
 Basically, AWS-Java Client have two types of the multipart upload method :
 
