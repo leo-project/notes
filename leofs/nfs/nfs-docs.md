@@ -1,11 +1,27 @@
 ## Getting Started
 
+### Purpose
+This section is a step by step guide to setting up LeoFS with NFS. By following this tutorial you can easily build a LeoFS system with NFS.
+
+### Pre-requirement
+ 1. Install NFS client
+  - CentOS 6.5
+   ```
+     sudo yum install nfs-utils
+   ```
+  - Ubuntu Server 12.04 LTS or Higher
+   ```
+     sudo apt-get install nfs-common
+   ```
+
 ### Configuration
  1. Modify `leo_gateway.conf`
-   - Set `http.handler` to `nfs`<sub><a href="#1">1</a></sub>
+   - Set `http.handler` to `nfs`
    - Set `large_object.chunked_obj_len` to `1048576`
 
-<a name="1">1.</a> if you also want to access LeoFS via S3 intereface, you need to start another leo_gateway with setting http.handler to `s3`.
+*note*
+ > If you also want to access LeoFS via S3 intereface, 
+ > you need to start another leo_gateway with setting http.handler to `s3`.
 
 ```erlang
    ## Gateway’s HTTP API to use: [s3 | rest | embed | nfs]
