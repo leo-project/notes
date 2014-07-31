@@ -2,8 +2,10 @@
 
 ### Configuration
  1. Modify `leo_gateway.conf`
-   - Set `http.handler` to `nfs`
+   - Set `http.handler` to `nfs`<sub><a href="#1">1</a></sub>
    - Set `large_object.chunked_obj_len` to `1048576`
+
+<a name="1">1.</a> if you also want to access LeoFS via S3 intereface, you need to start another leo_gateway with setting http.handler to `s3`.
 
 ```erlang
    ## Gateway’s HTTP API to use: [s3 | rest | embed | nfs]
@@ -122,7 +124,7 @@ Now you can operate the bucket test in LeoFS as a filesystem via `/mnt/leofs`.
    -rw-rw-rw-  0 root root   12  7月 31 10:31 2014 leofs.copy
   ```
 
-And other basic file operations also should work except controlling owners/permissions.
+And other basic file/directory operations also should work except controlling owners/permissions/symbolic links/special files.
 
 ## Configuration 
 You can change the port number the NFS/Mount server use and the number of acceptor processes at `leo_gateway.conf`.
