@@ -154,5 +154,5 @@ You can change the port number the NFS/Mount server use and the number of accept
 
 ## Limits
 Since LeoFS NFS implementation is still Alpha status, there are some limitations.
-Details are described at [LeoFS Limits](http://leo-project.net/leofs/docs/faq_2.html)
+Details are described at [LeoFS Limits](http://leo-project.net/leofs/docs/faq_2.html#nfs-support)
 
