@@ -57,8 +57,10 @@
 #### Storage
 * ``[compaction]`` Should I need to stop a storage node when executing the ``compaction`` command?
 * ``[compaction]`` コンパクションは自動で行われるか?
+* ``[compaction]`` コンパクション時に一時的にファイル数、ディスク使用量が増えるのは何故か?
 * ノード追加したときのデータは、どこに配置されるのか?
 * ノード停止を検知した時、どのような振る舞いをするのか?
+
 
 #### Gateway
 * ``[cache]`` How do I operate cache expire?
