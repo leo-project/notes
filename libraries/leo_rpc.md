@@ -4,7 +4,7 @@
 
 * [`start/0`](#start0)
 * [`async_call/4`](#async_call4)
-* [`call/4,5,6`](#call4,5,6)
+* [`call/4,5,6`](#call456)
 * [``](#)
 * [``](#)
 * [``](#)
