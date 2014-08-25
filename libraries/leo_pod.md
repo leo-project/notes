@@ -10,6 +10,8 @@
 
 ## Leo_Pod Function Reference
 
+### `leo_pod:start_link/6`
+
 #### Usage
 
 ```Erlang
