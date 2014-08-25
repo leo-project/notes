@@ -1,11 +1,12 @@
-# leo_pod function doc
+# Leo_Pod Users Reference
+
 ## Leo_Pod Function List
 
 * [`start_link/6`](#start_link6)
 * [`stop/1`](#stop1)
 * [`checkout/1`](#checkout1)
-* [`checkin/1`](#checkin1)
-* [`checkin_async/1`](#checkin_async1)
+* [`checkin/2`](#checkin2)
+* [`checkin_async/2`](#checkin_async2)
 * [`status/1`](#status1)
 
 ## Leo_Pod Function Reference
@@ -34,7 +35,7 @@ Initialize a worker pool.
 
 - - -
 
-### stop/1
+### `stop/1`
 
 #### Usage
  
@@ -52,49 +53,65 @@ Stop the worker pool.
 
 - - -
  
+### `checkout/1`
+
+#### Usage
+
 ```Erlang
 leo_pod:checkout(PodName) -> {ok, pid()}.
 ```
 
-**Explanation:**
+#### Explanation
 
 Checkout a worker from the worker pool.
 
-**Types:**
+#### Types
 
 * `PodName` = `atom()`
 
 - - -
+
+### `checkin/2`
+
+#### Usage
 
 ```Erlang
 leo_pod:checkin(PodName, Worker) -> ok.
 ```
 
-**Explanation:**
+#### Explanation
 
 Checkin the worker into the worker pool.
 
-**Types:**
+#### Types
 
 * `PodName` = `atom()`
 * `Worker` = `pid()`
 
 - - -
+
+### `checkin_async/2`
+
+#### Usage
 
 ```Erlang
 leo_pod:checkin_async(PodName, Worker) -> ok.
 ```
 
-**Explanation:**
+#### Explanation
 
 Checkin the worker into the worker pool assynchronously.
 
-**Types:**
+#### Types
 
 * `PodName` = `atom()`
 * `Worker` = `pid()`
 
 - - -
+
+### `status/1`
+
+#### Usage
 
 ```Erlang
 leo_pod:status(PodName) -> {ok, {non_neg_integer(),
@@ -102,12 +119,12 @@ leo_pod:status(PodName) -> {ok, {non_neg_integer(),
                                  non_neg_integer()}}.
 ```
 
-**Explanation:**
+#### Explanation
 
 Get the status of the worker pool.
 It returns the tuple of the numbers of working_processes, waiting processes, and room of overflow.
 
-**Types:**
+#### Types
 
 * `PodName` = `atom()`
 
