@@ -5,13 +5,20 @@
 * [`start/0`](#start0)
 * [`async_call/4`](#async_call4)
 * [`call/4,5,6`](#call456)
-* [``](#)
-* [``](#)
-* [``](#)
+* [`multicall/4,5`](#multicall45)
+* [`nb_yield/1,2`](#nb_yield12)
+* [`cast/4`](#cast4)
+* [`ping/1`](#ping1)
+* [`status/0`](#status0)
+* [`node/0`](#node0)
+* [`nodes/0`](#nodes0)
+* [`port/0`](#port0)
 
 ## Leo_RPC Function Reference
 
 ### `start/0`
+
+#### Usage
 
 ```Erlang
 leo_rpc:start() -> ok | {error, any()}.
@@ -26,6 +33,8 @@ Launch leo-rpc
 - - -
 
 ### `async_call/4`
+
+#### Usage
 
 ```Erlang
 async_call(Node, Mod, Method, Args) -> pid().
@@ -46,6 +55,8 @@ The key can be viewed as a promise to deliver the answer.
 - - -
 
 ### `call/4,5,6`
+
+#### Usage
 
 ```Erlang
 leo_rpc:call(Node, Mod, Method, Args) -> any() | {badrpc, any()}
@@ -70,9 +81,11 @@ Evaluates apply(Module, Function, Args) on the `Node` node and returns the resul
 
 ### `multicall/4,5`
 
+#### Usage
+
 ```Erlang
-multicall(Nodes, Mod, Method, Args) -> any() | {badrpc, any()}.
-multicall(Nodes, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}.
+leo_rpc:multicall(Nodes, Mod, Method, Args) -> any() | {badrpc, any()}.
+leo_rpc:multicall(Nodes, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}.
 ```
 
 #### Explanation
@@ -92,9 +105,11 @@ This is useful for collecting some information from a set of nodes.
 
 ### `nb_yield/1,2`
 
+#### Usage
+
 ```Erlang
-nb_yield(Key) -> {value, any()} | timeout.
-nb_yield(Key, Timeout) -> {value, any()} | timeout.
+leo_rpc:nb_yield(Key) -> {value, any()} | timeout.
+leo_rpc:nb_yield(Key, Timeout) -> {value, any()} | timeout.
 ```
 
 #### Explanation
@@ -109,8 +124,12 @@ It returns the tuple {value, Val} when the computation has finished, or timeout 
 
 - - -
 
+### `cast/4`
+
+#### Usage
+
 ```Erlang
-cast(Node, Module, Method, Args) -> true.
+leo_rpc:cast(Node, Module, Method, Args) -> true.
 ```
 
 #### Explanation
@@ -126,8 +145,12 @@ No response is delivered and the calling process is not suspended until the eval
 
 - - -
 
+### `ping/1`
+
+#### Usage
+
 ```Erlang
-ping(Node) -> pong|pang.
+leo_rpc:ping(Node) -> pong|pang.
 ```
 
 #### Explanation
@@ -141,8 +164,12 @@ Returns pang if it fails, or pong if it is successful.
 
 - - -
 
+### `status/0`
+
+#### Usage
+
 ```Erlang
-status() -> {ok, list(#rpc_info{})} | {error, any()}.
+leo_rpc:status() -> {ok, list(#rpc_info{})} | {error, any()}.
 ```
 
 #### Explanation
@@ -153,8 +180,12 @@ Retrieve status of active connections.
 
 - - -
 
+#### Usage
+
+### `node/0`
+
 ```Erlang
-node() -> 'nonode@nohost' | atom().
+leo_rpc:node() -> 'nonode@nohost' | atom().
 ```
 
 #### Explanation
@@ -165,8 +196,12 @@ Returns the name of the local node. If the node is not alive, nonode@nohost is r
 
 - - -
 
+#### Usage
+
+### `nodes/0`
+
 ```Erlang
-nodes() -> [atom()]
+leo_rpc:nodes() -> [atom()]
 ```
 
 #### Explanation
@@ -177,8 +212,12 @@ Returns a list of all connected nodes in the system, excluding the local node.
 
 - - -
 
+### `port/0`
+
+#### Usage
+
 ```Erlang
-port() -> integer().
+leo_rpc:port() -> integer().
 ```
 
 #### Explanation
