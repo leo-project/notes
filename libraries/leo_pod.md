@@ -1,4 +1,5 @@
-# Leo_Pod Function List
+# leo_pod function doc
+## Leo_Pod Function List
 
 * `leo_pod:start_link/6`
 * `leo_pod:stop/1`
@@ -7,17 +8,21 @@
 * `leo_pod:checkiin_async/1`
 * `leo_pod:status/1`
 
-# Leo_Pod Function Reference
+## Leo_Pod Function Reference
+
+### `leo_pod:start_link(PodName, PodSize, MaxOverflow, WorkerMod, WorkerArgs, InitFun) -> {'ok',pid()}.`
+
+#### Explanation:
+
+Initialize a worker pool.
+
+#### Usage
 
 ```Erlang
 leo_pod:start_link(PodName, PodSize, MaxOverflow, WorkerMod, WorkerArgs, InitFun) -> {'ok',pid()}.
 ```
 
-**Explanation:**
-
-Initialize a worker pool.
-
-**Types:**
+#### Types:
 
 * `PodName` = `atom()`
 * `PodSize` = `non_neg_integer()`
