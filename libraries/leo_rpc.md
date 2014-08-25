@@ -1,27 +1,42 @@
-# Leo_RPC Function Reference
+# Leo_RPC Users Reference
+
+## Leo_RPC Function List
+
+* [`start/0`](#start0)
+* [`async_call/4`](#async_call4)
+* [`call/4,5,6`](#call4,5,6)
+* [``](#)
+* [``](#)
+* [``](#)
+
+## Leo_RPC Function Reference
+
+### `start/0`
 
 ```Erlang
 leo_rpc:start() -> ok | {error, any()}.
 ```
 
-**Explanation:**
+#### Explanation
 
 Launch leo-rpc
 
-**Types:**
+#### Types
 
 - - -
+
+### `async_call/4`
 
 ```Erlang
 async_call(Node, Mod, Method, Args) -> pid().
 ```
 
-**Explanation:**
+#### Explanation
 Implements call streams with promises, a type of RPC which does not suspend the caller until the result is finished.
 Instead, a key is returned which can be used at a later stage to collect the value.
 The key can be viewed as a promise to deliver the answer.
 
-**Types:**
+#### Types
 
 * `Node` = `atom()`
 * `Mod` = `module()`
@@ -30,17 +45,19 @@ The key can be viewed as a promise to deliver the answer.
 
 - - -
 
+### `call/4,5,6`
+
 ```Erlang
-call(Node, Mod, Method, Args) -> any() | {badrpc, any()}
-call(Node, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}
-call(From, Node, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}
+leo_rpc:call(Node, Mod, Method, Args) -> any() | {badrpc, any()}
+leo_rpc:call(Node, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}
+leo_rpc:call(From, Node, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}
 ```
 
-**Explanation:**
+#### Explanation
 
 Evaluates apply(Module, Function, Args) on the `Node` node and returns the result or `{badrpc, Reason}` if the call fails.
 
-**Types:**
+#### Types
 
 * `Node` = `atom()`
 * `Mod` = `module()`
@@ -51,17 +68,19 @@ Evaluates apply(Module, Function, Args) on the `Node` node and returns the resul
 
 - - -
 
+### `multicall/4,5`
+
 ```Erlang
 multicall(Nodes, Mod, Method, Args) -> any() | {badrpc, any()}.
 multicall(Nodes, Mod, Method, Args, Timeout) -> any() | {badrpc, any()}.
 ```
 
-**Explanation:**
+#### Explanation
 
 A multicall is an RPC which is sent concurrently from one client to multiple servers.
 This is useful for collecting some information from a set of nodes.
 
-**Types:**
+#### Types
 
 * `Node` = `atom()`
 * `Mod` = `module()`
@@ -71,17 +90,19 @@ This is useful for collecting some information from a set of nodes.
 
 - - -
 
+### `nb_yield/1,2`
+
 ```Erlang
 nb_yield(Key) -> {value, any()} | timeout.
 nb_yield(Key, Timeout) -> {value, any()} | timeout.
 ```
 
-**Explanation:**
+#### Explanation
 
 This is able to call non-blocking.
 It returns the tuple {value, Val} when the computation has finished, or timeout when Timeout milliseconds has elapsed.
 
-**Types:**
+#### Types
 
 * `Key` = `pid()`
 * `Timeout` = `pos_integer()`
@@ -92,11 +113,11 @@ It returns the tuple {value, Val} when the computation has finished, or timeout 
 cast(Node, Module, Method, Args) -> true.
 ```
 
-**Explanation:**
+#### Explanation
 
 No response is delivered and the calling process is not suspended until the evaluation is complete, as is the case with call/4,5.
 
-**Types:**
+#### Types
 
 * `Node` = `atom()`
 * `Mod` = `module()`
@@ -109,12 +130,12 @@ No response is delivered and the calling process is not suspended until the eval
 ping(Node) -> pong|pang.
 ```
 
-**Explanation:**
+#### Explanation
 
 Tries to set up a connection to Node.
 Returns pang if it fails, or pong if it is successful.
 
-**Types:**
+#### Types
 
 * `Node` = `atom()`
 
@@ -124,11 +145,11 @@ Returns pang if it fails, or pong if it is successful.
 status() -> {ok, list(#rpc_info{})} | {error, any()}.
 ```
 
-**Explanation:**
+#### Explanation
 
 Retrieve status of active connections.
 
-**Types:**
+#### Types
 
 - - -
 
@@ -136,11 +157,11 @@ Retrieve status of active connections.
 node() -> 'nonode@nohost' | atom().
 ```
 
-**Explanation:**
+#### Explanation
 
 Returns the name of the local node. If the node is not alive, nonode@nohost is returned instead.
 
-**Types:**
+#### Types
 
 - - -
 
@@ -148,11 +169,11 @@ Returns the name of the local node. If the node is not alive, nonode@nohost is r
 nodes() -> [atom()]
 ```
 
-**Explanation:**
+#### Explanation
 
 Returns a list of all connected nodes in the system, excluding the local node.
 
-**Types:**
+#### Types
 
 - - -
 
@@ -160,11 +181,11 @@ Returns a list of all connected nodes in the system, excluding the local node.
 port() -> integer().
 ```
 
-**Explanation:**
+#### Explanation
 
 Returns the port number of the local node.
 
-**Types:**
+#### Types
 
 - - -
 
