@@ -114,9 +114,9 @@ Checkin the worker into the worker pool assynchronously.
 #### Usage
 
 ```Erlang
-leo_pod:status(PodName) -> {ok, {non_neg_integer(),
-                                 non_neg_integer(),
-                                 non_neg_integer()}}.
+leo_pod:status(PodName) -> {ok, {NumOfWorking,
+                                 NumOfWating,
+                                 NumOfOverflow}}.
 ```
 
 #### Explanation
@@ -127,5 +127,8 @@ It returns the tuple of the numbers of working_processes, waiting processes, and
 #### Types
 
 * `PodName` = `atom()`
+* `NumOfWorking` = `non_neg_integer()`
+* `NumOfWating` = `non_neg_integer()`
+* `NumOfOverflow` = `non_neg_integer()`
 
 - - -
