@@ -1,16 +1,16 @@
 # leo_pod function doc
 ## Leo_Pod Function List
 
-* [`leo_pod:start_link/6`](#leo_podstart_link6)
-* [`leo_pod:stop/1`](#leo_podstop1)
-* [`leo_pod:checkout/1`](#leo_podcheckout1)
-* [`leo_pod:checkin/1`](#leo_podcheckin1)
-* [`leo_pod:checkin_async/1`](#leo_podcheckin_async1)
-* [`leo_pod:status/1`](#leo_podstatus1)
+* [`start_link/6`](#start_link6)
+* [`stop/1`](#stop1)
+* [`checkout/1`](#checkout1)
+* [`checkin/1`](#checkin1)
+* [`checkin_async/1`](#checkin_async1)
+* [`status/1`](#status1)
 
 ## Leo_Pod Function Reference
 
-### `leo_pod:start_link/6`
+### `start_link/6`
 
 #### Usage
 
@@ -34,7 +34,7 @@ Initialize a worker pool.
 
 - - -
 
-### leo_pod:stop/1
+### stop/1
 
 #### Usage
  
