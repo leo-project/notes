@@ -40,18 +40,21 @@ status
 
 ### Delete bucket:
 
-* avs file extractor[listup_avs.rb](https://github.com/firejun/leofs_utils/blob/master/tools/listup_avs.rb)
-* avs file list of before 'delete-bucket'[before_delete_bucket.txt](before_delete_bucket.txt)
-* avs file list of after 'delete-bucket'[after_delete_bucket.txt](after_delete_bucket.txt)
-* Compare result[compare_delete_bucket.txt](compare_delete_bucket.txt)
+* avs file extractor [listup_avs.rb](https://github.com/firejun/leofs_utils/blob/master/tools/listup_avs.rb)
+* avs file list of before 'delete-bucket' [before_delete_bucket.txt](before_delete_bucket.txt)
+* avs file list of after 'delete-bucket' [after_delete_bucket.txt](after_delete_bucket.txt)
+* Compare result [compare_delete_bucket.txt](compare_delete_bucket.txt)
 
 * Store data of 100000 keys.
 
 * Delete bucket
+```
 delete-bucket ${bucket} ${access-key-id}
+```
 
 * Check disk usage
 - Before compaction
+```
 du leofs14@192.168.100.14
  active number of objects: 66002
   total number of objects: 264008
@@ -60,12 +63,16 @@ du leofs14@192.168.100.14
      ratio of active size: 0.04%
     last compaction start: ____-__-__ __:__:__
       last compaction end: ____-__-__ __:__:__
+```
 
 * Execute Compaction after 'delete-bucket'
+```
 compact start leofs14@192.168.100.14 all
 OK
+```
 
 * Check status
+```
 compact status leofs14@192.168.100.14
         current status: running
  last compaction start: 2014-09-19 13:34:49 +0900
@@ -81,9 +88,11 @@ compact status leofs14@192.168.100.14
   # of pending targets: 8
   # of ongoing targets: 0
   # of out of targets : 0
+```
 
 * Check disk usage
 - After compaction
+```
 du leofs14@192.168.100.14
  active number of objects: 0
   total number of objects: 0
@@ -92,6 +101,7 @@ du leofs14@192.168.100.14
      ratio of active size: 0%
     last compaction start: 2014-09-19 13:36:17 +0900
       last compaction end: 2014-09-19 13:36:50 +0900
+```
 
 * Result of 'ls'
 ```
