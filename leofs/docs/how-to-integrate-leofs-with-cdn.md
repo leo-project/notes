@@ -1,8 +1,8 @@
-## How to integrate LeoFS with AWS CloudFront
-There is nothing to do for integrating LeoFS with AWS CloudFront.
-If you want to customize TTL by the Origin, You can customize TTL on AWS Web Console.
-If you want to customize TTL in units finer than the Origin, 
-It's time to use `http_custom_header.conf`.
+## How to integrate LeoFS with CDN
+There is nothing special to do for integrating LeoFS with CDN.
+Since almost CDN service providers take care of a CacheControl Header received from a Origin to determine how long a file should be cached on their edge servers,
+So if you want to modify TTL according to URLs, 
+you can do it by using `http_custom_header.conf`.
 
 ## How to use `http_custom_header.conf`
 
@@ -26,15 +26,15 @@ location bucket/static {
 }
 ```
 
-In this case, assuming that AWS CloudFront settings already have been enabled and thare is a file at `bucket/static/path_to_file`,
-if a user browse that file via AWS CloudFront, AWS CloudFront will receive a response from the Origin(LeoFS) with customized http headers like this.
+In this case, assuming that a CDN service already have been enabled and thare is a file at `bucket/static/path_to_file`,
+if a user browse that file via the CDN, the CDN will receive a response from the Origin(LeoFS) with customized http headers like this.
 
 ```mime
 Cache-Control: public, max-age=43200;
 X-OriginalHeader: OriginalValue;
 ```
 
-As a result, AWS CloudFront cache that file for 12 hours and forward the response with the customized http headers to the user.
+As a result, the CDN cache that file for 12 hours and forward the response with the customized http headers to the user.
 
 ## Usecases
 - Specify TTL by the bucket
@@ -63,3 +63,9 @@ Following time intervals can be specified.
 - h hours
 - d days
 
+### List of verified CDN services
+LeoFS development team tested the following CDN services with LeoFS.
+But other CDN services also should work.
+If you have some troubles, please let us know.
+
+- [AWS CloudFront](http://aws.amazon.com/cloudfront/)
