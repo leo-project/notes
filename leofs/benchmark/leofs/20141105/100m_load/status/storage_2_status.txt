@@ -1,0 +1,43 @@
+[storage_2]
+[config-1: basic]
+                        version : 1.1.5
+               number of vnodes : 168
+                  group level-1 :
+                  group level-2 :
+            object container(s) : [[{path,"/data"},{num_of_containers,8}]]
+                        log dir : /usr/local/leofs/0.0.1-dev/leo_storage/log/erlang
+
+[config-2: watchdog]
+                  cpu watchdog  : enabled
+                   io watchdog  : disabled
+                 disk watchdog  : enabled
+ rex  - watch interval          : 5000ms
+ rex  - threshold mem capacity  : 33554432
+ cpu  - watch interval          : 5000ms
+ cpu  - threshold cpu load avg  : 2.5
+ cpu  - threshold cpu util      : 100%
+ io   - watch interval          : 1000ms
+ io   - threshold input size/s  : 134217728
+ io   - threshold output size/s : 134217728
+ disk - watch interval          : 1000ms
+ disk - threshold disk util     : 80%
+ disk - threshold iowait        : 90%
+
+[status-1: ring]
+              ring state (cur)  : 5aa99810
+              ring state (prev) : 5aa99810
+
+[status-2: erlang-vm]
+                     vm version : 5.10.4
+                total mem usage : 170435152
+               system mem usage : 149956072
+                procs mem usage : 20466016
+                  ets mem usage : 5201872
+                          procs : 435/1048576
+                    kernel_poll : true
+               thread_pool_size : 32
+
+[status-3: # of msgs]
+               replication msgs : 0
+                vnode-sync msgs : 0
+                 rebalance msgs : 0
