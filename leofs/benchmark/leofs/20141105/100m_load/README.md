@@ -1,4 +1,4 @@
-## Benchmark LeoFS v1.2.0
+## Benchmark LeoFS v1.2.0 with watchdog
 
 ### Environment
 
