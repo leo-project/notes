@@ -1,4 +1,4 @@
-## Benchmark LeoFS v1.2.1
+## Benchmark LeoFS v1.2.1 - restricting network traffic
 
 ### Environment
 
