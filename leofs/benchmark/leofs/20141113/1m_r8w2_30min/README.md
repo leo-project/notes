@@ -1,5 +1,9 @@
 ## Benchmark LeoFS v1.2.1 - restricting network traffic
 
+### Reference
+
+* [Sometimes Kill -9 Isn't Enough](http://www.bravenewgeek.com/sometimes-kill-9-isnt-enough/)
+
 ### Environment
 
 * OS: CentOS release 6.5 (Final)
