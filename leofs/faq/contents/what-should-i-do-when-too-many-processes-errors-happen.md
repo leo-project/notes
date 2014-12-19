@@ -1,6 +1,6 @@
 Q. What should I do when `Too many processes` errors happen?
 
-A. LeoFS usually try to keep the number of erlang processes as minimum as possible, but there are some exceptions when doing something asynchronously.
+A. LeoFS usually try to keep the number of Erlang processes as minimum as possible, but there are some exceptions when doing something asynchronously.
 
  - Replicating an object to the non-primary assigned nodes
  - Retrying to replicate an object when the previous attempt failed
