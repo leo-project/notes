@@ -59,11 +59,11 @@
         * 102400.. 819200: 30%
         * 819200..1572864: 16%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/leofs/blob/develop/test/src/basho_bench_driver_leofs.erl)
-    * Configuration file: [1m_r8w2_60min.conf](20141219_174256/1m_r8w2_60min.conf)
+    * Configuration file: [1m_r8w2_60min.conf](20141224_133834/1m_r8w2_60min.conf)
 
 ### OPS and Latency:
 
-![ops-latency](20141219_174256/summary.png)
+![ops-latency](20141224_133834/summary.png)
 
 ### Network Traffic
 #### Chart of Each Nodes
@@ -72,41 +72,41 @@
 ![Gateway-1](leofs13_20141224_133833/sar_1_20141224_133833_p1p1-if1.png)
 
 * Storage-1
-![Storage-1](leofs14_20141219_174255/sar_3_20141219_174255_p1p1-if1.png)
+![Storage-1](leofs14_20141224_133833/sar_3_20141224_133833_p1p1-if1.png)
 
 * Storage-2
 ![Storage-2](leofs15_20141224_133833/sar_3_20141224_133833_p1p1-if1.png)
 
 * Storage-3
-![Storage-3](leofs16_20141219_174255/sar_3_20141219_174255_p1p1-if1.png)
+![Storage-3](leofs16_20141224_133833/sar_3_20141224_133833_p1p1-if1.png)
 
 * Storage-4
 ![Storage-4](leofs17_20141224_133833/sar_3_20141224_133833_p1p1-if1.png)
 
 * Storage-5
-![Storage-5](leofs18_20141219_174255/sar_2_20141219_174255_p1p1-if1.png)
+![Storage-5](leofs18_20141224_133833/sar_2_20141224_133833_p1p1-if1.png)
 
 
 ### Disk
 #### Chart of Each Nodes (Storage)
 
 * Storage-1
-![Storage-1](leofs14_20141219_174255/sar_3_20141219_174255_dev8-16-t1.png)
-![Storage-1](leofs14_20141219_174255/sar_3_20141219_174255.txt_dev8-16-t2.png)
+![Storage-1](leofs14_20141224_133833/sar_3_20141224_133833_dev8-16-t1.png)
+![Storage-1](leofs14_20141224_133833/sar_3_20141224_133833_dev8-16-t2.png)
 
 * Storage-2
 ![Storage-2](leofs15_20141224_133833/sar_3_20141224_133833_dev8-16-t1.png)
 ![Storage-2](leofs15_20141224_133833/sar_3_20141224_133833_dev8-16-t2.png)
 
 * Storage-3
-![Storage-3](leofs16_20141219_174255/sar_3_20141219_174255_dev8-16-t1.png)
-![Storage-3](leofs16_20141219_174255/sar_3_20141219_174255.txt_dev8-16-t2.png)
+![Storage-3](leofs16_20141224_133833/sar_3_20141224_133833_dev8-16-t1.png)
+![Storage-3](leofs16_20141224_133833/sar_3_20141224_133833_dev8-16-t2.png)
 
 * Storage-4
 ![Storage-4](leofs17_20141224_133833/sar_3_20141224_133833_dev8-16-t1.png)
 ![Storage-4](leofs17_20141224_133833/sar_3_20141224_133833_dev8-16-t2.png)
 
 * Storage-5
-![Storage-5](leofs18_20141219_174255/sar_2_20141219_174255.txt_dev8-16-t1.png)
-![Storage-5](leofs18_20141219_174255/sar_2_20141219_174255_dev8-16-t2.png)
+![Storage-5](leofs18_20141224_133833/sar_2_20141224_133833_dev8-16-t1.png)
+![Storage-5](leofs18_20141224_133833/sar_2_20141224_133833_dev8-16-t2.png)
 
