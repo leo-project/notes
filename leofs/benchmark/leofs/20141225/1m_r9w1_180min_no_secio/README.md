@@ -59,56 +59,56 @@
         * 102400.. 819200: 30%
         * 819200..1572864: 16%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/leofs/blob/develop/test/src/basho_bench_driver_leofs.erl)
-    * Configuration file: [1m_r9w1_180min.conf](tests/1m_r9w1_180min_no_secio/20141225_123416/1m_r9w1_180min.conf)
+    * Configuration file: [1m_r9w1_180min.conf](20141225_123416/1m_r9w1_180min.conf)
 
 ### OPS and Latency:
 
-![ops-latency](tests/1m_r9w1_180min_no_secio/20141225_123416/summary.png)
+![ops-latency](20141225_123416/summary.png)
 
 ### Network Traffic
 #### Chart of Each Nodes
 
 * Gateway-1
-![Gateway-1](tests/1m_r9w1_180min_no_secio/leofs13_20141225_123415/sar_1_20141225_123415_p1p1-if1.png)
+![Gateway-1](leofs13_20141225_123415/sar_1_20141225_123415_p1p1-if1.png)
 
 * Storage-1
-![Storage-1](tests/1m_r9w1_180min_no_secio/leofs14_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
+![Storage-1](leofs14_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
 
 * Storage-2
-![Storage-2](tests/1m_r9w1_180min_no_secio/leofs15_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
+![Storage-2](leofs15_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
 
 * Storage-3
-![Storage-3](tests/1m_r9w1_180min_no_secio/leofs16_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
+![Storage-3](leofs16_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
 
 * Storage-4
-![Storage-4](tests/1m_r9w1_180min_no_secio/leofs17_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
+![Storage-4](leofs17_20141225_123415/sar_3_20141225_123415_p1p1-if1.png)
 
 * Storage-5
-![Storage-5](tests/1m_r9w1_180min_no_secio/leofs18_20141225_123415/sar_2_20141225_123415_p1p1-if1.png)
+![Storage-5](leofs18_20141225_123415/sar_2_20141225_123415_p1p1-if1.png)
 
 
 ### Disk
 #### Chart of Each Nodes (Storage)
 
 * Storage-1
-![Storage-1](tests/1m_r9w1_180min_no_secio/leofs14_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
-![Storage-1](tests/1m_r9w1_180min_no_secio/leofs14_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
+![Storage-1](leofs14_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
+![Storage-1](leofs14_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
 
 * Storage-2
-![Storage-2](tests/1m_r9w1_180min_no_secio/leofs15_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
-![Storage-2](tests/1m_r9w1_180min_no_secio/leofs15_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
+![Storage-2](leofs15_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
+![Storage-2](leofs15_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
 
 * Storage-3
-![Storage-3](tests/1m_r9w1_180min_no_secio/leofs16_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
-![Storage-3](tests/1m_r9w1_180min_no_secio/leofs16_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
+![Storage-3](leofs16_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
+![Storage-3](leofs16_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
 
 * Storage-4
-![Storage-4](tests/1m_r9w1_180min_no_secio/leofs17_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
-![Storage-4](tests/1m_r9w1_180min_no_secio/leofs17_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
+![Storage-4](leofs17_20141225_123415/sar_3_20141225_123415_dev8-16-t1.png)
+![Storage-4](leofs17_20141225_123415/sar_3_20141225_123415_dev8-16-t2.png)
 
 * Storage-5
-![Storage-5](tests/1m_r9w1_180min_no_secio/leofs18_20141225_123415/sar_2_20141225_123415_dev8-16-t1.png)
-![Storage-5](tests/1m_r9w1_180min_no_secio/leofs18_20141225_123415/sar_2_20141225_123415_dev8-16-t2.png)
+![Storage-5](leofs18_20141225_123415/sar_2_20141225_123415_dev8-16-t1.png)
+![Storage-5](leofs18_20141225_123415/sar_2_20141225_123415_dev8-16-t2.png)
 
 
 #### Summary
