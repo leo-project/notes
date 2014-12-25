@@ -3,7 +3,7 @@
 ### Environment
 
 * OS: CentOS release 6.5 (Final)
-* Erlang/OTP: R16B03-1
+* Erlang/OTP: 17.4
 * LeoFS: v1.2.2
 * LeoFS cluster settings:
 
