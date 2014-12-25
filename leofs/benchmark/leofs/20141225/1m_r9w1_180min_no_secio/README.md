@@ -50,9 +50,9 @@
 ```
 
 * basho-bench Configuration:
-    * Duration: ${MINUTES} minutes
+    * Duration: 180 minutes
     * # of concurrent processes: 64
-    * # of keys
+    * # of keys: 100000
     * Value size groups(byte):
         *   1024..  10240: 24%
         *  10240.. 102400: 30%
