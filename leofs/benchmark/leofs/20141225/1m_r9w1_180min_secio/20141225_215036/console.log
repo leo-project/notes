@@ -1,0 +1,8 @@
+2014-12-26 00:06:59.304 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-12-26 00:11:19.248 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2014-12-26 00:36:59.256 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{put,put},28},{{{get,get},{http_error,"503"}},10},{{{put,put},{http_error,"503"}},28}]
+2014-12-26 00:51:00.284 [info] <0.86.0>@basho_bench_stats:report_total_errors:360 Total Errors:
+2014-12-26 00:51:00.284 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},{get,connection_closing}}: 12
+2014-12-26 00:51:00.284 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},{http_error,"503"}}: 39
+2014-12-26 00:51:00.284 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{put,put},{http_error,"503"}}: 170
+2014-12-26 00:51:00.294 [info] <0.2.0>@basho_bench:wait_for_stop:204 Test completed after 180 mins.
