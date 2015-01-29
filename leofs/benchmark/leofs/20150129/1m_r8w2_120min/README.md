@@ -63,7 +63,7 @@
 
 ### OPS and Latency:
 
-![ops-latency](tests/1m_r8w2_120min/20150129_140855/summary.png)
+![ops-latency](20150129_140855/summary.png)
 
 ### Network Traffic
 #### Chart of Each Nodes
