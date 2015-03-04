@@ -1,5 +1,8 @@
 ## Benchmark LeoFS v1.2.6
 
+### Purpose
+We've checked LeoFS v1.2.6 w/watchdog and auto-compaction mechanism to find issues.
+
 ### Environment
 
 * OS: CentOS release 6.5 (Final)
