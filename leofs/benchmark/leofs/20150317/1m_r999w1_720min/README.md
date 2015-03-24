@@ -1,7 +1,7 @@
 ## Benchmark LeoFS v1.2.7
 
 ### Purpose
-We've checked LeoFS v1.2.7 w/recover-node mechanism to find issues.
+We've checked LeoFS v1.2.7 w/watchdog + auto-compaction mechanism during 'recover-node command' to find issues.
 
 ### Environment
 
@@ -69,7 +69,7 @@ We've checked LeoFS v1.2.7 w/recover-node mechanism to find issues.
 ![ops-latency](20150317_112949/summary.png)
 
 ### Network Traffic
-#### Chart of Each Nodes
+#### Chart of Every Node
 
 * Gateway-1
 ![Gateway-1](leofs13_20150317_112930/sar_1_20150317_112930_p1p1-if1.png)
@@ -91,7 +91,7 @@ We've checked LeoFS v1.2.7 w/recover-node mechanism to find issues.
 
 
 ### Disk
-#### Chart of Each Nodes (Storage)
+#### Chart of Every Node (Storage)
 
 * Storage-1
 ![Storage-1](leofs14_20150317_112930/sar_3_20150317_112930_dev8-16-t1.png)
