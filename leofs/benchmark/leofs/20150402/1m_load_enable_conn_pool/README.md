@@ -1,13 +1,13 @@
-## Benchmark LeoFS v1.2.7 (Multi Data Center Replication Test)
+## Benchmark LeoFS v1.2.8-dev (Multi Data Center Replication Test)
 
 ### Purpose
-We've checked Multi Data Center Replication of LeoFS v1.2.7.(develop/enable_connection_pool version)
+We've checked Multi Data Center Replication of LeoFS v1.2.8-dev.(develop/enable_connection_pool version)
 
 ### Master Environment
 
 * OS: CentOS release 6.5 (Final)
 * Erlang/OTP: 17.4
-* LeoFS: v1.2.7
+* LeoFS: v1.2.8-dev
 * LeoFS cluster settings:
 
 ```
