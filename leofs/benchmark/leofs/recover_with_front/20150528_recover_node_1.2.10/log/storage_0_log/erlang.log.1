@@ -1,0 +1,855 @@
+
+=====
+===== LOGGING STARTED Wed May 27 13:17:23 JST 2015
+=====
+Exec: /usr/local/leofs/1.2.10/leo_storage/erts-6.4/bin/erlexec -boot /usr/local/leofs/1.2.10/leo_storage/releases/1/leo_storage -mode minimal -config /usr/local/leofs/1.2.10/leo_storage/etc/app.config -args_file /usr/local/leofs/1.2.10/leo_storage/etc/vm.args -- console
+Root: /usr/local/leofs/1.2.10/leo_storage
+Erlang/OTP 17 [erts-6.4] [source] [64-bit halfword] [smp:24:24] [async-threads:32] [kernel-poll:true]
+
+id:leo_logger_file_i, path:"/usr/local/leofs/1.2.10/leo_storage/log/app", filename:"info"
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.13.1
+id:leo_logger_file_e, path:"/usr/local/leofs/1.2.10/leo_storage/log/app", filename:"error"
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.13.1
+id:leo_diagnosis_log_7, path:"/data/log/", filename:"leo_object_storage_7"
+* opening log file is /data/log/leo_object_storage_7.20150527.13.1
+id:leo_diagnosis_log_6, path:"/data/log/", filename:"leo_object_storage_6"
+* opening log file is /data/log/leo_object_storage_6.20150527.13.1
+id:leo_diagnosis_log_5, path:"/data/log/", filename:"leo_object_storage_5"
+* opening log file is /data/log/leo_object_storage_5.20150527.13.1
+id:leo_diagnosis_log_4, path:"/data/log/", filename:"leo_object_storage_4"
+* opening log file is /data/log/leo_object_storage_4.20150527.13.1
+id:leo_diagnosis_log_3, path:"/data/log/", filename:"leo_object_storage_3"
+* opening log file is /data/log/leo_object_storage_3.20150527.13.1
+id:leo_diagnosis_log_2, path:"/data/log/", filename:"leo_object_storage_2"
+* opening log file is /data/log/leo_object_storage_2.20150527.13.1
+id:leo_diagnosis_log_1, path:"/data/log/", filename:"leo_object_storage_1"
+* opening log file is /data/log/leo_object_storage_1.20150527.13.1
+id:leo_diagnosis_log_0, path:"/data/log/", filename:"leo_object_storage_0"
+* opening log file is /data/log/leo_object_storage_0.20150527.13.1
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/membership/message, handle:#Ref<0.0.0.539>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message7, handle:#Ref<0.0.0.562>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message6, handle:#Ref<0.0.0.575>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message5, handle:#Ref<0.0.0.588>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message4, handle:#Ref<0.0.0.601>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message3, handle:#Ref<0.0.0.614>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message2, handle:#Ref<0.0.0.627>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message1, handle:#Ref<0.0.0.640>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message0, handle:#Ref<0.0.0.653>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message7, handle:#Ref<0.0.0.703>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message6, handle:#Ref<0.0.0.716>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message5, handle:#Ref<0.0.0.729>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message4, handle:#Ref<0.0.0.742>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message3, handle:#Ref<0.0.0.755>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message2, handle:#Ref<0.0.0.768>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message1, handle:#Ref<0.0.0.781>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message0, handle:#Ref<0.0.0.794>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message7, handle:#Ref<0.0.0.844>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message6, handle:#Ref<0.0.0.857>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message5, handle:#Ref<0.0.0.870>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message4, handle:#Ref<0.0.0.883>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message3, handle:#Ref<0.0.0.896>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message2, handle:#Ref<0.0.0.909>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message1, handle:#Ref<0.0.0.922>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message0, handle:#Ref<0.0.0.935>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message7, handle:#Ref<0.0.0.985>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message6, handle:#Ref<0.0.0.998>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message5, handle:#Ref<0.0.0.1011>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message4, handle:#Ref<0.0.0.1024>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message3, handle:#Ref<0.0.0.1037>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message2, handle:#Ref<0.0.0.1050>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message1, handle:#Ref<0.0.0.1063>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message0, handle:#Ref<0.0.0.1076>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message7, handle:#Ref<0.0.0.1126>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message6, handle:#Ref<0.0.0.1139>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message5, handle:#Ref<0.0.0.1152>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message4, handle:#Ref<0.0.0.1165>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message3, handle:#Ref<0.0.0.1178>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message2, handle:#Ref<0.0.0.1191>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message1, handle:#Ref<0.0.0.1204>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message0, handle:#Ref<0.0.0.1217>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message7, handle:#Ref<0.0.0.1267>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message6, handle:#Ref<0.0.0.1280>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message5, handle:#Ref<0.0.0.1293>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message4, handle:#Ref<0.0.0.1306>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message3, handle:#Ref<0.0.0.1319>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message2, handle:#Ref<0.0.0.1332>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message1, handle:#Ref<0.0.0.1345>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message0, handle:#Ref<0.0.0.1358>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message7, handle:#Ref<0.0.0.1408>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message6, handle:#Ref<0.0.0.1421>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message5, handle:#Ref<0.0.0.1434>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message4, handle:#Ref<0.0.0.1447>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message3, handle:#Ref<0.0.0.1460>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message2, handle:#Ref<0.0.0.1473>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message1, handle:#Ref<0.0.0.1486>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message0, handle:#Ref<0.0.0.1499>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message7, handle:#Ref<0.0.0.1549>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message6, handle:#Ref<0.0.0.1562>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message5, handle:#Ref<0.0.0.1575>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message4, handle:#Ref<0.0.0.1588>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message3, handle:#Ref<0.0.0.1601>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message2, handle:#Ref<0.0.0.1614>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message1, handle:#Ref<0.0.0.1627>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message0, handle:#Ref<0.0.0.1640>
+Eshell V6.4  (abort with ^G)
+(leofs14@192.168.100.14)1> 
+===== Wed May 27 13:22:38 JST 2015
+[os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+===== ALIVE Wed May 27 13:37:38 JST 2015
+
+===== ALIVE Wed May 27 13:52:38 JST 2015
+
+===== Wed May 27 14:00:31 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.13.1
+* closing log file is /data/log/leo_object_storage_6.20150527.13.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.13.1
+* closing log file is /data/log/leo_object_storage_7.20150527.13.1
+* closing log file is /data/log/leo_object_storage_4.20150527.13.1
+* closing log file is /data/log/leo_object_storage_2.20150527.13.1
+* closing log file is /data/log/leo_object_storage_1.20150527.13.1
+* closing log file is /data/log/leo_object_storage_5.20150527.13.1
+* closing log file is /data/log/leo_object_storage_3.20150527.13.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.14.1
+* opening log file is /data/log/leo_object_storage_2.20150527.14.1
+* opening log file is /data/log/leo_object_storage_6.20150527.14.1
+* opening log file is /data/log/leo_object_storage_4.20150527.14.1
+* opening log file is /data/log/leo_object_storage_1.20150527.14.1
+* opening log file is /data/log/leo_object_storage_3.20150527.14.1
+* opening log file is /data/log/leo_object_storage_5.20150527.14.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.14.1
+* opening log file is /data/log/leo_object_storage_7.20150527.14.1
+* closing log file is /data/log/leo_object_storage_0.20150527.13.1
+* opening log file is /data/log/leo_object_storage_0.20150527.14.1
+
+===== ALIVE Wed May 27 14:15:35 JST 2015
+* closing log file is /data/log/leo_object_storage_0.20150527.14.1
+* closing log file is /data/log/leo_object_storage_1.20150527.14.1
+* closing log file is /data/log/leo_object_storage_2.20150527.14.1
+* closing log file is /data/log/leo_object_storage_3.20150527.14.1
+* closing log file is /data/log/leo_object_storage_4.20150527.14.1
+* closing log file is /data/log/leo_object_storage_5.20150527.14.1
+* closing log file is /data/log/leo_object_storage_6.20150527.14.1
+* closing log file is /data/log/leo_object_storage_7.20150527.14.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.14.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.14.1
+* closing log file is /data/log/leo_object_storage_0.20150527.14.1
+* closing log file is /data/log/leo_object_storage_1.20150527.14.1
+* closing log file is /data/log/leo_object_storage_2.20150527.14.1
+* closing log file is /data/log/leo_object_storage_3.20150527.14.1
+* closing log file is /data/log/leo_object_storage_4.20150527.14.1
+* closing log file is /data/log/leo_object_storage_5.20150527.14.1
+* closing log file is /data/log/leo_object_storage_6.20150527.14.1
+* closing log file is /data/log/leo_object_storage_7.20150527.14.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.14.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.14.1
+[os_mon] memory supervisor port (memsup): Erlang has closed
+[os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Wed May 27 14:17:14 JST 2015
+=====
+Exec: /usr/local/leofs/1.2.10/leo_storage/erts-6.4/bin/erlexec -boot /usr/local/leofs/1.2.10/leo_storage/releases/1/leo_storage -mode minimal -config /usr/local/leofs/1.2.10/leo_storage/etc/app.config -args_file /usr/local/leofs/1.2.10/leo_storage/etc/vm.args -- console
+Root: /usr/local/leofs/1.2.10/leo_storage
+Erlang/OTP 17 [erts-6.4] [source] [64-bit halfword] [smp:24:24] [async-threads:32] [kernel-poll:true]
+
+id:leo_logger_file_i, path:"/usr/local/leofs/1.2.10/leo_storage/log/app", filename:"info"
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.14.2
+id:leo_logger_file_e, path:"/usr/local/leofs/1.2.10/leo_storage/log/app", filename:"error"
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.14.2
+id:leo_diagnosis_log_7, path:"/data/log/", filename:"leo_object_storage_7"
+* opening log file is /data/log/leo_object_storage_7.20150527.14.1
+id:leo_diagnosis_log_6, path:"/data/log/", filename:"leo_object_storage_6"
+* opening log file is /data/log/leo_object_storage_6.20150527.14.1
+id:leo_diagnosis_log_5, path:"/data/log/", filename:"leo_object_storage_5"
+* opening log file is /data/log/leo_object_storage_5.20150527.14.1
+id:leo_diagnosis_log_4, path:"/data/log/", filename:"leo_object_storage_4"
+* opening log file is /data/log/leo_object_storage_4.20150527.14.1
+id:leo_diagnosis_log_3, path:"/data/log/", filename:"leo_object_storage_3"
+* opening log file is /data/log/leo_object_storage_3.20150527.14.1
+id:leo_diagnosis_log_2, path:"/data/log/", filename:"leo_object_storage_2"
+* opening log file is /data/log/leo_object_storage_2.20150527.14.1
+id:leo_diagnosis_log_1, path:"/data/log/", filename:"leo_object_storage_1"
+* opening log file is /data/log/leo_object_storage_1.20150527.14.1
+id:leo_diagnosis_log_0, path:"/data/log/", filename:"leo_object_storage_0"
+* opening log file is /data/log/leo_object_storage_0.20150527.14.1
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/membership/message, handle:#Ref<0.0.0.535>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message7, handle:#Ref<0.0.0.566>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message6, handle:#Ref<0.0.0.601>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message5, handle:#Ref<0.0.0.635>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message4, handle:#Ref<0.0.0.669>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message3, handle:#Ref<0.0.0.703>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message2, handle:#Ref<0.0.0.738>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message1, handle:#Ref<0.0.0.773>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/1/message0, handle:#Ref<0.0.0.807>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message7, handle:#Ref<0.0.0.863>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message6, handle:#Ref<0.0.0.872>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message5, handle:#Ref<0.0.0.881>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message4, handle:#Ref<0.0.0.890>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message3, handle:#Ref<0.0.0.899>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message2, handle:#Ref<0.0.0.908>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message1, handle:#Ref<0.0.0.917>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/2/message0, handle:#Ref<0.0.0.926>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message7, handle:#Ref<0.0.0.970>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message6, handle:#Ref<0.0.0.979>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message5, handle:#Ref<0.0.0.988>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message4, handle:#Ref<0.0.0.997>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message3, handle:#Ref<0.0.0.1006>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message2, handle:#Ref<0.0.0.1015>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message1, handle:#Ref<0.0.0.1024>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/3/message0, handle:#Ref<0.0.0.1033>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message7, handle:#Ref<0.0.0.1077>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message6, handle:#Ref<0.0.0.1086>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message5, handle:#Ref<0.0.0.1095>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message4, handle:#Ref<0.0.0.1104>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message3, handle:#Ref<0.0.0.1113>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message2, handle:#Ref<0.0.0.1122>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message1, handle:#Ref<0.0.0.1131>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/4/message0, handle:#Ref<0.0.0.1140>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message7, handle:#Ref<0.0.0.1184>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message6, handle:#Ref<0.0.0.1193>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message5, handle:#Ref<0.0.0.1202>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message4, handle:#Ref<0.0.0.1211>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message3, handle:#Ref<0.0.0.1220>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message2, handle:#Ref<0.0.0.1229>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message1, handle:#Ref<0.0.0.1238>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/5/message0, handle:#Ref<0.0.0.1247>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message7, handle:#Ref<0.0.0.1291>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message6, handle:#Ref<0.0.0.1300>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message5, handle:#Ref<0.0.0.1309>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message4, handle:#Ref<0.0.0.1318>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message3, handle:#Ref<0.0.0.1327>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message2, handle:#Ref<0.0.0.1336>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message1, handle:#Ref<0.0.0.1345>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/6/message0, handle:#Ref<0.0.0.1354>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message7, handle:#Ref<0.0.0.1398>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message6, handle:#Ref<0.0.0.1407>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message5, handle:#Ref<0.0.0.1416>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message4, handle:#Ref<0.0.0.1425>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message3, handle:#Ref<0.0.0.1434>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message2, handle:#Ref<0.0.0.1443>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message1, handle:#Ref<0.0.0.1452>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/7/message0, handle:#Ref<0.0.0.1461>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message7, handle:#Ref<0.0.0.1505>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message6, handle:#Ref<0.0.0.1514>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message5, handle:#Ref<0.0.0.1523>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message4, handle:#Ref<0.0.0.1532>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message3, handle:#Ref<0.0.0.1541>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message2, handle:#Ref<0.0.0.1550>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message1, handle:#Ref<0.0.0.1559>
+* bitcask - path:/usr/local/leofs/1.2.10/leo_storage/work/queue/8/message0, handle:#Ref<0.0.0.1568>
+Eshell V6.4  (abort with ^G)
+(leofs14@192.168.100.14)1> 
+===== ALIVE Wed May 27 14:32:24 JST 2015
+
+===== ALIVE Wed May 27 14:47:24 JST 2015
+
+===== Wed May 27 15:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.14.2
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.15.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.14.2
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.15.1
+* closing log file is /data/log/leo_object_storage_7.20150527.14.1
+* opening log file is /data/log/leo_object_storage_7.20150527.15.1
+* closing log file is /data/log/leo_object_storage_6.20150527.14.1
+* opening log file is /data/log/leo_object_storage_6.20150527.15.1
+* closing log file is /data/log/leo_object_storage_5.20150527.14.1
+* opening log file is /data/log/leo_object_storage_5.20150527.15.1
+* closing log file is /data/log/leo_object_storage_4.20150527.14.1
+* opening log file is /data/log/leo_object_storage_4.20150527.15.1
+* closing log file is /data/log/leo_object_storage_3.20150527.14.1
+* opening log file is /data/log/leo_object_storage_3.20150527.15.1
+* closing log file is /data/log/leo_object_storage_2.20150527.14.1
+* opening log file is /data/log/leo_object_storage_2.20150527.15.1
+* closing log file is /data/log/leo_object_storage_1.20150527.14.1
+* opening log file is /data/log/leo_object_storage_1.20150527.15.1
+* closing log file is /data/log/leo_object_storage_0.20150527.14.1
+* opening log file is /data/log/leo_object_storage_0.20150527.15.1
+
+===== ALIVE Wed May 27 15:15:19 JST 2015
+
+===== ALIVE Wed May 27 15:30:19 JST 2015
+
+===== ALIVE Wed May 27 15:45:19 JST 2015
+
+===== ALIVE Wed May 27 16:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.15.1
+* closing log file is /data/log/leo_object_storage_4.20150527.15.1
+* closing log file is /data/log/leo_object_storage_0.20150527.15.1
+* closing log file is /data/log/leo_object_storage_3.20150527.15.1
+* closing log file is /data/log/leo_object_storage_6.20150527.15.1
+* closing log file is /data/log/leo_object_storage_5.20150527.15.1
+* closing log file is /data/log/leo_object_storage_7.20150527.15.1
+* closing log file is /data/log/leo_object_storage_1.20150527.15.1
+* closing log file is /data/log/leo_object_storage_2.20150527.15.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.15.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.16.1
+* opening log file is /data/log/leo_object_storage_0.20150527.16.1
+* opening log file is /data/log/leo_object_storage_4.20150527.16.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.16.1
+* opening log file is /data/log/leo_object_storage_5.20150527.16.1
+* opening log file is /data/log/leo_object_storage_3.20150527.16.1
+* opening log file is /data/log/leo_object_storage_6.20150527.16.1
+* opening log file is /data/log/leo_object_storage_7.20150527.16.1
+* opening log file is /data/log/leo_object_storage_1.20150527.16.1
+* opening log file is /data/log/leo_object_storage_2.20150527.16.1
+
+===== ALIVE Wed May 27 16:15:29 JST 2015
+
+===== ALIVE Wed May 27 16:30:29 JST 2015
+
+===== ALIVE Wed May 27 16:45:29 JST 2015
+
+===== ALIVE Wed May 27 17:00:29 JST 2015
+* closing log file is /data/log/leo_object_storage_4.20150527.16.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.16.1
+* closing log file is /data/log/leo_object_storage_5.20150527.16.1
+* closing log file is /data/log/leo_object_storage_3.20150527.16.1
+* closing log file is /data/log/leo_object_storage_1.20150527.16.1
+* closing log file is /data/log/leo_object_storage_0.20150527.16.1
+* opening log file is /data/log/leo_object_storage_5.20150527.17.1
+* opening log file is /data/log/leo_object_storage_4.20150527.17.1
+* opening log file is /data/log/leo_object_storage_3.20150527.17.1
+* opening log file is /data/log/leo_object_storage_0.20150527.17.1
+* opening log file is /data/log/leo_object_storage_1.20150527.17.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.17.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.16.1
+* closing log file is /data/log/leo_object_storage_6.20150527.16.1
+* closing log file is /data/log/leo_object_storage_7.20150527.16.1
+* closing log file is /data/log/leo_object_storage_2.20150527.16.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.17.1
+* opening log file is /data/log/leo_object_storage_6.20150527.17.1
+* opening log file is /data/log/leo_object_storage_7.20150527.17.1
+* opening log file is /data/log/leo_object_storage_2.20150527.17.1
+
+===== ALIVE Wed May 27 17:15:39 JST 2015
+
+===== ALIVE Wed May 27 17:30:40 JST 2015
+
+===== ALIVE Wed May 27 17:45:40 JST 2015
+
+===== ALIVE Wed May 27 18:00:40 JST 2015
+* closing log file is /data/log/leo_object_storage_0.20150527.17.1
+* closing log file is /data/log/leo_object_storage_1.20150527.17.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.17.1
+* closing log file is /data/log/leo_object_storage_7.20150527.17.1
+* closing log file is /data/log/leo_object_storage_3.20150527.17.1
+* closing log file is /data/log/leo_object_storage_2.20150527.17.1
+* closing log file is /data/log/leo_object_storage_4.20150527.17.1
+* closing log file is /data/log/leo_object_storage_5.20150527.17.1
+* closing log file is /data/log/leo_object_storage_6.20150527.17.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.17.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.18.1
+* opening log file is /data/log/leo_object_storage_0.20150527.18.1
+* opening log file is /data/log/leo_object_storage_3.20150527.18.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.18.1
+* opening log file is /data/log/leo_object_storage_7.20150527.18.1
+* opening log file is /data/log/leo_object_storage_2.20150527.18.1
+* opening log file is /data/log/leo_object_storage_1.20150527.18.1
+* opening log file is /data/log/leo_object_storage_4.20150527.18.1
+* opening log file is /data/log/leo_object_storage_5.20150527.18.1
+* opening log file is /data/log/leo_object_storage_6.20150527.18.1
+
+===== ALIVE Wed May 27 18:15:43 JST 2015
+
+===== ALIVE Wed May 27 18:30:43 JST 2015
+
+===== ALIVE Wed May 27 18:45:43 JST 2015
+
+===== ALIVE Wed May 27 19:00:43 JST 2015
+* closing log file is /data/log/leo_object_storage_2.20150527.18.1
+* closing log file is /data/log/leo_object_storage_6.20150527.18.1
+* closing log file is /data/log/leo_object_storage_1.20150527.18.1
+* closing log file is /data/log/leo_object_storage_5.20150527.18.1
+* closing log file is /data/log/leo_object_storage_3.20150527.18.1
+* closing log file is /data/log/leo_object_storage_7.20150527.18.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.18.1
+* closing log file is /data/log/leo_object_storage_4.20150527.18.1
+* closing log file is /data/log/leo_object_storage_0.20150527.18.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.18.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.19.1
+* opening log file is /data/log/leo_object_storage_6.20150527.19.1
+* opening log file is /data/log/leo_object_storage_5.20150527.19.1
+* opening log file is /data/log/leo_object_storage_2.20150527.19.1
+* opening log file is /data/log/leo_object_storage_1.20150527.19.1
+* opening log file is /data/log/leo_object_storage_0.20150527.19.1
+* opening log file is /data/log/leo_object_storage_3.20150527.19.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.19.1
+* opening log file is /data/log/leo_object_storage_4.20150527.19.1
+* opening log file is /data/log/leo_object_storage_7.20150527.19.1
+
+===== ALIVE Wed May 27 19:15:43 JST 2015
+
+===== ALIVE Wed May 27 19:30:43 JST 2015
+
+===== ALIVE Wed May 27 19:45:43 JST 2015
+
+===== Wed May 27 20:00:43 JST 2015
+* closing log file is /data/log/leo_object_storage_0.20150527.19.1
+* closing log file is /data/log/leo_object_storage_2.20150527.19.1
+* closing log file is /data/log/leo_object_storage_3.20150527.19.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.19.1
+* closing log file is /data/log/leo_object_storage_5.20150527.19.1
+* closing log file is /data/log/leo_object_storage_7.20150527.19.1
+* closing log file is /data/log/leo_object_storage_6.20150527.19.1
+* closing log file is /data/log/leo_object_storage_4.20150527.19.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.19.1
+* closing log file is /data/log/leo_object_storage_1.20150527.19.1
+* opening log file is /data/log/leo_object_storage_0.20150527.20.1
+* opening log file is /data/log/leo_object_storage_7.20150527.20.1
+* opening log file is /data/log/leo_object_storage_2.20150527.20.1
+* opening log file is /data/log/leo_object_storage_6.20150527.20.1
+* opening log file is /data/log/leo_object_storage_3.20150527.20.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.20.1
+* opening log file is /data/log/leo_object_storage_4.20150527.20.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.20.1
+* opening log file is /data/log/leo_object_storage_5.20150527.20.1
+* opening log file is /data/log/leo_object_storage_1.20150527.20.1
+
+===== ALIVE Wed May 27 20:15:43 JST 2015
+
+===== ALIVE Wed May 27 20:30:43 JST 2015
+
+===== ALIVE Wed May 27 20:45:44 JST 2015
+
+===== ALIVE Wed May 27 21:00:44 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.20.1
+* closing log file is /data/log/leo_object_storage_5.20150527.20.1
+* closing log file is /data/log/leo_object_storage_4.20150527.20.1
+* closing log file is /data/log/leo_object_storage_1.20150527.20.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.20.1
+* closing log file is /data/log/leo_object_storage_7.20150527.20.1
+* closing log file is /data/log/leo_object_storage_2.20150527.20.1
+* closing log file is /data/log/leo_object_storage_3.20150527.20.1
+* closing log file is /data/log/leo_object_storage_0.20150527.20.1
+* closing log file is /data/log/leo_object_storage_6.20150527.20.1
+* opening log file is /data/log/leo_object_storage_4.20150527.21.1
+* opening log file is /data/log/leo_object_storage_5.20150527.21.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.21.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.21.1
+* opening log file is /data/log/leo_object_storage_1.20150527.21.1
+* opening log file is /data/log/leo_object_storage_7.20150527.21.1
+* opening log file is /data/log/leo_object_storage_0.20150527.21.1
+* opening log file is /data/log/leo_object_storage_6.20150527.21.1
+* opening log file is /data/log/leo_object_storage_2.20150527.21.1
+* opening log file is /data/log/leo_object_storage_3.20150527.21.1
+
+===== ALIVE Wed May 27 21:15:44 JST 2015
+
+===== ALIVE Wed May 27 21:30:44 JST 2015
+
+===== ALIVE Wed May 27 21:45:44 JST 2015
+
+===== Wed May 27 22:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_5.20150527.21.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.21.1
+* closing log file is /data/log/leo_object_storage_7.20150527.21.1
+* closing log file is /data/log/leo_object_storage_4.20150527.21.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.21.1
+* closing log file is /data/log/leo_object_storage_1.20150527.21.1
+* closing log file is /data/log/leo_object_storage_2.20150527.21.1
+* closing log file is /data/log/leo_object_storage_3.20150527.21.1
+* closing log file is /data/log/leo_object_storage_6.20150527.21.1
+* closing log file is /data/log/leo_object_storage_0.20150527.21.1
+* opening log file is /data/log/leo_object_storage_5.20150527.22.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.22.1
+* opening log file is /data/log/leo_object_storage_4.20150527.22.1
+* opening log file is /data/log/leo_object_storage_1.20150527.22.1
+* opening log file is /data/log/leo_object_storage_7.20150527.22.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.22.1
+* opening log file is /data/log/leo_object_storage_2.20150527.22.1
+* opening log file is /data/log/leo_object_storage_0.20150527.22.1
+* opening log file is /data/log/leo_object_storage_3.20150527.22.1
+* opening log file is /data/log/leo_object_storage_6.20150527.22.1
+
+===== ALIVE Wed May 27 22:15:44 JST 2015
+
+===== ALIVE Wed May 27 22:30:44 JST 2015
+
+===== ALIVE Wed May 27 22:45:44 JST 2015
+
+===== Wed May 27 23:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_7.20150527.22.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.22.1
+* closing log file is /data/log/leo_object_storage_5.20150527.22.1
+* closing log file is /data/log/leo_object_storage_1.20150527.22.1
+* closing log file is /data/log/leo_object_storage_4.20150527.22.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.22.1
+* closing log file is /data/log/leo_object_storage_2.20150527.22.1
+* closing log file is /data/log/leo_object_storage_0.20150527.22.1
+* closing log file is /data/log/leo_object_storage_6.20150527.22.1
+* closing log file is /data/log/leo_object_storage_3.20150527.22.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.23.1
+* opening log file is /data/log/leo_object_storage_7.20150527.23.1
+* opening log file is /data/log/leo_object_storage_4.20150527.23.1
+* opening log file is /data/log/leo_object_storage_1.20150527.23.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.23.1
+* opening log file is /data/log/leo_object_storage_5.20150527.23.1
+* opening log file is /data/log/leo_object_storage_2.20150527.23.1
+* opening log file is /data/log/leo_object_storage_6.20150527.23.1
+* opening log file is /data/log/leo_object_storage_3.20150527.23.1
+* opening log file is /data/log/leo_object_storage_0.20150527.23.1
+
+===== ALIVE Wed May 27 23:15:44 JST 2015
+
+===== ALIVE Wed May 27 23:30:44 JST 2015
+
+===== ALIVE Wed May 27 23:45:44 JST 2015
+
+===== Thu May 28 00:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_4.20150527.23.1
+* closing log file is /data/log/leo_object_storage_1.20150527.23.1
+* closing log file is /data/log/leo_object_storage_7.20150527.23.1
+* closing log file is /data/log/leo_object_storage_5.20150527.23.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150527.23.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150527.23.1
+* closing log file is /data/log/leo_object_storage_2.20150527.23.1
+* closing log file is /data/log/leo_object_storage_0.20150527.23.1
+* closing log file is /data/log/leo_object_storage_6.20150527.23.1
+* closing log file is /data/log/leo_object_storage_3.20150527.23.1
+* opening log file is /data/log/leo_object_storage_4.20150528.00.1
+* opening log file is /data/log/leo_object_storage_1.20150528.00.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.00.1
+* opening log file is /data/log/leo_object_storage_5.20150528.00.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.00.1
+* opening log file is /data/log/leo_object_storage_7.20150528.00.1
+* opening log file is /data/log/leo_object_storage_0.20150528.00.1
+* opening log file is /data/log/leo_object_storage_2.20150528.00.1
+* opening log file is /data/log/leo_object_storage_6.20150528.00.1
+* opening log file is /data/log/leo_object_storage_3.20150528.00.1
+
+===== ALIVE Thu May 28 00:15:44 JST 2015
+
+===== ALIVE Thu May 28 00:30:44 JST 2015
+
+===== ALIVE Thu May 28 00:45:44 JST 2015
+
+===== Thu May 28 01:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_1.20150528.00.1
+* closing log file is /data/log/leo_object_storage_7.20150528.00.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.00.1
+* closing log file is /data/log/leo_object_storage_5.20150528.00.1
+* closing log file is /data/log/leo_object_storage_4.20150528.00.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.00.1
+* closing log file is /data/log/leo_object_storage_0.20150528.00.1
+* closing log file is /data/log/leo_object_storage_6.20150528.00.1
+* closing log file is /data/log/leo_object_storage_3.20150528.00.1
+* closing log file is /data/log/leo_object_storage_2.20150528.00.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.01.1
+* opening log file is /data/log/leo_object_storage_7.20150528.01.1
+* opening log file is /data/log/leo_object_storage_4.20150528.01.1
+* opening log file is /data/log/leo_object_storage_1.20150528.01.1
+* opening log file is /data/log/leo_object_storage_5.20150528.01.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.01.1
+* opening log file is /data/log/leo_object_storage_6.20150528.01.1
+* opening log file is /data/log/leo_object_storage_2.20150528.01.1
+* opening log file is /data/log/leo_object_storage_0.20150528.01.1
+* opening log file is /data/log/leo_object_storage_3.20150528.01.1
+
+===== ALIVE Thu May 28 01:15:44 JST 2015
+
+===== ALIVE Thu May 28 01:30:44 JST 2015
+
+===== ALIVE Thu May 28 01:45:44 JST 2015
+
+===== Thu May 28 02:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_4.20150528.01.1
+* closing log file is /data/log/leo_object_storage_1.20150528.01.1
+* closing log file is /data/log/leo_object_storage_5.20150528.01.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.01.1
+* closing log file is /data/log/leo_object_storage_7.20150528.01.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.01.1
+* closing log file is /data/log/leo_object_storage_3.20150528.01.1
+* closing log file is /data/log/leo_object_storage_2.20150528.01.1
+* closing log file is /data/log/leo_object_storage_6.20150528.01.1
+* closing log file is /data/log/leo_object_storage_0.20150528.01.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.02.1
+* opening log file is /data/log/leo_object_storage_4.20150528.02.1
+* opening log file is /data/log/leo_object_storage_1.20150528.02.1
+* opening log file is /data/log/leo_object_storage_7.20150528.02.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.02.1
+* opening log file is /data/log/leo_object_storage_5.20150528.02.1
+* opening log file is /data/log/leo_object_storage_2.20150528.02.1
+* opening log file is /data/log/leo_object_storage_6.20150528.02.1
+* opening log file is /data/log/leo_object_storage_3.20150528.02.1
+* opening log file is /data/log/leo_object_storage_0.20150528.02.1
+
+===== ALIVE Thu May 28 02:15:44 JST 2015
+
+===== ALIVE Thu May 28 02:30:44 JST 2015
+
+===== ALIVE Thu May 28 02:45:44 JST 2015
+
+===== Thu May 28 03:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_5.20150528.02.1
+* closing log file is /data/log/leo_object_storage_7.20150528.02.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.02.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.02.1
+* closing log file is /data/log/leo_object_storage_1.20150528.02.1
+* closing log file is /data/log/leo_object_storage_4.20150528.02.1
+* closing log file is /data/log/leo_object_storage_3.20150528.02.1
+* closing log file is /data/log/leo_object_storage_6.20150528.02.1
+* closing log file is /data/log/leo_object_storage_2.20150528.02.1
+* closing log file is /data/log/leo_object_storage_0.20150528.02.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.03.1
+* opening log file is /data/log/leo_object_storage_1.20150528.03.1
+* opening log file is /data/log/leo_object_storage_5.20150528.03.1
+* opening log file is /data/log/leo_object_storage_4.20150528.03.1
+* opening log file is /data/log/leo_object_storage_7.20150528.03.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.03.1
+* opening log file is /data/log/leo_object_storage_0.20150528.03.1
+* opening log file is /data/log/leo_object_storage_3.20150528.03.1
+* opening log file is /data/log/leo_object_storage_6.20150528.03.1
+* opening log file is /data/log/leo_object_storage_2.20150528.03.1
+
+===== ALIVE Thu May 28 03:15:44 JST 2015
+
+===== ALIVE Thu May 28 03:30:44 JST 2015
+
+===== ALIVE Thu May 28 03:45:44 JST 2015
+
+===== Thu May 28 04:00:44 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.03.1
+* closing log file is /data/log/leo_object_storage_1.20150528.03.1
+* closing log file is /data/log/leo_object_storage_7.20150528.03.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.03.1
+* closing log file is /data/log/leo_object_storage_5.20150528.03.1
+* closing log file is /data/log/leo_object_storage_4.20150528.03.1
+* closing log file is /data/log/leo_object_storage_3.20150528.03.1
+* closing log file is /data/log/leo_object_storage_0.20150528.03.1
+* closing log file is /data/log/leo_object_storage_2.20150528.03.1
+* closing log file is /data/log/leo_object_storage_6.20150528.03.1
+* opening log file is /data/log/leo_object_storage_1.20150528.04.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.04.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.04.1
+* opening log file is /data/log/leo_object_storage_4.20150528.04.1
+* opening log file is /data/log/leo_object_storage_5.20150528.04.1
+* opening log file is /data/log/leo_object_storage_7.20150528.04.1
+* opening log file is /data/log/leo_object_storage_3.20150528.04.1
+* opening log file is /data/log/leo_object_storage_0.20150528.04.1
+* opening log file is /data/log/leo_object_storage_6.20150528.04.1
+* opening log file is /data/log/leo_object_storage_2.20150528.04.1
+
+===== ALIVE Thu May 28 04:15:44 JST 2015
+
+===== ALIVE Thu May 28 04:30:44 JST 2015
+
+===== ALIVE Thu May 28 04:45:44 JST 2015
+
+===== Thu May 28 05:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_5.20150528.04.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.04.1
+* closing log file is /data/log/leo_object_storage_1.20150528.04.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.04.1
+* closing log file is /data/log/leo_object_storage_4.20150528.04.1
+* closing log file is /data/log/leo_object_storage_7.20150528.04.1
+* closing log file is /data/log/leo_object_storage_6.20150528.04.1
+* closing log file is /data/log/leo_object_storage_3.20150528.04.1
+* closing log file is /data/log/leo_object_storage_0.20150528.04.1
+* closing log file is /data/log/leo_object_storage_2.20150528.04.1
+* opening log file is /data/log/leo_object_storage_5.20150528.05.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.05.1
+* opening log file is /data/log/leo_object_storage_1.20150528.05.1
+* opening log file is /data/log/leo_object_storage_7.20150528.05.1
+* opening log file is /data/log/leo_object_storage_4.20150528.05.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.05.1
+* opening log file is /data/log/leo_object_storage_6.20150528.05.1
+* opening log file is /data/log/leo_object_storage_3.20150528.05.1
+* opening log file is /data/log/leo_object_storage_0.20150528.05.1
+* opening log file is /data/log/leo_object_storage_2.20150528.05.1
+
+===== ALIVE Thu May 28 05:15:44 JST 2015
+
+===== ALIVE Thu May 28 05:30:44 JST 2015
+
+===== ALIVE Thu May 28 05:45:45 JST 2015
+
+===== Thu May 28 06:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_5.20150528.05.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.05.1
+* closing log file is /data/log/leo_object_storage_4.20150528.05.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.05.1
+* closing log file is /data/log/leo_object_storage_7.20150528.05.1
+* closing log file is /data/log/leo_object_storage_1.20150528.05.1
+* closing log file is /data/log/leo_object_storage_6.20150528.05.1
+* closing log file is /data/log/leo_object_storage_0.20150528.05.1
+* closing log file is /data/log/leo_object_storage_2.20150528.05.1
+* closing log file is /data/log/leo_object_storage_3.20150528.05.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.06.1
+* opening log file is /data/log/leo_object_storage_5.20150528.06.1
+* opening log file is /data/log/leo_object_storage_4.20150528.06.1
+* opening log file is /data/log/leo_object_storage_7.20150528.06.1
+* opening log file is /data/log/leo_object_storage_1.20150528.06.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.06.1
+* opening log file is /data/log/leo_object_storage_6.20150528.06.1
+* opening log file is /data/log/leo_object_storage_3.20150528.06.1
+* opening log file is /data/log/leo_object_storage_2.20150528.06.1
+* opening log file is /data/log/leo_object_storage_0.20150528.06.1
+
+===== ALIVE Thu May 28 06:15:44 JST 2015
+
+===== ALIVE Thu May 28 06:30:44 JST 2015
+
+===== ALIVE Thu May 28 06:45:45 JST 2015
+
+===== Thu May 28 07:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_1.20150528.06.1
+* closing log file is /data/log/leo_object_storage_4.20150528.06.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.06.1
+* closing log file is /data/log/leo_object_storage_7.20150528.06.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.06.1
+* closing log file is /data/log/leo_object_storage_5.20150528.06.1
+* closing log file is /data/log/leo_object_storage_0.20150528.06.1
+* closing log file is /data/log/leo_object_storage_3.20150528.06.1
+* closing log file is /data/log/leo_object_storage_2.20150528.06.1
+* closing log file is /data/log/leo_object_storage_6.20150528.06.1
+* opening log file is /data/log/leo_object_storage_4.20150528.07.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.07.1
+* opening log file is /data/log/leo_object_storage_1.20150528.07.1
+* opening log file is /data/log/leo_object_storage_5.20150528.07.1
+* opening log file is /data/log/leo_object_storage_7.20150528.07.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.07.1
+* opening log file is /data/log/leo_object_storage_3.20150528.07.1
+* opening log file is /data/log/leo_object_storage_0.20150528.07.1
+* opening log file is /data/log/leo_object_storage_6.20150528.07.1
+* opening log file is /data/log/leo_object_storage_2.20150528.07.1
+
+===== ALIVE Thu May 28 07:15:44 JST 2015
+
+===== ALIVE Thu May 28 07:30:45 JST 2015
+
+===== ALIVE Thu May 28 07:45:45 JST 2015
+
+===== Thu May 28 08:00:44 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.07.1
+* closing log file is /data/log/leo_object_storage_4.20150528.07.1
+* closing log file is /data/log/leo_object_storage_5.20150528.07.1
+* closing log file is /data/log/leo_object_storage_7.20150528.07.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.07.1
+* closing log file is /data/log/leo_object_storage_1.20150528.07.1
+* opening log file is /data/log/leo_object_storage_4.20150528.08.1
+* closing log file is /data/log/leo_object_storage_2.20150528.07.1
+* closing log file is /data/log/leo_object_storage_6.20150528.07.1
+* closing log file is /data/log/leo_object_storage_0.20150528.07.1
+* closing log file is /data/log/leo_object_storage_3.20150528.07.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.08.1
+* opening log file is /data/log/leo_object_storage_1.20150528.08.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.08.1
+* opening log file is /data/log/leo_object_storage_5.20150528.08.1
+* opening log file is /data/log/leo_object_storage_7.20150528.08.1
+* opening log file is /data/log/leo_object_storage_6.20150528.08.1
+* opening log file is /data/log/leo_object_storage_2.20150528.08.1
+* opening log file is /data/log/leo_object_storage_3.20150528.08.1
+* opening log file is /data/log/leo_object_storage_0.20150528.08.1
+
+===== ALIVE Thu May 28 08:15:45 JST 2015
+
+===== ALIVE Thu May 28 08:30:45 JST 2015
+
+===== ALIVE Thu May 28 08:45:45 JST 2015
+
+===== Thu May 28 09:00:44 JST 2015
+* closing log file is /data/log/leo_object_storage_7.20150528.08.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.08.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.08.1
+* closing log file is /data/log/leo_object_storage_5.20150528.08.1
+* closing log file is /data/log/leo_object_storage_4.20150528.08.1
+* closing log file is /data/log/leo_object_storage_1.20150528.08.1
+* closing log file is /data/log/leo_object_storage_2.20150528.08.1
+* closing log file is /data/log/leo_object_storage_6.20150528.08.1
+* closing log file is /data/log/leo_object_storage_3.20150528.08.1
+* closing log file is /data/log/leo_object_storage_0.20150528.08.1
+* opening log file is /data/log/leo_object_storage_7.20150528.09.1
+* opening log file is /data/log/leo_object_storage_5.20150528.09.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.09.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.09.1
+* opening log file is /data/log/leo_object_storage_4.20150528.09.1
+* opening log file is /data/log/leo_object_storage_1.20150528.09.1
+* opening log file is /data/log/leo_object_storage_2.20150528.09.1
+* opening log file is /data/log/leo_object_storage_3.20150528.09.1
+* opening log file is /data/log/leo_object_storage_0.20150528.09.1
+* opening log file is /data/log/leo_object_storage_6.20150528.09.1
+
+===== ALIVE Thu May 28 09:15:45 JST 2015
+
+===== ALIVE Thu May 28 09:30:45 JST 2015
+
+===== ALIVE Thu May 28 09:45:45 JST 2015
+
+===== Thu May 28 10:00:45 JST 2015
+* closing log file is /data/log/leo_object_storage_4.20150528.09.1
+* closing log file is /data/log/leo_object_storage_7.20150528.09.1
+* closing log file is /data/log/leo_object_storage_5.20150528.09.1
+* closing log file is /data/log/leo_object_storage_1.20150528.09.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.09.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.09.1
+* closing log file is /data/log/leo_object_storage_6.20150528.09.1
+* closing log file is /data/log/leo_object_storage_2.20150528.09.1
+* closing log file is /data/log/leo_object_storage_0.20150528.09.1
+* closing log file is /data/log/leo_object_storage_3.20150528.09.1
+* opening log file is /data/log/leo_object_storage_5.20150528.10.1
+* opening log file is /data/log/leo_object_storage_4.20150528.10.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.10.1
+* opening log file is /data/log/leo_object_storage_1.20150528.10.1
+* opening log file is /data/log/leo_object_storage_7.20150528.10.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.10.1
+* opening log file is /data/log/leo_object_storage_6.20150528.10.1
+* opening log file is /data/log/leo_object_storage_0.20150528.10.1
+* opening log file is /data/log/leo_object_storage_3.20150528.10.1
+* opening log file is /data/log/leo_object_storage_2.20150528.10.1
+
+===== ALIVE Thu May 28 10:15:45 JST 2015
+
+===== ALIVE Thu May 28 10:30:45 JST 2015
+
+===== ALIVE Thu May 28 10:45:45 JST 2015
+
+===== Thu May 28 11:00:45 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.10.1
+* closing log file is /data/log/leo_object_storage_4.20150528.10.1
+* closing log file is /data/log/leo_object_storage_5.20150528.10.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.10.1
+* closing log file is /data/log/leo_object_storage_7.20150528.10.1
+* closing log file is /data/log/leo_object_storage_1.20150528.10.1
+* closing log file is /data/log/leo_object_storage_3.20150528.10.1
+* closing log file is /data/log/leo_object_storage_2.20150528.10.1
+* closing log file is /data/log/leo_object_storage_6.20150528.10.1
+* closing log file is /data/log/leo_object_storage_0.20150528.10.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.11.1
+* opening log file is /data/log/leo_object_storage_4.20150528.11.1
+* opening log file is /data/log/leo_object_storage_5.20150528.11.1
+* opening log file is /data/log/leo_object_storage_7.20150528.11.1
+* opening log file is /data/log/leo_object_storage_1.20150528.11.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.11.1
+* opening log file is /data/log/leo_object_storage_2.20150528.11.1
+* opening log file is /data/log/leo_object_storage_3.20150528.11.1
+* opening log file is /data/log/leo_object_storage_6.20150528.11.1
+* opening log file is /data/log/leo_object_storage_0.20150528.11.1
+
+===== ALIVE Thu May 28 11:15:45 JST 2015
+
+===== ALIVE Thu May 28 11:30:45 JST 2015
+
+===== ALIVE Thu May 28 11:45:45 JST 2015
+
+===== Thu May 28 12:00:45 JST 2015
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.11.1
+* closing log file is /data/log/leo_object_storage_5.20150528.11.1
+* closing log file is /data/log/leo_object_storage_1.20150528.11.1
+* closing log file is /data/log/leo_object_storage_4.20150528.11.1
+* closing log file is /data/log/leo_object_storage_7.20150528.11.1
+* closing log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.11.1
+* closing log file is /data/log/leo_object_storage_3.20150528.11.1
+* closing log file is /data/log/leo_object_storage_6.20150528.11.1
+* closing log file is /data/log/leo_object_storage_0.20150528.11.1
+* closing log file is /data/log/leo_object_storage_2.20150528.11.1
+* opening log file is /data/log/leo_object_storage_5.20150528.12.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/error.20150528.12.1
+* opening log file is /data/log/leo_object_storage_7.20150528.12.1
+* opening log file is /data/log/leo_object_storage_1.20150528.12.1
+* opening log file is /data/log/leo_object_storage_4.20150528.12.1
+* opening log file is /usr/local/leofs/1.2.10/leo_storage/log/app/info.20150528.12.1
+* opening log file is /data/log/leo_object_storage_6.20150528.12.1
+* opening log file is /data/log/leo_object_storage_0.20150528.12.1
+* opening log file is /data/log/leo_object_storage_3.20150528.12.1
+* opening log file is /data/log/leo_object_storage_2.20150528.12.1
