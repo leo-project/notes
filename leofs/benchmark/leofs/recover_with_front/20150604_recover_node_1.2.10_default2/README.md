@@ -78,7 +78,7 @@ Get value of 'mq-stats' every 10 seconds.
 
 ### OPS and Latency:
 
-![ops-latency](tests/recover_node_1.2.10_w_front/20150603_185835/summary.png)
+![ops-latency](20150603_185835/summary.png)
 
 ### mq-stats:
 
