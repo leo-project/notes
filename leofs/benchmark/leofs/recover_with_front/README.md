@@ -12,6 +12,7 @@
 [20150604_recover_node_1.2.10_default2](20150604_recover_node_1.2.10_default2)|Yes|No|8|5000|3000|250|1000|10|10|
 [20150612_recover_node_1.2.11-dev](20150612_recover_node_1.2.11-dev)|No|Yes|2|1000|100|10|3000|500|50|
 [20150616_recover_node_1.2.11-dev2](20150616_recover_node_1.2.11-dev2)|No|Yes|2|1000|200|10|3000|500|50|
+[20150616_recover_node_1.2.11-dev3*](20150616_recover_node_1.2.11-dev3)|No|Yes|8|1000|800|10|3000|500|50|
 
 - wd: Watchdog
 - cpt: Auto-Compaction
