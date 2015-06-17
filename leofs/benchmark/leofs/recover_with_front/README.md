@@ -1,7 +1,7 @@
 ## Recover node with front stress test
 ### Test list
 
-|name|# of objects|consumption time(min)|wd|cpt|mq_p|p_mx|p_r|p_s|i_mx|i_r|i_s|
+|name|# of objects|recover-node's duration(min)|wd|cpt|mq_p|p_mx|p_r|p_s|i_mx|i_r|i_s|
 |:---|:-:|:-:|:-:|:-:|--:|--:|--:|--:|--:|--:|--:|  
 [20150515_recover_node_1.2.9](20150515_recover_node_1.2.9)|N/A|N/A|No|No|8|10000|5000|250|1000|10|10|
 [20150519_recover_node_1.2.9](20150519_recover_node_1.2.9)|N/A|N/A|Yes|Yes|8|10000|5000|250|1000|10|10|
