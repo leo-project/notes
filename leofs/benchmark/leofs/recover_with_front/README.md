@@ -13,6 +13,7 @@
 [20150612_recover_node_1.2.11-dev](20150612_recover_node_1.2.11-dev)|300000|16.0min|No|Yes|**2**|1000|**100**|10|3000|500|50|
 [20150616_recover_node_1.2.11-dev2](20150616_recover_node_1.2.11-dev2)|300000|12.0min|No|Yes|**2**|1000|**200**|10|3000|500|50|
 [20150616_recover_node_1.2.11-dev3](20150616_recover_node_1.2.11-dev3)|300000|7.5min|No|Yes|**8**|1000|**800**|10|3000|500|50|
+[20150617_recover_node_1.2.11-dev3](20150617_recover_node_1.2.11-dev3)|300000|6.8min|No|Yes|**8**|1000|**1600**|10|3000|500|50|
 
 - wd: Watchdog
 - cpt: Auto-Compaction
