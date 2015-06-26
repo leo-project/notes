@@ -122,3 +122,196 @@ We've checked LeoFS v1.2.11-dev10 w/watchdog + auto-compaction mechanism during 
 ![Storage-5](leofs18_20150626_152747/sar_2_20150626_152747_dev8-16-t1.png)
 ![Storage-5](leofs18_20150626_152747/sar_2_20150626_152747_dev8-16-t2.png)
 
+
+## Compaction Report Summary
+### Compaction's order
+
+* storage_3_1: [2015-06-26 10:53:53 +0900 - 2015-06-26 11:08:42 +0900]
+* duplicated:
+    * storage_1_1: [2015-06-26 11:05:37 +0900 - 2015-06-26 11:19:35 +0900]
+    * storage_2_1: [2015-06-26 11:05:37 +0900 - 2015-06-26 11:20:02 +0900]
+    * storage_4_1: [2015-06-26 11:05:37 +0900 - 2015-06-26 11:20:11 +0900]
+* storage_0_1: [2015-06-26 11:20:13 +0900 - 2015-06-26 11:36:58 +0900]
+* storage_3_2: [2015-06-26 12:04:03 +0900 - 2015-06-26 12:18:04 +0900]
+
+
+### storage_0:
+* [2015-06-26 11:20:13 +0900 - 2015-06-26 11:36:58 +0900 (16'45")]
+```
+[0]
+{file_path,"/data/object/0.avs_63602504413"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,22494}.
+{size_of_active_objs,7734486877}.
+{total_num_of_objs,22494}.
+{total_size_of_objs,7734486877}.
+{start_datetime,"2015-06-26 11:20:13 +0900"}.
+{end_datetime,"2015-06-26 11:22:11 +0900"}.
+{errors,[]}.
+{duration,118}.
+{result,success}.
+
+[7]
+{file_path,"/data/object/7.avs_63602505295"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,22725}.
+{size_of_active_objs,7795408822}.
+{total_num_of_objs,22725}.
+{total_size_of_objs,7795408822}.
+{start_datetime,"2015-06-26 11:34:55 +0900"}.
+{end_datetime,"2015-06-26 11:36:58 +0900"}.
+{errors,[]}.
+{duration,123}.
+{result,success}.
+```
+
+### storage_1:
+* [2015-06-26 11:05:37 +0900 - 2015-06-26 11:19:35 +0900 (13'58")]
+```
+[0]
+{file_path,"/data/object/0.avs_63602503537"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,19423}.
+{size_of_active_objs,6715890340}.
+{total_num_of_objs,19423}.
+{total_size_of_objs,6715890340}.
+{start_datetime,"2015-06-26 11:05:37 +0900"}.
+{end_datetime,"2015-06-26 11:07:12 +0900"}.
+{errors,[]}.
+{duration,95}.
+{result,success}.
+
+[7]
+{file_path,"/data/object/7.avs_63602504262"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,19554}.
+{size_of_active_objs,6830762572}.
+{total_num_of_objs,19554}.
+{total_size_of_objs,6830762572}.
+{start_datetime,"2015-06-26 11:17:42 +0900"}.
+{end_datetime,"2015-06-26 11:19:35 +0900"}.
+{errors,[]}.
+{duration,113}.
+{result,success}.
+```
+
+### storage_2:
+* [2015-06-26 11:05:37 +0900 - 2015-06-26 11:20:02 +0900 (14'35")]
+```
+[0]
+{file_path,"/data/object/0.avs_63602503537"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20244}.
+{size_of_active_objs,6877567434}.
+{total_num_of_objs,20244}.
+{total_size_of_objs,6877567434}.
+{start_datetime,"2015-06-26 11:05:37 +0900"}.
+{end_datetime,"2015-06-26 11:07:23 +0900"}.
+{errors,[]}.
+{duration,106}.
+{result,success}.
+
+[7]
+{file_path,"/data/object/7.avs_63602504292"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20222}.
+{size_of_active_objs,7028587217}.
+{total_num_of_objs,20222}.
+{total_size_of_objs,7028587217}.
+{start_datetime,"2015-06-26 11:18:12 +0900"}.
+{end_datetime,"2015-06-26 11:20:02 +0900"}.
+{errors,[]}.
+{duration,110}.
+{result,success}.
+```
+
+### storage_3:
+* [2015-06-26 10:53:53 +0900 - 2015-06-26 11:08:42 +0900 (14'49")]
+* [2015-06-26 12:04:03 +0900 - 2015-06-26 12:18:04 +0900 (14'01")]
+#### 1
+```
+[0]
+{file_path,"/data/object/0.avs_63602502833"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,19936}.
+{size_of_active_objs,6889206894}.
+{total_num_of_objs,19936}.
+{total_size_of_objs,6889206894}.
+{start_datetime,"2015-06-26 10:53:53 +0900"}.
+{end_datetime,"2015-06-26 10:55:32 +0900"}.
+{errors,[]}.
+{duration,99}.
+{result,success}.
+
+[7]
+{file_path,"/data/object/7.avs_63602503614"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20001}.
+{size_of_active_objs,6990504831}.
+{total_num_of_objs,20001}.
+{total_size_of_objs,6990504831}.
+{start_datetime,"2015-06-26 11:06:54 +0900"}.
+{end_datetime,"2015-06-26 11:08:42 +0900"}.
+{errors,[]}.
+{duration,108}.
+{result,success}.
+```
+
+#### 2
+```
+[0]
+{file_path,"/data/object/0.avs_63602507043"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20484}.
+{size_of_active_objs,7055143428}.
+{total_num_of_objs,20484}.
+{total_size_of_objs,7055143428}.
+{start_datetime,"2015-06-26 12:04:03 +0900"}.
+{end_datetime,"2015-06-26 12:05:59 +0900"}.
+{errors,[]}.
+{duration,116}.
+{result,success}.
+
+[7]
+{file_path,"/data/object/7.avs_63602507788"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20430}.
+{size_of_active_objs,7083254135}.
+{total_num_of_objs,20430}.
+{total_size_of_objs,7083254135}.
+{start_datetime,"2015-06-26 12:16:28 +0900"}.
+{end_datetime,"2015-06-26 12:18:04 +0900"}.
+{errors,[]}.
+{duration,96}.
+{result,success}.
+```
+
+### storage_4:
+* [2015-06-26 11:05:37 +0900 - 2015-06-26 11:20:11 +0900 (14'34")]
+```
+[0]
+{file_path,"/data/object/0.avs_63602503537"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20348}.
+{size_of_active_objs,7001679519}.
+{total_num_of_objs,20348}.
+{total_size_of_objs,7001679519}.
+{start_datetime,"2015-06-26 11:05:37 +0900"}.
+{end_datetime,"2015-06-26 11:07:15 +0900"}.
+{errors,[]}.
+{duration,98}.
+{result,success}.
+
+[7]
+{file_path,"/data/object/7.avs_63602504310"}.
+{avs_ver,<<"LeoFS AVS-2.4">>}.
+{num_of_active_objs,20337}.
+{size_of_active_objs,7084338710}.
+{total_num_of_objs,20337}.
+{total_size_of_objs,7084338710}.
+{start_datetime,"2015-06-26 11:18:30 +0900"}.
+{end_datetime,"2015-06-26 11:20:11 +0900"}.
+{errors,[]}.
+{duration,101}.
+{result,success}.
+```
