@@ -1,0 +1,220 @@
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2880           | 200            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 1              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2640           | 225            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 22980          | 2400           | 250            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 1              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 43516          | 2400           | 250            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 1              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2640           | 225            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 85816          | 2400           | 250            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2640           | 225            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2640           | 225            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 102327         | 2400           | 250            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2880           | 200            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 0              | 2640           | 225            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2640           | 225            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 101511         | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 3600           | 125            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 98578          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2640           | 225            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2640           | 225            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 97431          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2640           | 225            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 0              | 2640           | 225            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2640           | 225            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 96231          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 94944          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2880           | 200            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 0              | 2640           | 225            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2640           | 225            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2640           | 225            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 90054          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2640           | 225            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2880           | 200            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2880           | 200            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 86582          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   running   | 0              | 2640           | 225            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 3360           | 150            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2640           | 225            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2640           | 225            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 84656          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2640           | 225            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2880           | 200            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 73116          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   running   | 0              | 2640           | 225            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2640           | 225            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   running   | 0              | 2640           | 225            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 70509          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 3120           | 175            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   running   | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 67900          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   running   | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2640           | 225            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 61390          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2640           | 225            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2640           | 225            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 51065          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 46845          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   running   | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   running   | 0              | 2640           | 225            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2640           | 225            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 37554          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   running   | 0              | 2400           | 250            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2880           | 200            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2880           | 200            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   running   | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   running   | 0              | 3120           | 175            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2640           | 225            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 31858          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2880           | 200            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2640           | 225            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   running   | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2640           | 225            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 25223          | 5000           | 100            | recover inconsistent objs         
+              id                |    state    | number of msgs | batch of msgs  |    interval    |            description            
+--------------------------------+-------------+----------------|----------------|----------------|-----------------------------------
+ leo_delete_dir_queue           |   idling    | 0              | 2640           | 225            | delete directories                
+ leo_comp_meta_with_dc_queue    |   idling    | 0              | 2400           | 250            | compare metadata w/remote-node    
+ leo_sync_obj_with_dc_queue     |   idling    | 0              | 2400           | 250            | sync objs w/remote-node           
+ leo_recovery_node_queue        |   idling    | 0              | 2400           | 250            | recovery objs of node             
+ leo_async_deletion_queue       |   idling    | 0              | 2400           | 250            | async deletion of objs            
+ leo_rebalance_queue            |   idling    | 0              | 2400           | 250            | rebalance objs                    
+ leo_sync_by_vnode_id_queue     |   idling    | 0              | 2400           | 250            | sync objs by vnode-id             
+ leo_per_object_queue           |   running   | 17370          | 5000           | 100            | recover inconsistent objs         
