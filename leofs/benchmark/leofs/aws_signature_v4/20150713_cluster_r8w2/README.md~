@@ -6,8 +6,6 @@ Compare the overhead of AWS Signature V2/V4 authentication
 ## Test Cases
 * v2: AWS Signature V2
 * v4: AWS Signature V4 (Authorization Header, Precomputed SHA-256)
-* v4chunk: AWS Signature V4 (aws-chunked, online SHA-256, chunk verification)
-* v4chunk-nohash: AWS Signature V4 (aws-chunked, no SHA-256, no chunk verification)
 
 ### Enviroment
 * OS: CentOS release 6.5 (Final)
@@ -58,6 +56,7 @@ Compare the overhead of AWS Signature V2/V4 authentication
 * basho-bench Configuration:
     * # of concurrent processes: 64
     * Duration: 10 mins
+    * R:W = 8:2
     * Value size groups(byte):
         * 1024.. 10240: 24%
         * 10241.. 102400: 30%
@@ -67,15 +66,9 @@ Compare the overhead of AWS Signature V2/V4 authentication
     * Configuration file:
       * [v2.conf](v2/leofs_default_put.config)
       * [v4.conf](v4/leofs_default_put_v4.config)
-      * [v4chunk.conf](v4chunk/leofs_default_put_v4chunk.config)
-      * [v4chunk_nohash.conf](v4chunk_hash/leofs_default_put_v4chunk.config)
 
 ### OPS and Latency:
 * v2
 ![v2](v2/summary.png)
 * v4
 ![v4](v4/summary.png)
-* v4chunk
-![v4chunk](v4chunk/summary.png)
-* v4chunk-nohash
-![v4chunk-nohash](v4chunk_nohash/summary.png)
