@@ -1,11 +1,11 @@
 ## Benchmark LeoFS 1.4-pre1
 
 ### Purpose
-Compare the overhead of AWS Signature V2/V4 authentication
+Compare Long run Benchmark of AWS Signature V2/V4 authentication (R/W = 49/1)
 
 ## Test Cases
 * v2: AWS Signature V2
-* v4: AWS Signature V4 (Authorization Header, Precomputed SHA-256)
+* v4chunk: AWS Signature V4 (aws-chunked, online SHA-256, chunk verification)
 
 ### Enviroment
 * OS: CentOS release 6.5 (Final)
@@ -55,8 +55,8 @@ Compare the overhead of AWS Signature V2/V4 authentication
 
 * basho-bench Configuration:
     * # of concurrent processes: 64
-    * Duration: 10 mins
-    * R:W = 8:2
+    * Duration: 120 mins
+    * R:W = 49:1
     * Value size groups(byte):
         * 1024.. 10240: 24%
         * 10241.. 102400: 30%
@@ -64,11 +64,11 @@ Compare the overhead of AWS Signature V2/V4 authentication
         * 819201..1572864: 16%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/windkit/leofs/blob/add147a7038d077c05e2c91a679c682a0b67c764/test/src/basho_bench_driver_leofs.erl)
     * Configuration file:
-      * [v2.conf](v2/leofs_default_put.config)
-      * [v4.conf](v4/leofs_default_put_v4.config)
+      * [v2.conf](v2/leofs_default_r49w1_v42_longrun.config)
+      * [v4chunk.conf](v4chunk/leofs_default_r49w1_v4chunk_longrun.config)
 
 ### OPS and Latency:
 * v2
 ![v2](v2/summary.png)
-* v4
-![v4](v4/summary.png)
+* v4chunk
+![v4](v4chunk/summary.png)

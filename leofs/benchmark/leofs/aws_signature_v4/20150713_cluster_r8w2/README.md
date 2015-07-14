@@ -64,8 +64,8 @@ Compare the overhead of AWS Signature V2/V4 authentication (R: 80%, W: 20%)
         * 819201..1572864: 16%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/windkit/leofs/blob/add147a7038d077c05e2c91a679c682a0b67c764/test/src/basho_bench_driver_leofs.erl)
     * Configuration file:
-      * [v2.conf](v2/leofs_default_put.config)
-      * [v4.conf](v4/leofs_default_put_v4.config)
+      * [v2.conf](v2/leofs_default_r8w2.config)
+      * [v4.conf](v4/leofs_default_r8w2_v4.config)
 
 ### OPS and Latency:
 * v2

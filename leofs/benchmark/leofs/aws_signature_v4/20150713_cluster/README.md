@@ -68,7 +68,7 @@ Compare the overhead of AWS Signature V2/V4 authentication
       * [v2.conf](v2/leofs_default_put.config)
       * [v4.conf](v4/leofs_default_put_v4.config)
       * [v4chunk.conf](v4chunk/leofs_default_put_v4chunk.config)
-      * [v4chunk_nohash.conf](v4chunk_hash/leofs_default_put_v4chunk.config)
+      * [v4chunk_nohash.conf](v4chunk_nohash/leofs_default_put_v4chunk.config)
 
 ### OPS and Latency:
 * v2
