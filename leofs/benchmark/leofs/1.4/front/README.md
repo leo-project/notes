@@ -1,4 +1,5 @@
 ## Benchmark Results
+### Front operations w/auto-compaction
 
 |#|link|# of objects|duration(h)|operations - read(%):write(%)|watchdog|auto-compaction|# of mq-procs|max batch-procs|# of batch-procs(regular)|# of batch-procs(max)|interval between batch-procs(msec)|
 |---:|:---|:-:|:-:|:-:|:-:|--:|--:|--:|--:|--:|--:|--:|  
