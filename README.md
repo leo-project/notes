@@ -1,28 +1,7 @@
 # Index
 ## leofs
-- Design/Architecture
-    - [Apr 11, 2014: Multi Data Center Replication (1st phase)](https://github.com/leo-project/notes/tree/master/leofs/design/mdc-replication/phase-1/README.md)
-- Test
-    - [Aug 28, 2014: How to use LeoFS on FreeBSD with NFS](https://github.com/leo-project/notes/tree/master/leofs/test/freebsd/20140812)
-    - [Aug 28, 2014: How to use NFS of LeoFS on SmartOS](https://github.com/leo-project/notes/tree/master/leofs/test/smartos/20140828)
-    - [May 2, 2014: The long-running test resutl for LeoFS v1.0.1rc](https://github.com/leo-project/notes/tree/master/leofs/longrunning/leofs/20140502/README.md)
-    - [May 2, 2014: The benchmark resutl on 10Gbps for LeoFS v1.0.1rc](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/20140502/README.md)
-    - [Apr 17, 2014: Test LeoFS on SmartOS](https://github.com/leo-project/notes/blob/master/leofs/test/smartos/20140416/README.md) 
-    - [Apr 8, 2014: Compare response time on different num of buckets and objects at LeoFS v1.0.0](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/20140408/README.md)
-    - [Apr 2, 2014: The benchmark result with Multi DC Replication for LeoFS v1.0.0](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/20140402/README.md)
-    - [Feb 20, 2014: The long-running test result for LeoFS v1.0.0-pre3](https://github.com/leo-project/notes/tree/master/leofs/longrunning/leofs/20140220/README.md)
+### v1.2 bechmark results
+* [front-operation w/recover-node and auto-compaction](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/1.2/recover_with_front)
 
-## leofs/clients
-
-- Guide
-  - [May 22, 2014: Quick Start LeoFS Access Using PHP-Client](https://github.com/leo-project/notes/blob/a277978c38133a0db9d0ae9d47a10334c7472777/leofs/clients/php/README.md)
-- Test
-  - [Mar 17, 2014: HTTP Object Request and Response analysis of s3fuse](https://github.com/leo-project/notes/tree/master/leofs/clients/s3fuse/20140317)
-  - [Mar 14, 2014: Performance test of s3gof3r](https://github.com/leo-project/notes/tree/master/leofs/clients/s3gof3r/20140314)
-  - [Mar 4, 2014: Performance test of s3fs-fuse and s3fuse with basho_bench](https://github.com/leo-project/notes/tree/master/leofs/clients/fuse/20140304)
-  - [Mar 3, 2014: Performance test of s3fs-fuse and s3fuse](https://github.com/leo-project/notes/tree/master/leofs/clients/fuse/20140303)
-  - [Feb 28, 2014: s3fuse performance test](https://github.com/leo-project/notes/tree/master/leofs/clients/s3fuse/20140228/README.md)
-- Survey
-  - [Feb 28, 2014: S3FUSE's Command line example](https://github.com/leo-project/notes/blob/master/leofs/clients/s3fuse/README.md)
-  - [Feb 25, 2014: Survey s3fs products using fuse](https://github.com/leo-project/notes/tree/master/leofs/clients/fuse/20140225/README.md)
-  - [Feb 19, 2014: Survey 0 byte issue on s3fs-fuse](https://github.com/leo-project/notes/tree/master/leofs/clients/s3fs-fuse/20140219)
+### v1.4 bechmark results
+* [front-operation w/auto-compaction](https://github.com/leo-project/notes/tree/master/leofs/benchmark/leofs/1.4/front)
