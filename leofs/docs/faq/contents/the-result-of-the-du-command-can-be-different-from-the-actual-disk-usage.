@@ -1,6 +1,0 @@
-In order to reduce system resource usage for calculating the result of the du command,
-LeoFS keep that information on memory and when stopping itself, LeoFS save those data into a local file. then when restarting, LeoFS load those on memory.
-
-So if LeoFS is stopped unintentionally like killing by OOM killer, those data can become inconsistent with actual usage.
-
-If you get into this situation, you can recover those data by issueing the compact-start command to the node. after finishing the compaction, the result of the du command will be consitent with actual usage.
