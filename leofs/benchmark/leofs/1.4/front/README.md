@@ -1,7 +1,6 @@
-## front stress test
-### Test list
+## Benchmark Results
 
-|#|name|# of objects|duration(h)|operations - read(%):write(%)|watchdog|auto-compaction|# of mq-procs|max batch-procs|# of batch-procs(regular)|# of batch-procs(max)|interval between batch-procs(msec)|
+|#|link|# of objects|duration(h)|operations - read(%):write(%)|watchdog|auto-compaction|# of mq-procs|max batch-procs|# of batch-procs(regular)|# of batch-procs(max)|interval between batch-procs(msec)|
 |---:|:---|:-:|:-:|:-:|:-:|--:|--:|--:|--:|--:|--:|--:|  
 |1|[20150717_1m_r8w2_60min_1](20150717_1m_r8w2_60min_1)|100000|1.0h|80%:20%|Yes|Yes|8|1000|2400|3000|250|
 |2|[20150721_1m_r99w1_4320min_1](20150721_1m_r99w1_4320min_1)|100000|72.0h|99%:1%|Yes|Yes|8|1000|2400|3000|250|
