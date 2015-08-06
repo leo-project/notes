@@ -54,10 +54,10 @@ We've checked LeoFS v1.2.12 w/watchdog to find issues.(load 5.0)
 ```
 
 * basho-bench Configuration:
-    * Duration: ${MINUTES} minutes
-    * Recover node time: minutes
+    * Duration: 60 minutes
     * # of concurrent processes: 64
-    * # of keys:
+    * # of keys: 100000
+    * # of timeout count: 9260
     * Value size groups(byte):
         *   1024..  10240: 24%
         *  10241.. 102400: 30%
