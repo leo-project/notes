@@ -4,6 +4,7 @@ Recognize leo_jerasure's encoding performance
 
 ## Test Cases
 * Encoding
+    * Object size: 5MB
     * Encoder: vandrs
     * Params:
        * case-1: [K:10, M:4, W:8]
