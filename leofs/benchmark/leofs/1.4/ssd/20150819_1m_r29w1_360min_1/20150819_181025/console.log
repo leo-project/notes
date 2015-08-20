@@ -1,0 +1,6 @@
+2015-08-20 00:00:00.392 [info] <0.82.0>@basho_bench_stats:process_stats:313 Errors:[{{getv4,getv4},1},{{{getv4,getv4},{get,connection_closing}},1}]
+2015-08-20 00:03:10.422 [info] <0.82.0>@basho_bench_stats:process_stats:313 Errors:[{{getv4,getv4},1},{{{getv4,getv4},{get,connection_closing}},1}]
+2015-08-20 00:10:31.392 [info] <0.82.0>@basho_bench_stats:report_total_errors:360 Total Errors:
+2015-08-20 00:10:31.392 [info] <0.82.0>@basho_bench_stats:report_total_errors:366   {{getv4,getv4},{get,connection_closing}}: 43
+2015-08-20 00:10:31.393 [info] <0.82.0>@basho_bench_stats:report_total_errors:366   {{getv4,getv4},{get,{send_failed,{error,closed}}}}: 2
+2015-08-20 00:10:31.396 [info] <0.2.0>@basho_bench:wait_for_stop:204 Test completed after 360 mins.
