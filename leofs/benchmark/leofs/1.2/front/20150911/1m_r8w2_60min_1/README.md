@@ -1,7 +1,7 @@
-## Benchmark LeoFS v1.2.14
+## Benchmark LeoFS v1.2.14-dev
 
 ### Purpose
-We've checked LeoFS v1.4-dev w/watchdog + auto-compaction mechanism to find issues.
+We've checked LeoFS v1.2.14-dev w/watchdog + auto-compaction mechanism to find issues.
 
 ### Environment
 
@@ -54,10 +54,9 @@ We've checked LeoFS v1.4-dev w/watchdog + auto-compaction mechanism to find issu
 ```
 
 * basho-bench Configuration:
-    * Duration: ${MINUTES} minutes
-    * Recover node time: minutes
+    * Duration: 60 minutes
     * # of concurrent processes: 64
-    * # of keys:
+    * # of keys: 100000
     * Value size groups(byte):
         *   1024..  10240: 24%
         *  10241.. 102400: 30%
