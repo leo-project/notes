@@ -14,7 +14,7 @@ Compare Encoding Throughput of RS (10,4,8) between ISA-L and JErasure
 
 ## Environment
 * Setup Server (`ser2`)
-    * CPU: 2x [Intel Xeon E5-2470 v2](http://ark.intel.com/products/64623/Intel-Xeon-Processor-E5-2470-20M-Cache-2_30-GHz-8_00-GTs-Intel-QPI)
+    * CPU: 2x [Intel Xeon E5-2470 v2](http://ark.intel.com/products/75266/Intel-Xeon-Processor-E5-2470-v2-25M-Cache-2_40-GHz)
 * Erlang: Erlang/OTP 17.5
 
 ## Benchmark results
