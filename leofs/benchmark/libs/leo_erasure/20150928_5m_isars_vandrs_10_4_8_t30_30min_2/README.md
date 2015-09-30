@@ -1,4 +1,4 @@
-# Benchmark leo_erasure
+# Benchmark [leo_erasure](https://github.com/leo-project/leo_erasure)
 ## Purpose
 Compare Encoding Throughput of RS (10,4,8) between ISA-L and JErasure
 
