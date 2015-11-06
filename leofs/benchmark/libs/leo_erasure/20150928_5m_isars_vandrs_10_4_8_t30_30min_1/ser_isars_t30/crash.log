@@ -1,0 +1,6 @@
+2015-09-28 11:01:09 =SUPERVISOR REPORT====
+     Supervisor: {local,basho_bench_sup}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.126.0>},{name,basho_bench_worker_18},{mfargs,{basho_bench_worker,start_link,[basho_bench_worker_18,18]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
