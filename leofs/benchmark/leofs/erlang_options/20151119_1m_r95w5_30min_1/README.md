@@ -73,3 +73,5 @@ We've checked LeoFS v1.4.0-pre2 with different Erlang build options
 ![default-options](otp_default/summary.png)
 #### Configure Options (--enable-smp-support --enable-m64-build --enable-halfword-emulator --enable-kernel-poll --without-javac --disable-native-libs --disable-hipe --disable-sctp --enable-threads)
 ![leofs-options](otp_options/summary.png)
+#### Configure Options (--enable-smp-support --enable-kernel-poll --without-javac --disable-native-libs --enable-hipe --disable-sctp --enable-threads)
+![leofs-options (+HiPE)](otp_options_hipe/summary.png)
