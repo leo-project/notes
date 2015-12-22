@@ -74,7 +74,7 @@ We'va checked LeoFS 1.4.0-pre3 with erasure coding (ISA-L, RS {K=3, M=2}).
 ![ops-latency](20151217_191752/summary.png)
 
 ### Network Traffic
-#### Chart of Every Nodes
+#### Chart of Every Node
 
 * Gateway-1
 ![Gateway-1](leofs13_20151217_191751/sar_1_20151217_191751_p1p1-if1.png)
@@ -97,7 +97,7 @@ We'va checked LeoFS 1.4.0-pre3 with erasure coding (ISA-L, RS {K=3, M=2}).
 
 
 ### Disk
-#### Chart of Every Nodes (Storage)
+#### Chart of Every Node (Storage)
 
 * Storage-1
 ![Storage-1](leofs14_20151217_191751/sar_3_20151217_191751_dev8-16-t1.png)
@@ -122,7 +122,7 @@ We'va checked LeoFS 1.4.0-pre3 with erasure coding (ISA-L, RS {K=3, M=2}).
 
 
 ### CPU
-#### Chart of Every Nodes
+#### Chart of Every Node
 
 * Storage-1
 ![Storage-1](leofs14_20151217_191751/sar_3_20151217_191751_all-cpu.png)
@@ -145,7 +145,7 @@ We'va checked LeoFS 1.4.0-pre3 with erasure coding (ISA-L, RS {K=3, M=2}).
 
 
 ### Load
-#### Chart of Every Nodes
+#### Chart of Every Node
 
 * Storage-1
 ![Storage-1](leofs14_20151217_191751/sar_3_20151217_191751_LinuxloadSar.png)
