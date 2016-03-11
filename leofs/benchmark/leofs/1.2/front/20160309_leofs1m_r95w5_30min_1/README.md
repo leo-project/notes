@@ -73,3 +73,7 @@ We check the performance of LeoFS 1.2.20-dev
 ### OPS and Latency:
 
 ![ops-latency](summary.png)
+
+### Monitoring Results:
+
+![monitoring-results](leofs-dashboard.png)
