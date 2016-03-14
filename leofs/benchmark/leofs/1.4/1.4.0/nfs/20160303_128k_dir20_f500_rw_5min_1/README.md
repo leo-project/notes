@@ -79,9 +79,12 @@ Compare the NFS Performance of LeoFS 1.4.0-dev, GlusterFS, `nfs-kernel-server`
     $ sudo gluster volume set test-volume nfs.disable off
     $ sudo gluster volume start test-volume
     ```
+    * NFS-Ganesha Conf: [gluster_nfs4/export.conf]
     * Mount Option
     ```bash
     $ sudo mount -t nfs -o vers=3,nolock 192.168.100.40:/test-volume /mnt/leofs
+    $ sudo mount -t glusterfs 192.168.100.40:/test-volume /mnt/leofs
+    $ sudo mount -t nfs -o vers=4 192.168.100.40:/test-volume_pseudo /mnt/leofs
     ```
 
 * `nfs-kernel-server` Configuration:
@@ -103,6 +106,12 @@ Compare the NFS Performance of LeoFS 1.4.0-dev, GlusterFS, `nfs-kernel-server`
 * GlusterFS
 ![load-ops-latency-gluster](gluster/load/summary.png)
 
+* GlusterFS (Native Client)
+![load-ops-latency-gluster_native](gluster_native/load/summary.png)
+
+* GlusterFS (NFS-Ganesha)
+![load-ops-latency-gluster_ganesha](gluster_nfs4/load/summary.png)
+
 * `nfs-kernel-server`
 ![load-ops-latency-linux](linux/load/summary.png)
 
@@ -112,6 +121,12 @@ Compare the NFS Performance of LeoFS 1.4.0-dev, GlusterFS, `nfs-kernel-server`
 
 * GlusterFS
 ![read-ops-latency-gluster](gluster/read/summary.png)
+
+* GlusterFS (Native Client)
+![read-ops-latency-gluster_native](gluster_native/read/summary.png)
+
+* GlusterFS (NFS-Ganesha)
+![read-ops-latency-gluster_ganesha](gluster_nfs4/read/summary.png)
 
 * `nfs-kernel-server`
 ![read-ops-latency-linux](linux/read/summary.png)
