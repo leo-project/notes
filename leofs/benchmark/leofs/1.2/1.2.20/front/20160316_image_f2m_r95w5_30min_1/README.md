@@ -7,7 +7,7 @@ We check the performance of LeoFS 1.2.20-dev (With Multiple Read Threads)
 
 * OS: Ubuntu Server 14.04.3
 * Erlang/OTP: 17.5
-* LeoFS: v1.4.0-pre.3-dev
+* LeoFS: 1.2.20-dev
 * CPU: Intel Xeon E5-2630 v3 @ 2.40GHz
 * HDD (node[36~39]) : 6x 15k rpm HDD RAID-0 are mounted at `/data/`, Ext4
 
