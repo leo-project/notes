@@ -9,6 +9,7 @@ We check the performance of LeoFS 1.2.20-dev (With Multiple Read Threads, No GW 
 * Erlang/OTP: 17.5
 * LeoFS: v1.4.0-pre.3-dev
 * CPU: Intel Xeon E5-2630 v3 @ 2.40GHz
+* RAM: DDR4-1866MHz 8GB * 4
 * HDD (node[36~39]) : 6x 15k rpm HDD RAID-0 are mounted at `/data/`, Ext4
 
 ```
@@ -80,6 +81,7 @@ We check the performance of LeoFS 1.2.20-dev (With Multiple Read Threads, No GW 
 ![ops-latency-io3](image_f4m_r95w5_nocache_io3_160316_150320/summary.png)
 
 **10 Read Procs**
+![ops-latency-io3](image_f4m_r95w5_nocache_io10_160316_160408/summary.png)
 
 ### Monitoring Results:
 **1 Read Procs**
@@ -88,3 +90,4 @@ We check the performance of LeoFS 1.2.20-dev (With Multiple Read Threads, No GW 
 ![monitoring-results-io3](image_f4m_r95w5_nocache_io3_160316_150320/grafana.png)
 
 **10 Read Procs**
+![monitoring-results-io3](image_f4m_r95w5_nocache_io10_160316_160408/grafana.png)
