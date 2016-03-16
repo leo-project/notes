@@ -76,18 +76,20 @@ We check the performance of LeoFS 1.2.20-dev (With Multiple Read Threads, No GW 
 
 ### OPS and Latency:
 **1 Read Procs**
+![ops-latency-io1](image_f4m_r95w5_nocache_io1_160316_170521/summary.png)
 
 **3 Read Procs**
 ![ops-latency-io3](image_f4m_r95w5_nocache_io3_160316_150320/summary.png)
 
 **10 Read Procs**
-![ops-latency-io3](image_f4m_r95w5_nocache_io10_160316_160408/summary.png)
+![ops-latency-io10](image_f4m_r95w5_nocache_io10_160316_160408/summary.png)
 
 ### Monitoring Results:
 **1 Read Procs**
+![monitoring-results-io1](image_f4m_r95w5_nocache_io1_160316_170521/grafana.png)
 
 **3 Read Procs**
 ![monitoring-results-io3](image_f4m_r95w5_nocache_io3_160316_150320/grafana.png)
 
 **10 Read Procs**
-![monitoring-results-io3](image_f4m_r95w5_nocache_io10_160316_160408/grafana.png)
+![monitoring-results-io10](image_f4m_r95w5_nocache_io10_160316_160408/grafana.png)
