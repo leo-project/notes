@@ -74,13 +74,15 @@ We check the performance of LeoFS 1.2.20-dev
 **Load**
 ![ops-latency-load](mp_1g_load_160318_140232/summary.png)
 **Read**
+![ops-latency-read](mp_1g_read_160318_150321/summary.png)
 **R80W20**
 ![ops-latency-r8w2](mp_1g_r8w2_160318_140232/summary.png)
 
 ### Monitoring Results:
 
 **Load**
-![monitoring-results](mp_1g_load_160318_140232/grafana.png)
+![monitoring-results-load](mp_1g_load_160318_140232/grafana.png)
 **Read**
+![monitoring-results-read](mp_1g_read_160318_150321/grafana.png)
 **R80W20**
-![monitoring-results](mp_1g_r8w2_160318_140232/grafana.png)
+![monitoring-results-r8w2](mp_1g_r8w2_160318_140232/grafana.png)
