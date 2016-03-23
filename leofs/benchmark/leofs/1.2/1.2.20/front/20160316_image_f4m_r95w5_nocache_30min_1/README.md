@@ -71,8 +71,9 @@ We check the performance of LeoFS 1.2.20-dev (With Multiple Read Threads, No GW 
     * Manager_0: [leo_manager_0.conf](conf/leo_manager_0.conf)
     * Manager_1: [leo_manager_1.conf](conf/leo_manager_1.conf)
     * Gateway  : [leo_gateway.conf](conf/leo_gateway_0.conf)
+      * No Cache
     * Storage  : [leo_storage.conf](conf/leo_storage_0.conf)
-    * # of read processes: 1,3,10
+      * # of read processes: 1,3,10
 
 ### OPS and Latency:
 **1 Read Procs**
