@@ -1,0 +1,55 @@
+Iozone: Performance Test of File I/O
+        Version $Revision: 3.420 $
+        Compiled for 64 bit mode.
+        Build: linux-AMD64
+
+Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+             Vangel Bojaxhi, Ben England, Vikentsi Lapa.
+
+Run began: Thu Mar 24 12:43:21 2016
+
+File size set to 2097152 KB
+Record Size 32 KB
+Command line used: iozone -i 0 -i 2 -s 2g -r32k -t 64
+Output is in Kbytes/sec
+Time Resolution = 0.000001 seconds.
+Processor cache size set to 1024 Kbytes.
+Processor cache line size set to 32 bytes.
+File stride size set to 17 * record size.
+Throughput test with 64 processes
+Each process writes a 2097152 Kbyte file in 32 Kbyte records
+
+Children see throughput for 64 initial writers  =  512099.53 KB/sec
+Parent sees throughput for 64 initial writers   =  467302.68 KB/sec
+Min throughput per process                      =    7907.93 KB/sec
+Max throughput per process                      =    8247.79 KB/sec
+Avg throughput per process                      =    8001.56 KB/sec
+Min xfer                                        = 2010624.00 KB
+
+Children see throughput for 64 rewriters        =  460959.33 KB/sec
+Parent sees throughput for 64 rewriters         =  425236.56 KB/sec
+Min throughput per process                      =    7084.68 KB/sec
+Max throughput per process                      =    7550.22 KB/sec
+Avg throughput per process                      =    7202.49 KB/sec
+Min xfer                                        = 1967808.00 KB
+
+Children see throughput for 64 random readers   =   15161.62 KB/sec
+Parent sees throughput for 64 random readers    =   15161.31 KB/sec
+Min throughput per process                      =     232.98 KB/sec
+Max throughput per process                      =     242.80 KB/sec
+Avg throughput per process                      =     236.90 KB/sec
+Min xfer                                        = 2012352.00 KB
+
+Children see throughput for 64 random writers   =   42652.21 KB/sec
+Parent sees throughput for 64 random writers    =   37283.76 KB/sec
+Min throughput per process                      =     645.85 KB/sec
+Max throughput per process                      =     733.74 KB/sec
+Avg throughput per process                      =     666.44 KB/sec
+Min xfer                                        = 1845952.00 KB
+
