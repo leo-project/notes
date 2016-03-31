@@ -78,6 +78,13 @@ We check using Varnish with LeoFS
     * Setup: 3.0.7
     * Co-located with GW at 192.168.100.35
     * Cache: SSD, 100GB
+```
+DAEMON_OPTS="-a :6081 \
+             -T localhost:6082 \
+             -f /etc/varnish/default.vcl \
+             -S /etc/varnish/secret \
+             -s file,/ssd/varnishcache,100g"
+```
 
 ### OPS and Latency:
 
