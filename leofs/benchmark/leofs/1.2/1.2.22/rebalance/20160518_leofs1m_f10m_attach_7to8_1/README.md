@@ -82,4 +82,7 @@ We check the Rebalance Performance of LeoFS after a node attach
     * Rebalance (leofs-adm rebalance)
 
 ### Monitoring Results:
+
+- Duration of time: approx 9.0 hours
+
 ![monitoring-results](grafana.png)
