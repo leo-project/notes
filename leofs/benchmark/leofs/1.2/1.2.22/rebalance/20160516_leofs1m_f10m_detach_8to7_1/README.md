@@ -81,4 +81,7 @@ We check the Rebalance Performance of LeoFS after a node detach
     * Rebalance (leofs-adm rebalance)
 
 ### Monitoring Results:
+
+- Duration of time: 8.5 hours
+
 ![monitoring-results](grafana.png)
