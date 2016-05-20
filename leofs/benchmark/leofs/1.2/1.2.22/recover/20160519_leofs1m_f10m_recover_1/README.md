@@ -1,4 +1,4 @@
-## Benchmark LeoFS v1.2.22-dev Rebalance (attach)
+## Benchmark LeoFS v1.2.22-dev Rebalance (recover-node)
 
 ### Purpose
 We check the Recover Node Performance of LeoFS
@@ -82,4 +82,6 @@ We check the Recover Node Performance of LeoFS
     * Recover (leofs-adm recover-node S7@192.168.100.34)
 
 ### Monitoring Results:
+- Duration of time: approx 9 hours
+
 ![monitoring-results](grafana.png)
