@@ -59,7 +59,7 @@ We check the Recover Node Performance of LeoFS
 * basho-bench Configuration:
     * # of concurrent processes: 64
     * # of keys: 10000000
-    * R/W: 100/0
+    * R/W: 0/100
     * Value size groups(byte):
         *    1024..  10240: 24%
         *   10241.. 102400: 30%

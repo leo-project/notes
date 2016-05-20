@@ -59,7 +59,7 @@ We check the Rebalance Performance of LeoFS after a node detach
 * basho-bench Configuration:
     * # of concurrent processes: 64
     * # of keys: 10000000
-    * R/W: 100/0
+    * R/W: 0/100
     * Value size groups(byte):
         *    1024..  10240: 24%
         *   10241.. 102400: 30%
