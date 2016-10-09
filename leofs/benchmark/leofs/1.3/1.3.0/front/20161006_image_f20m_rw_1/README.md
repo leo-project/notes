@@ -3,6 +3,9 @@
 ### Purpose
 We check Performance with LeoFS
 
+### Issues
+* https://github.com/leo-project/notes/issues/18
+
 ### Environment
 
 * OS: Ubuntu Server 14.04.3
