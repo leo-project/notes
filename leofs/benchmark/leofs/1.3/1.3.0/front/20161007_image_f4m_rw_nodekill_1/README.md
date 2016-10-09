@@ -3,6 +3,9 @@
 ### Purpose
 We check the impact on performance when a node is killed (failed)
 
+### Issues:
+* https://github.com/leo-project/notes/issues/19
+
 ### Environment
 
 * OS: Ubuntu Server 14.04.3
