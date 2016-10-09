@@ -3,6 +3,9 @@
 ### Purpose
 We check Read/Write Performance of Large File with LeoFS
 
+### Issues
+* https://github.com/leo-project/notes/issues/17
+
 ### Environment
 
 * OS: Ubuntu Server 14.04.3
