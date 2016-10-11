@@ -1,0 +1,38 @@
+2016-10-11 14:49:14.085 [debug] <0.54.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20161011_144913/error.log"} into lager_event
+2016-10-11 14:49:14.085 [debug] <0.56.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20161011_144913/console.log"} into lager_event
+2016-10-11 14:49:14.085 [debug] <0.58.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2016-10-11 14:49:14.116 [debug] <0.41.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.60.0>
+2016-10-11 14:49:14.116 [debug] <0.40.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.61.0>
+2016-10-11 14:49:14.116 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.62.0>
+2016-10-11 14:49:14.117 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.63.0>
+2016-10-11 14:49:14.561 [debug] <0.50.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2016-10-11 14:49:14.590 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-10-11 14:49:14.590 [notice] <0.47.0>@lager_file_backend:128 Changed loglevel of /home/wilson/basho_bench/tests/20161011_144913/console.log to debug
+2016-10-11 14:49:14.600 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 390.63 KB
+2016-10-11 14:49:14.641 [debug] <0.72.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.73.0>
+2016-10-11 14:49:14.641 [debug] <0.72.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.74.0>
+2016-10-11 14:49:14.641 [debug] <0.71.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.72.0>
+2016-10-11 14:49:14.653 [debug] <0.71.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.75.0>
+2016-10-11 14:49:14.653 [info] <0.7.0> Application sasl started on node nonode@nohost
+2016-10-11 14:49:14.668 [info] <0.7.0> Application crypto started on node nonode@nohost
+2016-10-11 14:49:15.943 [debug] <0.87.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.88.0>
+2016-10-11 14:49:15.947 [debug] <0.87.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.89.0>
+2016-10-11 14:49:15.952 [debug] <0.87.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.90.0>
+2016-10-11 14:49:15.952 [info] <0.7.0> Application folsom started on node nonode@nohost
+2016-10-11 14:49:15.985 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.83.0>
+2016-10-11 14:49:15.994 [warning] <0.92.0>@basho_bench_keygen:new:81 Are you sure that you want to use 'sequential_int'?
+For most use cases, 'partitioned_sequential_int' is the better choice.
+2016-10-11 14:49:15.994 [debug] <0.92.0>@basho_bench_valgen:init_source:102 random source
+2016-10-11 14:49:16.028 [debug] <0.97.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.98.0>
+2016-10-11 14:49:16.028 [info] <0.7.0> Application ibrowse started on node nonode@nohost
+2016-10-11 14:49:17.098 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.92.0>
+2016-10-11 14:49:17.099 [debug] <0.26.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.100.0>
+2016-10-11 14:49:17.109 [info] <0.93.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.93.0> on nonode@nohost
+2016-10-11 14:49:17.109 [debug] <0.101.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.93.0>: 0 (0%)
+2016-10-11 14:49:17.109 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2016-10-11 14:49:17.150 [debug] <0.103.0> Supervisor inet_gethost_native_sup started undefined at pid <0.104.0>
+2016-10-11 14:49:17.151 [debug] <0.26.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.103.0>
+2016-10-11 15:07:43.335 [info] <0.93.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.93.0>) has requested stop: empty_keygen
+2016-10-11 15:07:43.336 [info] <0.83.0>@basho_bench_stats:report_total_errors:357 No Errors.
