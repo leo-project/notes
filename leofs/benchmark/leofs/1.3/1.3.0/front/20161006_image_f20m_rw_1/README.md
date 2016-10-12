@@ -1,10 +1,22 @@
 ## Benchmark LeoFS v1.3.0
 
 ### Purpose
-We check Performance with LeoFS
+We check Read/Write Performance with LeoFS
 
 ### Issues
 * https://github.com/leo-project/notes/issues/18
+
+### Summary
+- Put 4mil Images to LeoFS
+- Randomly Read Image with 64 threads
+- During Loading Phase, the throughput is decreasing over time
+    - Disk Write are buffered at the beginning
+    - When a Storage Node is overloaded, requests are rejected/timeout
+    - Object Repair further stresses nodes with background object read/write
+
+### Next Action
+- Collect Error Log during Loading Phase
+- Test with Watchdog
 
 ### Environment
 

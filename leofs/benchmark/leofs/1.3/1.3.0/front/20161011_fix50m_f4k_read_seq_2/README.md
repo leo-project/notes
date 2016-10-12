@@ -6,6 +6,19 @@ We check Performance with LeoFS when files are put/get sequentially
 ### Issues
 * https://github.com/leo-project/notes/issues/20
 
+### Summary
+- Put/Get 4000 50MB files in key order
+- Throughput in loading is limited by single thread client
+    - Stable around 200MB/s
+- During reading phase, performance decreases over time, with occasional large drops
+    - Start with 200MB/s, slowly decrease to 150MB/s
+    - Large drops to 50MB/s
+    - Similar pattern is observed when files are read in reverse order
+
+### Next Action
+- Close monitoring during read to find out the case of large drops
+- Check possibilties to improve single thread performance
+
 ### Environment
 
 * OS: Ubuntu Server 14.04.3

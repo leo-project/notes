@@ -1,10 +1,23 @@
 ## Benchmark LeoFS v1.3.0
 
 ### Purpose
-We check Read/Write Performance of Large File with LeoFS
+We check Read/Write Performance of Large File with LeoFS using S3cmd
 
 ### Issues
 * https://github.com/leo-project/notes/issues/17
+
+### Summary
+- Put/Get 1GB Files with S3Cmd
+    - Parallelly spawn 20 instances
+    - Base File is served through memdisk `/dev/shm/`
+- During Loading Phase, the throughput is bounded by Disk I/O rate
+    - 450MB/s * 5 (nodes) / 3 (replicas) = 800MB/s
+- During Reading Phase, the throughput is going up and down wildly
+    - Average around 500MB/s, Up to 700MB/s, Down to 200MB/s
+
+### Next Action
+- Check if problem persists in single thread
+- Detailed breakdown of latency in each processes
 
 ### Environment
 
