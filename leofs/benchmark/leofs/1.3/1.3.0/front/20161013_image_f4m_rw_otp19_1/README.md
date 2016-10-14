@@ -1,7 +1,7 @@
 ## Benchmark LeoFS v1.3.1-dev
 
 ### Purpose
-We check the performance of LeoFS with OTP 18.3
+We check the performance of LeoFS with OTP 19.1
 
 ### Issue
 * https://github.com/leo-project/notes/issues/21
@@ -9,7 +9,7 @@ We check the performance of LeoFS with OTP 18.3
 ### Environment
 
 * OS: Ubuntu Server 14.04.3
-* Erlang/OTP: 18.3
+* Erlang/OTP: 19.1
 * LeoFS: 1.3.1-dev
 * CPU: Intel Xeon E5-2630 v3 @ 2.40GHz
 * HDD (node[36~50]) : 4x ST2000LM003 (2TB 5400rpm 32MB) RAID-0 are mounted at `/data/`, Ext4
@@ -47,12 +47,12 @@ We check the performance of LeoFS with OTP 18.3
 -------+------------------------+--------------+----------------+----------------+----------------------------
  type  |          node          |    state     |  current ring  |   prev ring    |          updated at
 -------+------------------------+--------------+----------------+----------------+----------------------------
-  S    | S1@192.168.100.37      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 15:40:27 +0900
-  S    | S2@192.168.100.38      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 15:40:27 +0900
-  S    | S3@192.168.100.39      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 15:40:27 +0900
-  S    | S4@192.168.100.40      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 15:40:27 +0900
-  S    | S5@192.168.100.41      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 15:40:27 +0900
-  G    | G0@192.168.100.35      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 15:40:34 +0900
+  S    | S1@192.168.100.37      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 17:50:15 +0900
+  S    | S2@192.168.100.38      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 17:50:15 +0900
+  S    | S3@192.168.100.39      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 17:50:15 +0900
+  S    | S4@192.168.100.40      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 17:50:15 +0900
+  S    | S5@192.168.100.41      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 17:50:15 +0900
+  G    | G0@192.168.100.35      | running      | 4adb34e4       | 4adb34e4       | 2016-10-13 17:50:17 +0900
 -------+------------------------+--------------+----------------+----------------+----------------------------
 
 ```
