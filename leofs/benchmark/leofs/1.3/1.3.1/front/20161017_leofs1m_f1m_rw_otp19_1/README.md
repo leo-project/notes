@@ -66,7 +66,7 @@ We check the performance of LeoFS with OTP 19.1
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/basho_bench/blob/master/src/basho_bench_driver_leofs.erl)
     * Configuration file: 
         * [leofs_1m_f1m_load.conf](load/leofs_1m_f1m_load.conf)
-        * [leofs_1m_f1m_r100_30min.conf)(read/leofs_1m_f1m_r100_30min.conf)
+        * [leofs_1m_f1m_r100_30min.conf](read/leofs_1m_f1m_r100_30min.conf)
 
 * LeoFS Configuration:
     * Manager_0: [leo_manager_0.conf](conf/G0/leo_manager.conf)
