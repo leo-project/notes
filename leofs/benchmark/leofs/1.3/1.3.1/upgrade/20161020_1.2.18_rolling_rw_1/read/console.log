@@ -1,0 +1,63 @@
+2016-10-20 15:40:05.893 [debug] <0.54.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20161020_154005/error.log"} into lager_event
+2016-10-20 15:40:05.893 [debug] <0.56.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20161020_154005/console.log"} into lager_event
+2016-10-20 15:40:05.893 [debug] <0.58.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2016-10-20 15:40:05.923 [debug] <0.41.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.60.0>
+2016-10-20 15:40:05.923 [debug] <0.40.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.61.0>
+2016-10-20 15:40:05.923 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.62.0>
+2016-10-20 15:40:05.923 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.63.0>
+2016-10-20 15:40:06.368 [debug] <0.50.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2016-10-20 15:40:06.432 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-10-20 15:40:06.434 [notice] <0.47.0>@lager_file_backend:128 Changed loglevel of /home/wilson/basho_bench/tests/20161020_154005/console.log to debug
+2016-10-20 15:40:06.444 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 976.56 GB
+2016-10-20 15:40:06.492 [debug] <0.72.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.73.0>
+2016-10-20 15:40:06.492 [debug] <0.72.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.74.0>
+2016-10-20 15:40:06.493 [debug] <0.71.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.72.0>
+2016-10-20 15:40:06.504 [debug] <0.71.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.75.0>
+2016-10-20 15:40:06.505 [info] <0.7.0> Application sasl started on node nonode@nohost
+2016-10-20 15:40:06.526 [info] <0.7.0> Application crypto started on node nonode@nohost
+2016-10-20 15:40:06.594 [debug] <0.87.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.88.0>
+2016-10-20 15:40:06.599 [debug] <0.87.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.89.0>
+2016-10-20 15:40:06.604 [debug] <0.87.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.90.0>
+2016-10-20 15:40:06.604 [info] <0.7.0> Application folsom started on node nonode@nohost
+2016-10-20 15:40:06.637 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.83.0>
+2016-10-20 15:40:06.642 [debug] <0.93.0>@basho_bench_valgen:init_source:102 random source
+2016-10-20 15:40:06.669 [debug] <0.98.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.99.0>
+2016-10-20 15:40:06.670 [info] <0.7.0> Application ibrowse started on node nonode@nohost
+2016-10-20 15:40:06.690 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.93.0>
+2016-10-20 15:40:06.710 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.101.0>
+2016-10-20 15:40:06.729 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.103.0>
+2016-10-20 15:40:06.748 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.105.0>
+2016-10-20 15:40:06.767 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.107.0>
+2016-10-20 15:40:06.787 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.109.0>
+2016-10-20 15:40:06.806 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.111.0>
+2016-10-20 15:40:06.825 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.113.0>
+2016-10-20 15:40:06.844 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.115.0>
+2016-10-20 15:40:06.864 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.117.0>
+2016-10-20 15:40:06.864 [debug] <0.26.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.119.0>
+2016-10-20 15:40:06.871 [info] <0.118.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.118.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.116.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.116.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.114.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.114.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.112.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.112.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.110.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.110.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.108.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.108.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.106.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.106.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.104.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.104.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.102.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.102.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.94.0>@basho_bench_worker:worker_idle_loop:246 Starting 20.0 ms/req fixed rate worker: <0.94.0> on nonode@nohost
+2016-10-20 15:40:06.872 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2016-10-20 15:40:06.930 [debug] <0.130.0> Supervisor inet_gethost_native_sup started undefined at pid <0.131.0>
+2016-10-20 15:40:06.931 [debug] <0.26.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.130.0>
+2016-10-20 15:46:36.876 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},947},{{put,put},51},{{{get,get},{get,{conn_failed,{error,econnrefused}}}},947},{{{put,put},{put,{conn_failed,{error,econnrefused}}}},51}]
+2016-10-20 15:46:46.865 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2016-10-20 15:46:46.865 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2016-10-20 15:46:46.865 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},4409},{{put,put},264},{{{get,get},{get,{conn_failed,{error,econnrefused}}}},4409},{{{put,put},{put,{conn_failed,{error,econnrefused}}}},264}]
+2016-10-20 15:46:56.865 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2016-10-20 15:46:56.865 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2016-10-20 15:46:56.865 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},4473},{{put,put},209},{{{get,get},{get,{conn_failed,{error,econnrefused}}}},4473},{{{put,put},{put,{conn_failed,{error,econnrefused}}}},209}]
+2016-10-20 15:47:06.865 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2016-10-20 15:47:06.865 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2016-10-20 15:47:06.865 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},4507},{{put,put},222},{{{get,get},{get,{conn_failed,{error,econnrefused}}}},4507},{{{put,put},{put,{conn_failed,{error,econnrefused}}}},222}]
+2016-10-20 15:47:16.869 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1971},{{put,put},109},{{{get,get},{get,{conn_failed,{error,econnrefused}}}},1877},{{{get,get},{http_error,"500"}},94},{{{put,put},{http_error,"500"}},3},{{{put,put},{put,{conn_failed,{error,econnrefused}}}},106}]
+2016-10-20 15:49:26.878 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},3},{{{get,get},{http_error,"500"}},3}]
