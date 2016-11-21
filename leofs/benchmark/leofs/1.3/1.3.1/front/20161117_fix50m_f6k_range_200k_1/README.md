@@ -1,7 +1,7 @@
 ## Benchmark LeoFS v1.3.1-dev
 
 ### Purpose
-We check the performance of Random Access (100KB) in Large Object (50MB) of LeoFS
+We check the performance of Random Access (200KB) in Large Object (50MB) of LeoFS
 
 ### Issue
 * https://github.com/leo-project/notes/issues/22
@@ -68,10 +68,10 @@ We may have to check if there is bottleneck when reading from chunked objects.
     * Value size groups (bytes):
         * 52428800..52428800:100%
     * Range Get Size (bytes):
-        *   102400..  102400:100%
+        *   204800..  204800:100%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/basho_bench/blob/master/src/basho_bench_driver_leofs.erl)
     * Configuration file: 
-        * [leofs_fix50m_f6k_range_100k.conf](leofs_fix50m_f6k_range_100k.conf)
+        * [leofs_fix50m_f6k_range_200k.conf](leofs_fix50m_f6k_range_200k.conf)
 
 * LeoFS Configuration:
     * Manager_0: [leo_manager_0.conf](conf/G0/leo_manager.conf)
