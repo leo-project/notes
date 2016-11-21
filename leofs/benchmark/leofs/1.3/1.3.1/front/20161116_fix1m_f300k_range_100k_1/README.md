@@ -3,6 +3,9 @@
 ### Purpose
 We check the performance of Random Access in Small Image of LeoFS
 
+### Issue
+* https://github.com/leo-project/notes/issues/22
+
 ### Summary
 Delivered Consistent Bandwidth around 600MB/s, similar result to whole object read
 

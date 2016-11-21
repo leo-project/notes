@@ -3,6 +3,9 @@
 ### Purpose
 We check the performance of Random Access in Large Image of LeoFS
 
+### Issue
+* https://github.com/leo-project/notes/issues/22
+
 ### Summary
 Delivered Consistent Bandwidth around 300MB/s, significantly lower.
 We may have to check if there is bottleneck when reading from chunked objects.

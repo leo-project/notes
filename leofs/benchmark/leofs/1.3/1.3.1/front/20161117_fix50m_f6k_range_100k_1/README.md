@@ -3,6 +3,9 @@
 ### Purpose
 We check the performance of Random Access (100KB) in Large Object (50MB) of LeoFS
 
+### Issue
+* https://github.com/leo-project/notes/issues/22
+
 ### Summary
 Delivered Consistent Bandwidth around 400MB/s, lower than (100KB) in small Object (1MB).
 We may have to check if there is bottleneck when reading from chunked objects.
