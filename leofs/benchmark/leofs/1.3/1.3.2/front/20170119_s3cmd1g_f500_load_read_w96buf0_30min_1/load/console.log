@@ -1,0 +1,185 @@
+2017-01-19 13:48:37.219 [debug] <0.54.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20170119_134837/error.log"} into lager_event
+2017-01-19 13:48:37.219 [debug] <0.56.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20170119_134837/console.log"} into lager_event
+2017-01-19 13:48:37.219 [debug] <0.58.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2017-01-19 13:48:37.248 [debug] <0.41.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.60.0>
+2017-01-19 13:48:37.248 [debug] <0.40.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.61.0>
+2017-01-19 13:48:37.248 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.62.0>
+2017-01-19 13:48:37.249 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.63.0>
+2017-01-19 13:48:37.695 [debug] <0.50.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2017-01-19 13:48:37.704 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-01-19 13:48:37.704 [notice] <0.47.0>@lager_file_backend:128 Changed loglevel of /home/wilson/basho_bench/tests/20170119_134837/console.log to debug
+2017-01-19 13:48:37.713 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 48.83 KB
+2017-01-19 13:48:37.755 [debug] <0.72.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.73.0>
+2017-01-19 13:48:37.755 [debug] <0.72.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.74.0>
+2017-01-19 13:48:37.756 [debug] <0.71.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.72.0>
+2017-01-19 13:48:37.768 [debug] <0.71.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.75.0>
+2017-01-19 13:48:37.768 [info] <0.7.0> Application sasl started on node nonode@nohost
+2017-01-19 13:48:37.789 [info] <0.7.0> Application crypto started on node nonode@nohost
+2017-01-19 13:48:37.851 [debug] <0.87.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.88.0>
+2017-01-19 13:48:37.856 [debug] <0.87.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.89.0>
+2017-01-19 13:48:37.861 [debug] <0.87.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.90.0>
+2017-01-19 13:48:37.861 [info] <0.7.0> Application folsom started on node nonode@nohost
+2017-01-19 13:48:37.893 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.83.0>
+2017-01-19 13:48:37.898 [debug] <0.92.0>@basho_bench_keygen:new:100 ID 1 generating range 0 to 31
+2017-01-19 13:48:37.898 [debug] <0.92.0>@basho_bench_valgen:init_source:102 random source
+2017-01-19 13:48:38.095 [debug] <0.95.0>@basho_bench_keygen:new:100 ID 2 generating range 31 to 62
+2017-01-19 13:48:38.095 [debug] <0.97.0>@basho_bench_keygen:new:100 ID 3 generating range 62 to 93
+2017-01-19 13:48:38.095 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.92.0>
+2017-01-19 13:48:38.095 [debug] <0.99.0>@basho_bench_keygen:new:100 ID 4 generating range 93 to 124
+2017-01-19 13:48:38.096 [debug] <0.101.0>@basho_bench_keygen:new:100 ID 5 generating range 124 to 155
+2017-01-19 13:48:38.096 [debug] <0.103.0>@basho_bench_keygen:new:100 ID 6 generating range 155 to 186
+2017-01-19 13:48:38.096 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.95.0>
+2017-01-19 13:48:38.096 [debug] <0.105.0>@basho_bench_keygen:new:100 ID 7 generating range 186 to 217
+2017-01-19 13:48:38.096 [debug] <0.107.0>@basho_bench_keygen:new:100 ID 8 generating range 217 to 248
+2017-01-19 13:48:38.097 [debug] <0.109.0>@basho_bench_keygen:new:100 ID 9 generating range 248 to 279
+2017-01-19 13:48:38.097 [debug] <0.111.0>@basho_bench_keygen:new:100 ID 10 generating range 279 to 310
+2017-01-19 13:48:38.097 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.97.0>
+2017-01-19 13:48:38.097 [debug] <0.113.0>@basho_bench_keygen:new:100 ID 11 generating range 310 to 341
+2017-01-19 13:48:38.097 [debug] <0.115.0>@basho_bench_keygen:new:100 ID 12 generating range 341 to 372
+2017-01-19 13:48:38.097 [debug] <0.117.0>@basho_bench_keygen:new:100 ID 13 generating range 372 to 403
+2017-01-19 13:48:38.098 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.99.0>
+2017-01-19 13:48:38.098 [debug] <0.119.0>@basho_bench_keygen:new:100 ID 14 generating range 403 to 434
+2017-01-19 13:48:38.098 [debug] <0.121.0>@basho_bench_keygen:new:100 ID 15 generating range 434 to 465
+2017-01-19 13:48:38.098 [debug] <0.123.0>@basho_bench_keygen:new:100 ID 16 generating range 465 to 500
+2017-01-19 13:48:38.098 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.101.0>
+2017-01-19 13:48:38.099 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.103.0>
+2017-01-19 13:48:38.100 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.105.0>
+2017-01-19 13:48:38.100 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.107.0>
+2017-01-19 13:48:38.101 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.109.0>
+2017-01-19 13:48:38.101 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.111.0>
+2017-01-19 13:48:38.102 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.113.0>
+2017-01-19 13:48:38.103 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.115.0>
+2017-01-19 13:48:38.103 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.117.0>
+2017-01-19 13:48:38.104 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.119.0>
+2017-01-19 13:48:38.104 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.121.0>
+2017-01-19 13:48:38.105 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.123.0>
+2017-01-19 13:48:38.105 [debug] <0.26.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.125.0>
+2017-01-19 13:48:38.108 [info] <0.124.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.124.0> on nonode@nohost
+2017-01-19 13:48:38.108 [info] <0.122.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.122.0> on nonode@nohost
+2017-01-19 13:48:38.108 [debug] <0.126.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 0 (0%)
+2017-01-19 13:48:38.108 [info] <0.120.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.120.0> on nonode@nohost
+2017-01-19 13:48:38.108 [info] <0.118.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.118.0> on nonode@nohost
+2017-01-19 13:48:38.108 [info] <0.116.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.116.0> on nonode@nohost
+2017-01-19 13:48:38.108 [debug] <0.128.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 0 (0%)
+2017-01-19 13:48:38.108 [debug] <0.130.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 0 (0%)
+2017-01-19 13:48:38.108 [debug] <0.132.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 0 (0%)
+2017-01-19 13:48:38.108 [info] <0.114.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.114.0> on nonode@nohost
+2017-01-19 13:48:38.108 [debug] <0.134.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 0 (0%)
+2017-01-19 13:48:38.109 [info] <0.108.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.108.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.106.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.106.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.102.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.102.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.112.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.112.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.100.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.100.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.96.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.96.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.110.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.110.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.104.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.104.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.93.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.93.0> on nonode@nohost
+2017-01-19 13:48:38.109 [info] <0.98.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.98.0> on nonode@nohost
+2017-01-19 13:48:38.109 [debug] <0.136.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.138.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.139.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.142.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.100.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.143.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.153.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.152.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.96.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.144.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.149.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.98.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.150.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.93.0>: 0 (0%)
+2017-01-19 13:48:38.109 [debug] <0.147.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 0 (0%)
+2017-01-19 13:48:38.109 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2017-01-19 13:48:48.107 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:48:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:49:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:49:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:49:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:49:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:50:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:50:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:50:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:50:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:51:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:51:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:51:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:51:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:52:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:52:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:52:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:52:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:52:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:53:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:53:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:53:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:53:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:54:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:54:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:54:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:54:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:54:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:55:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:55:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:56:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:56:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:56:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:57:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:57:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:57:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:57:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:57:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:58:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:58:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:58:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:58:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:59:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:59:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:59:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:59:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 13:59:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:00:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:00:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:00:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:00:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:01:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:01:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:01:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:01:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:02:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:02:18.101 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:02:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:02:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:02:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:03:08.104 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:03:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:03:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:04:18.102 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:04:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:04:48.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:04:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:05:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:05:28.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:05:38.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:05:42.077 [info] <0.118.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.118.0>) has requested stop: empty_keygen
+2017-01-19 14:05:58.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:06:08.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:06:09.728 [info] <0.114.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.114.0>) has requested stop: empty_keygen
+2017-01-19 14:06:17.521 [info] <0.110.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.110.0>) has requested stop: empty_keygen
+2017-01-19 14:06:17.860 [info] <0.102.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.102.0>) has requested stop: empty_keygen
+2017-01-19 14:06:18.256 [info] <0.100.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.100.0>) has requested stop: empty_keygen
+2017-01-19 14:06:18.260 [info] <0.112.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.112.0>) has requested stop: empty_keygen
+2017-01-19 14:06:18.284 [info] <0.116.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.116.0>) has requested stop: empty_keygen
+2017-01-19 14:06:22.849 [info] <0.93.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.93.0>) has requested stop: empty_keygen
+2017-01-19 14:06:38.104 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:06:42.341 [info] <0.120.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.120.0>) has requested stop: empty_keygen
+2017-01-19 14:06:42.360 [info] <0.106.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.106.0>) has requested stop: empty_keygen
+2017-01-19 14:06:42.682 [info] <0.108.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.108.0>) has requested stop: empty_keygen
+2017-01-19 14:06:42.705 [info] <0.96.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.96.0>) has requested stop: empty_keygen
+2017-01-19 14:06:42.705 [info] <0.98.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.98.0>) has requested stop: empty_keygen
+2017-01-19 14:06:42.801 [info] <0.122.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.122.0>) has requested stop: empty_keygen
+2017-01-19 14:06:54.199 [info] <0.104.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.104.0>) has requested stop: empty_keygen
+2017-01-19 14:06:58.101 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:07:08.101 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:07:18.100 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:07:26.242 [info] <0.124.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_s3cmd (<0.124.0>) has requested stop: empty_keygen
+2017-01-19 14:07:26.243 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2017-01-19 14:07:26.243 [info] <0.83.0>@basho_bench_stats:report_total_errors:357 No Errors.
