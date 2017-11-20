@@ -62,11 +62,13 @@ We check the performance of LeoFS 1.3.8
     * no. of concurrent processes: 64
     * no. of keys: 1000000
     * Value size groups(byte):
+      ```
         *     1024.. 10240: 24%
         *   10241.. 102400: 30%
         *  102401.. 819200: 30%
         *  819201..1572864: 16%
-    * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/basho_bench/blob/1.4/src/basho_bench_driver_leofs.erl)
+      ```
+    * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/basho_bench/blob/master/src/basho_bench_driver_leofs.erl)
     * Configuration file: 
         * [load/image_1m_f1m_load.conf](load/image_1m_f1m_load.conf)
         * [read/leofs_1m_f1m_r100_30min.conf](read/leofs_1m_f1m_r100_30min.conf)
@@ -77,7 +79,7 @@ We check the performance of LeoFS 1.3.8
     * Gateway  : [leo_gateway.conf](conf/G0/leo_gateway.conf)
         * Disk Cache: 0
         * Mem Cache:  0
-    * Storage  : [leo_storage.conf](conf/S0/leo_storage.conf)
+    * Storage  : [leo_storage.conf](conf/S1/leo_storage.conf)
         * Container Path: /ssd/avs
 
 ### Loading
