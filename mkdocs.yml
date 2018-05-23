@@ -1,0 +1,55 @@
+##
+## LeoFS Development Notes
+##
+## Note:
+##   - Dependencies:
+##       - united (pip install mkdocs-bootswatch)
+##       - pygments (pip install pygments)
+##       - pymdown-extensions (pip install pymdown-extensions)
+##
+site_name: LeoFS Development Notes
+repo_url: https://github.com/leo-project/notes
+repo_name: 'LeoFS Development Notes'
+site_author: LeoProject
+copyright: 'Copyright &copy; 2012-2018 LeoProject'
+site_description: LeoFS Development Notes
+
+docs_dir: 'docs'
+theme:
+    name: 'material'
+    feature:
+        tabs: true
+markdown_extensions:
+    - admonition
+    - codehilite(linenums=true)
+    - footnotes
+    - meta
+    - toc(permalink=true)
+    - pymdownx.betterem(smart_enable=all)
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.tasklist(custom_checkbox=true)
+    - pymdownx.tilde
+    - pymdownx.tasklist:
+        custom_checkbox: true
+
+pages:
+- Introduction: 'index.md'
+- Benchmark:
+    - v1.3.0:
+        - With Cache Benchmark#1: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160808_15m_f10k_r95w5_dc_mc_30min_1/README.md'
+        - With Cache Benchmark#2: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160808_15m_f10k_r95w5_mc_30min_1/README.md'
+        - Without Cache Benchmark#1: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160808_15m_f10k_r95w5_nocache_30min_1/README.md'
+        - Without Cache Benchmark#2: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160912_image_f10m_r100_nocache_30min_1/README.md'
+        - Performance Test#1: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160912_image_f20m_r100_n15_300min_1/README.md'
+        - Performance Test#2: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160912_image_f50m_r100_n15_30min_1/README.md'
+        - Performance Test - Large Object#1: 'leofs/benchmark/leofs/1.3/1.3.0/front/20160919_large1g_f500_rw_1/README.md'
+        - Performance Test - Large Object#2: 'leofs/benchmark/leofs/1.3/1.3.0/front/20161005_large1g_f500_rw_1/README.md'
+        - Performance Test - Photo Size#1: 'leofs/benchmark/leofs/1.3/1.3.0/front/20161006_image_f20m_rw_1/README.md'
+        - Performance Test - Photo Size#2: 'leofs/benchmark/leofs/1.3/1.3.0/front/20161007_image_f4m_rw_nodekill_1/README.md'
+        - Performance Test - Fixed Size#1: 'leofs/benchmark/leofs/1.3/1.3.0/front/20161011_fix50m_f4k_read_seq_1/README.md'
+        - Performance Test - Fixed Size#2: 'leofs/benchmark/leofs/1.3/1.3.0/front/20161011_fix50m_f4k_read_seq_2/README.md'
+        - Performance Test - Large Object#3: 'leofs/benchmark/leofs/1.3/1.3.0/front/20161013_large1g_f500_rw_1/README.md'
