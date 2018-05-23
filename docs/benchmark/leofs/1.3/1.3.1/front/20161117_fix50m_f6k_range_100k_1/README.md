@@ -61,8 +61,8 @@ We check the performance of Random Access (100KB) in Large Object (50MB) of LeoF
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 6000
+    * Total number of concurrent processes: 64
+    * Total number  of keys: 6000
     * Value size groups (bytes):
         * 52428800..52428800:100%
     * Range Get Size (bytes):

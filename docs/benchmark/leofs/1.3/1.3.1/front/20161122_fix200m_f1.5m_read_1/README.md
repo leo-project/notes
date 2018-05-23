@@ -62,8 +62,8 @@ Delivered Consistent Bandwidth around 500~600MB/s
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 1500000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 1500000
     * Value size groups (bytes):
         * 204800..204700:100%
     * basho_bench driver: [basho_bench_driver_leofs.erl](https://github.com/leo-project/basho_bench/blob/master/src/basho_bench_driver_leofs.erl)

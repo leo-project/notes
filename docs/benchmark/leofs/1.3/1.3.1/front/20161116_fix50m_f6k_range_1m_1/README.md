@@ -63,8 +63,8 @@ We may have to check if there is bottleneck when reading from chunked objects.
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 6000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 6000
     * Value size groups (bytes):
         * 52428800..52428800:100%
     * Range Get Size (bytes):

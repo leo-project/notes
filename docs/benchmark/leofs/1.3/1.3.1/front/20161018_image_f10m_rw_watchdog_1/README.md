@@ -59,8 +59,8 @@ We check the performance of LeoFS with Disk Watchdog
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 10000000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 10000000
     * Value size groups(byte):
         *    4096..   8192: 15%
         *    8192..  16384: 25%

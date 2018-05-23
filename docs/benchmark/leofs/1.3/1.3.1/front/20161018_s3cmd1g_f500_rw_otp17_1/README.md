@@ -63,8 +63,8 @@ We check the performance of LeoFS with OTP 17.5
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 16
-    * # of keys: 500
+    * Total number of concurrent processes: 16
+    * Total number of keys: 500
     * basho_bench driver: [basho_bench_driver_s3cmd.erl](https://github.com/leo-project/basho_bench/blob/s3cmd/src/basho_bench_driver_s3cmd.erl)
     * Configuration file: 
         * [s3cmd_1g_500_load.conf](load/s3cmd_1g_500_load.conf)

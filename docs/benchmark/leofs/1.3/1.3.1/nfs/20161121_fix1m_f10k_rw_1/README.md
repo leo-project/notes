@@ -63,8 +63,8 @@ data is loaded from LeoFS at the beginning only
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 10000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 10000
     * Value size groups (bytes):
         * 1048576..1048576:100%
     * basho_bench driver: [basho_bench_driver_file.erl](https://github.com/leo-project/basho_bench/blob/master/src/basho_bench_driver_file.erl)

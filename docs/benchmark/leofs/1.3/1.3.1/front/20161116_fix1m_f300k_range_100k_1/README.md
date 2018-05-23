@@ -62,8 +62,8 @@ Delivered Consistent Bandwidth around 600MB/s, similar result to whole object re
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 300000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 300000
     * Value size groups (bytes):
         * 1048576..1048576:100%
     * Range Get Size (bytes):

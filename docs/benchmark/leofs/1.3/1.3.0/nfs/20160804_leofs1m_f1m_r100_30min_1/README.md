@@ -55,8 +55,8 @@ We've checked NFS Performance of LeoFS 1.3.0
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 1000000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 1000000
     * Value size groups(byte):
         *     1024.. 10240: 24%
         *   10241.. 102400: 30%

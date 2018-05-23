@@ -56,8 +56,8 @@ We check the performance of LeoFS 1.3.2.1
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 20000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 20000
     * R/W: 95/5
     * Value size groups(byte):
         * 10485760.. 10485760: 100%

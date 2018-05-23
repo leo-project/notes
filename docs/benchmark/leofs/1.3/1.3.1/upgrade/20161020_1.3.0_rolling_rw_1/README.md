@@ -56,8 +56,8 @@ We check rolling upgrade from LeoFS 1.3.0 to 1.3.1-dev
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 4000000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 4000000
     * R/W: 95/5
     * Rate: 50ops
     * Value size groups(byte):

@@ -56,8 +56,8 @@ We check the performance of LeoFS with OTP 17.5
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 40000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 40000
     * Value size groups(byte):
         *     16384..   65536: 50%
         *  10485760..15728640: 50%

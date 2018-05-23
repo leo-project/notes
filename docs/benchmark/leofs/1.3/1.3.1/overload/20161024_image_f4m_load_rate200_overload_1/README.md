@@ -67,8 +67,8 @@ in the order of seconds. LeoFS would appera to be stalled.
 
 * basho-bench Configuration:
     * Duration: 30 minutes
-    * # of concurrent processes: 64
-    * # of keys: 4000000
+    * Total number of concurrent processes: 64
+    * Total number of keys: 4000000
     * Rate: 200ops
     * Value size groups(byte):
         *    4096..   8192: 15%

@@ -56,8 +56,8 @@ Check the NFS Performance LeoFS 1.3.1.-dev
 
 * basho-bench Configuration:
     * Duration: 5 minutes
-    * # of concurrent processes: 64
-    * # of keys: 10000 (20 directories x 500 objects)
+    * Total number of concurrent processes: 64
+    * Total number of keys: 10000 (20 directories x 500 objects)
     * Object Size: 128KB
     * basho_bench driver: [basho_bench_driver_layered_file.erl](https://github.com/windkit/basho_bench/blob/layered_file/src/basho_bench_driver_layered_file.erl)
     * Configuration file:
