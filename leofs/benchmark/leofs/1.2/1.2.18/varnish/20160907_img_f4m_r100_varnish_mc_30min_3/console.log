@@ -1,0 +1,290 @@
+2016-09-07 11:39:08.593 [debug] <0.54.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20160907_113908/error.log"} into lager_event
+2016-09-07 11:39:08.593 [debug] <0.56.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20160907_113908/console.log"} into lager_event
+2016-09-07 11:39:08.593 [debug] <0.58.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2016-09-07 11:39:08.630 [debug] <0.41.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.60.0>
+2016-09-07 11:39:08.630 [debug] <0.40.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.61.0>
+2016-09-07 11:39:08.630 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.62.0>
+2016-09-07 11:39:08.631 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.63.0>
+2016-09-07 11:39:09.061 [debug] <0.50.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2016-09-07 11:39:09.239 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-09-07 11:39:09.240 [notice] <0.47.0>@lager_file_backend:128 Changed loglevel of /home/wilson/basho_bench/tests/20160907_113908/console.log to debug
+2016-09-07 11:39:09.249 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 0.00 bytes
+2016-09-07 11:39:09.292 [debug] <0.72.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.73.0>
+2016-09-07 11:39:09.293 [debug] <0.72.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.74.0>
+2016-09-07 11:39:09.293 [debug] <0.71.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.72.0>
+2016-09-07 11:39:09.303 [debug] <0.71.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.75.0>
+2016-09-07 11:39:09.303 [info] <0.7.0> Application sasl started on node nonode@nohost
+2016-09-07 11:39:09.318 [info] <0.7.0> Application crypto started on node nonode@nohost
+2016-09-07 11:39:09.360 [debug] <0.87.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.88.0>
+2016-09-07 11:39:09.363 [debug] <0.87.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.89.0>
+2016-09-07 11:39:09.367 [debug] <0.87.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.90.0>
+2016-09-07 11:39:09.367 [info] <0.7.0> Application folsom started on node nonode@nohost
+2016-09-07 11:39:09.390 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.83.0>
+2016-09-07 11:39:09.394 [debug] <0.92.0>@basho_bench_valgen:init_source:102 random source
+2016-09-07 11:39:09.409 [debug] <0.93.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAAQ==">>}
+2016-09-07 11:39:09.409 [info] <0.93.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.422 [debug] <0.97.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.98.0>
+2016-09-07 11:39:09.422 [info] <0.7.0> Application ibrowse started on node nonode@nohost
+2016-09-07 11:39:09.422 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.92.0>
+2016-09-07 11:39:09.422 [debug] <0.101.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAAg==">>}
+2016-09-07 11:39:09.422 [info] <0.101.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.423 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.100.0>
+2016-09-07 11:39:09.423 [debug] <0.103.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAAw==">>}
+2016-09-07 11:39:09.423 [info] <0.103.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.423 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.102.0>
+2016-09-07 11:39:09.424 [debug] <0.105.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAABA==">>}
+2016-09-07 11:39:09.424 [info] <0.105.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.424 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.104.0>
+2016-09-07 11:39:09.424 [debug] <0.107.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAABQ==">>}
+2016-09-07 11:39:09.424 [info] <0.107.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.425 [debug] <0.109.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAABg==">>}
+2016-09-07 11:39:09.425 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.106.0>
+2016-09-07 11:39:09.425 [info] <0.109.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.426 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.108.0>
+2016-09-07 11:39:09.426 [debug] <0.111.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAABw==">>}
+2016-09-07 11:39:09.427 [info] <0.111.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.427 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.110.0>
+2016-09-07 11:39:09.428 [debug] <0.113.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAACA==">>}
+2016-09-07 11:39:09.428 [info] <0.113.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.429 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.112.0>
+2016-09-07 11:39:09.429 [debug] <0.115.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAACQ==">>}
+2016-09-07 11:39:09.429 [info] <0.115.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.430 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.114.0>
+2016-09-07 11:39:09.430 [debug] <0.117.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAACg==">>}
+2016-09-07 11:39:09.430 [info] <0.117.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.431 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.116.0>
+2016-09-07 11:39:09.431 [debug] <0.119.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAACw==">>}
+2016-09-07 11:39:09.431 [info] <0.119.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.432 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.118.0>
+2016-09-07 11:39:09.433 [debug] <0.121.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAADA==">>}
+2016-09-07 11:39:09.433 [info] <0.121.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.434 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.120.0>
+2016-09-07 11:39:09.434 [debug] <0.123.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAADQ==">>}
+2016-09-07 11:39:09.434 [info] <0.123.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.435 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.122.0>
+2016-09-07 11:39:09.435 [debug] <0.125.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAADg==">>}
+2016-09-07 11:39:09.435 [info] <0.125.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.436 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.124.0>
+2016-09-07 11:39:09.436 [debug] <0.127.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAADw==">>}
+2016-09-07 11:39:09.436 [info] <0.127.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.437 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.126.0>
+2016-09-07 11:39:09.437 [debug] <0.129.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAEA==">>}
+2016-09-07 11:39:09.438 [info] <0.129.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.438 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.128.0>
+2016-09-07 11:39:09.439 [debug] <0.131.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAEQ==">>}
+2016-09-07 11:39:09.439 [info] <0.131.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.439 [debug] <0.133.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAEg==">>}
+2016-09-07 11:39:09.439 [info] <0.133.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.439 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_17, 17) at pid <0.130.0>
+2016-09-07 11:39:09.440 [debug] <0.135.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAEw==">>}
+2016-09-07 11:39:09.440 [info] <0.135.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.440 [debug] <0.137.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAFA==">>}
+2016-09-07 11:39:09.440 [info] <0.137.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.440 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_18, 18) at pid <0.132.0>
+2016-09-07 11:39:09.440 [debug] <0.139.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAFQ==">>}
+2016-09-07 11:39:09.440 [info] <0.139.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.441 [debug] <0.141.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAFg==">>}
+2016-09-07 11:39:09.441 [info] <0.141.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.441 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_19, 19) at pid <0.134.0>
+2016-09-07 11:39:09.441 [debug] <0.143.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAFw==">>}
+2016-09-07 11:39:09.441 [info] <0.143.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.441 [debug] <0.145.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAGA==">>}
+2016-09-07 11:39:09.441 [info] <0.145.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.442 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_20, 20) at pid <0.136.0>
+2016-09-07 11:39:09.442 [debug] <0.147.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAGQ==">>}
+2016-09-07 11:39:09.442 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_21, 21) at pid <0.138.0>
+2016-09-07 11:39:09.442 [info] <0.147.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.442 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_22, 22) at pid <0.140.0>
+2016-09-07 11:39:09.443 [debug] <0.149.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAGg==">>}
+2016-09-07 11:39:09.443 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_23, 23) at pid <0.142.0>
+2016-09-07 11:39:09.443 [info] <0.149.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.443 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_24, 24) at pid <0.144.0>
+2016-09-07 11:39:09.443 [debug] <0.151.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAGw==">>}
+2016-09-07 11:39:09.444 [info] <0.151.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.444 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_25, 25) at pid <0.146.0>
+2016-09-07 11:39:09.444 [debug] <0.153.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAHA==">>}
+2016-09-07 11:39:09.444 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_26, 26) at pid <0.148.0>
+2016-09-07 11:39:09.444 [info] <0.153.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.445 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_27, 27) at pid <0.150.0>
+2016-09-07 11:39:09.445 [debug] <0.155.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAHQ==">>}
+2016-09-07 11:39:09.445 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_28, 28) at pid <0.152.0>
+2016-09-07 11:39:09.445 [info] <0.155.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.445 [debug] <0.157.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAHg==">>}
+2016-09-07 11:39:09.445 [info] <0.157.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.446 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_29, 29) at pid <0.154.0>
+2016-09-07 11:39:09.446 [debug] <0.159.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAHw==">>}
+2016-09-07 11:39:09.446 [info] <0.159.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.446 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_30, 30) at pid <0.156.0>
+2016-09-07 11:39:09.446 [debug] <0.161.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAIA==">>}
+2016-09-07 11:39:09.447 [info] <0.161.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.447 [debug] <0.163.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAIQ==">>}
+2016-09-07 11:39:09.447 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_31, 31) at pid <0.158.0>
+2016-09-07 11:39:09.447 [info] <0.163.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.447 [debug] <0.165.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAIg==">>}
+2016-09-07 11:39:09.447 [info] <0.165.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.448 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_32, 32) at pid <0.160.0>
+2016-09-07 11:39:09.448 [debug] <0.167.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAIw==">>}
+2016-09-07 11:39:09.448 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_33, 33) at pid <0.162.0>
+2016-09-07 11:39:09.448 [info] <0.167.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.448 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_34, 34) at pid <0.164.0>
+2016-09-07 11:39:09.449 [debug] <0.169.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAJA==">>}
+2016-09-07 11:39:09.449 [info] <0.169.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.449 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_35, 35) at pid <0.166.0>
+2016-09-07 11:39:09.449 [debug] <0.171.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAJQ==">>}
+2016-09-07 11:39:09.449 [info] <0.171.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.449 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_36, 36) at pid <0.168.0>
+2016-09-07 11:39:09.450 [debug] <0.173.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAJg==">>}
+2016-09-07 11:39:09.450 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_37, 37) at pid <0.170.0>
+2016-09-07 11:39:09.450 [info] <0.173.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.450 [debug] <0.175.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAJw==">>}
+2016-09-07 11:39:09.451 [info] <0.175.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.451 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_38, 38) at pid <0.172.0>
+2016-09-07 11:39:09.451 [debug] <0.177.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAKA==">>}
+2016-09-07 11:39:09.451 [info] <0.177.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.451 [debug] <0.179.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAKQ==">>}
+2016-09-07 11:39:09.451 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_39, 39) at pid <0.174.0>
+2016-09-07 11:39:09.452 [info] <0.179.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.452 [debug] <0.181.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAKg==">>}
+2016-09-07 11:39:09.452 [info] <0.181.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.452 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_40, 40) at pid <0.176.0>
+2016-09-07 11:39:09.452 [debug] <0.183.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAKw==">>}
+2016-09-07 11:39:09.453 [info] <0.183.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.453 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_41, 41) at pid <0.178.0>
+2016-09-07 11:39:09.453 [debug] <0.185.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAALA==">>}
+2016-09-07 11:39:09.453 [info] <0.185.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.453 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_42, 42) at pid <0.180.0>
+2016-09-07 11:39:09.453 [debug] <0.187.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAALQ==">>}
+2016-09-07 11:39:09.454 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_43, 43) at pid <0.182.0>
+2016-09-07 11:39:09.454 [info] <0.187.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.454 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_44, 44) at pid <0.184.0>
+2016-09-07 11:39:09.454 [debug] <0.189.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAALg==">>}
+2016-09-07 11:39:09.454 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_45, 45) at pid <0.186.0>
+2016-09-07 11:39:09.454 [info] <0.189.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.455 [debug] <0.191.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAALw==">>}
+2016-09-07 11:39:09.455 [info] <0.191.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.455 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_46, 46) at pid <0.188.0>
+2016-09-07 11:39:09.455 [debug] <0.193.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAMA==">>}
+2016-09-07 11:39:09.455 [info] <0.193.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.455 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_47, 47) at pid <0.190.0>
+2016-09-07 11:39:09.456 [debug] <0.195.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAMQ==">>}
+2016-09-07 11:39:09.456 [info] <0.195.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.456 [debug] <0.197.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAMg==">>}
+2016-09-07 11:39:09.456 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_48, 48) at pid <0.192.0>
+2016-09-07 11:39:09.456 [info] <0.197.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.456 [debug] <0.199.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAMw==">>}
+2016-09-07 11:39:09.456 [info] <0.199.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.457 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_49, 49) at pid <0.194.0>
+2016-09-07 11:39:09.457 [debug] <0.201.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAANA==">>}
+2016-09-07 11:39:09.457 [info] <0.201.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.457 [debug] <0.203.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAANQ==">>}
+2016-09-07 11:39:09.457 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_50, 50) at pid <0.196.0>
+2016-09-07 11:39:09.457 [info] <0.203.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.458 [debug] <0.205.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAANg==">>}
+2016-09-07 11:39:09.458 [info] <0.205.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.458 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_51, 51) at pid <0.198.0>
+2016-09-07 11:39:09.458 [debug] <0.207.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAANw==">>}
+2016-09-07 11:39:09.458 [info] <0.207.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.458 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_52, 52) at pid <0.200.0>
+2016-09-07 11:39:09.459 [debug] <0.209.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAOA==">>}
+2016-09-07 11:39:09.459 [info] <0.209.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.459 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_53, 53) at pid <0.202.0>
+2016-09-07 11:39:09.459 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_54, 54) at pid <0.204.0>
+2016-09-07 11:39:09.459 [debug] <0.211.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAOQ==">>}
+2016-09-07 11:39:09.460 [info] <0.211.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.460 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_55, 55) at pid <0.206.0>
+2016-09-07 11:39:09.460 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_56, 56) at pid <0.208.0>
+2016-09-07 11:39:09.460 [debug] <0.213.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAOg==">>}
+2016-09-07 11:39:09.460 [info] <0.213.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.460 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_57, 57) at pid <0.210.0>
+2016-09-07 11:39:09.461 [debug] <0.215.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAOw==">>}
+2016-09-07 11:39:09.461 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_58, 58) at pid <0.212.0>
+2016-09-07 11:39:09.461 [info] <0.215.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.461 [debug] <0.217.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAPA==">>}
+2016-09-07 11:39:09.461 [info] <0.217.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.462 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_59, 59) at pid <0.214.0>
+2016-09-07 11:39:09.462 [debug] <0.219.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAPQ==">>}
+2016-09-07 11:39:09.462 [info] <0.219.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.462 [debug] <0.221.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAPg==">>}
+2016-09-07 11:39:09.462 [info] <0.221.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.462 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_60, 60) at pid <0.216.0>
+2016-09-07 11:39:09.462 [debug] <0.223.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAPw==">>}
+2016-09-07 11:39:09.463 [info] <0.223.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.463 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_61, 61) at pid <0.218.0>
+2016-09-07 11:39:09.463 [debug] <0.225.0>@basho_bench_driver_http_raw:new:76 Client ID: {'X-Riak-ClientId',<<"AAAAQA==">>}
+2016-09-07 11:39:09.463 [info] <0.225.0>@basho_bench_driver_http_raw:new:77 CWD: {ok,"/home/wilson/basho_bench_wilson/tests/20160907_113908"}
+2016-09-07 11:39:09.463 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_62, 62) at pid <0.220.0>
+2016-09-07 11:39:09.464 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_63, 63) at pid <0.222.0>
+2016-09-07 11:39:09.465 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_64, 64) at pid <0.224.0>
+2016-09-07 11:39:09.465 [debug] <0.26.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.226.0>
+2016-09-07 11:39:09.473 [info] <0.225.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.225.0> on nonode@nohost
+2016-09-07 11:39:09.473 [info] <0.223.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.223.0> on nonode@nohost
+2016-09-07 11:39:09.473 [info] <0.221.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.221.0> on nonode@nohost
+2016-09-07 11:39:09.473 [info] <0.219.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.219.0> on nonode@nohost
+2016-09-07 11:39:09.473 [info] <0.217.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.217.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.215.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.215.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.213.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.213.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.211.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.211.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.209.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.209.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.207.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.207.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.205.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.205.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.203.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.203.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.199.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.199.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.201.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.201.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.195.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.195.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.197.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.197.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.193.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.193.0> on nonode@nohost
+2016-09-07 11:39:09.474 [info] <0.191.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.191.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.189.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.189.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.187.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.187.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.185.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.185.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.183.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.183.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.181.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.181.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.179.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.179.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.177.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.177.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.175.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.175.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.173.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.173.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.171.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.171.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.169.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.169.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.167.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.167.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.165.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.165.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.163.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.163.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.161.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.161.0> on nonode@nohost
+2016-09-07 11:39:09.475 [info] <0.159.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.159.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.157.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.157.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.155.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.155.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.153.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.153.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.151.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.151.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.149.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.149.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.147.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.147.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.145.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.145.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.143.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.143.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.141.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.141.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.139.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.139.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.137.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.137.0> on nonode@nohost
+2016-09-07 11:39:09.476 [info] <0.135.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.135.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.133.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.133.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.131.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.131.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.129.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.129.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.127.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.127.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.125.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.125.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.123.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.123.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.121.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.121.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.119.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.119.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.117.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.117.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.115.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.115.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.113.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.113.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.111.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.111.0> on nonode@nohost
+2016-09-07 11:39:09.477 [info] <0.109.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.109.0> on nonode@nohost
+2016-09-07 11:39:09.478 [info] <0.107.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.107.0> on nonode@nohost
+2016-09-07 11:39:09.478 [info] <0.105.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.105.0> on nonode@nohost
+2016-09-07 11:39:09.478 [info] <0.103.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.103.0> on nonode@nohost
+2016-09-07 11:39:09.478 [info] <0.101.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.101.0> on nonode@nohost
+2016-09-07 11:39:09.478 [info] <0.93.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.93.0> on nonode@nohost
+2016-09-07 11:39:09.478 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2016-09-07 11:39:09.490 [debug] <0.291.0> Supervisor inet_gethost_native_sup started undefined at pid <0.292.0>
+2016-09-07 11:39:09.490 [debug] <0.26.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.291.0>
+2016-09-07 11:39:19.662 [info] <0.83.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},767},{{{get,get},{http_error,"500"}},767}]
+2016-09-07 12:09:10.637 [info] <0.83.0>@basho_bench_stats:report_total_errors:360 Total Errors:
+2016-09-07 12:09:10.637 [info] <0.83.0>@basho_bench_stats:report_total_errors:366   {{get,get},{http_error,"500"}}: 767

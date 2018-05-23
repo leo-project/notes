@@ -1,0 +1,478 @@
+2015-06-26 10:04:22.653 [debug] <0.53.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/ts-takizawaj01/basho_bench/tests/20150626_100422/error.log"} into lager_event
+2015-06-26 10:04:22.653 [debug] <0.55.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/ts-takizawaj01/basho_bench/tests/20150626_100422/console.log"} into lager_event
+2015-06-26 10:04:22.653 [debug] <0.57.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2015-06-26 10:04:22.733 [debug] <0.40.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.59.0>
+2015-06-26 10:04:22.733 [debug] <0.39.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.60.0>
+2015-06-26 10:04:22.733 [debug] <0.41.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.61.0>
+2015-06-26 10:04:22.734 [debug] <0.41.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.62.0>
+2015-06-26 10:04:23.096 [debug] <0.49.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2015-06-26 10:04:24.738 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-06-26 10:04:24.741 [notice] <0.46.0>@lager_file_backend:128 Changed loglevel of /home/ts-takizawaj01/basho_bench/tests/20150626_100422/console.log to debug
+2015-06-26 10:04:24.755 [info] <0.2.0>@basho_bench_keygen:dimension:150 No dimension available for key generator: {pareto_int,300000}
+2015-06-26 10:04:24.919 [debug] <0.71.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.72.0>
+2015-06-26 10:04:24.920 [debug] <0.71.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.73.0>
+2015-06-26 10:04:24.921 [debug] <0.70.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.71.0>
+2015-06-26 10:04:24.955 [debug] <0.70.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.74.0>
+2015-06-26 10:04:24.955 [info] <0.7.0> Application sasl started on node nonode@nohost
+2015-06-26 10:04:25.141 [debug] <0.79.0> Supervisor crypto_sup started crypto_server:start_link() at pid <0.80.0>
+2015-06-26 10:04:25.142 [info] <0.7.0> Application crypto started on node nonode@nohost
+2015-06-26 10:04:25.303 [debug] <0.90.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.91.0>
+2015-06-26 10:04:25.313 [debug] <0.90.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.92.0>
+2015-06-26 10:04:25.323 [debug] <0.90.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.93.0>
+2015-06-26 10:04:25.323 [info] <0.7.0> Application folsom started on node nonode@nohost
+2015-06-26 10:04:25.390 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.86.0>
+2015-06-26 10:04:25.414 [debug] <0.96.0>@basho_bench_valgen:init_source:89 random source
+2015-06-26 10:04:25.522 [debug] <0.101.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.102.0>
+2015-06-26 10:04:25.522 [info] <0.7.0> Application ibrowse started on node nonode@nohost
+2015-06-26 10:04:25.523 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.96.0>
+2015-06-26 10:04:25.825 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.104.0>
+2015-06-26 10:04:26.127 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.106.0>
+2015-06-26 10:04:26.429 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.108.0>
+2015-06-26 10:04:26.731 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.110.0>
+2015-06-26 10:04:27.033 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.112.0>
+2015-06-26 10:04:27.335 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.114.0>
+2015-06-26 10:04:27.637 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.116.0>
+2015-06-26 10:04:27.939 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.118.0>
+2015-06-26 10:04:28.241 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.120.0>
+2015-06-26 10:04:28.543 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.122.0>
+2015-06-26 10:04:28.845 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.124.0>
+2015-06-26 10:04:29.147 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.126.0>
+2015-06-26 10:04:29.449 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.128.0>
+2015-06-26 10:04:29.751 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.130.0>
+2015-06-26 10:04:30.053 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.132.0>
+2015-06-26 10:04:30.355 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_17, 17) at pid <0.134.0>
+2015-06-26 10:04:30.657 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_18, 18) at pid <0.136.0>
+2015-06-26 10:04:30.959 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_19, 19) at pid <0.138.0>
+2015-06-26 10:04:31.261 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_20, 20) at pid <0.140.0>
+2015-06-26 10:04:31.563 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_21, 21) at pid <0.142.0>
+2015-06-26 10:04:31.865 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_22, 22) at pid <0.144.0>
+2015-06-26 10:04:32.167 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_23, 23) at pid <0.146.0>
+2015-06-26 10:04:32.469 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_24, 24) at pid <0.148.0>
+2015-06-26 10:04:32.771 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_25, 25) at pid <0.150.0>
+2015-06-26 10:04:33.073 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_26, 26) at pid <0.152.0>
+2015-06-26 10:04:33.375 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_27, 27) at pid <0.154.0>
+2015-06-26 10:04:33.677 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_28, 28) at pid <0.156.0>
+2015-06-26 10:04:33.979 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_29, 29) at pid <0.158.0>
+2015-06-26 10:04:34.281 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_30, 30) at pid <0.160.0>
+2015-06-26 10:04:34.583 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_31, 31) at pid <0.162.0>
+2015-06-26 10:04:34.885 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_32, 32) at pid <0.164.0>
+2015-06-26 10:04:35.187 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_33, 33) at pid <0.166.0>
+2015-06-26 10:04:35.489 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_34, 34) at pid <0.168.0>
+2015-06-26 10:04:35.791 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_35, 35) at pid <0.170.0>
+2015-06-26 10:04:36.093 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_36, 36) at pid <0.172.0>
+2015-06-26 10:04:36.395 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_37, 37) at pid <0.174.0>
+2015-06-26 10:04:36.697 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_38, 38) at pid <0.176.0>
+2015-06-26 10:04:36.999 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_39, 39) at pid <0.178.0>
+2015-06-26 10:04:37.301 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_40, 40) at pid <0.180.0>
+2015-06-26 10:04:37.603 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_41, 41) at pid <0.182.0>
+2015-06-26 10:04:37.905 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_42, 42) at pid <0.184.0>
+2015-06-26 10:04:38.207 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_43, 43) at pid <0.186.0>
+2015-06-26 10:04:38.509 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_44, 44) at pid <0.188.0>
+2015-06-26 10:04:38.811 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_45, 45) at pid <0.190.0>
+2015-06-26 10:04:39.113 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_46, 46) at pid <0.192.0>
+2015-06-26 10:04:39.415 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_47, 47) at pid <0.194.0>
+2015-06-26 10:04:39.717 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_48, 48) at pid <0.196.0>
+2015-06-26 10:04:40.019 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_49, 49) at pid <0.198.0>
+2015-06-26 10:04:40.321 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_50, 50) at pid <0.200.0>
+2015-06-26 10:04:40.623 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_51, 51) at pid <0.202.0>
+2015-06-26 10:04:40.925 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_52, 52) at pid <0.204.0>
+2015-06-26 10:04:41.227 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_53, 53) at pid <0.206.0>
+2015-06-26 10:04:41.529 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_54, 54) at pid <0.208.0>
+2015-06-26 10:04:41.831 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_55, 55) at pid <0.210.0>
+2015-06-26 10:04:42.133 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_56, 56) at pid <0.212.0>
+2015-06-26 10:04:42.435 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_57, 57) at pid <0.214.0>
+2015-06-26 10:04:42.737 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_58, 58) at pid <0.216.0>
+2015-06-26 10:04:43.039 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_59, 59) at pid <0.218.0>
+2015-06-26 10:04:43.341 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_60, 60) at pid <0.220.0>
+2015-06-26 10:04:43.643 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_61, 61) at pid <0.222.0>
+2015-06-26 10:04:43.945 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_62, 62) at pid <0.224.0>
+2015-06-26 10:04:44.247 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_63, 63) at pid <0.226.0>
+2015-06-26 10:04:44.549 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_64, 64) at pid <0.228.0>
+2015-06-26 10:04:44.549 [debug] <0.25.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.230.0>
+2015-06-26 10:04:44.562 [info] <0.229.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.229.0> on nonode@nohost
+2015-06-26 10:04:44.562 [info] <0.227.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.227.0> on nonode@nohost
+2015-06-26 10:04:44.562 [info] <0.225.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.225.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.223.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.223.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.221.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.221.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.217.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.217.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.219.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.219.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.215.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.215.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.213.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.213.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.209.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.209.0> on nonode@nohost
+2015-06-26 10:04:44.563 [info] <0.211.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.211.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.207.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.207.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.205.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.205.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.203.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.203.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.201.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.201.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.199.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.199.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.197.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.197.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.195.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.195.0> on nonode@nohost
+2015-06-26 10:04:44.564 [info] <0.193.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.193.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.189.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.189.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.191.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.191.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.187.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.187.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.183.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.183.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.185.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.185.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.177.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.177.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.181.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.181.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.179.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.179.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.173.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.173.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.171.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.171.0> on nonode@nohost
+2015-06-26 10:04:44.565 [info] <0.175.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.175.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.169.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.169.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.167.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.167.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.165.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.165.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.163.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.163.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.161.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.161.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.159.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.159.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.157.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.157.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.155.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.155.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.153.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.153.0> on nonode@nohost
+2015-06-26 10:04:44.566 [info] <0.151.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.151.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.149.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.149.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.147.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.147.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.145.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.145.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.141.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.141.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.143.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.143.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.139.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.139.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.137.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.137.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.135.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.135.0> on nonode@nohost
+2015-06-26 10:04:44.567 [info] <0.133.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.133.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.129.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.129.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.131.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.131.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.127.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.127.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.125.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.125.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.123.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.123.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.119.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.119.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.121.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.121.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.117.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.117.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.115.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.115.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.113.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.113.0> on nonode@nohost
+2015-06-26 10:04:44.568 [info] <0.111.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.111.0> on nonode@nohost
+2015-06-26 10:04:44.569 [info] <0.109.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.109.0> on nonode@nohost
+2015-06-26 10:04:44.569 [info] <0.107.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.107.0> on nonode@nohost
+2015-06-26 10:04:44.569 [info] <0.105.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.105.0> on nonode@nohost
+2015-06-26 10:04:44.569 [info] <0.97.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.97.0> on nonode@nohost
+2015-06-26 10:04:44.570 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2015-06-26 10:04:44.638 [debug] <0.295.0> Supervisor inet_gethost_native_sup started undefined at pid <0.296.0>
+2015-06-26 10:04:44.639 [debug] <0.25.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.295.0>
+2015-06-26 10:04:54.572 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{put,put},7},{{{get,get},{http_error,"503"}},26},{{{put,put},{http_error,"503"}},7}]
+2015-06-26 10:05:24.808 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},234},{{put,put},25},{{{get,get},{http_error,"503"}},234},{{{put,put},{http_error,"503"}},25}]
+2015-06-26 10:05:34.746 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},215},{{put,put},16},{{{get,get},{http_error,"503"}},215},{{{put,put},{http_error,"503"}},16}]
+2015-06-26 10:05:44.758 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},397},{{put,put},30},{{{get,get},{http_error,"503"}},397},{{{put,put},{http_error,"503"}},30}]
+2015-06-26 10:05:54.762 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},191},{{put,put},13},{{{get,get},{http_error,"503"}},191},{{{put,put},{http_error,"503"}},13}]
+2015-06-26 10:06:04.754 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},346},{{put,put},40},{{{get,get},{http_error,"503"}},346},{{{put,put},{http_error,"503"}},40}]
+2015-06-26 10:06:14.758 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},180},{{put,put},22},{{{get,get},{http_error,"503"}},180},{{{put,put},{http_error,"503"}},22}]
+2015-06-26 10:06:24.774 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},285},{{put,put},19},{{{get,get},{http_error,"503"}},285},{{{put,put},{http_error,"503"}},19}]
+2015-06-26 10:06:34.769 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},391},{{put,put},35},{{{get,get},{http_error,"503"}},391},{{{put,put},{http_error,"503"}},35}]
+2015-06-26 10:06:44.783 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},95},{{put,put},9},{{{get,get},{http_error,"503"}},95},{{{put,put},{http_error,"503"}},9}]
+2015-06-26 10:06:54.773 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},372},{{put,put},38},{{{get,get},{http_error,"503"}},372},{{{put,put},{http_error,"503"}},38}]
+2015-06-26 10:07:04.767 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},194},{{put,put},25},{{{get,get},{http_error,"503"}},194},{{{put,put},{http_error,"503"}},25}]
+2015-06-26 10:07:14.753 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},439},{{put,put},50},{{{get,get},{http_error,"503"}},439},{{{put,put},{http_error,"503"}},50}]
+2015-06-26 10:07:24.764 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},188},{{put,put},19},{{{get,get},{http_error,"503"}},188},{{{put,put},{http_error,"503"}},19}]
+2015-06-26 10:07:34.773 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},411},{{put,put},37},{{{get,get},{http_error,"503"}},411},{{{put,put},{http_error,"503"}},37}]
+2015-06-26 10:07:44.784 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},100},{{put,put},10},{{{get,get},{http_error,"503"}},100},{{{put,put},{http_error,"503"}},10}]
+2015-06-26 10:07:54.753 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},362},{{put,put},35},{{{get,get},{http_error,"503"}},362},{{{put,put},{http_error,"503"}},35}]
+2015-06-26 10:08:04.765 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},174},{{put,put},17},{{{get,get},{http_error,"503"}},174},{{{put,put},{http_error,"503"}},17}]
+2015-06-26 10:08:14.757 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},437},{{put,put},42},{{{get,get},{http_error,"503"}},437},{{{put,put},{http_error,"503"}},42}]
+2015-06-26 10:08:24.765 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},176},{{put,put},24},{{{get,get},{http_error,"503"}},176},{{{put,put},{http_error,"503"}},24}]
+2015-06-26 10:08:34.760 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},320},{{put,put},31},{{{get,get},{http_error,"503"}},320},{{{put,put},{http_error,"503"}},31}]
+2015-06-26 10:08:44.763 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},157},{{put,put},15},{{{get,get},{http_error,"503"}},157},{{{put,put},{http_error,"503"}},15}]
+2015-06-26 10:08:54.779 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},257},{{put,put},30},{{{get,get},{http_error,"503"}},257},{{{put,put},{http_error,"503"}},30}]
+2015-06-26 10:09:04.762 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},419},{{put,put},45},{{{get,get},{get,connection_closing}},1},{{{get,get},{http_error,"503"}},418},{{{put,put},{http_error,"503"}},45}]
+2015-06-26 10:09:14.769 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},203},{{put,put},29},{{{get,get},{http_error,"503"}},203},{{{put,put},{http_error,"503"}},29}]
+2015-06-26 10:09:24.762 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},350},{{put,put},38},{{{get,get},{http_error,"503"}},350},{{{put,put},{http_error,"503"}},38}]
+2015-06-26 10:09:34.755 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},167},{{put,put},21},{{{get,get},{http_error,"503"}},167},{{{put,put},{http_error,"503"}},21}]
+2015-06-26 10:09:44.760 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},288},{{put,put},37},{{{get,get},{http_error,"503"}},288},{{{put,put},{http_error,"503"}},37}]
+2015-06-26 10:09:54.743 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},258},{{put,put},32},{{{get,get},{http_error,"503"}},258},{{{put,put},{http_error,"503"}},32}]
+2015-06-26 10:10:04.767 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},99},{{put,put},10},{{{get,get},{http_error,"503"}},99},{{{put,put},{http_error,"503"}},10}]
+2015-06-26 10:10:14.750 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},339},{{put,put},44},{{{get,get},{http_error,"503"}},339},{{{put,put},{http_error,"503"}},44}]
+2015-06-26 10:10:24.748 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},140},{{put,put},19},{{{get,get},{http_error,"503"}},140},{{{put,put},{http_error,"503"}},19}]
+2015-06-26 10:10:34.763 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},307},{{put,put},33},{{{get,get},{http_error,"503"}},307},{{{put,put},{http_error,"503"}},33}]
+2015-06-26 10:10:44.751 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},121},{{put,put},18},{{{get,get},{http_error,"503"}},121},{{{put,put},{http_error,"503"}},18}]
+2015-06-26 10:10:54.743 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},210},{{put,put},32},{{{get,get},{http_error,"503"}},210},{{{put,put},{http_error,"503"}},32}]
+2015-06-26 10:11:04.763 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},369},{{put,put},49},{{{get,get},{http_error,"503"}},369},{{{put,put},{http_error,"503"}},49}]
+2015-06-26 10:11:14.750 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},137},{{put,put},22},{{{get,get},{http_error,"503"}},137},{{{put,put},{http_error,"503"}},22}]
+2015-06-26 10:11:24.776 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},71},{{put,put},11},{{{get,get},{http_error,"503"}},71},{{{put,put},{http_error,"503"}},11}]
+2015-06-26 10:11:34.745 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},309},{{put,put},40},{{{get,get},{http_error,"503"}},309},{{{put,put},{http_error,"503"}},40}]
+2015-06-26 10:11:44.757 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},152},{{put,put},14},{{{get,get},{http_error,"503"}},152},{{{put,put},{http_error,"503"}},14}]
+2015-06-26 10:18:44.745 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2015-06-26 10:22:44.769 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2015-06-26 10:36:34.765 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2015-06-26 10:53:54.785 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},94},{{put,put},34},{{{get,get},{http_error,"503"}},94},{{{put,put},{http_error,"503"}},34}]
+2015-06-26 10:54:04.755 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},434},{{put,put},167},{{{get,get},{http_error,"503"}},434},{{{put,put},{http_error,"500"}},16},{{{put,put},{http_error,"503"}},151}]
+2015-06-26 10:54:14.739 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},479},{{put,put},184},{{{get,get},{http_error,"503"}},479},{{{put,put},{http_error,"500"}},12},{{{put,put},{http_error,"503"}},172}]
+2015-06-26 10:54:24.722 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},474},{{put,put},206},{{{get,get},{http_error,"503"}},474},{{{put,put},{http_error,"500"}},12},{{{put,put},{http_error,"503"}},194}]
+2015-06-26 10:54:34.716 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},461},{{put,put},207},{{{get,get},{http_error,"503"}},461},{{{put,put},{http_error,"500"}},9},{{{put,put},{http_error,"503"}},198}]
+2015-06-26 10:54:44.691 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},649},{{put,put},243},{{{get,get},{http_error,"503"}},649},{{{put,put},{http_error,"500"}},14},{{{put,put},{http_error,"503"}},229}]
+2015-06-26 10:54:54.662 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},692},{{put,put},303},{{{get,get},{http_error,"503"}},692},{{{put,put},{http_error,"500"}},22},{{{put,put},{http_error,"503"}},280},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:55:04.666 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 10:55:04.666 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1354},{{put,put},358},{{{get,get},{http_error,"503"}},1354},{{{put,put},{http_error,"500"}},23},{{{put,put},{http_error,"503"}},334},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:55:14.674 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 10:55:14.674 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1471},{{put,put},372},{{{get,get},{http_error,"503"}},1471},{{{put,put},{http_error,"500"}},24},{{{put,put},{http_error,"503"}},345},{{{put,put},{put,timeout}},3}]
+2015-06-26 10:55:24.648 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 10:55:24.649 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1338},{{put,put},339},{{{get,get},{http_error,"503"}},1338},{{{put,put},{http_error,"500"}},31},{{{put,put},{http_error,"503"}},306},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:55:34.641 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},866},{{put,put},275},{{{get,get},{http_error,"503"}},866},{{{put,put},{http_error,"500"}},13},{{{put,put},{http_error,"503"}},261},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:55:44.635 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},639},{{put,put},215},{{{get,get},{http_error,"503"}},639},{{{put,put},{http_error,"500"}},14},{{{put,put},{http_error,"503"}},198},{{{put,put},{put,timeout}},3}]
+2015-06-26 10:55:54.678 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},812},{{put,put},271},{{{get,get},{http_error,"503"}},812},{{{put,put},{http_error,"500"}},12},{{{put,put},{http_error,"503"}},258},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:56:04.648 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},653},{{put,put},281},{{{get,get},{http_error,"503"}},653},{{{put,put},{http_error,"500"}},20},{{{put,put},{http_error,"503"}},260},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:56:14.599 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},649},{{put,put},199},{{{get,get},{http_error,"503"}},649},{{{put,put},{http_error,"500"}},13},{{{put,put},{http_error,"503"}},186}]
+2015-06-26 10:56:24.671 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},973},{{put,put},299},{{{get,get},{http_error,"503"}},973},{{{put,put},{http_error,"500"}},18},{{{put,put},{http_error,"503"}},279},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:56:34.680 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},789},{{put,put},268},{{{get,get},{http_error,"503"}},789},{{{put,put},{http_error,"500"}},15},{{{put,put},{http_error,"503"}},251},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:56:44.658 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},735},{{put,put},259},{{{get,get},{http_error,"503"}},735},{{{put,put},{http_error,"500"}},20},{{{put,put},{http_error,"503"}},238},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:56:54.665 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},715},{{put,put},269},{{{get,get},{http_error,"503"}},715},{{{put,put},{http_error,"500"}},8},{{{put,put},{http_error,"503"}},259},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:57:04.662 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},760},{{put,put},287},{{{get,get},{http_error,"503"}},760},{{{put,put},{http_error,"500"}},20},{{{put,put},{http_error,"503"}},265},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:57:14.651 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},922},{{put,put},259},{{{get,get},{http_error,"503"}},922},{{{put,put},{http_error,"500"}},23},{{{put,put},{http_error,"503"}},234},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:57:24.672 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},829},{{put,put},274},{{{get,get},{http_error,"503"}},829},{{{put,put},{http_error,"500"}},13},{{{put,put},{http_error,"503"}},256},{{{put,put},{put,timeout}},5}]
+2015-06-26 10:57:34.667 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},715},{{put,put},229},{{{get,get},{http_error,"503"}},715},{{{put,put},{http_error,"500"}},9},{{{put,put},{http_error,"503"}},220}]
+2015-06-26 10:57:44.677 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},737},{{put,put},273},{{{get,get},{http_error,"503"}},737},{{{put,put},{http_error,"500"}},16},{{{put,put},{http_error,"503"}},255},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:57:54.675 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},729},{{put,put},245},{{{get,get},{http_error,"503"}},729},{{{put,put},{http_error,"500"}},12},{{{put,put},{http_error,"503"}},233}]
+2015-06-26 10:58:04.643 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},749},{{put,put},258},{{{get,get},{http_error,"503"}},749},{{{put,put},{http_error,"500"}},9},{{{put,put},{http_error,"503"}},247},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:58:14.578 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},346},{{put,put},104},{{{get,get},{http_error,"503"}},346},{{{put,put},{http_error,"500"}},7},{{{put,put},{http_error,"503"}},94},{{{put,put},{put,timeout}},3}]
+2015-06-26 10:58:24.605 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},549},{{put,put},161},{{{get,get},{http_error,"503"}},549},{{{put,put},{http_error,"500"}},11},{{{put,put},{http_error,"503"}},148},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:58:34.671 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},782},{{put,put},267},{{{get,get},{http_error,"503"}},782},{{{put,put},{http_error,"500"}},25},{{{put,put},{http_error,"503"}},242}]
+2015-06-26 10:58:44.676 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},842},{{put,put},270},{{{get,get},{http_error,"503"}},842},{{{put,put},{http_error,"500"}},13},{{{put,put},{http_error,"503"}},257}]
+2015-06-26 10:58:54.673 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},841},{{put,put},297},{{{get,get},{http_error,"503"}},841},{{{put,put},{http_error,"500"}},21},{{{put,put},{http_error,"503"}},275},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:59:04.588 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},359},{{put,put},145},{{{get,get},{http_error,"503"}},359},{{{put,put},{http_error,"500"}},7},{{{put,put},{http_error,"503"}},138}]
+2015-06-26 10:59:14.627 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},720},{{put,put},224},{{{get,get},{http_error,"503"}},720},{{{put,put},{http_error,"500"}},18},{{{put,put},{http_error,"503"}},203},{{{put,put},{put,timeout}},3}]
+2015-06-26 10:59:24.648 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},829},{{put,put},239},{{{get,get},{http_error,"503"}},829},{{{put,put},{http_error,"500"}},31},{{{put,put},{http_error,"503"}},207},{{{put,put},{put,timeout}},1}]
+2015-06-26 10:59:34.685 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},854},{{put,put},305},{{{get,get},{http_error,"503"}},854},{{{put,put},{http_error,"500"}},26},{{{put,put},{http_error,"503"}},279}]
+2015-06-26 10:59:44.675 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},778},{{put,put},306},{{{get,get},{http_error,"503"}},778},{{{put,put},{http_error,"500"}},17},{{{put,put},{http_error,"503"}},287},{{{put,put},{put,timeout}},2}]
+2015-06-26 10:59:54.682 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},857},{{put,put},258},{{{get,get},{http_error,"503"}},857},{{{put,put},{http_error,"500"}},16},{{{put,put},{http_error,"503"}},239},{{{put,put},{put,timeout}},3}]
+2015-06-26 11:00:04.613 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},955},{{put,put},247},{{{get,get},{http_error,"503"}},955},{{{put,put},{http_error,"500"}},11},{{{put,put},{http_error,"503"}},236}]
+2015-06-26 11:00:14.605 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},519},{{put,put},160},{{{get,get},{http_error,"503"}},519},{{{put,put},{http_error,"500"}},11},{{{put,put},{http_error,"503"}},148},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:00:24.674 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},990},{{put,put},302},{{{get,get},{http_error,"503"}},990},{{{put,put},{http_error,"500"}},26},{{{put,put},{http_error,"503"}},272},{{{put,put},{put,timeout}},4}]
+2015-06-26 11:00:34.664 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},901},{{put,put},328},{{{get,get},{http_error,"503"}},901},{{{put,put},{http_error,"500"}},19},{{{put,put},{http_error,"503"}},308},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:00:44.652 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},812},{{put,put},260},{{{get,get},{http_error,"503"}},812},{{{put,put},{http_error,"500"}},11},{{{put,put},{http_error,"503"}},247},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:00:54.665 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},816},{{put,put},281},{{{get,get},{http_error,"503"}},816},{{{put,put},{http_error,"500"}},18},{{{put,put},{http_error,"503"}},263}]
+2015-06-26 11:01:04.655 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},732},{{put,put},224},{{{get,get},{http_error,"503"}},732},{{{put,put},{http_error,"500"}},17},{{{put,put},{http_error,"503"}},206},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:01:14.696 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},989},{{put,put},290},{{{get,get},{http_error,"503"}},989},{{{put,put},{http_error,"500"}},23},{{{put,put},{http_error,"503"}},266},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:01:24.683 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1276},{{put,put},328},{{{get,get},{http_error,"503"}},1276},{{{put,put},{http_error,"500"}},14},{{{put,put},{http_error,"503"}},311},{{{put,put},{put,timeout}},3}]
+2015-06-26 11:01:34.675 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:01:34.676 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1750},{{put,put},408},{{{get,get},{http_error,"503"}},1750},{{{put,put},{http_error,"500"}},25},{{{put,put},{http_error,"503"}},382},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:01:44.626 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:01:44.626 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1746},{{put,put},310},{{{get,get},{http_error,"503"}},1746},{{{put,put},{http_error,"500"}},9},{{{put,put},{http_error,"503"}},300},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:01:54.613 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:01:54.613 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1504},{{put,put},264},{{{get,get},{http_error,"503"}},1504},{{{put,put},{http_error,"500"}},17},{{{put,put},{http_error,"503"}},244},{{{put,put},{put,timeout}},3}]
+2015-06-26 11:02:04.673 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:02:04.673 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1728},{{put,put},415},{{{get,get},{http_error,"503"}},1728},{{{put,put},{http_error,"500"}},41},{{{put,put},{http_error,"503"}},370},{{{put,put},{put,timeout}},4}]
+2015-06-26 11:02:14.670 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:02:14.670 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1781},{{put,put},404},{{{get,get},{http_error,"503"}},1781},{{{put,put},{http_error,"500"}},29},{{{put,put},{http_error,"503"}},374},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:02:24.676 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:02:24.676 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1761},{{put,put},374},{{{get,get},{http_error,"503"}},1761},{{{put,put},{http_error,"500"}},26},{{{put,put},{http_error,"503"}},347},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:02:34.689 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:02:34.690 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2492},{{put,put},428},{{{get,get},{http_error,"503"}},2492},{{{put,put},{http_error,"500"}},14},{{{put,put},{http_error,"503"}},414}]
+2015-06-26 11:02:44.686 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:02:44.687 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1820},{{put,put},392},{{{get,get},{http_error,"503"}},1820},{{{put,put},{http_error,"500"}},24},{{{put,put},{http_error,"503"}},367},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:02:54.666 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:02:54.666 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1753},{{put,put},381},{{{get,get},{http_error,"503"}},1753},{{{put,put},{http_error,"500"}},27},{{{put,put},{http_error,"503"}},352},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:03:04.654 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:03:04.656 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1607},{{put,put},327},{{{get,get},{http_error,"503"}},1607},{{{put,put},{http_error,"500"}},25},{{{put,put},{http_error,"503"}},302}]
+2015-06-26 11:03:14.665 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:03:14.665 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1834},{{put,put},389},{{{get,get},{http_error,"503"}},1834},{{{put,put},{http_error,"500"}},32},{{{put,put},{http_error,"503"}},356},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:03:24.681 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:03:24.682 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2016},{{put,put},394},{{{get,get},{http_error,"503"}},2016},{{{put,put},{http_error,"500"}},29},{{{put,put},{http_error,"503"}},363},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:03:34.634 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:03:34.634 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1877},{{put,put},341},{{{get,get},{http_error,"503"}},1877},{{{put,put},{http_error,"500"}},28},{{{put,put},{http_error,"503"}},311},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:03:44.652 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:03:44.653 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1890},{{put,put},360},{{{get,get},{http_error,"503"}},1890},{{{put,put},{http_error,"500"}},20},{{{put,put},{http_error,"503"}},340}]
+2015-06-26 11:03:54.668 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:03:54.668 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1941},{{put,put},376},{{{get,get},{http_error,"503"}},1941},{{{put,put},{http_error,"500"}},18},{{{put,put},{http_error,"503"}},357},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:04:04.659 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:04:04.659 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1758},{{put,put},371},{{{get,get},{http_error,"503"}},1758},{{{put,put},{http_error,"500"}},32},{{{put,put},{http_error,"503"}},336},{{{put,put},{put,timeout}},3}]
+2015-06-26 11:04:14.681 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:04:14.682 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1953},{{put,put},400},{{{get,get},{http_error,"503"}},1953},{{{put,put},{http_error,"500"}},34},{{{put,put},{http_error,"503"}},365},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:04:24.684 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:04:24.684 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1893},{{put,put},387},{{{get,get},{http_error,"503"}},1893},{{{put,put},{http_error,"500"}},30},{{{put,put},{http_error,"503"}},355},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:04:34.673 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:04:34.675 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1765},{{put,put},369},{{{get,get},{http_error,"503"}},1765},{{{put,put},{http_error,"500"}},25},{{{put,put},{http_error,"503"}},344}]
+2015-06-26 11:04:44.603 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:04:44.604 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},597},{{put,put},156},{{{get,get},{http_error,"503"}},597},{{{put,put},{http_error,"500"}},11},{{{put,put},{http_error,"503"}},144},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:04:54.625 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:04:54.626 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2105},{{put,put},377},{{{get,get},{http_error,"503"}},2105},{{{put,put},{http_error,"500"}},19},{{{put,put},{http_error,"503"}},358}]
+2015-06-26 11:05:04.645 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:05:04.645 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1544},{{put,put},321},{{{get,get},{http_error,"503"}},1544},{{{put,put},{http_error,"500"}},24},{{{put,put},{http_error,"503"}},295},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:05:14.662 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:05:14.662 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1757},{{put,put},364},{{{get,get},{http_error,"503"}},1757},{{{put,put},{http_error,"500"}},28},{{{put,put},{http_error,"503"}},334},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:05:24.630 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:05:24.630 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1419},{{put,put},306},{{{get,get},{http_error,"503"}},1419},{{{put,put},{http_error,"500"}},15},{{{put,put},{http_error,"503"}},288},{{{put,put},{put,timeout}},3}]
+2015-06-26 11:05:34.618 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:05:34.619 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1418},{{put,put},274},{{{get,get},{http_error,"503"}},1418},{{{put,put},{http_error,"500"}},12},{{{put,put},{http_error,"503"}},260},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:05:44.616 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:05:44.616 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1238},{{put,put},171},{{{get,get},{http_error,"503"}},1238},{{{put,put},{http_error,"500"}},9},{{{put,put},{http_error,"503"}},161},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:05:54.663 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:05:54.663 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1721},{{put,put},332},{{{get,get},{http_error,"503"}},1721},{{{put,put},{http_error,"500"}},23},{{{put,put},{http_error,"503"}},309}]
+2015-06-26 11:06:04.683 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:06:04.684 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2055},{{put,put},416},{{{get,get},{http_error,"503"}},2055},{{{put,put},{http_error,"500"}},26},{{{put,put},{http_error,"503"}},389},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:06:14.676 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:06:14.677 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1855},{{put,put},378},{{{get,get},{http_error,"503"}},1855},{{{put,put},{http_error,"500"}},28},{{{put,put},{http_error,"503"}},350}]
+2015-06-26 11:06:24.673 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:06:24.674 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2151},{{put,put},363},{{{get,get},{http_error,"503"}},2151},{{{put,put},{http_error,"500"}},21},{{{put,put},{http_error,"503"}},342}]
+2015-06-26 11:06:34.690 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:06:34.691 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2576},{{put,put},437},{{{get,get},{http_error,"503"}},2576},{{{put,put},{http_error,"500"}},13},{{{put,put},{http_error,"503"}},424}]
+2015-06-26 11:06:44.689 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:06:44.689 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1996},{{put,put},359},{{{get,get},{http_error,"503"}},1996},{{{put,put},{http_error,"500"}},35},{{{put,put},{http_error,"503"}},323},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:06:54.649 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:06:54.650 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1558},{{put,put},297},{{{get,get},{http_error,"500"}},1},{{{get,get},{http_error,"503"}},1557},{{{put,put},{http_error,"500"}},18},{{{put,put},{http_error,"503"}},277},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:07:04.658 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:07:04.658 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1991},{{put,put},402},{{{get,get},{http_error,"503"}},1991},{{{put,put},{http_error,"500"}},19},{{{put,put},{http_error,"503"}},381},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:07:14.622 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:07:14.622 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1547},{{put,put},308},{{{get,get},{http_error,"503"}},1547},{{{put,put},{http_error,"500"}},14},{{{put,put},{http_error,"503"}},294}]
+2015-06-26 11:07:24.565 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},273},{{put,put},63},{{{get,get},{http_error,"503"}},273},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},58},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:07:34.603 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},297},{{put,put},91},{{{get,get},{http_error,"503"}},297},{{{put,put},{http_error,"500"}},6},{{{put,put},{http_error,"503"}},83},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:07:44.589 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},149},{{put,put},47},{{{get,get},{http_error,"503"}},149},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},44},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:07:54.621 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},219},{{put,put},73},{{{get,get},{http_error,"503"}},219},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},71}]
+2015-06-26 11:08:04.565 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{put,put},21},{{{get,get},{http_error,"503"}},17},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},19},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:08:14.551 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-06-26 11:08:14.551 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},3},{{{put,put},{http_error,"503"}},3}]
+2015-06-26 11:08:24.699 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},354},{{put,put},113},{{{get,get},{http_error,"503"}},354},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},111}]
+2015-06-26 11:08:34.717 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},470},{{put,put},125},{{{get,get},{http_error,"503"}},470},{{{put,put},{http_error,"500"}},8},{{{put,put},{http_error,"503"}},117}]
+2015-06-26 11:08:44.698 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},299},{{put,put},72},{{{get,get},{http_error,"503"}},299},{{{put,put},{http_error,"503"}},72}]
+2015-06-26 11:08:54.605 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},132},{{put,put},44},{{{get,get},{http_error,"503"}},132},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},41},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:09:04.589 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},162},{{put,put},59},{{{get,get},{http_error,"503"}},162},{{{put,put},{http_error,"500"}},7},{{{put,put},{http_error,"503"}},51},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:09:14.625 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},194},{{put,put},52},{{{get,get},{http_error,"503"}},194},{{{put,put},{http_error,"503"}},51},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:09:24.636 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},230},{{put,put},65},{{{get,get},{http_error,"503"}},230},{{{put,put},{http_error,"503"}},65}]
+2015-06-26 11:09:34.623 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},206},{{put,put},61},{{{get,get},{http_error,"503"}},206},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},59}]
+2015-06-26 11:09:44.651 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},346},{{put,put},102},{{{get,get},{http_error,"503"}},346},{{{put,put},{http_error,"503"}},102}]
+2015-06-26 11:09:54.555 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{http_error,"503"}},1}]
+2015-06-26 11:10:04.614 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},213},{{put,put},80},{{{get,get},{http_error,"503"}},213},{{{put,put},{http_error,"500"}},5},{{{put,put},{http_error,"503"}},75}]
+2015-06-26 11:10:14.698 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},407},{{put,put},133},{{{get,get},{http_error,"503"}},407},{{{put,put},{http_error,"500"}},3},{{{put,put},{http_error,"503"}},130}]
+2015-06-26 11:10:24.609 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},183},{{put,put},57},{{{get,get},{http_error,"503"}},183},{{{put,put},{http_error,"500"}},5},{{{put,put},{http_error,"503"}},52}]
+2015-06-26 11:10:34.765 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},373},{{put,put},124},{{{get,get},{http_error,"503"}},373},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},122}]
+2015-06-26 11:10:44.644 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},171},{{put,put},57},{{{get,get},{http_error,"503"}},171},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},55},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:10:54.654 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},300},{{put,put},70},{{{get,get},{http_error,"503"}},300},{{{put,put},{http_error,"503"}},70}]
+2015-06-26 11:11:04.573 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},56},{{put,put},14},{{{get,get},{http_error,"503"}},56},{{{put,put},{http_error,"503"}},14}]
+2015-06-26 11:11:14.735 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},318},{{put,put},79},{{{get,get},{http_error,"503"}},318},{{{put,put},{http_error,"503"}},77},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:11:24.627 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},255},{{put,put},101},{{{get,get},{http_error,"503"}},255},{{{put,put},{http_error,"500"}},3},{{{put,put},{http_error,"503"}},98}]
+2015-06-26 11:11:34.591 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},89},{{put,put},36},{{{get,get},{http_error,"503"}},89},{{{put,put},{http_error,"503"}},36}]
+2015-06-26 11:11:44.552 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{put,put},2},{{{get,get},{http_error,"503"}},5},{{{put,put},{http_error,"503"}},2}]
+2015-06-26 11:11:54.618 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},194},{{put,put},75},{{{get,get},{http_error,"503"}},194},{{{put,put},{http_error,"500"}},5},{{{put,put},{http_error,"503"}},70}]
+2015-06-26 11:12:04.635 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},310},{{put,put},99},{{{get,get},{http_error,"503"}},310},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},95}]
+2015-06-26 11:12:14.640 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},316},{{put,put},92},{{{get,get},{http_error,"503"}},316},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},88}]
+2015-06-26 11:12:24.673 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},323},{{put,put},100},{{{get,get},{http_error,"503"}},323},{{{put,put},{http_error,"503"}},100}]
+2015-06-26 11:12:34.603 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},93},{{put,put},25},{{{get,get},{http_error,"503"}},93},{{{put,put},{http_error,"503"}},25}]
+2015-06-26 11:12:44.638 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},249},{{put,put},72},{{{get,get},{http_error,"503"}},249},{{{put,put},{http_error,"503"}},72}]
+2015-06-26 11:12:54.566 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},48},{{put,put},19},{{{get,get},{http_error,"503"}},48},{{{put,put},{http_error,"503"}},19}]
+2015-06-26 11:13:04.689 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},284},{{put,put},68},{{{get,get},{http_error,"503"}},284},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},67}]
+2015-06-26 11:13:14.652 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},251},{{put,put},61},{{{get,get},{http_error,"503"}},251},{{{put,put},{http_error,"500"}},3},{{{put,put},{http_error,"503"}},58}]
+2015-06-26 11:13:24.611 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},224},{{put,put},83},{{{get,get},{http_error,"503"}},224},{{{put,put},{http_error,"500"}},9},{{{put,put},{http_error,"503"}},74}]
+2015-06-26 11:13:34.629 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},250},{{put,put},60},{{{get,get},{http_error,"503"}},250},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},59}]
+2015-06-26 11:13:44.669 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},305},{{put,put},108},{{{get,get},{http_error,"503"}},305},{{{put,put},{http_error,"500"}},8},{{{put,put},{http_error,"503"}},100}]
+2015-06-26 11:13:54.730 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},374},{{put,put},99},{{{get,get},{http_error,"503"}},374},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},96},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:14:04.711 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},357},{{put,put},102},{{{get,get},{http_error,"503"}},357},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},98}]
+2015-06-26 11:14:14.626 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},236},{{put,put},70},{{{get,get},{http_error,"503"}},236},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},68}]
+2015-06-26 11:14:24.618 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},173},{{put,put},65},{{{get,get},{http_error,"503"}},173},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},61}]
+2015-06-26 11:14:34.689 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},245},{{put,put},66},{{{get,get},{http_error,"503"}},245},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},65}]
+2015-06-26 11:14:44.592 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},118},{{put,put},30},{{{get,get},{http_error,"503"}},118},{{{put,put},{http_error,"503"}},30}]
+2015-06-26 11:14:54.636 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},225},{{put,put},57},{{{get,get},{http_error,"503"}},225},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},54},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:15:04.696 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},301},{{put,put},84},{{{get,get},{http_error,"503"}},301},{{{put,put},{http_error,"503"}},84}]
+2015-06-26 11:15:14.604 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},152},{{put,put},44},{{{get,get},{http_error,"503"}},152},{{{put,put},{http_error,"503"}},44}]
+2015-06-26 11:15:24.655 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},351},{{put,put},110},{{{get,get},{http_error,"503"}},351},{{{put,put},{http_error,"500"}},6},{{{put,put},{http_error,"503"}},104}]
+2015-06-26 11:15:34.632 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},150},{{put,put},62},{{{get,get},{http_error,"503"}},150},{{{put,put},{http_error,"503"}},62}]
+2015-06-26 11:15:44.731 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},317},{{put,put},83},{{{get,get},{http_error,"503"}},317},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},82}]
+2015-06-26 11:15:54.650 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},227},{{put,put},75},{{{get,get},{http_error,"503"}},227},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},70},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:16:04.636 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},242},{{put,put},67},{{{get,get},{http_error,"503"}},242},{{{put,put},{http_error,"503"}},67}]
+2015-06-26 11:16:14.567 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},31},{{put,put},10},{{{get,get},{http_error,"503"}},31},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},9}]
+2015-06-26 11:16:24.666 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},303},{{put,put},81},{{{get,get},{http_error,"503"}},303},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},79},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:16:34.644 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},284},{{put,put},82},{{{get,get},{http_error,"503"}},284},{{{put,put},{http_error,"500"}},3},{{{put,put},{http_error,"503"}},79}]
+2015-06-26 11:16:44.612 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},97},{{put,put},30},{{{get,get},{http_error,"503"}},97},{{{put,put},{http_error,"503"}},30}]
+2015-06-26 11:16:54.700 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},234},{{put,put},60},{{{get,get},{http_error,"503"}},234},{{{put,put},{http_error,"503"}},60}]
+2015-06-26 11:17:04.573 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},37},{{put,put},12},{{{get,get},{http_error,"503"}},37},{{{put,put},{http_error,"503"}},12}]
+2015-06-26 11:17:14.670 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},319},{{put,put},118},{{{get,get},{http_error,"503"}},319},{{{put,put},{http_error,"500"}},7},{{{put,put},{http_error,"503"}},111}]
+2015-06-26 11:17:24.592 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},116},{{put,put},29},{{{get,get},{http_error,"503"}},116},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},28}]
+2015-06-26 11:17:34.625 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},146},{{put,put},36},{{{get,get},{http_error,"503"}},146},{{{put,put},{http_error,"503"}},36}]
+2015-06-26 11:17:44.709 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},312},{{put,put},91},{{{get,get},{http_error,"503"}},312},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},87},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:17:54.709 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},344},{{put,put},107},{{{get,get},{http_error,"503"}},344},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},106}]
+2015-06-26 11:18:04.721 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},326},{{put,put},114},{{{get,get},{http_error,"503"}},326},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},113}]
+2015-06-26 11:18:14.771 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},259},{{put,put},96},{{{get,get},{http_error,"503"}},259},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},93},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:18:24.640 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},298},{{put,put},68},{{{get,get},{http_error,"503"}},298},{{{put,put},{http_error,"500"}},5},{{{put,put},{http_error,"503"}},62},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:18:34.632 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},192},{{put,put},50},{{{get,get},{http_error,"503"}},192},{{{put,put},{http_error,"503"}},50}]
+2015-06-26 11:18:44.664 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},331},{{put,put},115},{{{get,get},{http_error,"503"}},331},{{{put,put},{http_error,"500"}},3},{{{put,put},{http_error,"503"}},111},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:18:54.642 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},186},{{put,put},52},{{{get,get},{http_error,"503"}},186},{{{put,put},{http_error,"503"}},52}]
+2015-06-26 11:19:04.728 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},403},{{put,put},147},{{{get,get},{http_error,"503"}},403},{{{put,put},{http_error,"500"}},4},{{{put,put},{http_error,"503"}},143}]
+2015-06-26 11:19:14.672 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},351},{{put,put},108},{{{get,get},{http_error,"503"}},351},{{{put,put},{http_error,"500"}},7},{{{put,put},{http_error,"503"}},101}]
+2015-06-26 11:19:24.656 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},320},{{put,put},111},{{{get,get},{http_error,"503"}},320},{{{put,put},{http_error,"500"}},7},{{{put,put},{http_error,"503"}},104}]
+2015-06-26 11:19:34.664 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},340},{{put,put},113},{{{get,get},{http_error,"503"}},340},{{{put,put},{http_error,"500"}},6},{{{put,put},{http_error,"503"}},105},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:19:44.710 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},331},{{put,put},84},{{{get,get},{http_error,"503"}},331},{{{put,put},{http_error,"503"}},82},{{{put,put},{put,timeout}},2}]
+2015-06-26 11:19:54.670 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},265},{{put,put},76},{{{get,get},{http_error,"503"}},265},{{{put,put},{http_error,"503"}},75},{{{put,put},{put,timeout}},1}]
+2015-06-26 11:20:04.609 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},91},{{put,put},18},{{{get,get},{http_error,"503"}},91},{{{put,put},{http_error,"503"}},18}]
+2015-06-26 11:20:14.707 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},266},{{put,put},75},{{{get,get},{http_error,"503"}},266},{{{put,put},{http_error,"503"}},75}]
+2015-06-26 11:20:24.655 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},164},{{put,put},43},{{{get,get},{http_error,"503"}},164},{{{put,put},{http_error,"503"}},43}]
+2015-06-26 11:20:34.733 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},325},{{put,put},92},{{{get,get},{http_error,"503"}},325},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},91}]
+2015-06-26 11:20:44.735 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},344},{{put,put},55},{{{get,get},{http_error,"503"}},344},{{{put,put},{http_error,"503"}},55}]
+2015-06-26 11:20:54.744 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},314},{{put,put},96},{{{get,get},{http_error,"503"}},314},{{{put,put},{http_error,"503"}},96}]
+2015-06-26 11:21:04.764 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},312},{{put,put},84},{{{get,get},{http_error,"503"}},312},{{{put,put},{http_error,"503"}},84}]
+2015-06-26 11:21:14.758 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},273},{{put,put},81},{{{get,get},{http_error,"503"}},273},{{{put,put},{http_error,"503"}},81}]
+2015-06-26 11:21:24.721 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},291},{{put,put},78},{{{get,get},{http_error,"503"}},291},{{{put,put},{http_error,"503"}},78}]
+2015-06-26 11:21:34.736 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},300},{{put,put},71},{{{get,get},{http_error,"503"}},300},{{{put,put},{http_error,"503"}},71}]
+2015-06-26 11:21:44.742 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},277},{{put,put},85},{{{get,get},{get,connection_closing}},1},{{{get,get},{http_error,"503"}},276},{{{put,put},{http_error,"503"}},85}]
+2015-06-26 11:21:54.644 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},242},{{put,put},54},{{{get,get},{http_error,"503"}},242},{{{put,put},{http_error,"503"}},54}]
+2015-06-26 11:22:04.629 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},232},{{put,put},61},{{{get,get},{http_error,"503"}},232},{{{put,put},{http_error,"503"}},61}]
+2015-06-26 11:22:14.602 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{http_error,"503"}},1}]
+2015-06-26 11:22:54.765 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},112},{{put,put},39},{{{get,get},{http_error,"503"}},112},{{{put,put},{http_error,"503"}},39}]
+2015-06-26 11:23:04.745 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},161},{{put,put},56},{{{get,get},{http_error,"503"}},161},{{{put,put},{http_error,"503"}},56}]
+2015-06-26 11:23:14.733 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},205},{{put,put},47},{{{get,get},{http_error,"503"}},205},{{{put,put},{http_error,"503"}},47}]
+2015-06-26 11:23:24.735 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},296},{{put,put},86},{{{get,get},{http_error,"503"}},296},{{{put,put},{http_error,"503"}},86}]
+2015-06-26 11:23:34.741 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},295},{{put,put},83},{{{get,get},{http_error,"503"}},295},{{{put,put},{http_error,"503"}},83}]
+2015-06-26 11:23:44.687 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},258},{{put,put},77},{{{get,get},{http_error,"503"}},258},{{{put,put},{http_error,"503"}},77}]
+2015-06-26 11:23:54.732 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},290},{{put,put},81},{{{get,get},{http_error,"503"}},290},{{{put,put},{http_error,"503"}},81}]
+2015-06-26 11:24:04.698 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},228},{{put,put},70},{{{get,get},{http_error,"503"}},228},{{{put,put},{http_error,"503"}},70}]
+2015-06-26 11:24:14.704 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},257},{{put,put},57},{{{get,get},{http_error,"503"}},257},{{{put,put},{http_error,"503"}},57}]
+2015-06-26 11:24:24.679 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},204},{{put,put},64},{{{get,get},{http_error,"503"}},204},{{{put,put},{http_error,"503"}},64}]
+2015-06-26 11:24:34.659 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},163},{{put,put},47},{{{get,get},{http_error,"503"}},163},{{{put,put},{http_error,"503"}},47}]
+2015-06-26 11:24:44.694 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},150},{{put,put},39},{{{get,get},{http_error,"503"}},150},{{{put,put},{http_error,"503"}},39}]
+2015-06-26 11:24:54.730 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},49},{{put,put},22},{{{get,get},{http_error,"503"}},49},{{{put,put},{http_error,"503"}},22}]
+2015-06-26 11:25:24.646 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},111},{{put,put},25},{{{get,get},{http_error,"503"}},111},{{{put,put},{http_error,"503"}},25}]
+2015-06-26 11:25:34.620 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{put,put},5},{{{get,get},{http_error,"503"}},22},{{{put,put},{http_error,"503"}},5}]
+2015-06-26 11:25:54.747 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},59},{{put,put},15},{{{get,get},{http_error,"503"}},59},{{{put,put},{http_error,"503"}},15}]
+2015-06-26 11:26:04.718 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},34},{{put,put},16},{{{get,get},{http_error,"503"}},34},{{{put,put},{http_error,"503"}},16}]
+2015-06-26 11:26:14.742 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{get,connection_closing}},1}]
+2015-06-26 11:26:44.656 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{put,put},10},{{{get,get},{http_error,"503"}},26},{{{put,put},{http_error,"503"}},10}]
+2015-06-26 11:27:14.748 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},25},{{put,put},7},{{{get,get},{http_error,"503"}},25},{{{put,put},{http_error,"503"}},7}]
+2015-06-26 11:27:24.761 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{put,put},2},{{{get,get},{http_error,"503"}},8},{{{put,put},{http_error,"503"}},2}]
+2015-06-26 11:27:34.697 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},141},{{put,put},33},{{{get,get},{http_error,"503"}},141},{{{put,put},{http_error,"503"}},33}]
+2015-06-26 11:27:54.690 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},30},{{put,put},8},{{{get,get},{http_error,"503"}},30},{{{put,put},{http_error,"503"}},8}]
+2015-06-26 11:28:34.697 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},70},{{put,put},15},{{{get,get},{http_error,"503"}},70},{{{put,put},{http_error,"503"}},15}]
+2015-06-26 11:28:44.684 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},72},{{put,put},21},{{{get,get},{http_error,"503"}},72},{{{put,put},{http_error,"503"}},21}]
+2015-06-26 11:29:34.623 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},85},{{put,put},19},{{{get,get},{http_error,"503"}},85},{{{put,put},{http_error,"503"}},19}]
+2015-06-26 11:29:44.719 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},49},{{put,put},17},{{{get,get},{http_error,"503"}},49},{{{put,put},{http_error,"503"}},17}]
+2015-06-26 11:29:54.696 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},62},{{put,put},16},{{{get,get},{http_error,"503"}},62},{{{put,put},{http_error,"503"}},16}]
+2015-06-26 11:30:04.674 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},58},{{put,put},25},{{{get,get},{get,connection_closing}},1},{{{get,get},{http_error,"503"}},57},{{{put,put},{http_error,"503"}},25}]
+2015-06-26 11:30:14.701 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{put,put},7},{{{get,get},{http_error,"503"}},26},{{{put,put},{http_error,"503"}},7}]
+2015-06-26 11:30:54.606 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{put,put},3},{{{get,get},{http_error,"503"}},12},{{{put,put},{http_error,"503"}},3}]
+2015-06-26 11:31:04.715 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{put,put},2},{{{get,get},{http_error,"503"}},20},{{{put,put},{http_error,"503"}},2}]
+2015-06-26 11:31:34.740 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},76},{{put,put},14},{{{get,get},{http_error,"503"}},76},{{{put,put},{http_error,"503"}},14}]
+2015-06-26 11:31:44.756 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},126},{{put,put},41},{{{get,get},{http_error,"503"}},126},{{{put,put},{http_error,"503"}},41}]
+2015-06-26 11:31:54.705 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},52},{{put,put},15},{{{get,get},{http_error,"503"}},52},{{{put,put},{http_error,"503"}},15}]
+2015-06-26 11:32:04.746 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},88},{{put,put},28},{{{get,get},{http_error,"503"}},88},{{{put,put},{http_error,"503"}},28}]
+2015-06-26 11:32:14.698 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},43},{{put,put},8},{{{get,get},{http_error,"503"}},43},{{{put,put},{http_error,"503"}},8}]
+2015-06-26 11:32:54.654 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},42},{{put,put},10},{{{get,get},{http_error,"503"}},42},{{{put,put},{http_error,"503"}},10}]
+2015-06-26 11:33:34.654 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},86},{{put,put},22},{{{get,get},{http_error,"503"}},86},{{{put,put},{http_error,"503"}},22}]
+2015-06-26 11:33:44.671 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},65},{{put,put},17},{{{get,get},{http_error,"503"}},65},{{{put,put},{http_error,"503"}},17}]
+2015-06-26 11:33:54.657 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{put,put},6},{{{get,get},{http_error,"503"}},16},{{{put,put},{http_error,"503"}},6}]
+2015-06-26 11:34:04.744 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{put,put},3},{{{get,get},{http_error,"503"}},18},{{{put,put},{http_error,"503"}},3}]
+2015-06-26 11:34:34.648 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},75},{{put,put},24},{{{get,get},{http_error,"503"}},75},{{{put,put},{http_error,"503"}},24}]
+2015-06-26 11:35:24.742 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},67},{{put,put},21},{{{get,get},{http_error,"503"}},67},{{{put,put},{http_error,"503"}},21}]
+2015-06-26 11:35:34.684 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{put,put},7},{{{get,get},{http_error,"503"}},26},{{{put,put},{http_error,"503"}},7}]
+2015-06-26 11:35:44.629 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},102},{{put,put},28},{{{get,get},{http_error,"503"}},102},{{{put,put},{http_error,"503"}},28}]
+2015-06-26 11:35:54.781 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},48},{{put,put},15},{{{get,get},{http_error,"503"}},48},{{{put,put},{http_error,"503"}},15}]
+2015-06-26 11:36:04.700 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},58},{{put,put},18},{{{get,get},{http_error,"503"}},58},{{{put,put},{http_error,"503"}},18}]
+2015-06-26 11:36:14.808 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},76},{{put,put},19},{{{get,get},{http_error,"503"}},76},{{{put,put},{http_error,"503"}},19}]
+2015-06-26 11:36:24.750 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},1},{{{get,get},{http_error,"503"}},1}]
+2015-06-26 11:36:54.656 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},46},{{put,put},8},{{{get,get},{http_error,"503"}},46},{{{put,put},{http_error,"503"}},8}]
+2015-06-26 12:04:04.745 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},37},{{put,put},20},{{{get,get},{http_error,"503"}},37},{{{put,put},{http_error,"503"}},20}]
+2015-06-26 12:04:14.755 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},203},{{put,put},81},{{{get,get},{http_error,"503"}},203},{{{put,put},{http_error,"503"}},81}]
+2015-06-26 12:04:24.729 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},186},{{put,put},97},{{{get,get},{http_error,"503"}},186},{{{put,put},{http_error,"503"}},97}]
+2015-06-26 12:04:34.731 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},236},{{put,put},80},{{{get,get},{http_error,"503"}},236},{{{put,put},{http_error,"503"}},80}]
+2015-06-26 12:04:44.742 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},202},{{put,put},78},{{{get,get},{http_error,"503"}},202},{{{put,put},{http_error,"503"}},78}]
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},27},{{put,put},11},{{{get,get},{http_error,"503"}},27},{{{put,put},{http_error,"503"}},11}]
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:report_total_errors:360 Total Errors:
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},{get,connection_closing}}: 7
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},{http_error,"500"}}: 1
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},{http_error,"503"}}: 134614
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{put,put},{http_error,"500"}}: 1705
+2015-06-26 12:04:45.723 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{put,put},{http_error,"503"}}: 31156
+2015-06-26 12:04:45.724 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{put,put},{put,timeout}}: 132
+2015-06-26 12:04:45.734 [info] <0.2.0>@basho_bench:wait_for_stop:204 Test completed after 120 mins.

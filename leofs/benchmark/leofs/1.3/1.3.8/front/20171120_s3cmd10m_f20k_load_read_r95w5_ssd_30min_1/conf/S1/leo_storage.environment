@@ -1,0 +1,25 @@
+# Directories used by launch script can be re-defined here, if needed
+# Default values will be picked for commented or empty parameters
+
+# Directory with main .conf file. It must be writable by $RUNNER_USER
+# RUNNER_ETC_DIR=
+
+# Directory for .schema file.
+# RUNNER_SCHEMA_DIR=
+
+# Directory for erlang log files (erlang.log.* and run_erl.log)
+# RUNNER_LOG_DIR=
+
+# Defaults to "leofs"
+RUNNER_USER=
+
+# Defaults to 65535
+# MAX_OPEN_FILES=
+
+# Defaults to "0" when launched under systemd or heart is active, which means
+# that no dumps are created before restart. Uncomment line below to set it to
+# "-1" and create dumps on every crash if leo_(manager|storage|gateway) is
+# restarted frequently in order to dig down further for identifying the root
+# cause. "-1" means that runtime system won't be rebooted until the crash dump
+# file is completely written.
+# ERL_CRASH_DUMP_SECONDS=-1

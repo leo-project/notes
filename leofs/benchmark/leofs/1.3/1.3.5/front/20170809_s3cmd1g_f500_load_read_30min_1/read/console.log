@@ -1,0 +1,166 @@
+2017-08-09 16:23:34.514 [debug] <0.54.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench_wilson/tests/20170809_162334/error.log"} into lager_event
+2017-08-09 16:23:34.514 [debug] <0.56.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench_wilson/tests/20170809_162334/console.log"} into lager_event
+2017-08-09 16:23:34.514 [debug] <0.58.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2017-08-09 16:23:34.566 [debug] <0.41.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.60.0>
+2017-08-09 16:23:34.566 [debug] <0.40.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.61.0>
+2017-08-09 16:23:34.566 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.62.0>
+2017-08-09 16:23:34.566 [debug] <0.42.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.63.0>
+2017-08-09 16:23:34.983 [debug] <0.50.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2017-08-09 16:23:35.500 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-08-09 16:23:35.501 [notice] <0.47.0>@lager_file_backend:128 Changed loglevel of /home/wilson/basho_bench_wilson/tests/20170809_162334/console.log to debug
+2017-08-09 16:23:35.514 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 48.83 KB
+2017-08-09 16:23:35.589 [debug] <0.72.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.73.0>
+2017-08-09 16:23:35.589 [debug] <0.72.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.74.0>
+2017-08-09 16:23:35.590 [debug] <0.71.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.72.0>
+2017-08-09 16:23:35.603 [debug] <0.71.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.75.0>
+2017-08-09 16:23:35.603 [info] <0.7.0> Application sasl started on node nonode@nohost
+2017-08-09 16:23:35.622 [info] <0.7.0> Application crypto started on node nonode@nohost
+2017-08-09 16:23:35.696 [debug] <0.87.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.88.0>
+2017-08-09 16:23:35.701 [debug] <0.87.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.89.0>
+2017-08-09 16:23:35.707 [debug] <0.87.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.90.0>
+2017-08-09 16:23:35.707 [info] <0.7.0> Application folsom started on node nonode@nohost
+2017-08-09 16:23:35.748 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.83.0>
+2017-08-09 16:23:35.756 [debug] <0.92.0>@basho_bench_valgen:init_source:102 random source
+2017-08-09 16:23:35.967 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.92.0>
+2017-08-09 16:23:35.967 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.95.0>
+2017-08-09 16:23:35.967 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.97.0>
+2017-08-09 16:23:35.968 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.99.0>
+2017-08-09 16:23:35.968 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.101.0>
+2017-08-09 16:23:35.969 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.103.0>
+2017-08-09 16:23:35.969 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.105.0>
+2017-08-09 16:23:35.970 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.107.0>
+2017-08-09 16:23:35.971 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.109.0>
+2017-08-09 16:23:35.972 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.111.0>
+2017-08-09 16:23:35.972 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.113.0>
+2017-08-09 16:23:35.973 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.115.0>
+2017-08-09 16:23:35.974 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.117.0>
+2017-08-09 16:23:35.974 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.119.0>
+2017-08-09 16:23:35.975 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.121.0>
+2017-08-09 16:23:35.976 [debug] <0.81.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.123.0>
+2017-08-09 16:23:35.976 [debug] <0.26.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.125.0>
+2017-08-09 16:23:35.984 [info] <0.122.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.122.0> on nonode@nohost
+2017-08-09 16:23:35.984 [info] <0.124.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.124.0> on nonode@nohost
+2017-08-09 16:23:35.984 [info] <0.120.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.120.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.114.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.114.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.118.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.118.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.116.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.116.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.112.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.112.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.110.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.110.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.108.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.108.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.106.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.106.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.104.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.104.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.102.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.102.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.100.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.100.0> on nonode@nohost
+2017-08-09 16:23:35.985 [info] <0.98.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.98.0> on nonode@nohost
+2017-08-09 16:23:35.986 [info] <0.96.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.96.0> on nonode@nohost
+2017-08-09 16:23:35.986 [info] <0.93.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.93.0> on nonode@nohost
+2017-08-09 16:23:35.986 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2017-08-09 16:23:45.983 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:23:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:24:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:24:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:24:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:24:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:24:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:25:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:25:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:25:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:25:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:26:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:26:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:26:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:26:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:27:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:27:25.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:27:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:27:45.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:28:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:28:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:28:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:28:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:29:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:29:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:30:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:30:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:30:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:30:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:31:05.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:31:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:32:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:32:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:32:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:32:55.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:33:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:33:25.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:33:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:33:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:34:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:34:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:34:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:34:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:35:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:35:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:35:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:36:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:36:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:37:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:37:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:37:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:37:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:37:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:38:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:38:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:39:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:39:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:39:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:39:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:40:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:40:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:40:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:41:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:41:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:41:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:42:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:43:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:43:15.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:43:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:43:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:43:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:44:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:44:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:44:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:44:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:45:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:45:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:45:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:46:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:46:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:46:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:46:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:47:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:47:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:47:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:48:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:48:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:48:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:48:55.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:49:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:49:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:49:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:50:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:50:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:50:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:50:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:50:55.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:51:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:51:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:51:35.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:51:45.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:51:55.971 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:52:15.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:53:05.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:53:25.972 [warning] <0.83.0>@basho_bench_stats:report_latency:345 No data for op: {get,get}
+2017-08-09 16:53:36.987 [info] <0.83.0>@basho_bench_stats:report_total_errors:357 No Errors.
+2017-08-09 16:53:36.989 [info] <0.2.0>@basho_bench:wait_for_stop:204 Test completed after 30 mins.

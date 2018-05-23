@@ -1,0 +1,73 @@
+LeoFS: 1.2.16
+Erlang: 17.5
+Method: s3cmd
+Server: Dell R610
+CPU: Intel Xeon X5650/2.67GHz/12M Cache x 2 (All servers)
+Memory: 96GB (All servers)
+Cluster: Manager x 1, Gateway x 1, Storage x 5
+Directory: /test/ls_xx
+
+* CASE-1
+$ ./leofs-ls-bench.sh -c 1 -d test/ls_ -k s3cmd -num-of-sub-dirs 50
+[Parametes]
+  * concurrency: 1
+  * target dir: test/ls_
+  * number of sub directories: 50
+  * client: s3cmd
+
+[Result]
+real 62.03
+user 24.05
+sys 1.07
+
+* CASE-2
+$ ./leofs-ls-bench.sh -c 10 -d test/ls_ -k s3cmd -num-of-sub-dirs 50
+[Parametes]
+  * concurrency: 10
+  * target dir: test/ls_
+  * number of sub directories: 50
+  * client: s3cmd
+
+[Result]
+real 84.95
+user 275.23
+sys 11.39
+
+* CASE-3
+$ ./leofs-ls-bench.sh -c 25 -d test/ls_ -k s3cmd -num-of-sub-dirs 50
+[Parametes]
+  * concurrency: 25
+  * target dir: test/ls_
+  * number of sub directories: 50
+  * client: s3cmd
+
+[Result]
+real 123.43
+user 864.93
+sys 33.23
+
+* CASE-4
+$ ./leofs-ls-bench.sh -c 50 -d test/ls_ -k s3cmd -num-of-sub-dirs 50
+[Parametes]
+  * concurrency: 50
+  * target dir: test/ls_
+  * number of sub directories: 50
+  * client: s3cmd
+
+[Result]
+real 182.24
+user 1715.62
+sys 68.21
+
+* CASE-5
+$ ./leofs-ls-bench.sh -c 100 -d test/ls_ -k s3cmd -num-of-sub-dirs 50
+[Parametes]
+  * concurrency: 100
+  * target dir: test/ls_
+  * number of sub directories: 50
+  * client: s3cmd
+
+[Result]
+real 300.76
+user 3388.35
+sys 138.39

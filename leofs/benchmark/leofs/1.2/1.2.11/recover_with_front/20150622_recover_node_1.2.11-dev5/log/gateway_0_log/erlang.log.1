@@ -1,0 +1,688 @@
+
+=====
+===== LOGGING STARTED Mon Jun 22 20:38:15 JST 2015
+=====
+Exec: /usr/local/leofs/1.2.11/leo_gateway/erts-6.4/bin/erlexec -boot /usr/local/leofs/1.2.11/leo_gateway/releases/1/leo_gateway -mode embedded -config /usr/local/leofs/1.2.11/leo_gateway/etc/app.config -args_file /usr/local/leofs/1.2.11/leo_gateway/etc/vm.args -- console
+Root: /usr/local/leofs/1.2.11/leo_gateway
+Erlang/OTP 17 [erts-6.4] [source] [64-bit halfword] [smp:24:24] [async-threads:32] [kernel-poll:true]
+
+
+=ERROR REPORT==== 22-Jun-2015::20:38:18 ===
+{module,"leo_logger_client_message"},{function,"append/3"},{line,179},{body,
+                                                                       {badarg,
+                                                                        [{ets,
+                                                                          lookup,
+                                                                          [leo_logger_group,
+                                                                           log_group_message_info],
+                                                                          []},
+                                                                         {leo_logger_client_message,
+                                                                          append,
+                                                                          3,
+                                                                          [{file,
+                                                                            "src/leo_logger_client_message.erl"},
+                                                                           {line,
+                                                                            174}]},
+                                                                         {leo_logger_error_logger_h,
+                                                                          handle_event,
+                                                                          2,
+                                                                          [{file,
+                                                                            "src/leo_logger_error_logger_h.erl"},
+                                                                           {line,
+                                                                            129}]},
+                                                                         {gen_event,
+                                                                          server_update,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            525}]},
+                                                                         {gen_event,
+                                                                          server_notify,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            507}]},
+                                                                         {gen_event,
+                                                                          handle_msg,
+                                                                          5,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            248}]},
+                                                                         {proc_lib,
+                                                                          init_p_do_apply,
+                                                                          3,
+                                                                          [{file,
+                                                                            "proc_lib.erl"},
+                                                                           {line,
+                                                                            237}]}]}}
+
+=ERROR REPORT==== 22-Jun-2015::20:38:18 ===
+{module,"leo_logger_client_message"},{function,"append/3"},{line,179},{body,
+                                                                       {badarg,
+                                                                        [{ets,
+                                                                          lookup,
+                                                                          [leo_logger_group,
+                                                                           log_group_message_error],
+                                                                          []},
+                                                                         {leo_logger_client_message,
+                                                                          append,
+                                                                          3,
+                                                                          [{file,
+                                                                            "src/leo_logger_client_message.erl"},
+                                                                           {line,
+                                                                            174}]},
+                                                                         {leo_logger_error_logger_h,
+                                                                          handle_event,
+                                                                          2,
+                                                                          [{file,
+                                                                            "src/leo_logger_error_logger_h.erl"},
+                                                                           {line,
+                                                                            85}]},
+                                                                         {gen_event,
+                                                                          server_update,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            525}]},
+                                                                         {gen_event,
+                                                                          server_notify,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            507}]},
+                                                                         {gen_event,
+                                                                          handle_msg,
+                                                                          5,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            248}]},
+                                                                         {proc_lib,
+                                                                          init_p_do_apply,
+                                                                          3,
+                                                                          [{file,
+                                                                            "proc_lib.erl"},
+                                                                           {line,
+                                                                            237}]}]}}
+
+=ERROR REPORT==== 22-Jun-2015::20:38:18 ===
+{module,"leo_logger_client_message"},{function,"append/3"},{line,179},{body,
+                                                                       {badarg,
+                                                                        [{ets,
+                                                                          lookup,
+                                                                          [leo_logger_group,
+                                                                           log_group_message_error],
+                                                                          []},
+                                                                         {leo_logger_client_message,
+                                                                          append,
+                                                                          3,
+                                                                          [{file,
+                                                                            "src/leo_logger_client_message.erl"},
+                                                                           {line,
+                                                                            174}]},
+                                                                         {leo_logger_error_logger_h,
+                                                                          handle_event,
+                                                                          2,
+                                                                          [{file,
+                                                                            "src/leo_logger_error_logger_h.erl"},
+                                                                           {line,
+                                                                            85}]},
+                                                                         {gen_event,
+                                                                          server_update,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            525}]},
+                                                                         {gen_event,
+                                                                          server_notify,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            507}]},
+                                                                         {gen_event,
+                                                                          handle_msg,
+                                                                          5,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            248}]},
+                                                                         {proc_lib,
+                                                                          init_p_do_apply,
+                                                                          3,
+                                                                          [{file,
+                                                                            "proc_lib.erl"},
+                                                                           {line,
+                                                                            237}]}]}}
+
+=ERROR REPORT==== 22-Jun-2015::20:38:18 ===
+{module,"leo_logger_client_message"},{function,"append/3"},{line,179},{body,
+                                                                       {badarg,
+                                                                        [{ets,
+                                                                          lookup,
+                                                                          [leo_logger_group,
+                                                                           log_group_message_error],
+                                                                          []},
+                                                                         {leo_logger_client_message,
+                                                                          append,
+                                                                          3,
+                                                                          [{file,
+                                                                            "src/leo_logger_client_message.erl"},
+                                                                           {line,
+                                                                            174}]},
+                                                                         {leo_logger_error_logger_h,
+                                                                          handle_event,
+                                                                          2,
+                                                                          [{file,
+                                                                            "src/leo_logger_error_logger_h.erl"},
+                                                                           {line,
+                                                                            85}]},
+                                                                         {gen_event,
+                                                                          server_update,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            525}]},
+                                                                         {gen_event,
+                                                                          server_notify,
+                                                                          4,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            507}]},
+                                                                         {gen_event,
+                                                                          handle_msg,
+                                                                          5,
+                                                                          [{file,
+                                                                            "gen_event.erl"},
+                                                                           {line,
+                                                                            248}]},
+                                                                         {proc_lib,
+                                                                          init_p_do_apply,
+                                                                          3,
+                                                                          [{file,
+                                                                            "proc_lib.erl"},
+                                                                           {line,
+                                                                            237}]}]}}
+id:leo_logger_file_i, path:"/usr/local/leofs/1.2.11/leo_gateway/log/app", filename:"info"
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.20.1
+id:leo_logger_file_e, path:"/usr/local/leofs/1.2.11/leo_gateway/log/app", filename:"error"
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.20.1
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554000920
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f25540035b0
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554006240
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554008ed0
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f255400bb60
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f255400e7f0
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554011480
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554014110
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554016da0
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554019a30
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f255401c6c0
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f255401f350
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554021fe0
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554024c70
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f2554027900
+slab class   1: chunk size       264 perslab   31775
+slab class   2: chunk size       528 perslab   15887
+slab class   3: chunk size      1056 perslab    7943
+slab class   4: chunk size      2112 perslab    3971
+slab class   5: chunk size      4224 perslab    1985
+slab class   6: chunk size      8448 perslab     992
+slab class   7: chunk size     16896 perslab     496
+slab class   8: chunk size     33792 perslab     248
+slab class   9: chunk size     67584 perslab     124
+slab class  10: chunk size    135168 perslab      62
+slab class  11: chunk size    270336 perslab      31
+slab class  12: chunk size    540672 perslab      15
+slab class  13: chunk size   1081344 perslab       7
+slab class  14: chunk size   2162688 perslab       3
+slab class  15: chunk size   8388608 perslab       1
+ps:0x7f255402a590
+* bitcask - path:/usr/local/leofs/1.2.11/leo_gateway/work/queue/membership/message, handle:#Ref<0.0.0.1613>
+Eshell V6.4  (abort with ^G)
+(leofs13@192.168.100.13)1> 
+===== ALIVE Mon Jun 22 20:53:21 JST 2015
+
+===== Mon Jun 22 21:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.20.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.20.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.21.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.21.1
+
+===== ALIVE Mon Jun 22 21:15:18 JST 2015
+
+===== ALIVE Mon Jun 22 21:30:18 JST 2015
+
+===== ALIVE Mon Jun 22 21:45:18 JST 2015
+
+===== Mon Jun 22 22:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.21.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.22.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.21.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.22.1
+
+===== ALIVE Mon Jun 22 22:15:18 JST 2015
+
+===== ALIVE Mon Jun 22 22:30:18 JST 2015
+
+===== ALIVE Mon Jun 22 22:45:18 JST 2015
+
+===== Mon Jun 22 23:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.22.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.23.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.22.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.23.1
+
+===== ALIVE Mon Jun 22 23:15:18 JST 2015
+
+===== ALIVE Mon Jun 22 23:30:18 JST 2015
+
+===== ALIVE Mon Jun 22 23:45:18 JST 2015
+
+===== Tue Jun 23 00:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150622.23.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150622.23.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.00.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.00.1
+
+===== ALIVE Tue Jun 23 00:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 00:30:18 JST 2015
+
+===== ALIVE Tue Jun 23 00:45:18 JST 2015
+
+===== Tue Jun 23 01:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.00.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.01.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.00.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.01.1
+
+===== ALIVE Tue Jun 23 01:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 01:30:18 JST 2015
+
+===== ALIVE Tue Jun 23 01:45:18 JST 2015
+
+===== Tue Jun 23 02:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.01.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.01.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.02.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.02.1
+
+===== ALIVE Tue Jun 23 02:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 02:30:18 JST 2015
+
+===== ALIVE Tue Jun 23 02:45:18 JST 2015
+
+===== Tue Jun 23 03:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.02.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.02.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.03.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.03.1
+
+===== ALIVE Tue Jun 23 03:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 03:30:18 JST 2015
+
+===== ALIVE Tue Jun 23 03:45:18 JST 2015
+
+===== Tue Jun 23 04:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.03.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.04.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.03.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.04.1
+
+===== ALIVE Tue Jun 23 04:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 04:30:18 JST 2015
+
+===== ALIVE Tue Jun 23 04:45:19 JST 2015
+
+===== Tue Jun 23 05:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.04.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.05.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.04.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.05.1
+
+===== ALIVE Tue Jun 23 05:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 05:30:18 JST 2015
+
+===== ALIVE Tue Jun 23 05:45:19 JST 2015
+
+===== Tue Jun 23 06:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.05.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.06.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.05.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.06.1
+
+===== ALIVE Tue Jun 23 06:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 06:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 06:45:19 JST 2015
+
+===== Tue Jun 23 07:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.06.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.07.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.06.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.07.1
+
+===== ALIVE Tue Jun 23 07:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 07:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 07:45:19 JST 2015
+
+===== Tue Jun 23 08:00:18 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.07.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.08.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.07.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.08.1
+
+===== ALIVE Tue Jun 23 08:15:18 JST 2015
+
+===== ALIVE Tue Jun 23 08:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 08:45:19 JST 2015
+
+===== Tue Jun 23 09:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.08.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.09.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.08.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.09.1
+
+===== ALIVE Tue Jun 23 09:15:19 JST 2015
+
+===== ALIVE Tue Jun 23 09:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 09:45:19 JST 2015
+
+===== Tue Jun 23 10:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.09.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.09.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.10.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.10.1
+
+===== ALIVE Tue Jun 23 10:15:19 JST 2015
+
+===== ALIVE Tue Jun 23 10:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 10:45:19 JST 2015
+
+===== Tue Jun 23 11:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.10.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.10.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.11.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.11.1
+
+===== ALIVE Tue Jun 23 11:15:19 JST 2015
+
+===== ALIVE Tue Jun 23 11:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 11:45:19 JST 2015
+
+===== Tue Jun 23 12:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.11.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.11.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.12.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.12.1
+
+===== ALIVE Tue Jun 23 12:15:19 JST 2015
+
+===== ALIVE Tue Jun 23 12:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 12:45:19 JST 2015
+
+===== Tue Jun 23 13:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.12.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.12.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.13.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.13.1
+
+===== ALIVE Tue Jun 23 13:15:19 JST 2015
+
+===== ALIVE Tue Jun 23 13:30:19 JST 2015
+
+===== ALIVE Tue Jun 23 13:45:19 JST 2015
+
+===== Tue Jun 23 14:00:19 JST 2015
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.13.1
+* closing log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.13.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/error.20150623.14.1
+* opening log file is /usr/local/leofs/1.2.11/leo_gateway/log/app/info.20150623.14.1
+
+===== ALIVE Tue Jun 23 14:15:19 JST 2015

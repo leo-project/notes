@@ -1,0 +1,89 @@
+2014-03-04 12:00:28.084 [debug] <0.50.0> Lager installed handler {lager_file_backend,"/home/leofs/dev/basho_bench/tests/20140304_120027/console.log"} into lager_event
+2014-03-04 12:00:28.087 [debug] <0.52.0> Lager installed handler error_logger_lager_h into error_logger
+2014-03-04 12:00:28.087 [info] <0.7.0> Application lager started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 12:00:28.096 [info] <0.2.0>@basho_bench:log_dimensions:249 Est. data size: 625.00 MB
+2014-03-04 12:00:28.153 [debug] <0.60.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.61.0>
+2014-03-04 12:00:28.154 [debug] <0.60.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.62.0>
+2014-03-04 12:00:28.155 [debug] <0.59.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.60.0>
+2014-03-04 12:00:28.155 [debug] <0.59.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.63.0>
+2014-03-04 12:00:28.156 [info] <0.7.0> Application sasl started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 12:00:28.213 [debug] <0.68.0> Supervisor crypto_sup started crypto_server:start_link() at pid <0.69.0>
+2014-03-04 12:00:28.214 [info] <0.7.0> Application crypto started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 12:00:28.248 [debug] <0.78.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.79.0>
+2014-03-04 12:00:28.251 [debug] <0.78.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.80.0>
+2014-03-04 12:00:28.255 [debug] <0.78.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.81.0>
+2014-03-04 12:00:28.255 [info] <0.7.0> Application folsom started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 12:00:28.293 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.74.0>
+2014-03-04 12:00:28.302 [debug] <0.84.0>@basho_bench_valgen:init_source:77 random source
+2014-03-04 12:00:28.426 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.84.0>
+2014-03-04 12:00:28.490 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.87.0>
+2014-03-04 12:00:28.553 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.89.0>
+2014-03-04 12:00:28.616 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.91.0>
+2014-03-04 12:00:28.679 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.93.0>
+2014-03-04 12:00:28.743 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.95.0>
+2014-03-04 12:00:28.806 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.97.0>
+2014-03-04 12:00:28.869 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.99.0>
+2014-03-04 12:00:28.933 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.101.0>
+2014-03-04 12:00:28.996 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.103.0>
+2014-03-04 12:00:29.059 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.105.0>
+2014-03-04 12:00:29.123 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.107.0>
+2014-03-04 12:00:29.186 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.109.0>
+2014-03-04 12:00:29.249 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.111.0>
+2014-03-04 12:00:29.313 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.113.0>
+2014-03-04 12:00:29.376 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.115.0>
+2014-03-04 12:00:29.439 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_17, 17) at pid <0.117.0>
+2014-03-04 12:00:29.502 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_18, 18) at pid <0.119.0>
+2014-03-04 12:00:29.566 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_19, 19) at pid <0.121.0>
+2014-03-04 12:00:29.629 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_20, 20) at pid <0.123.0>
+2014-03-04 12:00:29.692 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_21, 21) at pid <0.125.0>
+2014-03-04 12:00:29.755 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_22, 22) at pid <0.127.0>
+2014-03-04 12:00:29.818 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_23, 23) at pid <0.129.0>
+2014-03-04 12:00:29.882 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_24, 24) at pid <0.131.0>
+2014-03-04 12:00:29.945 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_25, 25) at pid <0.133.0>
+2014-03-04 12:00:30.008 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_26, 26) at pid <0.135.0>
+2014-03-04 12:00:30.071 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_27, 27) at pid <0.137.0>
+2014-03-04 12:00:30.135 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_28, 28) at pid <0.139.0>
+2014-03-04 12:00:30.198 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_29, 29) at pid <0.141.0>
+2014-03-04 12:00:30.257 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_30, 30) at pid <0.143.0>
+2014-03-04 12:00:30.321 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_31, 31) at pid <0.145.0>
+2014-03-04 12:00:30.384 [debug] <0.73.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_32, 32) at pid <0.147.0>
+2014-03-04 12:00:30.385 [debug] <0.31.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.149.0>
+2014-03-04 12:00:30.395 [info] <0.148.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.148.0>
+2014-03-04 12:00:30.396 [info] <0.146.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.146.0>
+2014-03-04 12:00:30.396 [info] <0.144.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.144.0>
+2014-03-04 12:00:30.396 [info] <0.142.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.142.0>
+2014-03-04 12:00:30.396 [info] <0.140.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.140.0>
+2014-03-04 12:00:30.396 [info] <0.138.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.138.0>
+2014-03-04 12:00:30.396 [info] <0.134.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.134.0>
+2014-03-04 12:00:30.396 [info] <0.136.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.136.0>
+2014-03-04 12:00:30.397 [info] <0.132.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.132.0>
+2014-03-04 12:00:30.397 [info] <0.130.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.130.0>
+2014-03-04 12:00:30.397 [info] <0.128.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.128.0>
+2014-03-04 12:00:30.397 [info] <0.126.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.126.0>
+2014-03-04 12:00:30.397 [info] <0.124.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.124.0>
+2014-03-04 12:00:30.397 [info] <0.122.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.122.0>
+2014-03-04 12:00:30.397 [info] <0.120.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.120.0>
+2014-03-04 12:00:30.397 [info] <0.118.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.118.0>
+2014-03-04 12:00:30.397 [info] <0.116.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.116.0>
+2014-03-04 12:00:30.397 [info] <0.112.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.112.0>
+2014-03-04 12:00:30.397 [info] <0.114.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.114.0>
+2014-03-04 12:00:30.397 [info] <0.110.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.110.0>
+2014-03-04 12:00:30.397 [info] <0.108.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.108.0>
+2014-03-04 12:00:30.398 [info] <0.106.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.106.0>
+2014-03-04 12:00:30.398 [info] <0.104.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.104.0>
+2014-03-04 12:00:30.398 [info] <0.102.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.102.0>
+2014-03-04 12:00:30.398 [info] <0.100.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.100.0>
+2014-03-04 12:00:30.398 [info] <0.98.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.98.0>
+2014-03-04 12:00:30.398 [info] <0.96.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.96.0>
+2014-03-04 12:00:30.398 [info] <0.94.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.94.0>
+2014-03-04 12:00:30.398 [info] <0.92.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.92.0>
+2014-03-04 12:00:30.398 [info] <0.90.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.90.0>
+2014-03-04 12:00:30.398 [info] <0.88.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.88.0>
+2014-03-04 12:00:30.398 [info] <0.86.0>@basho_bench_worker:worker_idle_loop:221 Starting max worker: <0.86.0>
+2014-03-04 12:00:30.399 [info] <0.7.0> Application basho_bench started on node 'bb@intel11.rit.rakuten.com'
+2014-03-04 12:00:50.397 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},enoent},1}]
+2014-03-04 12:01:00.391 [info] <0.74.0>@basho_bench_stats:process_stats:274 Errors:[{{get,get},1},{{{get,get},enoent},1}]
+2014-03-04 12:20:31.412 [info] <0.74.0>@basho_bench_stats:report_total_errors:321 Total Errors:
+2014-03-04 12:20:31.560 [info] <0.74.0>@basho_bench_stats:report_total_errors:327   {{get,get},enoent}: 2
+2014-03-04 12:20:31.562 [info] <0.7.0> Application basho_bench exited with reason: stopped
+2014-03-04 12:20:31.562 [info] <0.2.0>@basho_bench:wait_for_stop:200 Test completed after 20 mins.

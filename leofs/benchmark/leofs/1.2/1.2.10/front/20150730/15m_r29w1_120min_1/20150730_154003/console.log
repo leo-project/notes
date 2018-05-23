@@ -1,0 +1,1155 @@
+2015-07-30 15:40:04.041 [debug] <0.53.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/ts-takizawaj01/basho_bench/tests/20150730_154003/error.log"} into lager_event
+2015-07-30 15:40:04.041 [debug] <0.55.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/ts-takizawaj01/basho_bench/tests/20150730_154003/console.log"} into lager_event
+2015-07-30 15:40:04.041 [debug] <0.57.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2015-07-30 15:40:04.107 [debug] <0.40.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.59.0>
+2015-07-30 15:40:04.107 [debug] <0.39.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.60.0>
+2015-07-30 15:40:04.107 [debug] <0.41.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.61.0>
+2015-07-30 15:40:04.108 [debug] <0.41.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.62.0>
+2015-07-30 15:40:04.491 [debug] <0.49.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2015-07-30 15:40:05.875 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-07-30 15:40:05.878 [notice] <0.46.0>@lager_file_backend:128 Changed loglevel of /home/ts-takizawaj01/basho_bench/tests/20150730_154003/console.log to debug
+2015-07-30 15:40:05.900 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 0.00 bytes
+2015-07-30 15:40:06.037 [debug] <0.71.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.72.0>
+2015-07-30 15:40:06.038 [debug] <0.71.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.73.0>
+2015-07-30 15:40:06.038 [debug] <0.70.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.71.0>
+2015-07-30 15:40:06.069 [debug] <0.70.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.74.0>
+2015-07-30 15:40:06.069 [info] <0.7.0> Application sasl started on node nonode@nohost
+2015-07-30 15:40:06.226 [debug] <0.79.0> Supervisor crypto_sup started crypto_server:start_link() at pid <0.80.0>
+2015-07-30 15:40:06.226 [info] <0.7.0> Application crypto started on node nonode@nohost
+2015-07-30 15:40:06.952 [debug] <0.90.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.91.0>
+2015-07-30 15:40:06.962 [debug] <0.90.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.92.0>
+2015-07-30 15:40:06.971 [debug] <0.90.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.93.0>
+2015-07-30 15:40:06.972 [info] <0.7.0> Application folsom started on node nonode@nohost
+2015-07-30 15:40:07.037 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.86.0>
+2015-07-30 15:40:07.050 [debug] <0.96.0>@basho_bench_valgen:init_source:88 random source
+2015-07-30 15:40:07.111 [debug] <0.101.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.102.0>
+2015-07-30 15:40:07.112 [info] <0.7.0> Application ibrowse started on node nonode@nohost
+2015-07-30 15:40:07.113 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.96.0>
+2015-07-30 15:40:07.415 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.104.0>
+2015-07-30 15:40:07.717 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.106.0>
+2015-07-30 15:40:08.019 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.108.0>
+2015-07-30 15:40:08.321 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.110.0>
+2015-07-30 15:40:08.623 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.112.0>
+2015-07-30 15:40:08.925 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.114.0>
+2015-07-30 15:40:09.227 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.116.0>
+2015-07-30 15:40:09.529 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.118.0>
+2015-07-30 15:40:09.831 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.120.0>
+2015-07-30 15:40:10.133 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.122.0>
+2015-07-30 15:40:10.435 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.124.0>
+2015-07-30 15:40:10.737 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.126.0>
+2015-07-30 15:40:11.039 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.128.0>
+2015-07-30 15:40:11.341 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.130.0>
+2015-07-30 15:40:11.643 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.132.0>
+2015-07-30 15:40:11.945 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_17, 17) at pid <0.134.0>
+2015-07-30 15:40:12.247 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_18, 18) at pid <0.136.0>
+2015-07-30 15:40:12.549 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_19, 19) at pid <0.138.0>
+2015-07-30 15:40:12.851 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_20, 20) at pid <0.140.0>
+2015-07-30 15:40:13.153 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_21, 21) at pid <0.142.0>
+2015-07-30 15:40:13.455 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_22, 22) at pid <0.144.0>
+2015-07-30 15:40:13.757 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_23, 23) at pid <0.146.0>
+2015-07-30 15:40:14.059 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_24, 24) at pid <0.148.0>
+2015-07-30 15:40:14.361 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_25, 25) at pid <0.150.0>
+2015-07-30 15:40:14.663 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_26, 26) at pid <0.152.0>
+2015-07-30 15:40:14.965 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_27, 27) at pid <0.154.0>
+2015-07-30 15:40:15.267 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_28, 28) at pid <0.156.0>
+2015-07-30 15:40:15.569 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_29, 29) at pid <0.158.0>
+2015-07-30 15:40:15.871 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_30, 30) at pid <0.160.0>
+2015-07-30 15:40:16.173 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_31, 31) at pid <0.162.0>
+2015-07-30 15:40:16.475 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_32, 32) at pid <0.164.0>
+2015-07-30 15:40:16.777 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_33, 33) at pid <0.166.0>
+2015-07-30 15:40:17.079 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_34, 34) at pid <0.168.0>
+2015-07-30 15:40:17.381 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_35, 35) at pid <0.170.0>
+2015-07-30 15:40:17.683 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_36, 36) at pid <0.172.0>
+2015-07-30 15:40:17.985 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_37, 37) at pid <0.174.0>
+2015-07-30 15:40:18.287 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_38, 38) at pid <0.176.0>
+2015-07-30 15:40:18.589 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_39, 39) at pid <0.178.0>
+2015-07-30 15:40:18.891 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_40, 40) at pid <0.180.0>
+2015-07-30 15:40:19.193 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_41, 41) at pid <0.182.0>
+2015-07-30 15:40:19.495 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_42, 42) at pid <0.184.0>
+2015-07-30 15:40:19.797 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_43, 43) at pid <0.186.0>
+2015-07-30 15:40:20.099 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_44, 44) at pid <0.188.0>
+2015-07-30 15:40:20.401 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_45, 45) at pid <0.190.0>
+2015-07-30 15:40:20.703 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_46, 46) at pid <0.192.0>
+2015-07-30 15:40:21.005 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_47, 47) at pid <0.194.0>
+2015-07-30 15:40:21.307 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_48, 48) at pid <0.196.0>
+2015-07-30 15:40:21.609 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_49, 49) at pid <0.198.0>
+2015-07-30 15:40:21.911 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_50, 50) at pid <0.200.0>
+2015-07-30 15:40:22.213 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_51, 51) at pid <0.202.0>
+2015-07-30 15:40:22.515 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_52, 52) at pid <0.204.0>
+2015-07-30 15:40:22.817 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_53, 53) at pid <0.206.0>
+2015-07-30 15:40:23.119 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_54, 54) at pid <0.208.0>
+2015-07-30 15:40:23.421 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_55, 55) at pid <0.210.0>
+2015-07-30 15:40:23.723 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_56, 56) at pid <0.212.0>
+2015-07-30 15:40:24.025 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_57, 57) at pid <0.214.0>
+2015-07-30 15:40:24.327 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_58, 58) at pid <0.216.0>
+2015-07-30 15:40:24.629 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_59, 59) at pid <0.218.0>
+2015-07-30 15:40:24.931 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_60, 60) at pid <0.220.0>
+2015-07-30 15:40:25.233 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_61, 61) at pid <0.222.0>
+2015-07-30 15:40:25.535 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_62, 62) at pid <0.224.0>
+2015-07-30 15:40:25.837 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_63, 63) at pid <0.226.0>
+2015-07-30 15:40:26.139 [debug] <0.84.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_64, 64) at pid <0.228.0>
+2015-07-30 15:40:26.139 [debug] <0.25.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.230.0>
+2015-07-30 15:40:26.153 [info] <0.227.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.227.0> on nonode@nohost
+2015-07-30 15:40:26.153 [info] <0.229.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.229.0> on nonode@nohost
+2015-07-30 15:40:26.153 [info] <0.225.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.225.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.223.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.223.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.221.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.221.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.219.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.219.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.217.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.217.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.215.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.215.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.213.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.213.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.211.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.211.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.209.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.209.0> on nonode@nohost
+2015-07-30 15:40:26.154 [info] <0.207.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.207.0> on nonode@nohost
+2015-07-30 15:40:26.155 [info] <0.205.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.205.0> on nonode@nohost
+2015-07-30 15:40:26.155 [info] <0.203.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.203.0> on nonode@nohost
+2015-07-30 15:40:26.155 [info] <0.201.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.201.0> on nonode@nohost
+2015-07-30 15:40:26.155 [info] <0.199.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.199.0> on nonode@nohost
+2015-07-30 15:40:26.155 [info] <0.195.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.195.0> on nonode@nohost
+2015-07-30 15:40:26.155 [info] <0.197.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.197.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.193.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.193.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.191.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.191.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.189.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.189.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.187.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.187.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.185.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.185.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.183.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.183.0> on nonode@nohost
+2015-07-30 15:40:26.156 [info] <0.181.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.181.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.179.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.179.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.177.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.177.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.175.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.175.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.173.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.173.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.171.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.171.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.169.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.169.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.167.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.167.0> on nonode@nohost
+2015-07-30 15:40:26.157 [info] <0.165.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.165.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.163.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.163.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.161.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.161.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.159.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.159.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.157.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.157.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.155.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.155.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.153.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.153.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.151.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.151.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.149.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.149.0> on nonode@nohost
+2015-07-30 15:40:26.158 [info] <0.147.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.147.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.145.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.145.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.143.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.143.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.141.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.141.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.139.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.139.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.137.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.137.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.135.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.135.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.131.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.131.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.133.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.133.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.129.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.129.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.127.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.127.0> on nonode@nohost
+2015-07-30 15:40:26.159 [info] <0.125.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.125.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.123.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.123.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.121.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.121.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.119.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.119.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.117.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.117.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.115.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.115.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.113.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.113.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.111.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.111.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.109.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.109.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.107.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.107.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.105.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.105.0> on nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2015-07-30 15:40:26.160 [info] <0.97.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.97.0> on nonode@nohost
+2015-07-30 15:40:26.222 [debug] <0.295.0> Supervisor inet_gethost_native_sup started undefined at pid <0.296.0>
+2015-07-30 15:40:26.222 [debug] <0.25.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.295.0>
+2015-07-30 15:41:06.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:41:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:41:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:41:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:41:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:41:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:41:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 15:41:46.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:41:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:41:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 15:42:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:42:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:42:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:42:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 15:42:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:42:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 15:42:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:42:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:42:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:42:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},3},{{{get,get},max_retries},3}]
+2015-07-30 15:42:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:42:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:43:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:43:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{put,put},1},{{{get,get},max_retries},7},{{{get,get},{http_error,"503"}},3},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:43:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:43:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{put,put},1},{{{get,get},max_retries},13},{{{get,get},{http_error,"503"}},3},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:43:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:43:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{put,put},1},{{{get,get},max_retries},8},{{{get,get},{http_error,"503"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:43:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:43:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{put,put},1},{{{get,get},max_retries},4},{{{get,get},{http_error,"503"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:43:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:43:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{put,put},1},{{{get,get},max_retries},12},{{{get,get},{http_error,"503"}},1},{{{put,put},{http_error,"500"}},1}]
+2015-07-30 15:43:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:43:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{put,put},2},{{{get,get},max_retries},7},{{{get,get},{http_error,"503"}},5},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:44:06.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:44:06.140 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{put,put},1},{{{get,get},max_retries},9},{{{get,get},{http_error,"503"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:44:16.146 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:44:16.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},16},{{{get,get},{http_error,"503"}},1}]
+2015-07-30 15:44:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:44:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{put,put},2},{{{get,get},max_retries},10},{{{get,get},{http_error,"503"}},5},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:44:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:44:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{put,put},3},{{{get,get},max_retries},7},{{{get,get},{http_error,"503"}},2},{{{put,put},{http_error,"503"}},3}]
+2015-07-30 15:44:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:44:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{put,put},1},{{{get,get},max_retries},4},{{{get,get},{http_error,"503"}},5},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:44:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:44:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{put,put},1},{{{get,get},max_retries},11},{{{get,get},{http_error,"503"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:45:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:45:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{put,put},2},{{{get,get},max_retries},7},{{{get,get},{http_error,"503"}},2},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:45:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:45:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},7},{{{get,get},{http_error,"503"}},4}]
+2015-07-30 15:45:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:45:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{put,put},3},{{{get,get},max_retries},7},{{{get,get},{http_error,"503"}},7},{{{put,put},{http_error,"500"}},2},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:45:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:45:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{put,put},2},{{{get,get},max_retries},20},{{{get,get},{http_error,"503"}},6},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:45:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:45:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{put,put},1},{{{get,get},max_retries},5},{{{get,get},{http_error,"503"}},4},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:45:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:45:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{put,put},1},{{{get,get},max_retries},19},{{{get,get},{http_error,"503"}},2},{{{put,put},{http_error,"503"}},1}]
+2015-07-30 15:46:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:46:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:46:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:46:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:46:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:46:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 15:46:56.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:46:56.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:47:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:47:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:47:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:47:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 15:47:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:47:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:47:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 15:47:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:47:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:47:56.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 15:48:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:48:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:48:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:48:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:48:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:48:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:48:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 15:48:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:48:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:49:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:49:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 15:49:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:49:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:49:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:49:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:49:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:49:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 15:49:56.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:49:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 15:50:06.146 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:50:06.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:50:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:50:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{{get,get},max_retries},26}]
+2015-07-30 15:50:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:50:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 15:50:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:50:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 15:50:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{{get,get},max_retries},5}]
+2015-07-30 15:51:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:51:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:51:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:51:26.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:51:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:51:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:51:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:51:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:51:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:52:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:52:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 15:52:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:52:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:52:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:52:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:52:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:52:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 15:52:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:52:56.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:53:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:53:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 15:53:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:53:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:53:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 15:53:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:53:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 15:54:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:54:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:54:26.150 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:54:26.150 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 15:54:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:54:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 15:54:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:54:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:54:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:55:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:55:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:55:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:55:26.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:55:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 15:55:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:55:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:55:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 15:56:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:56:16.145 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:56:16.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{{get,get},max_retries},26}]
+2015-07-30 15:56:26.140 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 15:56:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:56:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 15:56:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 15:56:56.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:57:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:57:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 15:57:16.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:57:26.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:57:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 15:57:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 15:57:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:57:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:58:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:58:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:58:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 15:58:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:58:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},4},{{{get,get},max_retries},4}]
+2015-07-30 15:58:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:58:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:58:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:58:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:58:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 15:59:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 15:59:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:59:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 15:59:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:59:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{{get,get},max_retries},5}]
+2015-07-30 15:59:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:59:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 15:59:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 15:59:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 15:59:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:00:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:00:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:00:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:00:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:00:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:00:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:00:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:00:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:01:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:01:16.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:01:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:01:36.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:01:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:01:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:01:56.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:01:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:02:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:02:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:02:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:02:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:02:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:02:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:02:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:02:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{{get,get},max_retries},5}]
+2015-07-30 16:03:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:03:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:03:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 16:03:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:03:46.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:03:56.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:03:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:04:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:04:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:04:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{put,put},3},{{{get,get},max_retries},12},{{{get,get},{http_error,"503"}},8},{{{put,put},{http_error,"500"}},1},{{{put,put},{http_error,"503"}},2}]
+2015-07-30 16:04:26.146 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:04:26.149 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{put,put},1},{{{get,get},max_retries},12},{{{get,get},{http_error,"503"}},6},{{{put,put},{http_error,"500"}},1}]
+2015-07-30 16:04:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:04:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{put,put},1},{{{get,get},max_retries},8},{{{get,get},{http_error,"503"}},4},{{{put,put},{http_error,"500"}},1}]
+2015-07-30 16:04:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},25},{{{get,get},max_retries},19},{{{get,get},{http_error,"503"}},6}]
+2015-07-30 16:04:56.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:04:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{put,put},2},{{{get,get},max_retries},13},{{{get,get},{http_error,"503"}},2},{{{put,put},{http_error,"500"}},2}]
+2015-07-30 16:05:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:05:16.154 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:05:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:05:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:05:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},25},{{{get,get},max_retries},25}]
+2015-07-30 16:05:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:05:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:05:56.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:05:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:06:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:06:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:06:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:06:26.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:06:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:06:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:06:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:06:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:06:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:06:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:07:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:07:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:07:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:07:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:07:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:07:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:07:46.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:07:46.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:07:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:08:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:08:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:08:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 16:08:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:08:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:08:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:08:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:09:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:09:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:09:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:09:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:09:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{{get,get},max_retries},26}]
+2015-07-30 16:09:46.147 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:09:46.148 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{{get,get},max_retries},5}]
+2015-07-30 16:09:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:10:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:10:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 16:10:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:10:36.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:10:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:10:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:10:56.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:11:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:11:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:11:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:11:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:11:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:11:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:12:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:12:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:12:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:12:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:12:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:12:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:12:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:12:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:12:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:12:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:13:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:13:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:13:26.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:13:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:13:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:13:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:13:46.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:13:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:13:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:14:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:14:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 16:14:16.149 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:14:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 16:14:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:14:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{{get,get},max_retries},5}]
+2015-07-30 16:14:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:14:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:15:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:15:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:15:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:15:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:15:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:15:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:15:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:15:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:16:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:16:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:16:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:16:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:16:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:16:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:16:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:16:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:17:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:17:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:17:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:17:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:17:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:17:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:17:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:18:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:18:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:18:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:18:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:18:26.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:18:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:18:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 16:18:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:18:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:18:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:18:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:19:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:19:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:19:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:19:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:19:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:19:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:19:56.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:20:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:20:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:20:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},4},{{{get,get},max_retries},4}]
+2015-07-30 16:20:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:20:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:20:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:20:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:21:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:21:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:21:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:21:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:21:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:21:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:21:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:22:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},23},{{{get,get},max_retries},23}]
+2015-07-30 16:22:16.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:22:16.140 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:22:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:22:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:22:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:22:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:22:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:22:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:23:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:23:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:23:16.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:23:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:23:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:23:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:23:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 16:23:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},27},{{{get,get},max_retries},27}]
+2015-07-30 16:23:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:24:06.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:24:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:24:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:24:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:24:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:24:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:24:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:24:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:24:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:25:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:25:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:25:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},25},{{{get,get},max_retries},25}]
+2015-07-30 16:25:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:25:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:25:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:25:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:25:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:26:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 16:26:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:26:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 16:26:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:26:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:26:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:26:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:26:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:26:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:26:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:27:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},24},{{{get,get},max_retries},24}]
+2015-07-30 16:27:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:27:26.149 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:27:26.150 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:27:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:27:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:27:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:27:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:28:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:28:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:28:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:28:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:28:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:28:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:28:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:28:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:29:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:29:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:29:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:29:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:29:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:29:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:29:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:29:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:29:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:29:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:30:06.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:30:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:30:16.151 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:30:16.156 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:30:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:30:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:30:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:30:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:30:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:31:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:31:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:31:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:31:26.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:31:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:31:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:31:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:31:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:31:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:32:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:32:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:32:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:32:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:32:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:32:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:32:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:32:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:33:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:33:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:33:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:33:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:33:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:33:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:33:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:33:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:34:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:34:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:34:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:34:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:34:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 16:34:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:35:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:35:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:35:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:35:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:35:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:35:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 16:35:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:35:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:35:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:36:06.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:36:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:36:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:36:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:36:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:36:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:36:36.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:36:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:36:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:36:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:37:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:37:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:37:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:37:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:37:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:37:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:37:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:37:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:37:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:38:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:38:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:38:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:38:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:38:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},24},{{{get,get},max_retries},24}]
+2015-07-30 16:38:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:38:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 16:38:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:39:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:39:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:39:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:39:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:39:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:39:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:39:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:39:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:39:56.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:40:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:40:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:40:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 16:40:36.150 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:40:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:40:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:41:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:41:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:41:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:41:26.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:41:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:41:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:41:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:41:56.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:42:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:42:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:42:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:42:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:42:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:42:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:42:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:42:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:42:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:42:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:43:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:43:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:43:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:43:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:43:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:43:56.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:43:56.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:44:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:44:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:44:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:44:26.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:44:26.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:44:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:44:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:44:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:44:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:45:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:45:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:45:26.148 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:45:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:45:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:45:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 16:46:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:46:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:46:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:46:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:46:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:46:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:47:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:47:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:47:26.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:47:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:47:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:47:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:47:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},24},{{{get,get},max_retries},24}]
+2015-07-30 16:47:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:48:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 16:48:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:48:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:48:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:48:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:48:46.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:48:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:49:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:49:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:49:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:49:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:49:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:49:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:49:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:49:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{{get,get},max_retries},26}]
+2015-07-30 16:49:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:49:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:50:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 16:50:16.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:50:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 16:50:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:50:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:50:56.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:51:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:51:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:51:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:51:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:51:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:51:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:51:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:52:06.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:52:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 16:52:16.148 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:52:16.149 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:52:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:52:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 16:52:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:52:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:52:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:52:56.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:53:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:53:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:53:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:53:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:53:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:53:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:54:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:54:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:54:16.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:54:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:54:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:54:36.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:54:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:54:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:54:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:55:06.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:55:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:55:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:55:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:55:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:55:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:55:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:55:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:55:56.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:55:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:56:06.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:56:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:56:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:56:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:56:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:56:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 16:56:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:56:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 16:57:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:57:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 16:57:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 16:57:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:57:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:57:56.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:57:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:58:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 16:58:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:58:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 16:58:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 16:58:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 16:58:46.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:58:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:58:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 16:59:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:59:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 16:59:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},23},{{{get,get},max_retries},23}]
+2015-07-30 16:59:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:59:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 16:59:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:59:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 16:59:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 16:59:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 16:59:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:00:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:00:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:00:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:00:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:00:36.148 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:00:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:00:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 17:01:06.145 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:01:06.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:01:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:01:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:01:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:01:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:01:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:02:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 17:02:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:02:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:02:26.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:02:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:02:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:02:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:03:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:03:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:03:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:03:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 17:03:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:03:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:03:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:04:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:04:16.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:04:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:04:26.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:04:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:04:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:04:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 17:04:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:05:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:05:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 17:05:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:05:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:05:36.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:05:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 17:05:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:06:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:06:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:06:16.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:06:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:06:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:06:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:06:46.145 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:06:46.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:06:56.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:06:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 17:07:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:07:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:07:16.145 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:07:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:07:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},4},{{{get,get},max_retries},4}]
+2015-07-30 17:07:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:07:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:07:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:07:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:08:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 17:08:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:08:26.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:08:36.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:08:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:08:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:08:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:09:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:09:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:09:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:09:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:09:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:09:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:10:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:10:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:10:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:10:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:10:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:10:56.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 17:11:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:11:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:11:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:11:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:11:46.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:11:56.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:11:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 17:12:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:12:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},24},{{{get,get},max_retries},24}]
+2015-07-30 17:12:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:12:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:12:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:12:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:12:46.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:12:46.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:12:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:13:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:13:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:13:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:13:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:13:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:13:56.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:14:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:14:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:14:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:14:36.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:14:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:14:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:14:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:15:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:15:16.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:15:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:15:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 17:15:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:15:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:16:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:16:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:16:26.144 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:16:26.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:16:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:16:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:16:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:17:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:17:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:17:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:17:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:17:46.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:17:46.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:17:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:17:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:18:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 17:18:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},26},{{{get,get},max_retries},26}]
+2015-07-30 17:18:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 17:18:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:18:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:18:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:19:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:19:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:19:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:19:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:19:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:19:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:19:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:19:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:19:56.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:20:06.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:20:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 17:20:26.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:20:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},5},{{{get,get},max_retries},5}]
+2015-07-30 17:20:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:20:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:20:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:20:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:20:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:21:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:21:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:21:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:21:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:21:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:21:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:21:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:21:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:21:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:22:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:22:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:22:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:22:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:22:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:22:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:22:56.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:23:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:23:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:23:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:23:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:23:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:23:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:23:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 17:23:56.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:24:06.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:24:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:24:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:24:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:24:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:24:46.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:24:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:24:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:25:06.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:25:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:25:26.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:25:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:25:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:25:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:25:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:25:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 17:26:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:26:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:26:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:26:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:26:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:26:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:26:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:26:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:27:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:27:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:27:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:27:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:27:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 17:27:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:27:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:27:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:28:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:28:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:28:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:28:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:28:46.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:28:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:28:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 17:29:06.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:29:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:29:16.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:29:16.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},6},{{{get,get},max_retries},6}]
+2015-07-30 17:29:26.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:29:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:29:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:29:46.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:29:46.140 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:29:56.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:29:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},28},{{{get,get},max_retries},28}]
+2015-07-30 17:30:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 17:30:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:30:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:30:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:30:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:30:36.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:30:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:30:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:31:06.146 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:31:06.146 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:31:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:31:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:31:26.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:31:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:31:36.155 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:31:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:31:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:31:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:32:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:32:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:32:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:32:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:32:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:32:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:32:56.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:33:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:33:16.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:33:16.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:33:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:33:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:33:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},21},{{{get,get},max_retries},21}]
+2015-07-30 17:33:56.143 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:33:56.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:34:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:34:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:34:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:34:36.147 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:34:46.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:34:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:35:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:35:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:35:26.144 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},19},{{{get,get},max_retries},19}]
+2015-07-30 17:35:36.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:35:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},7},{{{get,get},max_retries},7}]
+2015-07-30 17:35:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:35:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:35:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:36:06.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:36:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:36:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:36:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:36:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:36:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},14},{{{get,get},max_retries},14}]
+2015-07-30 17:36:56.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},15},{{{get,get},max_retries},15}]
+2015-07-30 17:37:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:37:16.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:37:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:37:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:37:36.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:37:36.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:37:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:37:46.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:37:56.148 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:38:06.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:38:06.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},20},{{{get,get},max_retries},20}]
+2015-07-30 17:38:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:38:26.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},17},{{{get,get},max_retries},17}]
+2015-07-30 17:38:36.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},18},{{{get,get},max_retries},18}]
+2015-07-30 17:38:46.145 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},11},{{{get,get},max_retries},11}]
+2015-07-30 17:38:56.140 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:38:56.141 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},9},{{{get,get},max_retries},9}]
+2015-07-30 17:39:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:39:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:39:16.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:39:26.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},10},{{{get,get},max_retries},10}]
+2015-07-30 17:39:36.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},13},{{{get,get},max_retries},13}]
+2015-07-30 17:39:46.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:39:46.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:39:56.141 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:39:56.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},8},{{{get,get},max_retries},8}]
+2015-07-30 17:40:06.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},16},{{{get,get},max_retries},16}]
+2015-07-30 17:40:16.142 [warning] <0.86.0>@basho_bench_stats:report_latency:345 No data for op: {put,put}
+2015-07-30 17:40:16.142 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},22},{{{get,get},max_retries},22}]
+2015-07-30 17:40:26.143 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},12},{{{get,get},max_retries},12}]
+2015-07-30 17:40:27.166 [info] <0.86.0>@basho_bench_stats:process_stats:313 Errors:[{{get,get},2},{{{get,get},max_retries},2}]
+2015-07-30 17:40:27.166 [info] <0.86.0>@basho_bench_stats:report_total_errors:360 Total Errors:
+2015-07-30 17:40:27.166 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},max_retries}: 9581
+2015-07-30 17:40:27.167 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{get,get},{http_error,"503"}}: 80
+2015-07-30 17:40:27.167 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{put,put},{http_error,"500"}}: 12
+2015-07-30 17:40:27.167 [info] <0.86.0>@basho_bench_stats:report_total_errors:366   {{put,put},{http_error,"503"}}: 19

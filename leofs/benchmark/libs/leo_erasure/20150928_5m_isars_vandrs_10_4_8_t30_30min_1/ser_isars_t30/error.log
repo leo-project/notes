@@ -1,0 +1,2 @@
+2015-09-28 11:01:04.109 [error] <0.126.0>@basho_bench_worker:handle_info:165 Worker <0.127.0> exited with {timeout,{gen_server,call,[{global,basho_bench_stats},{op,{encode,encode},{error,crash},5094400}]}}
+2015-09-28 11:01:09.101 [error] <0.80.0> Supervisor basho_bench_sup had child basho_bench_worker_18 started with basho_bench_worker:start_link(basho_bench_worker_18, 18) at <0.126.0> exit with reason normal in context child_terminated

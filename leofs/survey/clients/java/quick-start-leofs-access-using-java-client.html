@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1 id="quick-start-leofs-access-using-java-client">Quick Start LeoFS Access Using Java-Client</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article will get you going with a how to develop and architect <code>Java-client</code> application for LeoFS. This article assumes that you have already installed LeoFS environment on your local or remote node. See <a href="http://leo-project.net/leofs/docs/getting_started.html#getting-started">Getting Started with LeoFS</a> for more Information. ## Installation and Setup S3 Java-client The easiest way to install Java on your machine is through the yum or apt package installer. Then we need some additional <a href="http://ant.apache.org/">Apache Ant</a>.</p>
+<h3 id="centos-fedora-and-rhel">CentOS, Fedora and RHEL:</h3>
+<pre class="shell"><code>##### Install Java, SDK and Dependencies #####
+$ wget --no-cookies --no-check-certificate --header &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; &quot;http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.rpm&quot;
+$ sudo yum install jdk-8u5-linux-x64.rpm      # To install JDK
+$ sudo yum install ant                        # To install ant</code></pre>
+<h3 id="debian-and-ubuntu-based-installation">Debian and Ubuntu based Installation</h3>
+<pre class="shell"><code>##### Install JAVA8, SDK and Dependencies #####
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update
+$ sudo apt-get install oracle-java8-installerdd-apt-repository ppa:webupd8team/java&quot;
+$ java -version                                  # To Verfiy your installation
+$ sudo apt-get install oracle-java8-set-default  # To Setup java environment</code></pre>
+<pre class="shell"><code>###### Download Sample Project it includes aws-java sdk #####
+$ git clone https://github.com/leo-project/leofs_client_tests.git
+$ cd aws-sdk-java</code></pre>
+<h3 id="about-the-sample">About the sample</h3>
+<p>This sample application is designed to show you how to: * Include a dependency on the aws-sdk using <code>build.xml</code> file. * Read access keys from environment variables or define it statically in this sample we are using static entry. * Instantiate an Amazon Simple Storage Service (Amazon S3) client using <code>ClientConfiguration()</code> method. * Interact with Amazon S3 in various ways, such as creating a bucket and uploading a file.</p>
+<p>The project's <code>README</code> file contains more information about this sample code. If you have trouble getting set up or have other feedback about this sample codes, let us know on <a href="https://github.com/leo-project/leofs_client_tests/tree/develop/aws-sdk-java">GitHub</a>.</p>
+<h2 id="api-feature-list">API feature list</h2>
+<p>The storage API is compatible with the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html">Amazon S3 REST API</a> which means that any of the operations listed can be executed using any of the commonly available S3 libraries or tools.</p>
+<h3 id="bucket-level-operation">Bucket-level operation</h3>
+<ul>
+<li>GET Bucket - Returns a list of the objects within a bucket</li>
+<li>GET Bucket ACL - Returns the ACL associated with a bucket</li>
+<li>PUT Bucket - Creates a new bucket</li>
+<li>PUT Bucket ACL - Sets the ACL permissions for a bucket</li>
+<li>HEAD Object – Retrieves Bucket metadata.</li>
+<li>DELETE Bucket - Deletes a bucket</li>
+</ul>
+<h3 id="object-level-operation">Object-level operation</h3>
+<ul>
+<li>GET Object - Retrieves an object</li>
+<li>LIST Object - Retrieves an object list</li>
+<li>PUT Object - Stores an object to a bucket</li>
+<li>PUT Object (Copy) - Creates a copy of an object internally or externally</li>
+<li>HEAD Object - Retrieves object metadata (not the full content of the object)</li>
+<li>DELETE Object - Deletes an object</li>
+</ul>
+<h3 id="multipart-upload">Multipart upload</h3>
+<ul>
+<li>Initiate Multipart Upload - Initiates a multipart upload and returns an upload ID</li>
+<li>Upload Part - Uploads a part in a multipart upload</li>
+<li>Complete Multipart Upload - Completes a multipart upload and assembles previously uploaded parts</li>
+<li>Abort Multipart Upload - Aborts a multipart upload and eventually frees storage consumed by previously uploaded parts.</li>
+<li>List Parts - Lists the parts that have been uploaded for a specific multipart upload.</li>
+<li>List Multipart Uploads - Lists multipart uploads that have not yet been completed or aborted.</li>
+</ul>
+<p>The <em>multipart-upload</em> allows you to upload a single object as a set of parts. Object parts can be uploaded independently and in any order. After all, parts are uploaded, LeoFS assembles an object out of the parts. When your object size reaches 100MB, you should consider using multipart uploads instead of uploading the object in a single operation. Read more about <a href="http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html">parallel multipart uploads</a>.</p>
+<div class="figure">
+<img src="http://media.amazonwebservices.com/blog/s3_multipart_upload.png" alt="Multipart Upload" /><p class="caption">Multipart Upload</p>
+</div>
+<p>Basically, AWS-Java Client have two types of the multipart upload method :</p>
+<ol style="list-style-type: decimal">
+<li>Using the High-Level Java API for Multipart Upload</li>
+<li>Using the Low-Level Java API for Multipart Upload Here we are Using High-level Java API for the multipart upload. For more detail visit <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/usingHLmpuJava.html">this page</a>.</li>
+</ol>
+<h2 id="sample-methods">Sample methods:</h2>
+<p>The complete API reference is available on the <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/">Amazon site</a>. Here we included our sample <a href="https://github.com/leo-project/leofs_client_tests/blob/develop/aws-sdk-java/LeoFSSample.java">script file</a> which includes major method which is supported by LeoFS.</p>
+<h3 id="creating-a-connection">Creating a connection</h3>
+<p>A simple way to specify your credentials is by injecting them directly into the factory method when instantiating the client object. However, be careful to NOT <em>hard-coding</em> your credentials inside your applications. <em>Hard-coding</em> your credentials can be dangerous. According to your bucket name, set <code>sub-domain</code> name entry as a per <a href="http://leo-project.net/leofs/docs/s3_client.html#edit-etc-hosts">this page</a>. For more detail method you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/auth/BasicAWSCredentials.html#BasicAWSCredentials(java.lang.String,%20java.lang.String)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">        <span class="co">/*  Global variable setting </span>
+<span class="co">         * ---------------------------------------------------------</span>
+<span class="co">         * You need to set &#39;Proxy host&#39;, &#39;Proxy port&#39; and &#39;Protocol&#39;</span>
+<span class="co">         * --------------------------------------------------------- */</span>
+
+ClientConfiguration config = <span class="kw">new</span> <span class="fu">ClientConfiguration</span>();
+        config.<span class="fu">setProxyHost</span>(<span class="st">&quot;localhost&quot;</span>); <span class="co">// LeoFS Gateway&#39;s Host</span>
+        config.<span class="fu">setProxyPort</span>(<span class="dv">8080</span>);        <span class="co">// LeoFS Gateway&#39;s Port</span>
+        config.<span class="fu">withProtocol</span>(Protocol.<span class="fu">HTTP</span>);
+        <span class="dt">final</span> String accessKeyId = <span class="st">&quot;05236&quot;</span>;
+        <span class="dt">final</span> String secretAccessKey = <span class="st">&quot;802562235&quot;</span>;
+        AWSCredentials credentials = <span class="kw">new</span> <span class="fu">BasicAWSCredentials</span>(accessKeyId, secretAccessKey);
+        AmazonS3 s3 = <span class="kw">new</span> <span class="fu">AmazonS3Client</span>(credentials, config);
+        <span class="dt">final</span> String bucketName = <span class="st">&quot;test&quot;</span>;
+        <span class="dt">final</span> String key = <span class="st">&quot;test-key&quot;</span>;
+        <span class="dt">final</span> String fileName = <span class="st">&quot;testFile&quot;</span>;</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">/* OR you can use dynamic Configuration via specifying your environmental variable into your shell</span>
+<span class="co">  Instantiate a new client for Amazon Simple Storage Service (S3). With no</span>
+<span class="co">  parameters or configuration, the AWS SDK for java will look for access keys</span>
+<span class="co">  and region in these environment variables: </span>
+<span class="co">  </span>
+<span class="co">     AWS_ACCESS_KEY_ID=&#39;...&#39;</span>
+<span class="co">     AWS_SECRET_ACCESS_KEY=&#39;...&#39;</span>
+<span class="co">*/</span></code></pre>
+<p>For More detail, you can refer <a href="https://github.com/awslabs/aws-java-sample/blob/master/README.md">this page</a>.</p>
+<h2 id="creating-a-bucket">Creating a bucket</h2>
+<p>A simple way to create bucket is given from here be careful bucket name should be globally unique and must be DNS compatible otherwise it will throw <code>S3Exception</code>. For more information about bucket name restrictions, see http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html bucket.</p>
+<pre class="sourceCode java"><code class="sourceCode java">   <span class="co">// Create bucket</span>
+   s3.<span class="fu">createBucket</span>(bucketName);
+   <span class="kw">if</span> ( s3.<span class="fu">doesBucketExist</span>(bucketName) ) {
+                System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Bucket Created Successfully&quot;</span>);
+    }</code></pre>
+<h3 id="does-bucket-exists">Does bucket exists ?</h3>
+<p>A simple to check bucket is exist or not and you have permission to access it. The operation returns a <code>200 - OK</code> if the bucket exists and you have permission to access it. Otherwise, the operation might return responses such as <code>404 - Not Found</code> and <code>403 - Forbidden</code>. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#doesBucketExist(java.lang.String)">this page</a>.</p>
+<h3 id="get-buckets">Get buckets</h3>
+<p>You can get list of all the buckets owned by your account using the <code>listbuckets()</code> method. You can also enumerate all buckets in your account. For more detail information you can refer this <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#listBuckets()">page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="co">// Retrieve list of buckets</span>
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;-----List Buckets----&quot;</span>);
+    <span class="kw">for</span> ( Bucket bucket : s3.<span class="fu">listBuckets</span>() ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Bucket:&quot;</span> + bucket.<span class="fu">getName</span>() + <span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span> + bucket.<span class="fu">getCreationDate</span>());
+    }</code></pre>
+<h3 id="single-part-object-upload">Single-part object upload</h3>
+<p>A simple way to upload object via the single-part method from your file system which is recommended to use for object less than 100MB in size. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#putObject(java.lang.String,%20java.lang.String,%20java.io.File)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="co">// File Upload to LeoFS using single part upload method</span>
+    String filePath= <span class="st">&quot;../temp_data/&quot;</span> + fileName;
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Uploading a new object to S3 from a file</span><span class="ch">\n</span><span class="st">&quot;</span>);
+    File file = <span class="kw">new</span> File(filePath);
+    s3.<span class="fu">putObject</span>(<span class="kw">new</span> <span class="fu">PutObjectRequest</span>(bucketName, file.<span class="fu">getName</span>()+<span class="st">&quot;.single&quot;</span>, file));
+    <span class="kw">if</span> ( !<span class="fu">doesFileExist</span>(s3, bucketName, fileName+<span class="st">&quot;.single&quot;</span>) ) {
+        <span class="kw">throw</span> <span class="kw">new</span> IOException(<span class="st">&quot;Single Part File could not Uploaded Successfully&quot;</span>);
+    } <span class="kw">else</span> {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Single Part File Uploaded Successfully&quot;</span>);
+    }</code></pre>
+<h3 id="multi-part-object-upload">Multi-part object upload</h3>
+<p>The <em>multipart-upload</em> allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order. If transmission of any part fails, you can retransmit that part without affecting other parts. After all, parts of your object are uploaded, LeoFS assembles these parts and creates the object. In general, when your object size reaches 100 MB, you should consider using multipart uploads instead of uploading the object in a single operation.</p>
+<p>Advantages: Improved throughput, quick recovery from any network issues, suspend and resume object uploads begin an upload before you know the final object size. For more detail information, you can refer <a href="">this page</a>. This method is very simple in java for more detail you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/transfer/TransferManager.html">this class methods</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="co">// File Upload to LeoFS using multipart upload method</span>
+    TransferManager tx = <span class="kw">new</span> <span class="fu">TransferManager</span>(s3);
+    Upload upload = tx.<span class="fu">upload</span>(bucketName, file.<span class="fu">getName</span>(), file); 
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Transfer: &quot;</span> + upload.<span class="fu">getDescription</span>() + <span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span> + <span class="st">&quot;State&quot;</span> + upload.<span class="fu">getState</span>());
+
+    <span class="co">// You can poll your transfer&#39;s status to check its progress</span>
+    <span class="kw">while</span> ( upload.<span class="fu">isDone</span>() == <span class="kw">false</span> ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot; - Progress: &quot;</span> + upload.<span class="fu">getProgress</span>().<span class="fu">getBytesTransferred</span>() 
+                              + <span class="st">&quot;Byte </span><span class="ch">\t</span><span class="st">&quot;</span> + upload.<span class="fu">getProgress</span>().<span class="fu">getPercentTransferred</span>() + <span class="st">&quot;%&quot;</span> );
+        Thread.<span class="fu">sleep</span>(<span class="dv">100</span>);
+    } 
+    upload.<span class="fu">waitForCompletion</span>();
+    tx.<span class="fu">shutdownNow</span>(Boolean.<span class="fu">FALSE</span>.<span class="fu">booleanValue</span>());
+    <span class="kw">if</span> ( !<span class="fu">doesFileExist</span>(s3, bucketName, fileName) ) {
+        <span class="kw">throw</span> <span class="kw">new</span> IOException(<span class="st">&quot;Multi-part File could not Uploaded Successfully&quot;</span>);
+    } <span class="kw">else</span> {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;File Uploaded Successfully&quot;</span>);
+    }</code></pre>
+<h3 id="head-an-object">Head an object</h3>
+<p>Files in Amazon-S3 and LeoFS are called <code>objects</code> and are stored in buckets. A specific object is referred to by its key (i.e., name) and holds data. Here we create a new object with the key name, <code>HEAD</code> request is metadata of that object.</p>
+<p>e.g. ContentLength, ETag, ContentType etc.. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#getObjectMetadata(java.lang.String,%20java.lang.String)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="co">// Head Object</span>
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;HEAD Object Test [Start]&quot;</span>);
+    ObjectMetadata objectMetadata = s3.<span class="fu">getObjectMetadata</span>(bucketName, fileName+<span class="st">&quot;.single&quot;</span>);
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Single Part Metadata =&gt; Etag :&quot;</span> + objectMetadata.<span class="fu">getETag</span>() + <span class="st">&quot; </span><span class="ch">\t</span><span class="st">ContentLength :&quot;</span> + objectMetadata.<span class="fu">getContentLength</span>() );
+    <span class="kw">if</span> ( file.<span class="fu">length</span>() == objectMetadata.<span class="fu">getContentLength</span>() &amp;&amp; objectMetadata.<span class="fu">getETag</span>() == <span class="fu">MD5</span>(filePath) ) {
+        <span class="kw">throw</span> <span class="kw">new</span> IOException(<span class="st">&quot;Sigle Part File Metadata could not match&quot;</span>);
+    } <span class="kw">else</span> {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Single Part File MetaData Test passed Successfully&quot;</span>);
+    }</code></pre>
+<h3 id="get-read-an-object">GET / READ an object</h3>
+<p>A simple way to download object from LeoFS in to current directory by using read method. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#getObject(com.amazonaws.services.s3.model.GetObjectRequest,%20java.io.File)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="co">// File Download from LeoFS</span>
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;GET Object Test [Start]&quot;</span>);
+    S3Object object = s3.<span class="fu">getObject</span>(<span class="kw">new</span> <span class="fu">GetObjectRequest</span>(bucketName, fileName));
+    <span class="fu">dumpInputStream</span>(object.<span class="fu">getObjectContent</span>(),fileName+<span class="st">&quot;.copy&quot;</span>);
+    File newfile = <span class="kw">new</span> File(fileName+<span class="st">&quot;.copy&quot;</span>);
+    <span class="kw">if</span> ( file.<span class="fu">length</span>() != newfile.<span class="fu">length</span>() ) {
+        <span class="kw">throw</span> <span class="kw">new</span> IOException(<span class="st">&quot;Downloaded File content-length is not equal&quot;</span>);
+    }</code></pre>
+<h3 id="copy-an-object">Copy an object</h3>
+<p>A simple way to copy object on LeoFS same bucket or different bucket we should use this method than by using the <code>exists</code> method. we are checking presence of copied object. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#copyObject(java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">   <span class="co">// File copy bucket internally</span>
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;COPY Object Test [Start]&quot;</span>);
+    s3.<span class="fu">copyObject</span>( bucketName, file.<span class="fu">getName</span>(), bucketName, fileName+<span class="st">&quot;.copy&quot;</span>);
+    <span class="kw">if</span> (!<span class="fu">doesFileExist</span>(s3, bucketName, fileName+<span class="st">&quot;.copy&quot;</span>) ) {
+        <span class="kw">throw</span> <span class="kw">new</span> IOException(<span class="st">&quot;File could not copy Successfully&quot;</span>);
+    }</code></pre>
+<h3 id="move-rename-an-object">Move / Rename an object</h3>
+<p>This method currently not available via Java client but might be in future it will be available.</p>
+<h3 id="list-a-buckets-content">List a bucket’s content</h3>
+<p>Here we request an object iterator and loop over it to retrieve the desired information about the objects - object key, size, and modification time stamp in this case. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#listObjects(java.lang.String)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">  <span class="co">// Retrieve list of objects from the LeoFS</span>
+    ObjectListing objectListing =
+        s3.<span class="fu">listObjects</span>(<span class="kw">new</span> <span class="fu">ListObjectsRequest</span>().<span class="fu">withBucketName</span>(bucketName));
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;-----List objects----&quot;</span>);
+    <span class="kw">for</span> ( S3ObjectSummary objectSummary : objectListing.<span class="fu">getObjectSummaries</span>() ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(objectSummary.<span class="fu">getKey</span>() + <span class="st">&quot; </span><span class="ch">\t</span><span class="st"> Size:&quot;</span> + objectSummary.<span class="fu">getSize</span>());
+    }</code></pre>
+<h3 id="delete-an-object">Delete an object</h3>
+<p>A simple way to delete object from LeoFS by providing bucket and object name - key. The multiple object delete method currently not supported but you can perfrom similar operation via using iterator. For more detail information you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#deleteObject(java.lang.String,%20java.lang.String)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">   <span class="co">// DELETE an object from the LeoFS</span>
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;DELETE Object Test [Start]&quot;</span>);
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;-----List objects----&quot;</span>);
+    <span class="kw">for</span> ( S3ObjectSummary objectSummary : objectListing.<span class="fu">getObjectSummaries</span>() ) {
+        s3.<span class="fu">deleteObject</span>(bucketName, objectSummary.<span class="fu">getKey</span>());
+        <span class="kw">if</span> ( <span class="fu">doesFileExist</span>(s3,bucketName,objectSummary.<span class="fu">getKey</span>()) ) {
+            <span class="kw">throw</span> <span class="kw">new</span> IOException(<span class="st">&quot;Object Not Deleted&quot;</span>);
+        } <span class="kw">else</span> {
+            System.<span class="fu">out</span>.<span class="fu">println</span>(objectSummary.<span class="fu">getKey</span>() + <span class="st">&quot; </span><span class="ch">\t\t</span><span class="st"> Deleted Successfully&quot;</span>);
+        }
+    }</code></pre>
+<p>Currently, <code>FileExist</code> is not availble in built in AWS Java client. So I made my own trailer made method.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="kw">public</span> <span class="dt">static</span> <span class="dt">boolean</span> <span class="fu">doesFileExist</span>( AmazonS3 s3, String bucketName, String key ) <span class="kw">throws</span> AmazonClientException,           AmazonServiceException {
+        <span class="dt">boolean</span> isValidFile = <span class="kw">true</span>;
+        <span class="kw">try</span> {
+            ObjectMetadata objectMetadata = s3.<span class="fu">getObjectMetadata</span>(bucketName, key);
+        } <span class="kw">catch</span> ( AmazonS3Exception s3e ) {
+            <span class="kw">if</span> ( s3e.<span class="fu">getStatusCode</span>() == <span class="dv">404</span> ) {
+                <span class="co">// i.e. 404: NoSuchKey - The specified key does not exist</span>
+                isValidFile = <span class="kw">false</span>;
+            }
+            <span class="kw">else</span> {
+                <span class="kw">throw</span> s3e; <span class="co">// rethrow all S3 exceptions other than 404 </span>
+            }
+        }
+        <span class="kw">catch</span> ( Exception exception ) {
+            exception.<span class="fu">printStackTrace</span>();
+            isValidFile = <span class="kw">false</span>;
+        }
+        <span class="kw">return</span> isValidFile;
+    }</code></pre>
+<p>To dump InputStream into File I created a function <code>dumpInputStream(InputStream,FileName)</code>. It will use to dump stream(string) into file.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="kw">private</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">dumpInputStream</span>(InputStream input,String fileName) <span class="kw">throws</span> IOException {
+        BufferedReader reader = <span class="kw">new</span> BufferedReader(<span class="kw">new</span> InputStreamReader(input));
+        File file=<span class="kw">new</span> File(fileName);
+        OutputStreamWriter writer = <span class="kw">new</span> OutputStreamWriter(<span class="kw">new</span> FileOutputStream(file));
+        <span class="dt">int</span> read = -<span class="dv">1</span>;
+        <span class="kw">while</span> ( ( read = (<span class="dt">byte</span>) reader.<span class="fu">read</span>() ) != -<span class="dv">1</span> ) {
+            writer.<span class="fu">write</span>(read);
+        }
+        writer.<span class="fu">flush</span>();
+        writer.<span class="fu">close</span>();
+        reader.<span class="fu">close</span>();
+    }</code></pre>
+<p>To cound Hashtext(Etag) of local file to verify content's MD5 digest. I created a user define fucntion <code>MD5(filePath)</code> as below:</p>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="dt">static</span> String <span class="fu">MD5</span>( String filePath )
+    {
+        StringBuffer sb = <span class="kw">new</span> StringBuffer();
+        <span class="kw">try</span> {
+            MessageDigest md = MessageDigest.<span class="fu">getInstance</span>(<span class="st">&quot;MD5&quot;</span>);
+            FileInputStream fis = <span class="kw">new</span> FileInputStream(filePath); 
+            <span class="dt">byte</span>[] dataBytes = <span class="kw">new</span> <span class="dt">byte</span>[<span class="dv">1024</span>];
+
+            <span class="dt">int</span> nread = <span class="dv">0</span>; 
+            <span class="kw">while</span> ( (nread = fis.<span class="fu">read</span>(dataBytes)) != -<span class="dv">1</span> ) {
+                md.<span class="fu">update</span>(dataBytes, <span class="dv">0</span>, nread);
+            };
+            <span class="dt">byte</span>[] mdbytes = md.<span class="fu">digest</span>();
+
+            <span class="co">//convert the byte to hex format method 1</span>
+            <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; mdbytes.<span class="fu">length</span>; i++) {
+                sb.<span class="fu">append</span>(Integer.<span class="fu">toString</span>((mdbytes[i] &amp; <span class="bn">0xff</span>) + <span class="bn">0x100</span>, <span class="dv">16</span>).<span class="fu">substring</span>(<span class="dv">1</span>));
+            }
+
+            System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Digest(in hex format):: &quot;</span> + sb.<span class="fu">toString</span>());
+ 
+        } <span class="kw">catch</span> ( java.<span class="fu">security</span>.<span class="fu">NoSuchAlgorithmException</span> e ) {
+            System.<span class="fu">out</span>.<span class="fu">println</span>(e.<span class="fu">getMessage</span>());
+        } <span class="kw">catch</span> ( Exception e ) {
+            System.<span class="fu">out</span>.<span class="fu">println</span>(e.<span class="fu">getMessage</span>());
+        }
+        <span class="kw">return</span> sb.<span class="fu">toString</span>();
+    }</code></pre>
+<h3 id="get-a-bucket-acl">Get a bucket ACL</h3>
+<p>A simple way to get bucket ACL is given here. LeoFS basically supports <code>private</code>, <code>public-read</code> and <code>public-read-write</code> types of the ACL. <em>Object level ACL</em> is currently not supported yet. In java SDK it associated with <code>CannedAccessControlList</code> which have enume constant like <code>Private</code>,<code>PublicRead</code>, <code>write</code> and <code>PublicReadWrite</code>. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/CannedAccessControlList.html">this page</a>. For more detail information about <code>getBucketACL</code> you can refer this <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#getBucketAcl(java.lang.String)">page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;#####Default ACL#####&quot;</span>);
+    AccessControlList acp = s3.<span class="fu">getBucketAcl</span>(bucketName);
+    List&lt;String&gt; list = <span class="kw">new</span> ArrayList&lt;String&gt;();
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Owner ID : &quot;</span> + acp.<span class="fu">getOwner</span>());
+    <span class="kw">for</span> ( Grant grant : acp.<span class="fu">getGrants</span>() ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Grantee : &quot;</span> + grant.<span class="fu">getGrantee</span>() + <span class="st">&quot; </span><span class="ch">\t</span><span class="st"> Permissions : &quot;</span> + grant.<span class="fu">getPermission</span>());
+    list.<span class="fu">add</span>(grant.<span class="fu">getPermission</span>().<span class="fu">toString</span>());
+    }
+    <span class="kw">if</span> ( list.<span class="fu">contains</span>(<span class="st">&quot;FULL_CONTROL&quot;</span>) ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Bucket permission is private&quot;</span>);
+    } </code></pre>
+<h3 id="put-a-bucket-acl">Put a bucket ACL</h3>
+<p>A simple way to put ACL and restrict different <code>Bucket Acess</code> by <code>setBucketACl(BucketName,CannedAccessControlList)</code> method. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html#setBucketAcl(java.lang.String,%20com.amazonaws.services.s3.model.CannedAccessControlList)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">#####:public_read ACL#####&quot;</span>);
+    s3.<span class="fu">setBucketAcl</span>(bucketName, CannedAccessControlList.<span class="fu">PublicRead</span>);
+    acp = s3.<span class="fu">getBucketAcl</span>(bucketName);
+    list.<span class="fu">clear</span>();
+    System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Owner ID : &quot;</span> + acp.<span class="fu">getOwner</span>());
+    <span class="kw">for</span> ( Grant grant : acp.<span class="fu">getGrants</span>() ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Grantee : &quot;</span> + grant.<span class="fu">getGrantee</span>() + <span class="st">&quot; </span><span class="ch">\t</span><span class="st"> Permissions : &quot;</span> + grant.<span class="fu">getPermission</span>());
+        list.<span class="fu">add</span>(grant.<span class="fu">getPermission</span>().<span class="fu">toString</span>());
+    }
+    <span class="kw">if</span> ( list.<span class="fu">contains</span>(<span class="st">&quot;READ&quot;</span>) &amp;&amp; list.<span class="fu">contains</span>(<span class="st">&quot;READ_ACP&quot;</span>) ) {
+        System.<span class="fu">out</span>.<span class="fu">println</span>(<span class="st">&quot;Bucket permission is public_read&quot;</span>);
+    }</code></pre>
+<h3 id="delete-a-bucket">Delete a bucket</h3>
+<p>A simple way to delete bucket using <code>deleteBucket(bucketName)</code> method. For more detail information, you can refer <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#deleteBucket(java.lang.String)">this page</a>.</p>
+<pre class="sourceCode java"><code class="sourceCode java">    <span class="co">// DELETE a bucket from the LeoFS</span>
+    s3.<span class="fu">deleteBucket</span>(bucketName);</code></pre>
+<h2 id="test-script-code">Test script code:</h2>
+<p>This testing file include all well know methods of Java SDK. This script required sample file name as <code>testFile</code> at following location in <code>$file_path = &quot;../temp_data/$file_name&quot;;</code> your project Directory. Sample Operation testing Script which is located in downloaded project’s LeoFSSample.java file or you can access [script] (https://gist.github.com/PatelParas/8a06ec19283efa4c09ff#file-leofs_java_client_testing_script).</p>
+<h2 id="test-script-output">Test script output :</h2>
+<p>You can check sample output of this script via [this link] (https://gist.github.com/PatelParas/8a06ec19283efa4c09ff#file-leofs_java_client_testing_results).</p>
+</body>
+</html>
