@@ -1,0 +1,947 @@
+2018-07-18 12:04:45.263 [debug] <0.55.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20180718_120445/error.log"} into lager_event
+2018-07-18 12:04:45.263 [debug] <0.57.0>@lager_handler_watcher:94 Lager installed handler {lager_file_backend,
+                            "/home/wilson/basho_bench/tests/20180718_120445/console.log"} into lager_event
+2018-07-18 12:04:45.263 [debug] <0.59.0>@lager_handler_watcher:94 Lager installed handler error_logger_lager_h into error_logger
+2018-07-18 12:04:45.292 [debug] <0.42.0> Supervisor gr_param_sup started gr_param:start_link(gr_lager_default_tracer_params) at pid <0.61.0>
+2018-07-18 12:04:45.292 [debug] <0.41.0> Supervisor gr_counter_sup started gr_counter:start_link(gr_lager_default_tracer_counters) at pid <0.62.0>
+2018-07-18 12:04:45.293 [debug] <0.43.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_params_mgr, gr_lager_default_tracer_params, []) at pid <0.63.0>
+2018-07-18 12:04:45.293 [debug] <0.43.0> Supervisor gr_manager_sup started gr_manager:start_link(gr_lager_default_tracer_counters_mgr, gr_lager_default_tracer_counters, [{input,0},{filter,0},{output,0}]) at pid <0.64.0>
+2018-07-18 12:04:45.740 [debug] <0.51.0>@lager_handler_watcher:94 Lager installed handler lager_backend_throttle into lager_event
+2018-07-18 12:04:45.945 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-07-18 12:04:45.946 [notice] <0.48.0>@lager_file_backend:128 Changed loglevel of /home/wilson/basho_bench/tests/20180718_120445/console.log to debug
+2018-07-18 12:04:45.956 [info] <0.2.0>@basho_bench:log_dimensions:253 Est. data size: 732.42 GB
+2018-07-18 12:04:46.007 [debug] <0.73.0> Supervisor sasl_safe_sup started alarm_handler:start_link() at pid <0.74.0>
+2018-07-18 12:04:46.008 [debug] <0.73.0> Supervisor sasl_safe_sup started overload:start_link() at pid <0.75.0>
+2018-07-18 12:04:46.008 [debug] <0.72.0> Supervisor sasl_sup started supervisor:start_link({local,sasl_safe_sup}, sasl, safe) at pid <0.73.0>
+2018-07-18 12:04:46.018 [debug] <0.72.0> Supervisor sasl_sup started release_handler:start_link() at pid <0.76.0>
+2018-07-18 12:04:46.019 [info] <0.7.0> Application sasl started on node nonode@nohost
+2018-07-18 12:04:46.036 [info] <0.7.0> Application crypto started on node nonode@nohost
+2018-07-18 12:04:46.098 [debug] <0.88.0> Supervisor folsom_sup started folsom_sample_slide_sup:start_link() at pid <0.89.0>
+2018-07-18 12:04:46.102 [debug] <0.88.0> Supervisor folsom_sup started folsom_meter_timer_server:start_link() at pid <0.90.0>
+2018-07-18 12:04:46.106 [debug] <0.88.0> Supervisor folsom_sup started folsom_metrics_histogram_ets:start_link() at pid <0.91.0>
+2018-07-18 12:04:46.106 [info] <0.7.0> Application folsom started on node nonode@nohost
+2018-07-18 12:04:46.130 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_stats:start_link() at pid <0.84.0>
+2018-07-18 12:04:46.135 [debug] <0.93.0>@basho_bench_keygen:new:100 ID 1 generating range 0 to 46875
+2018-07-18 12:04:46.135 [debug] <0.93.0>@basho_bench_valgen:init_source:102 random source
+2018-07-18 12:04:46.157 [debug] <0.98.0> Supervisor ibrowse_sup started ibrowse:start_link() at pid <0.99.0>
+2018-07-18 12:04:46.157 [info] <0.7.0> Application ibrowse started on node nonode@nohost
+2018-07-18 12:04:46.176 [debug] <0.101.0>@basho_bench_keygen:new:100 ID 2 generating range 46875 to 93750
+2018-07-18 12:04:46.176 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_1, 1) at pid <0.93.0>
+2018-07-18 12:04:46.195 [debug] <0.103.0>@basho_bench_keygen:new:100 ID 3 generating range 93750 to 140625
+2018-07-18 12:04:46.195 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_2, 2) at pid <0.101.0>
+2018-07-18 12:04:46.214 [debug] <0.105.0>@basho_bench_keygen:new:100 ID 4 generating range 140625 to 187500
+2018-07-18 12:04:46.214 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_3, 3) at pid <0.103.0>
+2018-07-18 12:04:46.232 [debug] <0.107.0>@basho_bench_keygen:new:100 ID 5 generating range 187500 to 234375
+2018-07-18 12:04:46.232 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_4, 4) at pid <0.105.0>
+2018-07-18 12:04:46.251 [debug] <0.109.0>@basho_bench_keygen:new:100 ID 6 generating range 234375 to 281250
+2018-07-18 12:04:46.251 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_5, 5) at pid <0.107.0>
+2018-07-18 12:04:46.269 [debug] <0.111.0>@basho_bench_keygen:new:100 ID 7 generating range 281250 to 328125
+2018-07-18 12:04:46.270 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_6, 6) at pid <0.109.0>
+2018-07-18 12:04:46.288 [debug] <0.113.0>@basho_bench_keygen:new:100 ID 8 generating range 328125 to 375000
+2018-07-18 12:04:46.288 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_7, 7) at pid <0.111.0>
+2018-07-18 12:04:46.307 [debug] <0.115.0>@basho_bench_keygen:new:100 ID 9 generating range 375000 to 421875
+2018-07-18 12:04:46.307 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_8, 8) at pid <0.113.0>
+2018-07-18 12:04:46.325 [debug] <0.117.0>@basho_bench_keygen:new:100 ID 10 generating range 421875 to 468750
+2018-07-18 12:04:46.325 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_9, 9) at pid <0.115.0>
+2018-07-18 12:04:46.344 [debug] <0.119.0>@basho_bench_keygen:new:100 ID 11 generating range 468750 to 515625
+2018-07-18 12:04:46.344 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_10, 10) at pid <0.117.0>
+2018-07-18 12:04:46.363 [debug] <0.121.0>@basho_bench_keygen:new:100 ID 12 generating range 515625 to 562500
+2018-07-18 12:04:46.363 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_11, 11) at pid <0.119.0>
+2018-07-18 12:04:46.381 [debug] <0.123.0>@basho_bench_keygen:new:100 ID 13 generating range 562500 to 609375
+2018-07-18 12:04:46.381 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_12, 12) at pid <0.121.0>
+2018-07-18 12:04:46.400 [debug] <0.125.0>@basho_bench_keygen:new:100 ID 14 generating range 609375 to 656250
+2018-07-18 12:04:46.400 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_13, 13) at pid <0.123.0>
+2018-07-18 12:04:46.419 [debug] <0.127.0>@basho_bench_keygen:new:100 ID 15 generating range 656250 to 703125
+2018-07-18 12:04:46.419 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_14, 14) at pid <0.125.0>
+2018-07-18 12:04:46.459 [debug] <0.129.0>@basho_bench_keygen:new:100 ID 16 generating range 703125 to 750000
+2018-07-18 12:04:46.459 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_15, 15) at pid <0.127.0>
+2018-07-18 12:04:46.493 [debug] <0.131.0>@basho_bench_keygen:new:100 ID 17 generating range 750000 to 796875
+2018-07-18 12:04:46.493 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_16, 16) at pid <0.129.0>
+2018-07-18 12:04:46.523 [debug] <0.133.0>@basho_bench_keygen:new:100 ID 18 generating range 796875 to 843750
+2018-07-18 12:04:46.523 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_17, 17) at pid <0.131.0>
+2018-07-18 12:04:46.549 [debug] <0.135.0>@basho_bench_keygen:new:100 ID 19 generating range 843750 to 890625
+2018-07-18 12:04:46.549 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_18, 18) at pid <0.133.0>
+2018-07-18 12:04:46.571 [debug] <0.137.0>@basho_bench_keygen:new:100 ID 20 generating range 890625 to 937500
+2018-07-18 12:04:46.572 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_19, 19) at pid <0.135.0>
+2018-07-18 12:04:46.590 [debug] <0.139.0>@basho_bench_keygen:new:100 ID 21 generating range 937500 to 984375
+2018-07-18 12:04:46.590 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_20, 20) at pid <0.137.0>
+2018-07-18 12:04:46.608 [debug] <0.141.0>@basho_bench_keygen:new:100 ID 22 generating range 984375 to 1031250
+2018-07-18 12:04:46.609 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_21, 21) at pid <0.139.0>
+2018-07-18 12:04:46.627 [debug] <0.143.0>@basho_bench_keygen:new:100 ID 23 generating range 1031250 to 1078125
+2018-07-18 12:04:46.627 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_22, 22) at pid <0.141.0>
+2018-07-18 12:04:46.645 [debug] <0.145.0>@basho_bench_keygen:new:100 ID 24 generating range 1078125 to 1125000
+2018-07-18 12:04:46.646 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_23, 23) at pid <0.143.0>
+2018-07-18 12:04:46.664 [debug] <0.147.0>@basho_bench_keygen:new:100 ID 25 generating range 1125000 to 1171875
+2018-07-18 12:04:46.664 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_24, 24) at pid <0.145.0>
+2018-07-18 12:04:46.682 [debug] <0.149.0>@basho_bench_keygen:new:100 ID 26 generating range 1171875 to 1218750
+2018-07-18 12:04:46.683 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_25, 25) at pid <0.147.0>
+2018-07-18 12:04:46.701 [debug] <0.151.0>@basho_bench_keygen:new:100 ID 27 generating range 1218750 to 1265625
+2018-07-18 12:04:46.701 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_26, 26) at pid <0.149.0>
+2018-07-18 12:04:46.719 [debug] <0.153.0>@basho_bench_keygen:new:100 ID 28 generating range 1265625 to 1312500
+2018-07-18 12:04:46.720 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_27, 27) at pid <0.151.0>
+2018-07-18 12:04:46.738 [debug] <0.155.0>@basho_bench_keygen:new:100 ID 29 generating range 1312500 to 1359375
+2018-07-18 12:04:46.738 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_28, 28) at pid <0.153.0>
+2018-07-18 12:04:46.757 [debug] <0.157.0>@basho_bench_keygen:new:100 ID 30 generating range 1359375 to 1406250
+2018-07-18 12:04:46.757 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_29, 29) at pid <0.155.0>
+2018-07-18 12:04:46.775 [debug] <0.159.0>@basho_bench_keygen:new:100 ID 31 generating range 1406250 to 1453125
+2018-07-18 12:04:46.776 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_30, 30) at pid <0.157.0>
+2018-07-18 12:04:46.794 [debug] <0.161.0>@basho_bench_keygen:new:100 ID 32 generating range 1453125 to 1500000
+2018-07-18 12:04:46.794 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_31, 31) at pid <0.159.0>
+2018-07-18 12:04:46.813 [debug] <0.163.0>@basho_bench_keygen:new:100 ID 33 generating range 1500000 to 1546875
+2018-07-18 12:04:46.813 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_32, 32) at pid <0.161.0>
+2018-07-18 12:04:46.831 [debug] <0.165.0>@basho_bench_keygen:new:100 ID 34 generating range 1546875 to 1593750
+2018-07-18 12:04:46.832 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_33, 33) at pid <0.163.0>
+2018-07-18 12:04:46.850 [debug] <0.167.0>@basho_bench_keygen:new:100 ID 35 generating range 1593750 to 1640625
+2018-07-18 12:04:46.850 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_34, 34) at pid <0.165.0>
+2018-07-18 12:04:46.869 [debug] <0.169.0>@basho_bench_keygen:new:100 ID 36 generating range 1640625 to 1687500
+2018-07-18 12:04:46.869 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_35, 35) at pid <0.167.0>
+2018-07-18 12:04:46.887 [debug] <0.171.0>@basho_bench_keygen:new:100 ID 37 generating range 1687500 to 1734375
+2018-07-18 12:04:46.888 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_36, 36) at pid <0.169.0>
+2018-07-18 12:04:46.906 [debug] <0.173.0>@basho_bench_keygen:new:100 ID 38 generating range 1734375 to 1781250
+2018-07-18 12:04:46.906 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_37, 37) at pid <0.171.0>
+2018-07-18 12:04:46.925 [debug] <0.175.0>@basho_bench_keygen:new:100 ID 39 generating range 1781250 to 1828125
+2018-07-18 12:04:46.925 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_38, 38) at pid <0.173.0>
+2018-07-18 12:04:46.943 [debug] <0.177.0>@basho_bench_keygen:new:100 ID 40 generating range 1828125 to 1875000
+2018-07-18 12:04:46.944 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_39, 39) at pid <0.175.0>
+2018-07-18 12:04:46.962 [debug] <0.179.0>@basho_bench_keygen:new:100 ID 41 generating range 1875000 to 1921875
+2018-07-18 12:04:46.962 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_40, 40) at pid <0.177.0>
+2018-07-18 12:04:46.980 [debug] <0.181.0>@basho_bench_keygen:new:100 ID 42 generating range 1921875 to 1968750
+2018-07-18 12:04:46.981 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_41, 41) at pid <0.179.0>
+2018-07-18 12:04:46.999 [debug] <0.183.0>@basho_bench_keygen:new:100 ID 43 generating range 1968750 to 2015625
+2018-07-18 12:04:46.999 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_42, 42) at pid <0.181.0>
+2018-07-18 12:04:47.017 [debug] <0.185.0>@basho_bench_keygen:new:100 ID 44 generating range 2015625 to 2062500
+2018-07-18 12:04:47.018 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_43, 43) at pid <0.183.0>
+2018-07-18 12:04:47.036 [debug] <0.187.0>@basho_bench_keygen:new:100 ID 45 generating range 2062500 to 2109375
+2018-07-18 12:04:47.036 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_44, 44) at pid <0.185.0>
+2018-07-18 12:04:47.054 [debug] <0.189.0>@basho_bench_keygen:new:100 ID 46 generating range 2109375 to 2156250
+2018-07-18 12:04:47.055 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_45, 45) at pid <0.187.0>
+2018-07-18 12:04:47.073 [debug] <0.191.0>@basho_bench_keygen:new:100 ID 47 generating range 2156250 to 2203125
+2018-07-18 12:04:47.073 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_46, 46) at pid <0.189.0>
+2018-07-18 12:04:47.092 [debug] <0.193.0>@basho_bench_keygen:new:100 ID 48 generating range 2203125 to 2250000
+2018-07-18 12:04:47.092 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_47, 47) at pid <0.191.0>
+2018-07-18 12:04:47.110 [debug] <0.195.0>@basho_bench_keygen:new:100 ID 49 generating range 2250000 to 2296875
+2018-07-18 12:04:47.111 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_48, 48) at pid <0.193.0>
+2018-07-18 12:04:47.129 [debug] <0.197.0>@basho_bench_keygen:new:100 ID 50 generating range 2296875 to 2343750
+2018-07-18 12:04:47.129 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_49, 49) at pid <0.195.0>
+2018-07-18 12:04:47.147 [debug] <0.199.0>@basho_bench_keygen:new:100 ID 51 generating range 2343750 to 2390625
+2018-07-18 12:04:47.148 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_50, 50) at pid <0.197.0>
+2018-07-18 12:04:47.166 [debug] <0.201.0>@basho_bench_keygen:new:100 ID 52 generating range 2390625 to 2437500
+2018-07-18 12:04:47.166 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_51, 51) at pid <0.199.0>
+2018-07-18 12:04:47.184 [debug] <0.203.0>@basho_bench_keygen:new:100 ID 53 generating range 2437500 to 2484375
+2018-07-18 12:04:47.185 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_52, 52) at pid <0.201.0>
+2018-07-18 12:04:47.203 [debug] <0.205.0>@basho_bench_keygen:new:100 ID 54 generating range 2484375 to 2531250
+2018-07-18 12:04:47.203 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_53, 53) at pid <0.203.0>
+2018-07-18 12:04:47.221 [debug] <0.207.0>@basho_bench_keygen:new:100 ID 55 generating range 2531250 to 2578125
+2018-07-18 12:04:47.222 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_54, 54) at pid <0.205.0>
+2018-07-18 12:04:47.240 [debug] <0.209.0>@basho_bench_keygen:new:100 ID 56 generating range 2578125 to 2625000
+2018-07-18 12:04:47.240 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_55, 55) at pid <0.207.0>
+2018-07-18 12:04:47.258 [debug] <0.211.0>@basho_bench_keygen:new:100 ID 57 generating range 2625000 to 2671875
+2018-07-18 12:04:47.259 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_56, 56) at pid <0.209.0>
+2018-07-18 12:04:47.277 [debug] <0.213.0>@basho_bench_keygen:new:100 ID 58 generating range 2671875 to 2718750
+2018-07-18 12:04:47.277 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_57, 57) at pid <0.211.0>
+2018-07-18 12:04:47.296 [debug] <0.215.0>@basho_bench_keygen:new:100 ID 59 generating range 2718750 to 2765625
+2018-07-18 12:04:47.296 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_58, 58) at pid <0.213.0>
+2018-07-18 12:04:47.314 [debug] <0.217.0>@basho_bench_keygen:new:100 ID 60 generating range 2765625 to 2812500
+2018-07-18 12:04:47.315 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_59, 59) at pid <0.215.0>
+2018-07-18 12:04:47.333 [debug] <0.219.0>@basho_bench_keygen:new:100 ID 61 generating range 2812500 to 2859375
+2018-07-18 12:04:47.333 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_60, 60) at pid <0.217.0>
+2018-07-18 12:04:47.352 [debug] <0.221.0>@basho_bench_keygen:new:100 ID 62 generating range 2859375 to 2906250
+2018-07-18 12:04:47.352 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_61, 61) at pid <0.219.0>
+2018-07-18 12:04:47.370 [debug] <0.223.0>@basho_bench_keygen:new:100 ID 63 generating range 2906250 to 2953125
+2018-07-18 12:04:47.371 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_62, 62) at pid <0.221.0>
+2018-07-18 12:04:47.389 [debug] <0.225.0>@basho_bench_keygen:new:100 ID 64 generating range 2953125 to 3000000
+2018-07-18 12:04:47.389 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_63, 63) at pid <0.223.0>
+2018-07-18 12:04:47.408 [debug] <0.82.0> Supervisor basho_bench_sup started basho_bench_worker:start_link(basho_bench_worker_64, 64) at pid <0.225.0>
+2018-07-18 12:04:47.408 [debug] <0.27.0> Supervisor kernel_safe_sup started timer:start_link() at pid <0.227.0>
+2018-07-18 12:04:47.414 [info] <0.226.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.226.0> on nonode@nohost
+2018-07-18 12:04:47.414 [info] <0.224.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.224.0> on nonode@nohost
+2018-07-18 12:04:47.414 [debug] <0.228.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.222.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.222.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.229.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.220.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.220.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.230.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.218.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.218.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.231.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.216.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.216.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.232.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 0 (0%)
+2018-07-18 12:04:47.415 [debug] <0.233.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.212.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.212.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.210.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.210.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.234.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.214.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.214.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.208.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.208.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.235.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.206.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.206.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.204.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.204.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.236.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 0 (0%)
+2018-07-18 12:04:47.415 [debug] <0.237.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 0 (0%)
+2018-07-18 12:04:47.415 [debug] <0.238.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 0 (0%)
+2018-07-18 12:04:47.415 [info] <0.200.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.200.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.202.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.202.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.198.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.198.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.196.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.196.0> on nonode@nohost
+2018-07-18 12:04:47.415 [info] <0.194.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.194.0> on nonode@nohost
+2018-07-18 12:04:47.415 [debug] <0.239.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 0 (0%)
+2018-07-18 12:04:47.416 [info] <0.192.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.192.0> on nonode@nohost
+2018-07-18 12:04:47.416 [debug] <0.240.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 0 (0%)
+2018-07-18 12:04:47.416 [debug] <0.241.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 0 (0%)
+2018-07-18 12:04:47.416 [debug] <0.243.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 0 (0%)
+2018-07-18 12:04:47.416 [debug] <0.242.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 0 (0%)
+2018-07-18 12:04:47.416 [debug] <0.244.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 0 (0%)
+2018-07-18 12:04:47.416 [info] <0.190.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.190.0> on nonode@nohost
+2018-07-18 12:04:47.416 [debug] <0.245.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 0 (0%)
+2018-07-18 12:04:47.416 [info] <0.188.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.188.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.186.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.186.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.184.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.184.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.182.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.182.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.180.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.180.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.176.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.176.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.178.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.178.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.174.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.174.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.172.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.172.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.168.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.168.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.170.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.170.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.166.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.166.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.164.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.164.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.162.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.162.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.160.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.160.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.158.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.158.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.154.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.154.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.156.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.156.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.152.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.152.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.150.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.150.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.148.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.148.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.144.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.144.0> on nonode@nohost
+2018-07-18 12:04:47.416 [info] <0.146.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.146.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.142.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.142.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.140.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.140.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.138.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.138.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.136.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.136.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.134.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.134.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.130.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.130.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.132.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.132.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.128.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.128.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.126.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.126.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.124.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.124.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.122.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.122.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.120.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.120.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.114.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.114.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.118.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.118.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.116.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.116.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.112.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.112.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.110.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.110.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.104.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.104.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.108.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.108.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.106.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.106.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.102.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.102.0> on nonode@nohost
+2018-07-18 12:04:47.417 [info] <0.94.0>@basho_bench_worker:worker_idle_loop:237 Starting max worker: <0.94.0> on nonode@nohost
+2018-07-18 12:04:47.418 [info] <0.7.0> Application basho_bench started on node nonode@nohost
+2018-07-18 12:04:47.418 [debug] <0.246.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 0 (0%)
+2018-07-18 12:04:47.418 [debug] <0.247.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.248.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.249.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.250.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.251.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.252.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.253.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.254.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.255.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.256.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.257.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.258.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.259.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.260.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 0 (0%)
+2018-07-18 12:04:47.419 [debug] <0.261.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.262.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.263.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.264.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.265.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.266.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.267.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.268.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.269.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.270.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.271.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.272.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.273.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.275.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.274.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 0 (0%)
+2018-07-18 12:04:47.420 [debug] <0.276.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.277.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.278.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.279.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.280.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.281.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.282.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.283.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.284.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.285.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.286.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.287.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.288.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.289.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.290.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 0 (0%)
+2018-07-18 12:04:47.421 [debug] <0.291.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 0 (0%)
+2018-07-18 12:04:47.474 [debug] <0.356.0> Supervisor inet_gethost_native_sup started undefined at pid <0.357.0>
+2018-07-18 12:04:47.474 [debug] <0.27.0> Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.356.0>
+2018-07-18 12:05:37.503 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},3},{{{put,put},{put,connection_closing}},3}]
+2018-07-18 12:05:40.579 [debug] <0.422.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 5000 (10%)
+2018-07-18 12:05:40.630 [debug] <0.423.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 5000 (10%)
+2018-07-18 12:05:40.686 [debug] <0.424.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 5000 (10%)
+2018-07-18 12:05:40.726 [debug] <0.425.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 5000 (10%)
+2018-07-18 12:05:40.760 [debug] <0.426.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 5000 (10%)
+2018-07-18 12:05:40.862 [debug] <0.427.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 5000 (10%)
+2018-07-18 12:05:40.952 [debug] <0.428.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 5000 (10%)
+2018-07-18 12:05:40.991 [debug] <0.429.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 5000 (10%)
+2018-07-18 12:05:41.087 [debug] <0.430.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 5000 (10%)
+2018-07-18 12:05:41.095 [debug] <0.431.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 5000 (10%)
+2018-07-18 12:05:41.127 [debug] <0.432.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 5000 (10%)
+2018-07-18 12:05:41.133 [debug] <0.433.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 5000 (10%)
+2018-07-18 12:05:41.134 [debug] <0.434.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 5000 (10%)
+2018-07-18 12:05:41.136 [debug] <0.435.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 5000 (10%)
+2018-07-18 12:05:41.180 [debug] <0.436.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 5000 (10%)
+2018-07-18 12:05:41.188 [debug] <0.437.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 5000 (10%)
+2018-07-18 12:05:41.189 [debug] <0.438.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 5000 (10%)
+2018-07-18 12:05:41.193 [debug] <0.439.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 5000 (10%)
+2018-07-18 12:05:41.220 [debug] <0.440.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 5000 (10%)
+2018-07-18 12:05:41.236 [debug] <0.441.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 5000 (10%)
+2018-07-18 12:05:41.283 [debug] <0.442.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 5000 (10%)
+2018-07-18 12:05:41.327 [debug] <0.443.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 5000 (10%)
+2018-07-18 12:05:41.344 [debug] <0.444.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 5000 (10%)
+2018-07-18 12:05:41.350 [debug] <0.445.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 5000 (10%)
+2018-07-18 12:05:41.379 [debug] <0.446.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 5000 (10%)
+2018-07-18 12:05:41.381 [debug] <0.447.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 5000 (10%)
+2018-07-18 12:05:41.396 [debug] <0.448.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 5000 (10%)
+2018-07-18 12:05:41.407 [debug] <0.449.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 5000 (10%)
+2018-07-18 12:05:41.420 [debug] <0.450.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 5000 (10%)
+2018-07-18 12:05:41.427 [debug] <0.451.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 5000 (10%)
+2018-07-18 12:05:41.444 [debug] <0.452.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 5000 (10%)
+2018-07-18 12:05:41.447 [debug] <0.453.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 5000 (10%)
+2018-07-18 12:05:41.452 [debug] <0.454.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 5000 (10%)
+2018-07-18 12:05:41.475 [debug] <0.455.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 5000 (10%)
+2018-07-18 12:05:41.481 [debug] <0.456.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 5000 (10%)
+2018-07-18 12:05:41.484 [debug] <0.457.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 5000 (10%)
+2018-07-18 12:05:41.486 [debug] <0.458.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 5000 (10%)
+2018-07-18 12:05:41.504 [debug] <0.459.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 5000 (10%)
+2018-07-18 12:05:41.518 [debug] <0.460.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 5000 (10%)
+2018-07-18 12:05:41.523 [debug] <0.461.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 5000 (10%)
+2018-07-18 12:05:41.560 [debug] <0.462.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 5000 (10%)
+2018-07-18 12:05:41.594 [debug] <0.463.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 5000 (10%)
+2018-07-18 12:05:41.604 [debug] <0.464.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 5000 (10%)
+2018-07-18 12:05:41.623 [debug] <0.465.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 5000 (10%)
+2018-07-18 12:05:41.625 [debug] <0.466.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 5000 (10%)
+2018-07-18 12:05:41.647 [debug] <0.467.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 5000 (10%)
+2018-07-18 12:05:41.685 [debug] <0.468.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 5000 (10%)
+2018-07-18 12:05:41.692 [debug] <0.469.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 5000 (10%)
+2018-07-18 12:05:41.697 [debug] <0.470.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 5000 (10%)
+2018-07-18 12:05:41.716 [debug] <0.471.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 5000 (10%)
+2018-07-18 12:05:41.738 [debug] <0.472.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 5000 (10%)
+2018-07-18 12:05:41.759 [debug] <0.473.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 5000 (10%)
+2018-07-18 12:05:41.840 [debug] <0.474.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 5000 (10%)
+2018-07-18 12:05:41.862 [debug] <0.475.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 5000 (10%)
+2018-07-18 12:05:41.867 [debug] <0.476.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 5000 (10%)
+2018-07-18 12:05:41.873 [debug] <0.477.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 5000 (10%)
+2018-07-18 12:05:41.875 [debug] <0.478.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 5000 (10%)
+2018-07-18 12:05:41.941 [debug] <0.479.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 5000 (10%)
+2018-07-18 12:05:41.966 [debug] <0.480.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 5000 (10%)
+2018-07-18 12:05:41.967 [debug] <0.481.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 5000 (10%)
+2018-07-18 12:05:42.059 [debug] <0.482.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 5000 (10%)
+2018-07-18 12:05:42.113 [debug] <0.483.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 5000 (10%)
+2018-07-18 12:05:42.520 [debug] <0.484.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 5000 (10%)
+2018-07-18 12:05:42.564 [debug] <0.485.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 5000 (10%)
+2018-07-18 12:06:27.501 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},2},{{{put,put},{put,connection_closing}},2}]
+2018-07-18 12:06:31.334 [debug] <0.550.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 10000 (21%)
+2018-07-18 12:06:31.712 [debug] <0.551.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 10000 (21%)
+2018-07-18 12:06:31.966 [debug] <0.552.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 10000 (21%)
+2018-07-18 12:06:33.294 [debug] <0.553.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 10000 (21%)
+2018-07-18 12:06:33.934 [debug] <0.554.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 10000 (21%)
+2018-07-18 12:06:34.521 [debug] <0.555.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 10000 (21%)
+2018-07-18 12:06:34.999 [debug] <0.556.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 10000 (21%)
+2018-07-18 12:06:35.040 [debug] <0.557.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 10000 (21%)
+2018-07-18 12:06:35.483 [debug] <0.558.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 10000 (21%)
+2018-07-18 12:06:36.098 [debug] <0.559.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 10000 (21%)
+2018-07-18 12:06:36.396 [debug] <0.560.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 10000 (21%)
+2018-07-18 12:06:37.194 [debug] <0.561.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 10000 (21%)
+2018-07-18 12:06:37.564 [debug] <0.562.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 10000 (21%)
+2018-07-18 12:06:37.606 [debug] <0.563.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 10000 (21%)
+2018-07-18 12:06:37.697 [debug] <0.564.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 10000 (21%)
+2018-07-18 12:06:37.769 [debug] <0.565.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 10000 (21%)
+2018-07-18 12:06:38.040 [debug] <0.566.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 10000 (21%)
+2018-07-18 12:06:38.205 [debug] <0.567.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 10000 (21%)
+2018-07-18 12:06:38.213 [debug] <0.568.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 10000 (21%)
+2018-07-18 12:06:38.380 [debug] <0.569.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 10000 (21%)
+2018-07-18 12:06:39.719 [debug] <0.570.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 10000 (21%)
+2018-07-18 12:06:39.977 [debug] <0.571.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 10000 (21%)
+2018-07-18 12:06:40.182 [debug] <0.572.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 10000 (21%)
+2018-07-18 12:06:40.315 [debug] <0.573.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 10000 (21%)
+2018-07-18 12:06:40.422 [debug] <0.574.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 10000 (21%)
+2018-07-18 12:06:40.685 [debug] <0.575.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 10000 (21%)
+2018-07-18 12:06:41.229 [debug] <0.576.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 10000 (21%)
+2018-07-18 12:06:41.457 [debug] <0.577.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 10000 (21%)
+2018-07-18 12:06:41.578 [debug] <0.578.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 10000 (21%)
+2018-07-18 12:06:41.651 [debug] <0.579.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 10000 (21%)
+2018-07-18 12:06:41.781 [debug] <0.580.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 10000 (21%)
+2018-07-18 12:06:41.790 [debug] <0.581.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 10000 (21%)
+2018-07-18 12:06:41.926 [debug] <0.582.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 10000 (21%)
+2018-07-18 12:06:42.069 [debug] <0.583.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 10000 (21%)
+2018-07-18 12:06:42.132 [debug] <0.584.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 10000 (21%)
+2018-07-18 12:06:42.204 [debug] <0.585.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 10000 (21%)
+2018-07-18 12:06:42.697 [debug] <0.586.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 10000 (21%)
+2018-07-18 12:06:42.916 [debug] <0.587.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 10000 (21%)
+2018-07-18 12:06:42.923 [debug] <0.588.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 10000 (21%)
+2018-07-18 12:06:43.281 [debug] <0.589.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 10000 (21%)
+2018-07-18 12:06:43.519 [debug] <0.590.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 10000 (21%)
+2018-07-18 12:06:44.014 [debug] <0.591.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 10000 (21%)
+2018-07-18 12:06:44.110 [debug] <0.592.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 10000 (21%)
+2018-07-18 12:06:44.152 [debug] <0.593.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 10000 (21%)
+2018-07-18 12:06:44.214 [debug] <0.594.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 10000 (21%)
+2018-07-18 12:06:44.222 [debug] <0.595.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 10000 (21%)
+2018-07-18 12:06:44.267 [debug] <0.596.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 10000 (21%)
+2018-07-18 12:06:44.616 [debug] <0.597.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 10000 (21%)
+2018-07-18 12:06:44.851 [debug] <0.598.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 10000 (21%)
+2018-07-18 12:06:44.866 [debug] <0.599.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 10000 (21%)
+2018-07-18 12:06:44.876 [debug] <0.600.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 10000 (21%)
+2018-07-18 12:06:45.041 [debug] <0.601.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 10000 (21%)
+2018-07-18 12:06:45.062 [debug] <0.602.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 10000 (21%)
+2018-07-18 12:06:45.508 [debug] <0.603.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 10000 (21%)
+2018-07-18 12:06:46.184 [debug] <0.604.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 10000 (21%)
+2018-07-18 12:06:46.646 [debug] <0.605.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 10000 (21%)
+2018-07-18 12:06:48.524 [debug] <0.606.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 10000 (21%)
+2018-07-18 12:06:49.095 [debug] <0.607.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 10000 (21%)
+2018-07-18 12:06:49.134 [debug] <0.608.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 10000 (21%)
+2018-07-18 12:06:49.631 [debug] <0.609.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 10000 (21%)
+2018-07-18 12:06:50.440 [debug] <0.610.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 10000 (21%)
+2018-07-18 12:06:51.590 [debug] <0.611.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 10000 (21%)
+2018-07-18 12:06:51.805 [debug] <0.612.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 10000 (21%)
+2018-07-18 12:06:53.369 [debug] <0.613.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 10000 (21%)
+2018-07-18 12:07:17.503 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},3},{{{put,put},{put,connection_closing}},3}]
+2018-07-18 12:07:29.121 [debug] <0.678.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 15000 (32%)
+2018-07-18 12:07:30.696 [debug] <0.679.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 15000 (32%)
+2018-07-18 12:07:31.345 [debug] <0.680.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 15000 (32%)
+2018-07-18 12:07:32.919 [debug] <0.681.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 15000 (32%)
+2018-07-18 12:07:34.323 [debug] <0.682.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 15000 (32%)
+2018-07-18 12:07:34.927 [debug] <0.683.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 15000 (32%)
+2018-07-18 12:07:35.250 [debug] <0.684.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 15000 (32%)
+2018-07-18 12:07:35.384 [debug] <0.685.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 15000 (32%)
+2018-07-18 12:07:35.968 [debug] <0.686.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 15000 (32%)
+2018-07-18 12:07:35.974 [debug] <0.687.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 15000 (32%)
+2018-07-18 12:07:36.201 [debug] <0.688.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 15000 (32%)
+2018-07-18 12:07:36.863 [debug] <0.689.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 15000 (32%)
+2018-07-18 12:07:37.200 [debug] <0.690.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 15000 (32%)
+2018-07-18 12:07:37.393 [debug] <0.691.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 15000 (32%)
+2018-07-18 12:07:37.405 [debug] <0.692.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 15000 (32%)
+2018-07-18 12:07:38.387 [debug] <0.693.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 15000 (32%)
+2018-07-18 12:07:38.408 [debug] <0.694.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 15000 (32%)
+2018-07-18 12:07:38.785 [debug] <0.695.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 15000 (32%)
+2018-07-18 12:07:39.511 [debug] <0.696.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 15000 (32%)
+2018-07-18 12:07:39.744 [debug] <0.697.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 15000 (32%)
+2018-07-18 12:07:40.299 [debug] <0.698.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 15000 (32%)
+2018-07-18 12:07:40.509 [debug] <0.699.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 15000 (32%)
+2018-07-18 12:07:40.638 [debug] <0.700.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 15000 (32%)
+2018-07-18 12:07:40.747 [debug] <0.701.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 15000 (32%)
+2018-07-18 12:07:41.030 [debug] <0.702.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 15000 (32%)
+2018-07-18 12:07:41.230 [debug] <0.703.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 15000 (32%)
+2018-07-18 12:07:41.593 [debug] <0.704.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 15000 (32%)
+2018-07-18 12:07:41.621 [debug] <0.705.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 15000 (32%)
+2018-07-18 12:07:41.635 [debug] <0.706.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 15000 (32%)
+2018-07-18 12:07:41.702 [debug] <0.707.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 15000 (32%)
+2018-07-18 12:07:41.893 [debug] <0.708.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 15000 (32%)
+2018-07-18 12:07:42.632 [debug] <0.709.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 15000 (32%)
+2018-07-18 12:07:42.895 [debug] <0.710.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 15000 (32%)
+2018-07-18 12:07:43.023 [debug] <0.711.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 15000 (32%)
+2018-07-18 12:07:43.102 [debug] <0.712.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 15000 (32%)
+2018-07-18 12:07:43.121 [debug] <0.713.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 15000 (32%)
+2018-07-18 12:07:43.164 [debug] <0.714.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 15000 (32%)
+2018-07-18 12:07:43.199 [debug] <0.715.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 15000 (32%)
+2018-07-18 12:07:43.213 [debug] <0.716.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 15000 (32%)
+2018-07-18 12:07:43.843 [debug] <0.717.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 15000 (32%)
+2018-07-18 12:07:44.167 [debug] <0.718.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 15000 (32%)
+2018-07-18 12:07:44.308 [debug] <0.720.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 15000 (32%)
+2018-07-18 12:07:44.911 [debug] <0.723.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 15000 (32%)
+2018-07-18 12:07:45.645 [debug] <0.724.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 15000 (32%)
+2018-07-18 12:07:46.083 [debug] <0.725.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 15000 (32%)
+2018-07-18 12:07:46.256 [debug] <0.726.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 15000 (32%)
+2018-07-18 12:07:46.753 [debug] <0.727.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 15000 (32%)
+2018-07-18 12:07:46.853 [debug] <0.728.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 15000 (32%)
+2018-07-18 12:07:46.911 [debug] <0.729.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 15000 (32%)
+2018-07-18 12:07:46.952 [debug] <0.730.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 15000 (32%)
+2018-07-18 12:07:47.534 [debug] <0.731.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 15000 (32%)
+2018-07-18 12:07:48.179 [debug] <0.733.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 15000 (32%)
+2018-07-18 12:07:48.354 [debug] <0.734.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 15000 (32%)
+2018-07-18 12:07:49.218 [debug] <0.735.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 15000 (32%)
+2018-07-18 12:07:49.855 [debug] <0.737.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 15000 (32%)
+2018-07-18 12:07:49.935 [debug] <0.739.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 15000 (32%)
+2018-07-18 12:07:50.433 [debug] <0.740.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 15000 (32%)
+2018-07-18 12:07:51.531 [debug] <0.743.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 15000 (32%)
+2018-07-18 12:07:51.894 [debug] <0.744.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 15000 (32%)
+2018-07-18 12:07:52.472 [debug] <0.748.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 15000 (32%)
+2018-07-18 12:07:53.260 [debug] <0.753.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 15000 (32%)
+2018-07-18 12:07:53.443 [debug] <0.754.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 15000 (32%)
+2018-07-18 12:07:54.001 [debug] <0.756.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 15000 (32%)
+2018-07-18 12:07:54.289 [debug] <0.758.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 15000 (32%)
+2018-07-18 12:08:07.523 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:08:29.277 [debug] <0.806.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 20000 (42%)
+2018-07-18 12:08:30.473 [debug] <0.807.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 20000 (42%)
+2018-07-18 12:08:33.330 [debug] <0.809.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 20000 (42%)
+2018-07-18 12:08:34.977 [debug] <0.811.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 20000 (42%)
+2018-07-18 12:08:35.067 [debug] <0.812.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 20000 (42%)
+2018-07-18 12:08:35.183 [debug] <0.813.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 20000 (42%)
+2018-07-18 12:08:35.683 [debug] <0.815.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 20000 (42%)
+2018-07-18 12:08:35.684 [debug] <0.816.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 20000 (42%)
+2018-07-18 12:08:36.675 [debug] <0.817.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 20000 (42%)
+2018-07-18 12:08:36.925 [debug] <0.818.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 20000 (42%)
+2018-07-18 12:08:37.709 [debug] <0.819.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 20000 (42%)
+2018-07-18 12:08:38.812 [debug] <0.820.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 20000 (42%)
+2018-07-18 12:08:39.305 [debug] <0.822.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 20000 (42%)
+2018-07-18 12:08:39.683 [debug] <0.825.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 20000 (42%)
+2018-07-18 12:08:39.992 [debug] <0.826.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 20000 (42%)
+2018-07-18 12:08:40.343 [debug] <0.828.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 20000 (42%)
+2018-07-18 12:08:40.503 [debug] <0.830.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 20000 (42%)
+2018-07-18 12:08:41.466 [debug] <0.831.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 20000 (42%)
+2018-07-18 12:08:41.616 [debug] <0.832.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 20000 (42%)
+2018-07-18 12:08:41.626 [debug] <0.833.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 20000 (42%)
+2018-07-18 12:08:41.692 [debug] <0.834.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 20000 (42%)
+2018-07-18 12:08:41.751 [debug] <0.835.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 20000 (42%)
+2018-07-18 12:08:41.952 [debug] <0.836.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 20000 (42%)
+2018-07-18 12:08:42.062 [debug] <0.837.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 20000 (42%)
+2018-07-18 12:08:42.355 [debug] <0.839.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 20000 (42%)
+2018-07-18 12:08:42.706 [debug] <0.840.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 20000 (42%)
+2018-07-18 12:08:42.743 [debug] <0.841.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 20000 (42%)
+2018-07-18 12:08:42.835 [debug] <0.843.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 20000 (42%)
+2018-07-18 12:08:42.913 [debug] <0.844.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 20000 (42%)
+2018-07-18 12:08:42.923 [debug] <0.845.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 20000 (42%)
+2018-07-18 12:08:43.901 [debug] <0.849.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 20000 (42%)
+2018-07-18 12:08:44.445 [debug] <0.852.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 20000 (42%)
+2018-07-18 12:08:44.766 [debug] <0.853.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 20000 (42%)
+2018-07-18 12:08:45.217 [debug] <0.855.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 20000 (42%)
+2018-07-18 12:08:45.575 [debug] <0.859.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 20000 (42%)
+2018-07-18 12:08:45.865 [debug] <0.860.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 20000 (42%)
+2018-07-18 12:08:45.891 [debug] <0.861.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 20000 (42%)
+2018-07-18 12:08:46.031 [debug] <0.862.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 20000 (42%)
+2018-07-18 12:08:46.775 [debug] <0.866.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 20000 (42%)
+2018-07-18 12:08:47.084 [debug] <0.870.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 20000 (42%)
+2018-07-18 12:08:47.429 [debug] <0.872.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 20000 (42%)
+2018-07-18 12:08:47.512 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:08:47.610 [debug] <0.874.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 20000 (42%)
+2018-07-18 12:08:47.696 [debug] <0.875.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 20000 (42%)
+2018-07-18 12:08:48.222 [debug] <0.879.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 20000 (42%)
+2018-07-18 12:08:48.525 [debug] <0.880.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 20000 (42%)
+2018-07-18 12:08:48.786 [debug] <0.881.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 20000 (42%)
+2018-07-18 12:08:49.600 [debug] <0.884.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 20000 (42%)
+2018-07-18 12:08:50.040 [debug] <0.890.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 20000 (42%)
+2018-07-18 12:08:50.202 [debug] <0.891.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 20000 (42%)
+2018-07-18 12:08:50.767 [debug] <0.893.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 20000 (42%)
+2018-07-18 12:08:50.847 [debug] <0.894.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 20000 (42%)
+2018-07-18 12:08:50.972 [debug] <0.895.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 20000 (42%)
+2018-07-18 12:08:51.204 [debug] <0.896.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 20000 (42%)
+2018-07-18 12:08:51.524 [debug] <0.899.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 20000 (42%)
+2018-07-18 12:08:51.720 [debug] <0.901.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 20000 (42%)
+2018-07-18 12:08:52.036 [debug] <0.903.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 20000 (42%)
+2018-07-18 12:08:52.283 [debug] <0.905.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 20000 (42%)
+2018-07-18 12:08:52.670 [debug] <0.906.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 20000 (42%)
+2018-07-18 12:08:52.750 [debug] <0.907.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 20000 (42%)
+2018-07-18 12:08:56.034 [debug] <0.916.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 20000 (42%)
+2018-07-18 12:08:58.906 [debug] <0.925.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 20000 (42%)
+2018-07-18 12:08:59.116 [debug] <0.926.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 20000 (42%)
+2018-07-18 12:08:59.785 [debug] <0.927.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 20000 (42%)
+2018-07-18 12:09:04.332 [debug] <0.930.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 20000 (42%)
+2018-07-18 12:09:07.483 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:09:30.632 [debug] <0.945.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 25000 (53%)
+2018-07-18 12:09:31.056 [debug] <0.946.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 25000 (53%)
+2018-07-18 12:09:31.248 [debug] <0.947.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 25000 (53%)
+2018-07-18 12:09:33.697 [debug] <0.952.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 25000 (53%)
+2018-07-18 12:09:34.891 [debug] <0.955.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 25000 (53%)
+2018-07-18 12:09:34.972 [debug] <0.956.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 25000 (53%)
+2018-07-18 12:09:35.082 [debug] <0.957.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 25000 (53%)
+2018-07-18 12:09:35.271 [debug] <0.959.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 25000 (53%)
+2018-07-18 12:09:35.419 [debug] <0.960.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 25000 (53%)
+2018-07-18 12:09:35.756 [debug] <0.962.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 25000 (53%)
+2018-07-18 12:09:37.856 [debug] <0.970.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 25000 (53%)
+2018-07-18 12:09:39.424 [debug] <0.976.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 25000 (53%)
+2018-07-18 12:09:39.478 [debug] <0.977.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 25000 (53%)
+2018-07-18 12:09:39.673 [debug] <0.978.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 25000 (53%)
+2018-07-18 12:09:40.115 [debug] <0.980.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 25000 (53%)
+2018-07-18 12:09:41.026 [debug] <0.984.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 25000 (53%)
+2018-07-18 12:09:41.547 [debug] <0.987.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 25000 (53%)
+2018-07-18 12:09:41.699 [debug] <0.988.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 25000 (53%)
+2018-07-18 12:09:41.917 [debug] <0.989.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 25000 (53%)
+2018-07-18 12:09:42.043 [debug] <0.991.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 25000 (53%)
+2018-07-18 12:09:42.239 [debug] <0.993.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 25000 (53%)
+2018-07-18 12:09:42.813 [debug] <0.996.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 25000 (53%)
+2018-07-18 12:09:42.922 [debug] <0.998.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 25000 (53%)
+2018-07-18 12:09:43.300 [debug] <0.1000.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 25000 (53%)
+2018-07-18 12:09:43.340 [debug] <0.1001.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 25000 (53%)
+2018-07-18 12:09:43.932 [debug] <0.1004.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 25000 (53%)
+2018-07-18 12:09:45.092 [debug] <0.1009.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 25000 (53%)
+2018-07-18 12:09:45.446 [debug] <0.1010.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 25000 (53%)
+2018-07-18 12:09:45.702 [debug] <0.1011.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 25000 (53%)
+2018-07-18 12:09:46.033 [debug] <0.1013.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 25000 (53%)
+2018-07-18 12:09:46.440 [debug] <0.1015.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 25000 (53%)
+2018-07-18 12:09:46.764 [debug] <0.1017.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 25000 (53%)
+2018-07-18 12:09:46.845 [debug] <0.1018.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 25000 (53%)
+2018-07-18 12:09:47.027 [debug] <0.1019.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 25000 (53%)
+2018-07-18 12:09:47.054 [debug] <0.1020.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 25000 (53%)
+2018-07-18 12:09:47.083 [debug] <0.1021.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 25000 (53%)
+2018-07-18 12:09:47.448 [debug] <0.1022.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 25000 (53%)
+2018-07-18 12:09:48.302 [debug] <0.1025.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 25000 (53%)
+2018-07-18 12:09:48.482 [debug] <0.1028.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 25000 (53%)
+2018-07-18 12:09:49.683 [debug] <0.1030.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 25000 (53%)
+2018-07-18 12:09:49.694 [debug] <0.1031.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 25000 (53%)
+2018-07-18 12:09:50.225 [debug] <0.1032.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 25000 (53%)
+2018-07-18 12:09:51.033 [debug] <0.1035.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 25000 (53%)
+2018-07-18 12:09:51.044 [debug] <0.1036.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 25000 (53%)
+2018-07-18 12:09:52.062 [debug] <0.1038.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 25000 (53%)
+2018-07-18 12:09:52.196 [debug] <0.1039.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 25000 (53%)
+2018-07-18 12:09:53.556 [debug] <0.1040.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 25000 (53%)
+2018-07-18 12:09:53.577 [debug] <0.1041.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 25000 (53%)
+2018-07-18 12:09:55.270 [debug] <0.1043.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 25000 (53%)
+2018-07-18 12:09:55.544 [debug] <0.1044.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 25000 (53%)
+2018-07-18 12:09:55.860 [debug] <0.1045.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 25000 (53%)
+2018-07-18 12:09:57.475 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:09:57.862 [debug] <0.1046.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 25000 (53%)
+2018-07-18 12:09:59.448 [debug] <0.1048.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 25000 (53%)
+2018-07-18 12:09:59.860 [debug] <0.1049.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 25000 (53%)
+2018-07-18 12:09:59.906 [debug] <0.1050.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 25000 (53%)
+2018-07-18 12:10:00.845 [debug] <0.1051.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 25000 (53%)
+2018-07-18 12:10:01.035 [debug] <0.1052.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 25000 (53%)
+2018-07-18 12:10:01.099 [debug] <0.1053.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 25000 (53%)
+2018-07-18 12:10:01.263 [debug] <0.1054.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 25000 (53%)
+2018-07-18 12:10:01.771 [debug] <0.1055.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 25000 (53%)
+2018-07-18 12:10:02.865 [debug] <0.1056.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 25000 (53%)
+2018-07-18 12:10:04.788 [debug] <0.1058.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 25000 (53%)
+2018-07-18 12:10:09.535 [debug] <0.1059.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 25000 (53%)
+2018-07-18 12:10:17.519 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:10:24.093 [debug] <0.1075.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 25000 (53%)
+2018-07-18 12:10:27.498 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},2},{{{put,put},{put,connection_closing}},2}]
+2018-07-18 12:10:31.413 [debug] <0.1097.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 30000 (64%)
+2018-07-18 12:10:32.612 [debug] <0.1099.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 30000 (64%)
+2018-07-18 12:10:33.545 [debug] <0.1102.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 30000 (64%)
+2018-07-18 12:10:34.221 [debug] <0.1105.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 30000 (64%)
+2018-07-18 12:10:34.255 [debug] <0.1106.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 30000 (64%)
+2018-07-18 12:10:36.063 [debug] <0.1113.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 30000 (64%)
+2018-07-18 12:10:36.528 [debug] <0.1114.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 30000 (64%)
+2018-07-18 12:10:37.509 [debug] <0.1118.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 30000 (64%)
+2018-07-18 12:10:37.574 [debug] <0.1119.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 30000 (64%)
+2018-07-18 12:10:38.612 [debug] <0.1124.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 30000 (64%)
+2018-07-18 12:10:38.988 [debug] <0.1125.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 30000 (64%)
+2018-07-18 12:10:39.726 [debug] <0.1128.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 30000 (64%)
+2018-07-18 12:10:39.929 [debug] <0.1130.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 30000 (64%)
+2018-07-18 12:10:40.553 [debug] <0.1131.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 30000 (64%)
+2018-07-18 12:10:40.654 [debug] <0.1133.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 30000 (64%)
+2018-07-18 12:10:41.731 [debug] <0.1134.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 30000 (64%)
+2018-07-18 12:10:42.587 [debug] <0.1136.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 30000 (64%)
+2018-07-18 12:10:43.057 [debug] <0.1138.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 30000 (64%)
+2018-07-18 12:10:43.405 [debug] <0.1140.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 30000 (64%)
+2018-07-18 12:10:43.963 [debug] <0.1142.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 30000 (64%)
+2018-07-18 12:10:44.235 [debug] <0.1143.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 30000 (64%)
+2018-07-18 12:10:44.676 [debug] <0.1144.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 30000 (64%)
+2018-07-18 12:10:44.821 [debug] <0.1145.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 30000 (64%)
+2018-07-18 12:10:44.827 [debug] <0.1146.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 30000 (64%)
+2018-07-18 12:10:44.999 [debug] <0.1147.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 30000 (64%)
+2018-07-18 12:10:45.024 [debug] <0.1148.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 30000 (64%)
+2018-07-18 12:10:45.817 [debug] <0.1150.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 30000 (64%)
+2018-07-18 12:10:45.820 [debug] <0.1151.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 30000 (64%)
+2018-07-18 12:10:46.027 [debug] <0.1152.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 30000 (64%)
+2018-07-18 12:10:46.212 [debug] <0.1153.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 30000 (64%)
+2018-07-18 12:10:46.366 [debug] <0.1154.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 30000 (64%)
+2018-07-18 12:10:46.725 [debug] <0.1155.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 30000 (64%)
+2018-07-18 12:10:47.501 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:10:48.588 [debug] <0.1156.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 30000 (64%)
+2018-07-18 12:10:54.165 [debug] <0.1157.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 30000 (64%)
+2018-07-18 12:10:54.216 [debug] <0.1158.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 30000 (64%)
+2018-07-18 12:10:54.280 [debug] <0.1159.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 30000 (64%)
+2018-07-18 12:10:55.302 [debug] <0.1160.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 30000 (64%)
+2018-07-18 12:10:55.309 [debug] <0.1161.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 30000 (64%)
+2018-07-18 12:10:55.830 [debug] <0.1163.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 30000 (64%)
+2018-07-18 12:10:55.944 [debug] <0.1164.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 30000 (64%)
+2018-07-18 12:10:57.628 [debug] <0.1165.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 30000 (64%)
+2018-07-18 12:10:57.845 [debug] <0.1166.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 30000 (64%)
+2018-07-18 12:10:57.938 [debug] <0.1167.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 30000 (64%)
+2018-07-18 12:10:58.382 [debug] <0.1168.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 30000 (64%)
+2018-07-18 12:10:58.519 [debug] <0.1169.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 30000 (64%)
+2018-07-18 12:10:58.560 [debug] <0.1170.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 30000 (64%)
+2018-07-18 12:10:59.278 [debug] <0.1171.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 30000 (64%)
+2018-07-18 12:10:59.741 [debug] <0.1172.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 30000 (64%)
+2018-07-18 12:11:00.150 [debug] <0.1173.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 30000 (64%)
+2018-07-18 12:11:00.639 [debug] <0.1174.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 30000 (64%)
+2018-07-18 12:11:01.434 [debug] <0.1175.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 30000 (64%)
+2018-07-18 12:11:01.455 [debug] <0.1176.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 30000 (64%)
+2018-07-18 12:11:01.887 [debug] <0.1177.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 30000 (64%)
+2018-07-18 12:11:01.946 [debug] <0.1178.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 30000 (64%)
+2018-07-18 12:11:02.644 [debug] <0.1179.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 30000 (64%)
+2018-07-18 12:11:02.822 [debug] <0.1180.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 30000 (64%)
+2018-07-18 12:11:04.690 [debug] <0.1182.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 30000 (64%)
+2018-07-18 12:11:04.946 [debug] <0.1183.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 30000 (64%)
+2018-07-18 12:11:05.132 [debug] <0.1184.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 30000 (64%)
+2018-07-18 12:11:05.649 [debug] <0.1185.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 30000 (64%)
+2018-07-18 12:11:06.693 [debug] <0.1187.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 30000 (64%)
+2018-07-18 12:11:07.385 [debug] <0.1189.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 30000 (64%)
+2018-07-18 12:11:11.601 [debug] <0.1196.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 30000 (64%)
+2018-07-18 12:11:17.515 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:11:27.521 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:11:28.944 [debug] <0.1243.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 35000 (74%)
+2018-07-18 12:11:31.288 [debug] <0.1246.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 35000 (74%)
+2018-07-18 12:11:32.294 [debug] <0.1248.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 35000 (74%)
+2018-07-18 12:11:33.911 [debug] <0.1251.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 35000 (74%)
+2018-07-18 12:11:34.555 [debug] <0.1253.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 35000 (74%)
+2018-07-18 12:11:35.278 [debug] <0.1256.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 35000 (74%)
+2018-07-18 12:11:35.884 [debug] <0.1257.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 35000 (74%)
+2018-07-18 12:11:36.525 [debug] <0.1258.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 35000 (74%)
+2018-07-18 12:11:37.417 [debug] <0.1259.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 35000 (74%)
+2018-07-18 12:11:38.869 [debug] <0.1261.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 35000 (74%)
+2018-07-18 12:11:40.461 [debug] <0.1262.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 35000 (74%)
+2018-07-18 12:11:40.570 [debug] <0.1263.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 35000 (74%)
+2018-07-18 12:11:40.628 [debug] <0.1264.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 35000 (74%)
+2018-07-18 12:11:40.880 [debug] <0.1265.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 35000 (74%)
+2018-07-18 12:11:41.650 [debug] <0.1266.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 35000 (74%)
+2018-07-18 12:11:43.003 [debug] <0.1267.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 35000 (74%)
+2018-07-18 12:11:43.572 [debug] <0.1268.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 35000 (74%)
+2018-07-18 12:11:43.573 [debug] <0.1269.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 35000 (74%)
+2018-07-18 12:11:52.136 [debug] <0.1270.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 35000 (74%)
+2018-07-18 12:11:52.366 [debug] <0.1271.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 35000 (74%)
+2018-07-18 12:11:52.490 [debug] <0.1272.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 35000 (74%)
+2018-07-18 12:11:52.742 [debug] <0.1273.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 35000 (74%)
+2018-07-18 12:11:53.257 [debug] <0.1274.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 35000 (74%)
+2018-07-18 12:11:53.306 [debug] <0.1275.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 35000 (74%)
+2018-07-18 12:11:53.796 [debug] <0.1276.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 35000 (74%)
+2018-07-18 12:11:54.299 [debug] <0.1277.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 35000 (74%)
+2018-07-18 12:11:54.643 [debug] <0.1278.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 35000 (74%)
+2018-07-18 12:11:54.676 [debug] <0.1279.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 35000 (74%)
+2018-07-18 12:11:54.688 [debug] <0.1280.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 35000 (74%)
+2018-07-18 12:11:54.689 [debug] <0.1281.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 35000 (74%)
+2018-07-18 12:11:54.896 [debug] <0.1282.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 35000 (74%)
+2018-07-18 12:11:54.955 [debug] <0.1283.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 35000 (74%)
+2018-07-18 12:11:55.124 [debug] <0.1284.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 35000 (74%)
+2018-07-18 12:11:56.204 [debug] <0.1285.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 35000 (74%)
+2018-07-18 12:11:56.757 [debug] <0.1286.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 35000 (74%)
+2018-07-18 12:11:56.893 [debug] <0.1287.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 35000 (74%)
+2018-07-18 12:11:57.188 [debug] <0.1288.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 35000 (74%)
+2018-07-18 12:11:58.076 [debug] <0.1290.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 35000 (74%)
+2018-07-18 12:11:58.350 [debug] <0.1291.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 30000 (64%)
+2018-07-18 12:11:59.098 [debug] <0.1292.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 35000 (74%)
+2018-07-18 12:11:59.678 [debug] <0.1295.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 35000 (74%)
+2018-07-18 12:11:59.984 [debug] <0.1296.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 35000 (74%)
+2018-07-18 12:11:59.992 [debug] <0.1297.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 35000 (74%)
+2018-07-18 12:12:00.211 [debug] <0.1298.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 35000 (74%)
+2018-07-18 12:12:00.855 [debug] <0.1300.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 35000 (74%)
+2018-07-18 12:12:01.572 [debug] <0.1301.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 35000 (74%)
+2018-07-18 12:12:01.676 [debug] <0.1302.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 35000 (74%)
+2018-07-18 12:12:03.405 [debug] <0.1304.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 35000 (74%)
+2018-07-18 12:12:04.334 [debug] <0.1305.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 35000 (74%)
+2018-07-18 12:12:10.329 [debug] <0.1309.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 35000 (74%)
+2018-07-18 12:12:11.459 [debug] <0.1311.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 35000 (74%)
+2018-07-18 12:12:12.080 [debug] <0.1312.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 35000 (74%)
+2018-07-18 12:12:12.378 [debug] <0.1314.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 35000 (74%)
+2018-07-18 12:12:12.662 [debug] <0.1316.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 35000 (74%)
+2018-07-18 12:12:13.081 [debug] <0.1318.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 35000 (74%)
+2018-07-18 12:12:13.361 [debug] <0.1320.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 35000 (74%)
+2018-07-18 12:12:14.074 [debug] <0.1323.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 35000 (74%)
+2018-07-18 12:12:15.293 [debug] <0.1326.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 35000 (74%)
+2018-07-18 12:12:15.635 [debug] <0.1328.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 35000 (74%)
+2018-07-18 12:12:16.212 [debug] <0.1330.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 35000 (74%)
+2018-07-18 12:12:17.481 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:12:18.149 [debug] <0.1334.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 35000 (74%)
+2018-07-18 12:12:19.569 [debug] <0.1342.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 35000 (74%)
+2018-07-18 12:12:21.250 [debug] <0.1348.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 35000 (74%)
+2018-07-18 12:12:21.492 [debug] <0.1349.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 35000 (74%)
+2018-07-18 12:12:42.561 [debug] <0.1378.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 40000 (85%)
+2018-07-18 12:12:44.058 [debug] <0.1379.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 40000 (85%)
+2018-07-18 12:12:44.258 [debug] <0.1381.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 40000 (85%)
+2018-07-18 12:12:45.956 [debug] <0.1382.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 40000 (85%)
+2018-07-18 12:12:46.392 [debug] <0.1383.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 40000 (85%)
+2018-07-18 12:12:47.494 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:12:47.876 [debug] <0.1385.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 40000 (85%)
+2018-07-18 12:12:48.191 [debug] <0.1386.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 40000 (85%)
+2018-07-18 12:12:48.430 [debug] <0.1387.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 40000 (85%)
+2018-07-18 12:12:48.723 [debug] <0.1388.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 40000 (85%)
+2018-07-18 12:12:49.003 [debug] <0.1389.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 40000 (85%)
+2018-07-18 12:12:49.629 [debug] <0.1390.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 40000 (85%)
+2018-07-18 12:12:49.878 [debug] <0.1391.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 40000 (85%)
+2018-07-18 12:12:50.638 [debug] <0.1392.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 40000 (85%)
+2018-07-18 12:12:50.873 [debug] <0.1393.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 40000 (85%)
+2018-07-18 12:12:51.117 [debug] <0.1394.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 40000 (85%)
+2018-07-18 12:12:52.681 [debug] <0.1396.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 40000 (85%)
+2018-07-18 12:12:52.777 [debug] <0.1397.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 40000 (85%)
+2018-07-18 12:12:53.282 [debug] <0.1398.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 40000 (85%)
+2018-07-18 12:12:53.539 [debug] <0.1399.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 40000 (85%)
+2018-07-18 12:12:54.253 [debug] <0.1401.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 40000 (85%)
+2018-07-18 12:12:54.918 [debug] <0.1404.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 40000 (85%)
+2018-07-18 12:12:55.588 [debug] <0.1407.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 40000 (85%)
+2018-07-18 12:12:56.021 [debug] <0.1410.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 40000 (85%)
+2018-07-18 12:12:56.038 [debug] <0.1411.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 40000 (85%)
+2018-07-18 12:12:56.708 [debug] <0.1412.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 40000 (85%)
+2018-07-18 12:12:57.013 [debug] <0.1413.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 40000 (85%)
+2018-07-18 12:12:57.598 [debug] <0.1416.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 40000 (85%)
+2018-07-18 12:12:58.894 [debug] <0.1418.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 40000 (85%)
+2018-07-18 12:12:59.022 [debug] <0.1421.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 40000 (85%)
+2018-07-18 12:12:59.213 [debug] <0.1423.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 40000 (85%)
+2018-07-18 12:13:01.352 [debug] <0.1428.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 40000 (85%)
+2018-07-18 12:13:02.483 [debug] <0.1430.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 40000 (85%)
+2018-07-18 12:13:02.491 [debug] <0.1431.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 40000 (85%)
+2018-07-18 12:13:02.553 [debug] <0.1432.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 40000 (85%)
+2018-07-18 12:13:02.704 [debug] <0.1433.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 40000 (85%)
+2018-07-18 12:13:03.593 [debug] <0.1436.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 40000 (85%)
+2018-07-18 12:13:04.712 [debug] <0.1438.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 40000 (85%)
+2018-07-18 12:13:05.058 [debug] <0.1440.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 40000 (85%)
+2018-07-18 12:13:05.999 [debug] <0.1444.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 40000 (85%)
+2018-07-18 12:13:06.066 [debug] <0.1445.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 40000 (85%)
+2018-07-18 12:13:06.582 [debug] <0.1447.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 40000 (85%)
+2018-07-18 12:13:06.647 [debug] <0.1448.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 40000 (85%)
+2018-07-18 12:13:06.712 [debug] <0.1449.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 40000 (85%)
+2018-07-18 12:13:08.558 [debug] <0.1452.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 40000 (85%)
+2018-07-18 12:13:09.245 [debug] <0.1453.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 40000 (85%)
+2018-07-18 12:13:09.502 [debug] <0.1454.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 40000 (85%)
+2018-07-18 12:13:10.311 [debug] <0.1455.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 40000 (85%)
+2018-07-18 12:13:10.374 [debug] <0.1456.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 40000 (85%)
+2018-07-18 12:13:12.364 [debug] <0.1462.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 40000 (85%)
+2018-07-18 12:13:12.579 [debug] <0.1464.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 40000 (85%)
+2018-07-18 12:13:12.990 [debug] <0.1466.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 40000 (85%)
+2018-07-18 12:13:14.190 [debug] <0.1471.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 40000 (85%)
+2018-07-18 12:13:14.488 [debug] <0.1472.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 40000 (85%)
+2018-07-18 12:13:14.935 [debug] <0.1473.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 40000 (85%)
+2018-07-18 12:13:14.988 [debug] <0.1474.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 40000 (85%)
+2018-07-18 12:13:15.707 [debug] <0.1476.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 40000 (85%)
+2018-07-18 12:13:18.633 [debug] <0.1482.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 40000 (85%)
+2018-07-18 12:13:18.735 [debug] <0.1483.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 40000 (85%)
+2018-07-18 12:13:21.942 [debug] <0.1488.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 40000 (85%)
+2018-07-18 12:13:23.380 [debug] <0.1491.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 35000 (74%)
+2018-07-18 12:13:25.907 [debug] <0.1496.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 40000 (85%)
+2018-07-18 12:13:27.376 [debug] <0.1499.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 40000 (85%)
+2018-07-18 12:13:27.522 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:13:35.140 [debug] <0.1502.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 40000 (85%)
+2018-07-18 12:13:48.710 [debug] <0.1504.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 40000 (85%)
+2018-07-18 12:13:51.945 [debug] <0.1511.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.144.0>: 45000 (96%)
+2018-07-18 12:13:52.583 [debug] <0.1512.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.176.0>: 45000 (96%)
+2018-07-18 12:13:52.844 [debug] <0.1513.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.152.0>: 45000 (96%)
+2018-07-18 12:13:53.349 [debug] <0.1515.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.154.0>: 45000 (96%)
+2018-07-18 12:13:55.691 [debug] <0.1524.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.128.0>: 45000 (96%)
+2018-07-18 12:13:56.424 [debug] <0.1529.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.124.0>: 45000 (96%)
+2018-07-18 12:13:56.499 [debug] <0.1530.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.218.0>: 45000 (96%)
+2018-07-18 12:13:56.722 [debug] <0.1532.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.186.0>: 45000 (96%)
+2018-07-18 12:13:57.437 [debug] <0.1534.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.126.0>: 45000 (96%)
+2018-07-18 12:13:57.438 [debug] <0.1535.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.118.0>: 45000 (96%)
+2018-07-18 12:13:57.500 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:13:57.698 [debug] <0.1536.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.216.0>: 45000 (96%)
+2018-07-18 12:13:57.810 [debug] <0.1538.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.140.0>: 45000 (96%)
+2018-07-18 12:13:57.896 [debug] <0.1539.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.160.0>: 45000 (96%)
+2018-07-18 12:13:57.958 [debug] <0.1540.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.188.0>: 45000 (96%)
+2018-07-18 12:13:58.382 [debug] <0.1542.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.192.0>: 45000 (96%)
+2018-07-18 12:13:58.609 [debug] <0.1543.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.132.0>: 45000 (96%)
+2018-07-18 12:13:58.841 [debug] <0.1544.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.170.0>: 45000 (96%)
+2018-07-18 12:13:59.128 [debug] <0.1546.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.162.0>: 45000 (96%)
+2018-07-18 12:14:00.055 [debug] <0.1549.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.122.0>: 45000 (96%)
+2018-07-18 12:14:00.799 [debug] <0.1550.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.158.0>: 45000 (96%)
+2018-07-18 12:14:01.269 [debug] <0.1553.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.130.0>: 45000 (96%)
+2018-07-18 12:14:01.858 [debug] <0.1556.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.178.0>: 45000 (96%)
+2018-07-18 12:14:02.217 [debug] <0.1557.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.182.0>: 45000 (96%)
+2018-07-18 12:14:03.098 [debug] <0.1559.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.202.0>: 45000 (96%)
+2018-07-18 12:14:03.439 [debug] <0.1562.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.114.0>: 45000 (96%)
+2018-07-18 12:14:03.785 [debug] <0.1563.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.198.0>: 45000 (96%)
+2018-07-18 12:14:03.838 [debug] <0.1564.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.204.0>: 45000 (96%)
+2018-07-18 12:14:05.354 [debug] <0.1569.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.208.0>: 45000 (96%)
+2018-07-18 12:14:05.448 [debug] <0.1570.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.220.0>: 45000 (96%)
+2018-07-18 12:14:05.631 [debug] <0.1571.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.148.0>: 45000 (96%)
+2018-07-18 12:14:06.948 [debug] <0.1573.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.166.0>: 45000 (96%)
+2018-07-18 12:14:07.359 [debug] <0.1576.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.172.0>: 45000 (96%)
+2018-07-18 12:14:07.359 [debug] <0.1577.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.112.0>: 45000 (96%)
+2018-07-18 12:14:07.507 [debug] <0.1578.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.190.0>: 45000 (96%)
+2018-07-18 12:14:07.542 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:14:08.863 [debug] <0.1583.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.214.0>: 45000 (96%)
+2018-07-18 12:14:09.538 [debug] <0.1585.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.196.0>: 45000 (96%)
+2018-07-18 12:14:09.591 [debug] <0.1586.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.226.0>: 45000 (96%)
+2018-07-18 12:14:09.964 [debug] <0.1587.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.180.0>: 45000 (96%)
+2018-07-18 12:14:10.041 [debug] <0.1588.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.156.0>: 45000 (96%)
+2018-07-18 12:14:10.207 [debug] <0.1590.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.174.0>: 45000 (96%)
+2018-07-18 12:14:10.479 [debug] <0.1591.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.134.0>: 45000 (96%)
+2018-07-18 12:14:11.335 [info] <0.144.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.144.0>) has requested stop: empty_keygen
+2018-07-18 12:14:11.645 [debug] <0.1596.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.210.0>: 45000 (96%)
+2018-07-18 12:14:12.172 [info] <0.176.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.176.0>) has requested stop: empty_keygen
+2018-07-18 12:14:12.285 [info] <0.152.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.152.0>) has requested stop: empty_keygen
+2018-07-18 12:14:12.425 [debug] <0.1601.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.146.0>: 45000 (96%)
+2018-07-18 12:14:12.518 [info] <0.154.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.154.0>) has requested stop: empty_keygen
+2018-07-18 12:14:13.590 [debug] <0.1603.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.224.0>: 45000 (96%)
+2018-07-18 12:14:13.631 [debug] <0.1604.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.184.0>: 45000 (96%)
+2018-07-18 12:14:13.812 [debug] <0.1605.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.150.0>: 45000 (96%)
+2018-07-18 12:14:14.106 [debug] <0.1606.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.120.0>: 45000 (96%)
+2018-07-18 12:14:14.263 [debug] <0.1607.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.138.0>: 45000 (96%)
+2018-07-18 12:14:14.903 [info] <0.128.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.128.0>) has requested stop: empty_keygen
+2018-07-18 12:14:15.440 [info] <0.124.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.124.0>) has requested stop: empty_keygen
+2018-07-18 12:14:15.585 [info] <0.186.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.186.0>) has requested stop: empty_keygen
+2018-07-18 12:14:15.833 [info] <0.218.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.218.0>) has requested stop: empty_keygen
+2018-07-18 12:14:16.107 [info] <0.126.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.126.0>) has requested stop: empty_keygen
+2018-07-18 12:14:16.249 [info] <0.118.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.118.0>) has requested stop: empty_keygen
+2018-07-18 12:14:16.403 [debug] <0.1618.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.110.0>: 45000 (96%)
+2018-07-18 12:14:16.617 [info] <0.160.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.160.0>) has requested stop: empty_keygen
+2018-07-18 12:14:16.704 [info] <0.188.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.188.0>) has requested stop: empty_keygen
+2018-07-18 12:14:16.943 [info] <0.216.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.216.0>) has requested stop: empty_keygen
+2018-07-18 12:14:17.002 [info] <0.140.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.140.0>) has requested stop: empty_keygen
+2018-07-18 12:14:17.015 [debug] <0.1625.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.136.0>: 45000 (96%)
+2018-07-18 12:14:17.072 [info] <0.170.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.170.0>) has requested stop: empty_keygen
+2018-07-18 12:14:17.182 [debug] <0.1628.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.164.0>: 45000 (96%)
+2018-07-18 12:14:17.388 [info] <0.192.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.192.0>) has requested stop: empty_keygen
+2018-07-18 12:14:17.515 [info] <0.84.0>@basho_bench_stats:process_stats:313 Errors:[{{put,put},1},{{{put,put},{put,connection_closing}},1}]
+2018-07-18 12:14:17.646 [info] <0.132.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.132.0>) has requested stop: empty_keygen
+2018-07-18 12:14:17.804 [info] <0.162.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.162.0>) has requested stop: empty_keygen
+2018-07-18 12:14:17.953 [debug] <0.1633.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.168.0>: 45000 (96%)
+2018-07-18 12:14:18.311 [info] <0.122.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.122.0>) has requested stop: empty_keygen
+2018-07-18 12:14:18.696 [info] <0.158.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.158.0>) has requested stop: empty_keygen
+2018-07-18 12:14:18.706 [debug] <0.1637.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.212.0>: 45000 (96%)
+2018-07-18 12:14:18.765 [debug] <0.1639.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.206.0>: 45000 (96%)
+2018-07-18 12:14:18.865 [debug] <0.1640.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.222.0>: 45000 (96%)
+2018-07-18 12:14:19.097 [info] <0.130.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.130.0>) has requested stop: empty_keygen
+2018-07-18 12:14:19.239 [info] <0.178.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.178.0>) has requested stop: empty_keygen
+2018-07-18 12:14:19.261 [debug] <0.1643.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.194.0>: 45000 (96%)
+2018-07-18 12:14:19.905 [info] <0.182.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.182.0>) has requested stop: empty_keygen
+2018-07-18 12:14:20.095 [debug] <0.1646.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.116.0>: 45000 (96%)
+2018-07-18 12:14:20.332 [debug] <0.1647.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.200.0>: 45000 (96%)
+2018-07-18 12:14:20.449 [info] <0.202.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.202.0>) has requested stop: empty_keygen
+2018-07-18 12:14:20.657 [info] <0.114.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.114.0>) has requested stop: empty_keygen
+2018-07-18 12:14:20.985 [info] <0.198.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.198.0>) has requested stop: empty_keygen
+2018-07-18 12:14:21.046 [info] <0.204.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.204.0>) has requested stop: empty_keygen
+2018-07-18 12:14:21.348 [info] <0.220.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.220.0>) has requested stop: empty_keygen
+2018-07-18 12:14:21.545 [debug] <0.1653.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.142.0>: 45000 (96%)
+2018-07-18 12:14:22.069 [info] <0.208.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.208.0>) has requested stop: empty_keygen
+2018-07-18 12:14:22.250 [info] <0.148.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.148.0>) has requested stop: empty_keygen
+2018-07-18 12:14:22.487 [info] <0.112.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.112.0>) has requested stop: empty_keygen
+2018-07-18 12:14:22.861 [info] <0.166.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.166.0>) has requested stop: empty_keygen
+2018-07-18 12:14:23.167 [info] <0.190.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.190.0>) has requested stop: empty_keygen
+2018-07-18 12:14:23.352 [info] <0.172.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.172.0>) has requested stop: empty_keygen
+2018-07-18 12:14:23.909 [info] <0.214.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.214.0>) has requested stop: empty_keygen
+2018-07-18 12:14:24.037 [info] <0.226.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.226.0>) has requested stop: empty_keygen
+2018-07-18 12:14:24.201 [info] <0.196.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.196.0>) has requested stop: empty_keygen
+2018-07-18 12:14:24.350 [info] <0.156.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.156.0>) has requested stop: empty_keygen
+2018-07-18 12:14:24.500 [info] <0.134.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.134.0>) has requested stop: empty_keygen
+2018-07-18 12:14:24.532 [info] <0.180.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.180.0>) has requested stop: empty_keygen
+2018-07-18 12:14:24.538 [info] <0.174.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.174.0>) has requested stop: empty_keygen
+2018-07-18 12:14:25.209 [info] <0.210.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.210.0>) has requested stop: empty_keygen
+2018-07-18 12:14:31.763 [info] <0.146.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.146.0>) has requested stop: empty_keygen
+2018-07-18 12:14:33.775 [info] <0.224.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.224.0>) has requested stop: empty_keygen
+2018-07-18 12:14:33.938 [info] <0.138.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.138.0>) has requested stop: empty_keygen
+2018-07-18 12:14:34.167 [info] <0.150.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.150.0>) has requested stop: empty_keygen
+2018-07-18 12:14:34.349 [info] <0.184.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.184.0>) has requested stop: empty_keygen
+2018-07-18 12:14:34.404 [info] <0.120.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.120.0>) has requested stop: empty_keygen
+2018-07-18 12:14:35.079 [debug] <0.1674.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 40000 (85%)
+2018-07-18 12:14:35.273 [info] <0.136.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.136.0>) has requested stop: empty_keygen
+2018-07-18 12:14:35.990 [info] <0.164.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.164.0>) has requested stop: empty_keygen
+2018-07-18 12:14:36.040 [info] <0.110.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.110.0>) has requested stop: empty_keygen
+2018-07-18 12:14:36.163 [info] <0.168.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.168.0>) has requested stop: empty_keygen
+2018-07-18 12:14:36.384 [info] <0.206.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.206.0>) has requested stop: empty_keygen
+2018-07-18 12:14:36.861 [debug] <0.1682.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.102.0>: 45000 (96%)
+2018-07-18 12:14:37.032 [info] <0.222.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.222.0>) has requested stop: empty_keygen
+2018-07-18 12:14:37.285 [debug] <0.1684.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.108.0>: 45000 (96%)
+2018-07-18 12:14:37.292 [info] <0.212.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.212.0>) has requested stop: empty_keygen
+2018-07-18 12:14:37.366 [info] <0.194.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.194.0>) has requested stop: empty_keygen
+2018-07-18 12:14:37.460 [info] <0.116.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.116.0>) has requested stop: empty_keygen
+2018-07-18 12:14:38.321 [info] <0.200.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.200.0>) has requested stop: empty_keygen
+2018-07-18 12:14:38.750 [info] <0.142.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.142.0>) has requested stop: empty_keygen
+2018-07-18 12:14:40.538 [debug] <0.1692.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.106.0>: 45000 (96%)
+2018-07-18 12:14:41.542 [debug] <0.1694.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.104.0>: 45000 (96%)
+2018-07-18 12:14:44.862 [info] <0.102.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.102.0>) has requested stop: empty_keygen
+2018-07-18 12:14:45.220 [info] <0.108.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.108.0>) has requested stop: empty_keygen
+2018-07-18 12:14:47.211 [info] <0.106.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.106.0>) has requested stop: empty_keygen
+2018-07-18 12:14:49.222 [info] <0.104.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.104.0>) has requested stop: empty_keygen
+2018-07-18 12:14:56.998 [debug] <0.1700.0>@basho_bench_keygen:sequential_int_generator:193 sequential_int_gen: <0.94.0>: 45000 (96%)
+2018-07-18 12:15:04.337 [info] <0.94.0>@basho_bench_worker:worker_next_op:304 Driver basho_bench_driver_leofs (<0.94.0>) has requested stop: empty_keygen
+2018-07-18 12:15:04.345 [info] <0.84.0>@basho_bench_stats:report_total_errors:360 Total Errors:
+2018-07-18 12:15:04.345 [info] <0.84.0>@basho_bench_stats:report_total_errors:366   {{put,put},{put,connection_closing}}: 24
